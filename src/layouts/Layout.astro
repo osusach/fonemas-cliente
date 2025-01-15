@@ -13,10 +13,32 @@
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+body {
+  font-family: 'CabinetGrotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+
+<style is:global>
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'CabinetGroteskBold';	
+	src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+.text-bold {
+    font-family: CabinetGroteskBold;
+}
 </style>
