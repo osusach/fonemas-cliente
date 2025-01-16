@@ -5,78 +5,62 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Fonemas">
     <!-- Aprox la que da el nicolas es 373px en el mx, yo porpongo un 250px -->
     <article class="bg-[#F4F0FF] mx-[250px]"> 
-        <section class="flex justify-between">
-            <div class="relative inline-block">
-                <span class="absolute right-2 font-serif text-[476px] text-[#6610F2] select-none">/Z/</span>
-                <span class="font-serif top-2 text-[476px] text-black select-none">/Z/</span>
-            </div>
-
-            <div class="my-auto max-w-[564px]">
-                <p class="text-[48px]">
-                    El fonema /z/ es un fonema  que no se asocia a la <span class="text-bold text-[#6610F2]">letra o grafema z</span> en el castellano de Chile.
-                </p>
-                <p class="text-[24px] whitespace-pre-line">
-                    En el castellano de Chile usamos el fonema <span class="text-bold">/s/</span> para las palabras escritas con las letras <span class="text-bold">s</span> y <span class="text-bold">z</span>. 
-                    Es decir, <span class="text-bold">sólo tenemos un fonema</span> para las palabras escritas con <span class="text-bold">s</span> y <span class="text-bold">z</span>.
-                </p>
+        <section>
+            <div class="grid grid-cols-12 grid-rows-1 gap-4">
+                <div class="col-span-5">
+                    <img src="/images/svg/Fonema_Z.svg" alt="Fonema Z" />
+                </div>
+                <div class="col-span-7 col-start-6 place-content-center space-y-4">
+                    <p class="text-4xl">
+                        El fonema /z/ es un fonema  que no se asocia a la <span class="text-bold text-[#6610F2]">letra o grafema z</span> en el castellano de Chile.
+                    </p>
+                    <div class="text-xl">
+                        <p>
+                            En el castellano de Chile usamos el fonema <span class="text-bold text-[#6610F2]">/s/</span> para las palabras escritas con las letras <span class="text-bold">s</span> y <span class="text-bold">z</span>. 
+                        </p>
+                        <p>
+                            Es decir, <span class="text-bold">sólo tenemos un fonema</span> para las palabras escritas con <span class="text-bold">s</span> y <span class="text-bold">z</span>.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
-            <p class="text-[45px] text-center">
-                Pensemos <span class="text-bold">por ejemplo</span> en la pronunciación de:
-            </p>
-            <div class="flex relative">
-                <img src="/public/images/svg/Mano_Derecha.svg" alt="Mano apuntando a la derecha" class="absolute h-auto left-32">
-                <div class="flex flex-col items-center text-[#6610F2] mx-auto">
-                    <p class="text-[64px] leading-none transform -translate-x-[80px] translate-y-[25px]">
-                        Zona
+            <div class="grid grid-cols-12 grid-rows-3 gap-">
+                <div class="col-span-8 col-start-3 place-content-center">
+                    <p class="text-2xl text-center">
+                        Pensemos <span class="text-bold">por ejemplo</span> en la pronunciación de:
                     </p>
-                    <p class="text-[70px] leading-none">
-                        /
-                    </p>
-                    <p class="text-[64px] leading-none transform translate-x-[80px] -translate-y-[25px]">
-                        Sano
-                    </p>
-                    <p class="text-[32px] text-black text-center w-[657px] mx-auto">
+                </div>
+                <div class="col-span-4 col-start-5 row-start-2">
+                    <img src="/public/images/svg/Zona_Sano.svg" alt="Comparación entre Zona y Sano">
+                </div>
+                <div class="col-span-6 col-start-4 row-start-3 place-content-center">
+                    <p class="text-xl text-center">
                         Tal como lo puedes notar, sólo tenemos <span class="text-bold">un fonema para ambas palabras</span>.
                     </p>
                 </div>
+                <div class="col-span-3 row-span-2 col-start-1 row-start-2">
+                    <img src="/public/images/svg/Mano_Derecha.svg" alt="Mano apuntando a la derecha" class="">
+                </div>
             </div>
-
+        </section>
+        <section>
+            <div class="grid grid-cols-12 grid-rows-1 gap-4">
+                <div class="col-span-7 place-content-center text-2xl space-y-4">
+                    <p>
+                        <span class="text-bold text-[#6610F2]">En inglés</span>, la escritura de <span class="text-bold">s</span> y <span class="text-bold">z</span> al inicio de una palabra implica <span class="text-bold">dos fonemas distintos</span>.
+                    </p>
+                    <p>
+                        Estos fonemas son <span class="text-bold text-[#6610F2]">/s/</span> y <span class="text-bold text-[#6610F2]">/z/</span>.
+                    </p>
+                </div>
+                <div class="col-span-3 col-start-9">
+                    <img src="/public/images/svg/Fonema_S_Z.svg" alt="">
+                </div>
+            </div>
         </section>
         <div>
-            <div class="flex mt-20">
-                <div class="my-auto">
-                    <p class="text-[32px] w-[615px]">
-                        <span class="text-bold text-[#6610F2]">En inglés</span>, la escritura de <span class="text-bold">s</span> y <span class="text-bold">z</span> al inicio de una palabra implica <span class="text-bold">dos fonemas distintos</span>. 
-                    </p>
-                    <p class="text-[32px] w-[615px] whitespace-pre-line">
-                        Estos fonemas son <span class="text-bold text-[#6610F2]">/s/</span> y <span class="text-bold text-[#6610F2]">/z/</span>.
-                    </p>    
-                </div>
-                <!-- Fonemas s y z -->
-                <div class="text-[#6610F2] mx-auto inline-block">
-                    <!-- Contenedor para /S/ -->
-                    <div class="-translate-x-[80px] relative">
-                        <span class="font-serif absolute right-2 text-[128px] ">
-                            /S/
-                        </span>
-                        <span class="font-serif text-[128px] top-2 text-black">
-                            /S/
-                        </span>
-                    </div>
-
-                    <!-- Contenedor para /Z/ -->
-                    <div class="translate-x-[80px] relative">
-                        <span class="font-serif absolute right-1 text-[128px]">
-                            /Z/
-                        </span>
-                        <span class="font-serif text-[128px] top-2 text-black">
-                            /Z/
-                        </span>
-                    </div>
-                </div>
-             </div>
              <!-- Seccion de Por ejemplo palabras como -->
             <div>
                 <p class="flex justify-center text-3xl mb-10 mt-20">
