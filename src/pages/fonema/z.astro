@@ -33,7 +33,7 @@ import Layout from "../../layouts/Layout.astro";
                     </p>
                 </div>
                 <div class="col-span-4 col-start-5 row-start-2">
-                    <img src="/public/images/svg/Zona_Sano.svg" alt="Comparación entre Zona y Sano">
+                    <img src="/images/svg/Zona_Sano.svg" alt="Comparación entre Zona y Sano">
                 </div>
                 <div class="col-span-6 col-start-4 row-start-3 place-content-center">
                     <p class="text-xl text-center">
@@ -41,7 +41,7 @@ import Layout from "../../layouts/Layout.astro";
                     </p>
                 </div>
                 <div class="col-span-3 row-span-2 col-start-1 row-start-2">
-                    <img src="/public/images/svg/Mano_Derecha.svg" alt="Mano apuntando a la derecha" class="">
+                    <img src="/images/svg/Mano_Derecha.svg" alt="Mano apuntando a la derecha" class="">
                 </div>
             </div>
         </section>
@@ -56,48 +56,89 @@ import Layout from "../../layouts/Layout.astro";
                     </p>
                 </div>
                 <div class="col-span-3 col-start-9">
-                    <img src="/public/images/svg/Fonema_S_Z.svg" alt="">
+                    <img src="/images/svg/Fonema_S_Z.svg" alt="">
                 </div>
             </div>
         </section>
-        <div>
-             <!-- Seccion de Por ejemplo palabras como -->
-            <div>
-                <p class="flex justify-center text-3xl mb-10 mt-20">
-                    <span class="text-bold">Por ejemplo</span>, en palabras como:
+        <!-- Seccion de "Por ejemplo palabras como" -->
+        <section class="mb-40">
+            <p class="flex justify-center text-2xl mb-10 mt-20">
+                <span class="text-bold">Por ejemplo</span>, en palabras como:
+            </p>
+            <div class="flex justify-center items-center gap-24">
+                <div class="text-center">
+                    <p class="text-extrabold text-[#6610F2] text-6xl leading-[79.36px]">Zip</p>
+                    <p class="text-2xl text-bold">fonema /z/</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-extrabold text-[#6610F2] text-6xl leading-[79.36px]">Sip</p>
+                    <p class="text-2xl text-bold">fonema /s/</p>
+                </div>
+            </div>  
+        </section>
+        <!-- Seccion de "Cómo sepronuncien la palabras" -->
+        <section class="-mb-16">
+            <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto">
+              <div class="col-start-2 col-span-3 flex justify-center items-center transform -translate-y-20 ">
+                <img src="/images/svg/Estrella.svg" alt="Estrella" class="w-72 h-72">
+              </div>
+              <div class="col-end-12 col-span-7"> 
+                <p class="text-2xl text-right">
+                  Esto significa que, dependiendo de <span class="text-bold">cómo se 
+                  pronuncien la palabras</span>, quien habla inglés <br>
+                  podrá comprender <span class="text-bold text-[#6610F2]">dos cosas distintas</span>.
                 </p>
-                <div class="flex justify-center items-center gap-24">
-                    <div class="text-center">
-                        <p class="text-extrabold text-[#6610F2] text-7xl leading-[79.36px]">Zip</p>
-                        <p class="text-3xl text-bold">fonema /z/</p>
-                    </div>
-                    <div class="text-center">
-                        <p class="text-extrabold text-[#6610F2] text-7xl leading-[79.36px]">Sip</p>
-                        <p class="text-3xl text-bold">fonema /s/</p>
-                    </div>
-                </div>  
-            </div>          
-        </div>
-        <div>
-            <p class="mt-20">
-                Esto significa que, dependiendo de <span class="text-bold">cómo se pronuncien la palabras</span>, quien hablan inglés podrán comprender <span class="text-bold">dos cosas distintas</span>.
-            </p>
-            <p>Por ejemplo:</p>
-            <div>
-                <p>Sip</p>
+              </div>
             </div>
-            <div>
-                <p>Zip</p>
+          </section>          
+        <!-- Seccion de "Por ejemplo" -->
+        <section class="mb-24">
+            <div class="max-w-2xl mx-auto">
+              <p class="text-3xl text-bold text-center -mb-4">Por ejemplo:</p>
+              
+              <div class="grid grid-cols-2 gap-x-48">
+                <div class="flex flex-col items-center">
+                  <img src="/images/svg/Sip.svg" alt="Sip" class="w-64 h-96 -mb-8">
+                  <p class="text-[#6610F2] text-6xl text-extrabold mb-8">Sip</p>
+                  <button class="w-20 h-20">
+                    <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" 
+                         class="w-full h-full p-2">
+                  </button>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/svg/Zip.svg" alt="Zip" class="w-64 h-96 rotate-[17.53deg] origin-center -mb-8">
+                    <p class="text-[#6610F2] text-6xl text-extrabold mb-8">Zip</p>
+                    <button class="w-20 h-20">
+                      <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" 
+                           class="w-full h-full p-2">
+                    </button>
+                </div>
+              </div>
             </div>
-        </div>
-        <div>
-            <p>
-                Una forma para comenzar a concientizar a los estudiantes sobre las <span class="text-bold">diferencias entre la escritura y la pronunciación</span> de una lengua y su lengua materna es hacer <span class="text-bold">ejercicios de percepción</span>.
-            </p>
-            <p>
-                Los <span class="text-bold">ejercicios de percepción</span> permiten que los estudiantes aprendan a <span class="text-bold">discriminar el fonema</span> y, que, además refuercen la discriminación con la <span class="text-bold">escritura de la palabra</span>.
-            </p>
-        </div>
+        </section>          
+        <!-- Seccion de "Ejercicios de percepción" -->
+        <section>
+            <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto">
+                <div class="col-start-1 col-span-12"> 
+                    <p class="text-2xl text-left mb-8">
+                        Una forma para comenzar a concientizar sobre las<br>
+                        <span class="text-bold">diferencias entre la escritura y la pronunciación<br>
+                        </span> de una lengua y su lengua materna es hacer <br>
+                        <span class="text-bold text-[#6610F2]">ejercicios de percepción</span>.
+                    </p>
+                </div>
+                <div class="col-start-1 col-span-2 flex justify-center items-center">
+                    <img src="/images/svg/Flecha.svg" alt="Flecha" class="w-40 h-40 transform rotate-[5.53deg] -translate-y-10 translate-x-24">
+                </div>
+                <div class="col-end-12 col-span-9"> 
+                    <p class="text-2xl text-right">
+                        Los <span class="text-bold text-[#6610F2]">ejercicios de percepción</span> permiten aprender a<br> 
+                        <span class="text-bold">discriminar el fonema</span> y, que, además refuercen la<br>
+                        discriminación con la <span class="text-bold">escritura de la palabra</span>.
+                    </p>
+                </div>
+            </div>
+        </section>
         <div>
             <p class="text-bold">
                 ¿Cómo podemos <span>pronunciar el fonema /z/</span> en  al principio de una palabra en inglés?
