@@ -3,56 +3,61 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Fonemas exercices">
-    <article class="bg-[#F4F0FF] mx-[250px]">
+    <article class="bg-[#F4F0FF] mx-[188px]">
         <!-- Title section -->
-        <section class="grid text-center">
-            <div class="relative inline-block">
-                <h2 class="text-[96px] text-[#6610F2] inline-block">
-                    Ejercicios /z/
-                </h2>
-                <img 
-                    src="/public/images/svg/Destacado.svg" 
-                    alt="Imagen de destacado" 
-                    class="w-[212px] absolute -translate-y-24 left-1/2 -translate-x-1/2"
+        <section class="grid grid-cols-12 gap-4">
+            <!-- Tittle image -->
+            <img src="/public/images/svg/Ejercicios_s.svg" 
+                alt="Titulo de ejercicios" 
+                class="col-span-6 col-start-4 m-w-[571px] w-full"
                 >
-            </div>
-            <div class="flex">
-                <img src="/public/images/svg/Estrella.svg" alt="Imagen de estrella" class="ml-auto">
-                <p class="w-[615px] text-[36px] m-auto">
-                    Ahora vas a <span class="text-bold">escuchar palabras</span> y vas a 
-                    <span class="text-bold">seleccionar si la palabra tiene</span> 
-                    <span class="text-[#6610F2]">
-                        s 
-                        <span class="text-black text-bold">o</span>
-                        z
-                    </span>
-                </p>
-                <img src="/public/images/svg/Estrella.svg" alt="Imagen de estrella" class="mr-auto">
-            </div>
+            <!-- Left star image -->
+            <img src="/public/images/svg/Estrella.svg" 
+                alt="Imagen de estrella"
+                class="col-span-2 col-start-1 my-auto"
+                >
+            <!-- Text -->
+            <p class="m-w-[615px] w-full text-[36px] text-center col-span-6 col-start-4 m-auto">
+                Ahora vas a <span class="text-bold">escuchar palabras</span> y vas a 
+                <span class="text-bold">seleccionar si la palabra tiene</span> 
+                <span class="text-[#6610F2]">
+                    s 
+                    <span class="text-black text-bold">o</span>
+                    z.
+                </span>
+            </p>
+            <!-- Right star image -->
+            <img src="/public/images/svg/Estrella.svg" 
+                alt="Imagen de estrella"
+                class="col-span-2 col-start-11 scale-x-[-1] my-auto"
+                >
         </section>
         <!-- Section of question -->
-        <section class="grid">
-            <span class="text-[#6610F2] text-[40px] mx-auto">Palabra 1</span>
-            <div class="grid mx-auto w-full">
-                <!-- Play audio -->
-                <div class="flex my-10">
-                    <!-- Left arrow -->
-                    <img src="/public/images/svg/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda">
-                    <!-- Play audio image -->
-                    <img src="/public/images/svg/Reproducir_Audio.svg" alt="Imagen de reproducir audio" class="mx-auto">
-                    <!-- Right arrow -->
-                    <img src="/public/images/svg/Flecha_Derecha.svg" alt="Imagen de flecha derecha">
-                </div>
-                <!-- Answers -->
-                <div class="flex justify-between w-[38%] mx-auto">
-                    <button class="w-[234px] h-[82px] text-[40px] border-black text-white bg-[#6610F2] rounded-[48px]">
-                        <span class="text-bold">a)</span> Tiene s
-                    </button>
-                    <button class="w-[234px] h-[82px] text-[40px] border-black text-white bg-[#6610F2] rounded-[48px]">
-                        <span class="text-bold">b)</span> Tiene z
-                    </button>
-                </div>
-            </div>
+        <section class="grid grid-cols-12 gap-4">
+            <span class="text-[#6610F2] col-span-2 col-start-6 text-[40px] text-center m-auto">
+                Palabra 1
+            </span>
+            <!-- Left arrow -->
+            <img src="/public/images/svg/Flecha_Izquierda.svg" 
+                alt="Imagen de flecha izquierda"
+                class="col-span-1 col-start-1 m-auto"
+                >
+            <!-- Play audio image -->
+            <img src="/public/images/svg/Reproducir_Audio.svg" 
+                alt="Imagen de reproducir audio"
+                class="col-span-2 col-start-6 max-w-[216px] w-full m-auto"
+                >
+            <!-- Right arrow -->
+            <img src="/public/images/svg/Flecha_Derecha.svg" 
+                alt="Imagen de flecha derecha"
+                class="col-span-1 col-start-12 m-auto"
+                >
+            <button class="col-start-4 w-[234px] h-[82px] text-[40px] border-black text-white bg-[#6610F2] rounded-[48px]">
+                <span class="text-bold">a)</span> Tiene s
+            </button>
+            <button class="col-start-8 w-[234px] h-[82px] text-[40px] border-black text-white bg-[#6610F2] rounded-[48px]">
+                <span class="text-bold">b)</span> Tiene z
+            </button>
         </section>
     </article>
 </Layout>
