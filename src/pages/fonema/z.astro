@@ -4,7 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout title="Fonemas">
     <!-- Aprox la que da el nicolas es 373px en el mx, yo porpongo un 250px -->
-    <article class="bg-[#F4F0FF] mx-[250px]"> 
+    <article class="bg-[#F4F0FF] xl:mx-[250px]">
         <section>
             <div class="grid grid-cols-12 grid-rows-1 gap-4">
                 <div class="col-span-5">
@@ -78,8 +78,8 @@ import Layout from "../../layouts/Layout.astro";
             </div>  
         </section>
         <!-- Seccion de "Cómo se pronuncien la palabras" -->
-        <section class="-mb-16">
-            <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto">
+        <section class="mb-12 xl:-mb-12">
+            <div class="grid grid-cols-12 gap-[15px] xl:w-[75%] mx-auto">
               <div class="col-start-1 col-span-4 flex justify-center items-center transform -translate-y-20 translate-x-8">
                 <img src="/images/svg/Estrella.svg" alt="Estrella" class="w-60 h-60">
               </div>
@@ -93,23 +93,23 @@ import Layout from "../../layouts/Layout.astro";
             </div>
           </section>          
         <!-- Seccion de "Por ejemplo" -->
-        <section class="mb-24">
+        <section class="mb-12 sm:mb-24">
             <div class="max-w-2xl mx-auto">
-              <p class="text-3xl text-bold text-center -mb-4">Por ejemplo:</p>
+              <p class="text-xl sm:text-3xl text-bold text-center -mb-12 sm:-mb-4">Por ejemplo:</p>
               
-              <div class="grid grid-cols-2 gap-x-48">
+              <div class="grid grid-cols-2 sm:gap-x-48">
                 <div class="flex flex-col items-center">
-                  <img src="/images/svg/Sip.svg" alt="Sip" class="w-54 h-72 -mb-8">
-                  <p class="text-[#6610F2] text-6xl text-extrabold mb-8">Sip</p>
-                  <button class="w-20 h-20">
+                  <img src="/images/svg/Sip.svg" alt="Sip" class="w-54 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
+                  <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">Sip</p>
+                  <button class="w-24 h-24 sm:w-20 sm:h-20">
                     <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" 
                          class="w-full h-full p-2">
                   </button>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="/images/svg/Zip.svg" alt="Zip" class="w-54 h-72 rotate-[17.53deg] origin-center -mb-8">
-                    <p class="text-[#6610F2] text-6xl text-extrabold mb-8">Zip</p>
-                    <button class="w-20 h-20">
+                    <img src="/images/svg/Zip.svg" alt="Zip" class="w-54 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] rotate-[17.53deg] origin-center tranform -translate-x-2 sm:-mb-8">
+                    <p class="text-[#6610F2] text-4xl xl:text-6xl text-extrabold mb-2 sm:mb-8">Zip</p>
+                    <button class="w-24 h-24 sm:w-20 sm:h-20">
                       <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" 
                            class="w-full h-full p-2">
                     </button>
@@ -119,45 +119,45 @@ import Layout from "../../layouts/Layout.astro";
         </section>          
         <!-- Seccion de "Ejercicios de percepción" -->
         <section>
-            <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto">
-                <div class="col-start-1 col-span-8 max-w-[90%]"> 
-                    <p class="text-2xl text-left mb-8">
+            <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <div class="col-start-1 col-span-11 row-start-1 max-w-[94%] sm:col-span-8 sm:max-w-[90%] mb-12"> 
+                    <p class="text-lg sm:text-2xl text-left leading-[1.35rem]">
                         Una forma para comenzar a concientizar sobre las
                         <span class="text-bold">diferencias entre la escritura y la pronunciación
                         </span> de una lengua y su lengua materna es hacer 
                         <span class="text-bold text-[#6610F2]">ejercicios de percepción</span>.
                     </p>
                 </div>
-                <div class="col-start-2 col-span-3 flex justify-center items-center">
-                    <img src="/images/svg/Flecha.svg" alt="Flecha" class="w-40 h-40 transform rotate-[5.53deg] -translate-y-10 ">
+                <div class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-6 sm:-translate-y-20  sm:translate-x-0 ">
+                    <img src="/images/svg/Flecha.svg" alt="Flecha" class="w-24 h-24 sm:w-40 sm:h-40 rotate-[5.53deg] ">
                 </div>
-                <div class="col-end-13 col-span-8"> 
-                    <p class="text-2xl text-right">
+                <div class="col-end-13 col-span-9 max-w-[97%] ml-auto sm:max-w-[100%] sm:col-end-13 sm:col-span-7 row-start-2 transform -translate-y-4"> 
+                    <p class="text-lg sm:text-2xl text-right leading-[1.35rem]">
                         Los <span class="text-bold text-[#6610F2]">ejercicios de percepción</span> permiten aprender a
-                        <span class="text-bold">discriminar el fonema</span> y, que, además refuercen la
-                        discriminación con la <span class="text-bold">escritura de la palabra</span>.
+                        <span class="text-bold">discriminar el fonema</span> y, además, refuercen la
+                        discriminación con la <span class="text-bold"> <br class="min-[450px]:hidden"> escritura de la palabra</span>.
                     </p>
                 </div>
             </div>
-        </section>
+        </section>        
         <!-- Seccion de "Como podemos pronunciar el fonema" -->
-        <section class="-mb-24">
-            <p class="mt-4 text-3xl text-bold text-center mb-16">
-                ¿Cómo podemos<span class="text-[#6610F2]"> pronunciar el fonema /z/</span><br>
+        <section class="xl:-mb-24">
+            <p class="mt-4 text-xl xl:text-3xl text-bold text-center mb-16 max-w-[62%] mx-auto leading-[1.45rem]">
+                ¿Cómo podemos<span class="text-[#6610F2]"> pronunciar el fonema /z/</span>
                 al principio de una palabra en inglés?
             </p>
 
-            <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto">
-                <div class="col-start-1 col-span-7 mb-8">
-                    <p class="text-2xl text-left">
+            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <div class="col-start-1 col-span-12 sm:col-start-1 sm:col-span-7 -mb-12">
+                    <p class="text-lg sm:text-2xl text-left leading-[1.35rem]">
                         Partimos realizando el <span class="text-bold">sonido de la letra s en
                         español</span>. Luego, hacemos el sonido mientras
-                        estamos pronunciando s y ponemos las manos 
+                        estamos pronunciando s y ponemos las <br class="min-[450px]:hidden"> manos 
                         sobre nuestra garganta.
                     </p>
                 </div>
-                <div class="col-start-8 col-span-4 flex justify-center items-center">
-                    <img src="/images/svg/Nota_Musical.svg" alt="Nota Musical" class="w-40 h-40 transform -translate-y-6 translate-x-8">
+                <div class="col-start-7 col-span-5 sm:col-start-8 sm:col-span-4 flex justify-center items-center">
+                    <img src="/images/svg/Nota_Musical.svg" alt="Nota Musical" class="w-40 h-40 transform sm:rotate-[0deg] rotate-[31.53deg] -translate-y-2 sm:-translate-y-6 translate-x-8">
                 </div>
             
                 <div class="col-start-1 col-span-5 flex justify-center items-center">
@@ -179,49 +179,49 @@ import Layout from "../../layouts/Layout.astro";
                 los audios, <span class="text-bold text-[#6610F2]">pronuncia las siguientes palabras:</span>
             </p>
         
-            <div class="relative w-full max-w-[650px] mx-auto">
-                <img src="/images/svg/Contenedor_Audios.svg" alt="Contenedor de Audios" class="w-full h-auto">
+            <div class="relative w-full max-w-[650px] mx-auto max-h-[1240px]">
+                <img src="/images/svg/Contenedor_Audios.svg" alt="Contenedor de Audios" class="w-full h-full">
                 
                 <div class="absolute inset-0 flex items-center justify-center">
                     <div class="w-full px-24 transform translate-y-4">
                         <div class="grid grid-cols-2 gap-4 ">
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-6xl text-extrabold">Zip</p>
+                                <p class="text-[#6610F2] text-4xl xl:text-6xl text-extrabold">Zip</p>
                                 <button class="w-20 h-20 flex items-center justify-center">
                                     <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
                                 </button>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-6xl text-extrabold">Zone</p>
+                                <p class="text-[#6610F2] text-4xl xl:text-6xl text-extrabold">Zone</p>
                                 <button class="w-20 h-20 flex items-center justify-center">
                                     <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
                                 </button>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-6xl text-extrabold">Solar</p>
+                                <p class="text-[#6610F2] text-4xl xl:text-6xl text-extrabold">Solar</p>
                                 <button class="w-20 h-20 flex items-center justify-center">
                                     <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
                                 </button>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-6xl text-extrabold">Zoo</p>
+                                <p class="text-[#6610F2] text-4xl xl:text-6xl text-extrabold">Zoo</p>
                                 <button class="w-20 h-20 flex items-center justify-center">
                                     <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
                                 </button>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-6xl text-extrabold">Station</p>
+                                <p class="text-[#6610F2] text-4xl xl:text-6xl text-extrabold">Station</p>
                                 <button class="w-20 h-20 flex items-center justify-center">
                                     <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
                                 </button>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-6xl text-extrabold">Size</p>
+                                <p class="text-[#6610F2] text-4xl xl:text-6xl text-extrabold">Size</p>
                                 <button class="w-20 h-20 flex items-center justify-center">
                                     <img src="/images/svg/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
                                 </button>
