@@ -9,7 +9,7 @@ export async function getStaticPaths() {
 ---
 
 <Layout title="Fonemas">
-    <article class="bg-[#F4F0FF] mx-[188px]"> 
+    <article class="bg-[#F4F0FF] sm:mx-auto xl:mx-[188px]"> 
         <section>
             <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto">
                 <img src="/images/svg/Fonema_Z.svg" alt="Fonema Z" class="col-span-5" />
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
                 </div>
             </div>
         </section>
-        <section>
+        <section class="mb-16">
             <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto mt-20">
                 <div class="col-span-8 col-start-3 place-content-center">
                     <p class="text-2xl text-center">
@@ -138,7 +138,8 @@ export async function getStaticPaths() {
                     <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
                         Los <span class="text-bold text-[#6610F2]">ejercicios de percepción</span> permiten aprender a
                         <span class="text-bold">discriminar el fonema</span> y, además, refuercen la
-                        discriminación con la <span class="text-bold"> <br class="min-[450px]:hidden"> escritura de la palabra</span>.
+                        discriminación con la <span class="text-bold"> <br class="hidden min-[400px]:block max-[450px]:block">
+                        escritura de la palabra</span>.
                     </p>
                 </div>
             </div>
@@ -166,13 +167,14 @@ export async function getStaticPaths() {
                 <div class="col-end-13 col-span-12 max-w-[95%] ml-auto sm:max-w-[100%] sm:col-end-13 sm:col-span-6 transform -translate-y-8 sm:translate-y-4">
                     <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
                         <span class="text-bold">Si vibra, </span><span class="text-bold text-[#6610F2]">estás produciendo el fonema /z/;</span> 
-                        si no vibra como una abeja, <br class="min-[450px]:hidden"> estás  produciendo
-                        <span class="text-bold"> <br class="min-[450px]:hidden"> el fonema /s/</span>.
+                        si no vibra como una abeja, <br class="block lg:hidden"> estás  produciendo
+                        <span class="text-bold"> <br class="block lg:hidden">
+                            el fonema /s/</span>.
                     </p>
                 </div>
 
-                <div class="col-start-1 col-span-6 flex justify-center items-center">
-                    <img src="/images/png/abeja.png" alt="Abeja" class="w-48 h-48 sm:w-72 sm:h-72 transform -translate-y-36 min-[450px]:-translate-y-24 sm:-translate-y-48 translate-x-4">
+                <div class="col-start-1 col-span-7 flex justify-center items-center">
+                    <img src="/images/png/abeja.png" alt="Abeja" class="w-48 h-48 sm:w-72 sm:h-72 transform -translate-y-36 -translate-x-4 min-[450px]:-translate-y-24 sm:-translate-y-48 sm:-translate-x-12">
                 </div>
             </div>
         </section>
@@ -237,23 +239,28 @@ export async function getStaticPaths() {
             </div>
         </section> 
         <!-- Seccion de "¿Quieres seguir ejercitando?" -->                   
-        <section class="grid grid-cols-2 items-center relative">
-            <div class="col-span-2 text-center">
-                <p class="text-3xl text-center mb-12">¿Quieres seguir <span class="text-bold text-[#6610F2]">ejercitando</span>?</p>
-                <nav class="transform transition-transform duration-200 hover:scale-110">
-                    <a href="/exercice/z" class="text-[#6610F2] text-extrabold text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center">
-                        Haz click aquí
-                    </a>
-                    <img 
-                        src="/images/svg/Destacado.svg" 
-                        alt="Destacado" 
-                        class="mx-auto mt-2"
-                    >
-                </nav>
+        <section >
+            <div class="grid grid-cols-2 items-center relative">
+                <div class="col-span-2 text-center">
+                    <p class="text-xl sm:text-3xl text-center mb-4 sm:mb-12">
+                        <span class="text-mediumbold">¿Quieres seguir </span><span class="text-bold text-[#6610F2]">
+                        ejercitando</span><span class="text-mediumbold">?</span>
+                    </p>
+                    <nav class="transform transition-transform duration-200 hover:scale-110">
+                        <a href="/exercice/z" class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center">
+                            Haz click aquí
+                        </a>
+                        <img 
+                            src="/images/svg/Destacado.svg" 
+                            alt="Destacado" 
+                            class="mx-auto w-20 sm:w-40 sm:mt-2"
+                        >
+                    </nav>
+                </div>
+                <div class="col-start-2 col-span-2 -mt-12 sm:-mt-14">
+                    <img src="/images/svg/Mano_Izquierda.svg" alt="Mano Izquierda" class="w-32 h-32 sm:w-56 sm:h-56 transform translate-y-2 translate-x-14 sm:-translate-y-8 sm:translate-x-32">
+                </div>
             </div>
-            <div class="col-start-2 justify-self-end absolute right-56 top-16">
-                <img src="/images/svg/Mano_Izquierda.svg" alt="Mano Izquierda" class="w-56 h-56">
-            </div>
-        </section>
+        </section> 
     </article>
 </Layout>
