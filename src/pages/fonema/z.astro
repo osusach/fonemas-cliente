@@ -1,20 +1,23 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return [
+    { params: { exercice: 'z' } }
+  ];
+}
 ---
 
 <Layout title="Fonemas">
-    <!-- Aprox la que da el nicolas es 373px en el mx, yo porpongo un 250px -->
-    <article class="bg-[#F4F0FF] xl:mx-[250px]">
+    <article class="bg-[#F4F0FF] mx-[188px]"> 
         <section>
-            <div class="grid grid-cols-12 grid-rows-1 gap-4">
-                <div class="col-span-5">
-                    <img src="/images/svg/Fonema_Z.svg" alt="Fonema Z" />
-                </div>
+            <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto">
+                <img src="/images/svg/Fonema_Z.svg" alt="Fonema Z" class="col-span-5" />
                 <div class="col-span-7 col-start-6 place-content-center space-y-4">
-                    <p class="text-4xl">
-                        El fonema /z/ es un fonema  que no se asocia a la <span class="text-bold text-[#6610F2]">letra o grafema z</span> en el castellano de Chile.
+                    <p class="text-[48px]">
+                        Es un fonema que no se asocia a la <span class="text-bold text-[#6610F2]">letra o grafema z</span> en el castellano de Chile.
                     </p>
-                    <div class="text-xl">
+                    <div class="text-[24px] col-span-6">
                         <p>
                             En el castellano de Chile usamos el fonema <span class="text-bold text-[#6610F2]">/s/</span> para las palabras escritas con las letras <span class="text-bold">s</span> y <span class="text-bold">z</span>. 
                         </p>
@@ -26,7 +29,7 @@ import Layout from "../../layouts/Layout.astro";
             </div>
         </section>
         <section>
-            <div class="grid grid-cols-12 grid-rows-3 gap-">
+            <div class="grid grid-cols-12 gap-[15px] w-[75%] mx-auto mt-20">
                 <div class="col-span-8 col-start-3 place-content-center">
                     <p class="text-2xl text-center">
                         Pensemos <span class="text-bold">por ejemplo</span> en la pronunciación de:
@@ -234,20 +237,23 @@ import Layout from "../../layouts/Layout.astro";
             </div>
         </section> 
         <!-- Seccion de "¿Quieres seguir ejercitando?" -->                   
-        <section >
-            <div class="grid grid-cols-2 items-center relative">
-                <div class="col-span-2 text-center">
-                    <p class="text-xl sm:text-3xl text-center mb-4 sm:mb-12">
-                        <span class="text-mediumbold">¿Quieres seguir </span><span class="text-bold text-[#6610F2]">
-                        ejercitando</span><span class="text-mediumbold">?</span>
-                    </p>
-                    <a href="#" class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl block">Haz click aquí</a>
-                    <img src="/images/svg/Destacado.svg" alt="Destacado" class="w-24 h-24 sm:w-40 sm:h-40 mx-auto transform -translate-y-8 sm:-translate-y-12">
-                </div>
-                <div class="col-start-2 col-span-2 -mt-24 sm:-mt-48">
-                    <img src="/images/svg/Mano_Izquierda.svg" alt="Mano Izquierda" class="w-32 h-32 sm:w-56 sm:h-56 transform -translate-y-4 translate-x-14 sm:-translate-y-8 sm:translate-x-32">
-                </div>
+        <section class="grid grid-cols-2 items-center relative">
+            <div class="col-span-2 text-center">
+                <p class="text-3xl text-center mb-12">¿Quieres seguir <span class="text-bold text-[#6610F2]">ejercitando</span>?</p>
+                <nav class="transform transition-transform duration-200 hover:scale-110">
+                    <a href="/exercice/z" class="text-[#6610F2] text-extrabold text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center">
+                        Haz click aquí
+                    </a>
+                    <img 
+                        src="/images/svg/Destacado.svg" 
+                        alt="Destacado" 
+                        class="mx-auto mt-2"
+                    >
+                </nav>
             </div>
-        </section>        
+            <div class="col-start-2 justify-self-end absolute right-56 top-16">
+                <img src="/images/svg/Mano_Izquierda.svg" alt="Mano Izquierda" class="w-56 h-56">
+            </div>
+        </section>
     </article>
 </Layout>
