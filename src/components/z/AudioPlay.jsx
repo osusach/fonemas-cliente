@@ -1,138 +1,97 @@
 import { useState } from "react";
+import { zAudioList } from "../../constant/constants";
 
 export default function AudioPlay() {
     const [currentAudio, setCurrentAudio] = useState(0);
-    const [sShowAnswer, setSShowAnswer] = useState(false);
-    const [zShowAnswer, setZShowAnswer] = useState(false);
-    const audioList = ["Socket", "Signal", "ZigZag", "Zero", "Secret", "Zing"];
+    const [selectedButton, setSelectedButton] = useState(null);
+    const [isCorrect, setIsCorrect] = useState(false);
 
+    // Play audio function
     const playAudio = () => {
-        const audio = new Audio(`/public/audio/z/${audioList[currentAudio]}.mp3`);
+        const audio = new Audio(`/audio/z/${zAudioList[currentAudio]}.mp3`);
         audio.play();
     }
 
+    // Count and discount audio functions
     const countAudio = () => {
-        if (currentAudio === audioList.length - 1) {
-            return;
-        }
         setCurrentAudio(currentAudio + 1);
-        setSShowAnswer(false);
-        setZShowAnswer(false);
+        setSelectedButton(null);
     }
 
     const discountAudio = () => {
         setCurrentAudio(currentAudio - 1);
-        setSShowAnswer(false);
-        setZShowAnswer(false);
+        setSelectedButton(null);
     }
 
+    // Validate answer function
     const validateAnswer = (answer) => {
-        // Hacer bien las validaciones tomando en cuenta que la respuesta correcta es diferente dependiendo del audio.
+        setSelectedButton(answer);
+
         switch (currentAudio) {
-            // Caso que sea Socket
-            case 0:
-                if (answer === "s") {
-                    setSShowAnswer(true);
-                    setZShowAnswer(false);
-                } else {
-                    setZShowAnswer(true);
-                    setSShowAnswer(false);
-                }
+            case 0: // Socket
+                setIsCorrect(answer === "s");
                 break;
-            // Caso que sea Signal
-            case 1:
-                if (answer === "s") {
-                    setSShowAnswer(true);
-                    setZShowAnswer(false);
-                } else {
-                    setZShowAnswer(true);
-                    setSShowAnswer(false);
-                }
+            case 1: // Signal
+                setIsCorrect(answer === "s");
                 break;
-            // Caso que sea ZigZag
-            case 2:
-                if (answer === "z") {
-                    setZShowAnswer(true);
-                    setSShowAnswer(false);
-                } else {
-                    setSShowAnswer(true);
-                    setZShowAnswer(false);
-                }
+            case 2: // ZigZag
+                setIsCorrect(answer === "z");
                 break;
-            // Caso que sea Zero
-            case 3:
-                if (answer === "z") {
-                    setZShowAnswer(true);
-                    setSShowAnswer(false);
-                } else {
-                    setSShowAnswer(true);
-                    setZShowAnswer(false);
-                }
+            case 3: // Zero
+                setIsCorrect(answer === "z");
                 break;
-            // Caso que sea Secret
-            case 4:
-                if (answer === "s") {
-                    setSShowAnswer(true);
-                    setZShowAnswer(false);
-                } else {
-                    setZShowAnswer(true);
-                    setSShowAnswer(false);
-                }
+            case 4: // Secret
+                setIsCorrect(answer === "s");
                 break;
-            // Caso que sea Zing
-            case 5:
-                if (answer === "z") {
-                    setZShowAnswer(true);
-                    setSShowAnswer(false);
-                } else {
-                    setSShowAnswer(true);
-                    setZShowAnswer(false);
-                }
+            case 5: // Zing
+                setIsCorrect(answer === "z");
                 break;
             default:
                 break;
         }
     }
 
+    // Get button color function
+    const getButtonColor = (buttonType) => {
+        if (selectedButton === buttonType) {
+            return isCorrect ? "bg-green-500" : "bg-red-500";
+        }
+        return "bg-[#6610F2]";
+    }
+
     return (
         <section className="grid grid-cols-12 gap-4">
+            {/* Number of word */}
             <span className="text-[#6610F2] col-span-2 col-start-6 text-[40px] text-center m-auto">
                 Palabra {currentAudio + 1}
             </span>
-            {/* Left arrow */}
+            {/* Left arrow button */}
             {currentAudio === 0 ?
-                ""
-                :
-                <button onClick={discountAudio}
-                    className="col-span-1 col-start-1 m-auto"
-                >
-                    <img src="/images/svg/Flecha_Izquierda.svg"
-                        alt="Imagen de flecha izquierda"
-                    />
+                "" :
+                <button onClick={discountAudio} className="col-span-1 col-start-1 m-auto">
+                    <img src="/images/svg/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" />
                 </button>
             }
-            {/* Play audio image */}
+            {/* Play audio button */}
             <button className="col-span-2 col-start-6 max-w-[216px] w-full m-auto">
-                <img onClick={playAudio}
-                    src="/images/svg/Reproducir_Audio.svg"
-                    alt="Imagen de reproducir audio"
-                />
+                <img onClick={playAudio} src="/images/svg/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
             </button>
-            {/* Right arrow */}
-            <button onClick={countAudio}
-                className="col-span-1 col-start-12 m-auto"
-            >
-                <img src="/images/svg/Flecha_Derecha.svg"
-                    alt="Imagen de flecha derecha"
-                />
-            </button>
-            {/* Answers */}
-            <button onClick={() => validateAnswer("s")}
-                className={`col-start-4 w-[234px] h-[82px] text-[40px] border-black text-white rounded-[48px] ${sShowAnswer ? "bg-green-500" : "bg-[#6610F2]"}`}>
+            {/* Right arrow button */}
+            {currentAudio === zAudioList.length - 1 ?
+                "" :
+                <button onClick={countAudio} className="col-span-1 col-start-12 m-auto">
+                    <img src="/images/svg/Flecha_Derecha.svg" alt="Imagen de flecha derecha" />
+                </button>
+            }
+            {/* Answer buttons */}
+            <button
+                onClick={() => validateAnswer("s")}
+                className={`col-start-4 w-[234px] h-[82px] text-[40px] border-black text-white rounded-[48px] ${getButtonColor("s")}`}>
                 Tiene s
             </button>
-            <button onClick={() => validateAnswer("z")}
-                className={`col-start-8 w-[234px] h-[82px] text-[40px] border-black text-white rounded-[48px] ${zShowAnswer ? "bg-red-500" : "bg-[#6610F2]"}`}>
+            <button
+                onClick={() => validateAnswer("z")}
+                className={`col-start-8 w-[234px] h-[82px] text-[40px] border-black text-white rounded-[48px] ${getButtonColor("z")}`}>
                 Tiene z
             </button>
         </section>
