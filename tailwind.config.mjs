@@ -6,6 +6,7 @@ export default {
 			screens: {
 				'xs': '350px',
 				'c400': '400px',
+				'c450': '450px',
 				'c500': '500px',
 				'c550': '550px',
 				'c1400': '1400px',
