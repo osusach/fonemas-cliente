@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { zAudioList } from "../../constant/constants";
 
-export default function AudioPlay() {
+export function AudioPlay() {
     const [currentAudio, setCurrentAudio] = useState(0);
     const [selectedButton, setSelectedButton] = useState(null);
     const [isCorrect, setIsCorrect] = useState(false);
@@ -60,40 +60,70 @@ export default function AudioPlay() {
     }
 
     return (
-        <section className="grid grid-cols-12 gap-4">
-            {/* Number of word */}
-            <span className="text-[#6610F2] col-span-2 col-start-6 text-[40px] text-center m-auto">
-                Palabra {currentAudio + 1}
-            </span>
-            {/* Left arrow button */}
-            {currentAudio === 0 ?
-                "" :
-                <button onClick={discountAudio} className="col-span-1 col-start-1 m-auto">
-                    <img src="/images/svg/global/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" />
+        <>
+            <section className="grid grid-cols-12 gap-[15px] w-[85%] mx-auto">
+                {/* Number of word */}
+                <span 
+                className="text-[rgb(102,16,242)] text-xl text-bold text-center
+                col-span-12 col-start-1 row-start-1
+                md:text-2xl
+                lg:text-5xl">
+                    Palabra {currentAudio + 1}
+                </span>
+                {/* Left arrow button */}
+                {(currentAudio !== 0) && (
+                    <button 
+                    onClick={discountAudio}
+                    className="m-auto
+                    col-span-2 col-start-1
+                    lg:col-span-1"
+                    >
+                        <img src="/images/svg/global/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" className="w-[160px]" />
+                    </button>
+                )}
+                {/* Play audio button */}
+                <button
+                onClick={playAudio}
+                className="col-span-4 col-start-5 m-auto
+                lg:w-[164px]"
+                >
+                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
                 </button>
-            }
-            {/* Play audio button */}
-            <button className="col-span-2 col-start-6 max-w-[216px] w-full m-auto">
-                <img onClick={playAudio} src="/images/svg/global/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
-            </button>
-            {/* Right arrow button */}
-            {currentAudio === zAudioList.length - 1 ?
-                "" :
-                <button onClick={countAudio} className="col-span-1 col-start-12 m-auto">
-                    <img src="/images/svg/global/Flecha_Derecha.svg" alt="Imagen de flecha derecha" />
-                </button>
-            }
-            {/* Answer buttons */}
-            <button
+                {/* Right arrow button */}
+                {(currentAudio !== zAudioList.length - 1) && (
+                    <button
+                    onClick={countAudio}
+                    className="m-auto
+                    col-span-2 col-start-11
+                    lg:col-span-1 lg:col-start-12">
+                        <img src="/images/svg/global/Flecha_Derecha.svg" alt="Imagen de flecha derecha" className="w-[160px]" />
+                    </button>
+                )}
+            </section>
+            <section className="grid grid-cols-12 gap-[15px] w-[85%] mx-auto mb-4">
+                {/* S button */}
+                <button
                 onClick={() => validateAnswer("s")}
-                className={`col-start-4 w-[234px] h-[82px] text-[40px] border-black text-white rounded-[48px] ${getButtonColor("s")}`}>
-                Tiene s
-            </button>
-            <button
+                className={`text-white text-xl text-bold px-8 py-4 rounded-full
+                col-span-6 col-start-1
+                lg:text-4xl lg:mx-8
+                lg:col-span-4 lg:col-start-3
+                ${getButtonColor("s")}`}
+                >
+                    Tiene s
+                </button>
+                {/* Z button */}
+                <button
                 onClick={() => validateAnswer("z")}
-                className={`col-start-8 w-[234px] h-[82px] text-[40px] border-black text-white rounded-[48px] ${getButtonColor("z")}`}>
-                Tiene z
-            </button>
-        </section>
+                className={`text-white text-xl text-bold px-8 py-4 rounded-full
+                col-span-6 col-start-7
+                lg:text-4xl lg:mx-8
+                lg:col-span-4 lg:col-start-7
+                ${getButtonColor("z")}`}
+                >
+                    Tiene z
+                </button>
+            </section>
+        </>
     );
 }
