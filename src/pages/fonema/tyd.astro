@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return [
+    { params: { exercice: 'z' } }
+  ];
+}
+---
+
+<Layout title="Fonemas">
+    <article class="bg-[#F4F0FF] sm:mx-auto xl:mx-[188px]"> 
+        <section class="mb-40 sm:mb-48 -mt-32">
+            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <img 
+                    src="/images/svg/tyd/Fonema_T_D.svg" 
+                    alt="Fonema Z" 
+                    class="col-span-6 sm:col-span-5 transform sm:-translate-x-4 translate-y-40" 
+                />
+                <div class="col-span-7 col-start-6 flex items-center transform translate-y-40 translate-x-8 sm:translate-x-0">
+                    <p class="text-xl sm:text-2xl lg:text-5xl w-[85%]">
+                        Las <span class="font-bold text-[#6610F2]">letras t y d</span> existen en castellano e inglés, pero se pronuncian de manera distinta.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16">
+            <div class="flex justify-center mx-auto">
+                <p class="text-2xl sm:text-3xl lg:text-4xl text-center max-w-[80%] lg:max-w-[60%]">
+                    <span class="text-bold">En castellano</span>, para pronunciar las 
+                    <span class="text-bold">
+                        letras <span class="text-[#6610F2]">t</span> y <span class="text-[#6610F2]">d</span>
+                    </span>
+                    ponemos la lengua <span class="text-bold text-[#6610F2]">detrás de los dientes.</span>
+                </p>
+            </div>
+        </section>
+    </article>
+</Layout>
