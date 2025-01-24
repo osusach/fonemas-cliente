@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { zAudioList } from "../../constant/constants";
 
-export function AudioPlayZ() {
+export function AudioPlay() {
     const [currentAudio, setCurrentAudio] = useState(0);
     const [selectedButton, setSelectedButton] = useState(null);
     const [isCorrect, setIsCorrect] = useState(false);
@@ -78,7 +78,7 @@ export function AudioPlayZ() {
                     col-span-2 col-start-1
                     lg:col-span-1"
                     >
-                        <img src="/images/svg/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" className="w-[160px]" />
+                        <img src="/images/svg/global/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" className="w-[160px]" />
                     </button>
                 )}
                 {/* Play audio button */}
@@ -87,7 +87,7 @@ export function AudioPlayZ() {
                 className="col-span-4 col-start-5 m-auto
                 lg:w-[164px]"
                 >
-                    <img src="/images/svg/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
+                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
                 </button>
                 {/* Right arrow button */}
                 {(currentAudio !== zAudioList.length - 1) && (
@@ -96,7 +96,7 @@ export function AudioPlayZ() {
                     className="m-auto
                     col-span-2 col-start-11
                     lg:col-span-1 lg:col-start-12">
-                        <img src="/images/svg/Flecha_Derecha.svg" alt="Imagen de flecha derecha" className="w-[160px]" />
+                        <img src="/images/svg/global/Flecha_Derecha.svg" alt="Imagen de flecha derecha" className="w-[160px]" />
                     </button>
                 )}
             </section>

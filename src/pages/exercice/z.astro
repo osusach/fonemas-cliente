@@ -1,5 +1,5 @@
 ---
-import { AudioPlayZ } from '../../components/z/AudioPlayZ';
+import { AudioPlay } from '../../components/z/AudioPlay';
 import Layout from '../../layouts/Layout.astro';
 ---
 
@@ -11,7 +11,7 @@ import Layout from '../../layouts/Layout.astro';
         >
             <!-- Title -->
             <img
-            src="/images/svg/Ejercicios_z.svg" 
+            src="/images/svg/z/Ejercicios_s.svg"
             alt="Titulo de ejercicios" 
             class="w-[206px] h-[93px] place-self-center
             col-span-6 col-start-4 
@@ -43,14 +43,14 @@ import Layout from '../../layouts/Layout.astro';
                 </p>
             </div>
             <!-- Left start -->
-            <img src="/images/svg/Estrella.svg" 
+            <img src="/images/svg/global/Estrella.svg" 
             alt="Imagen de estrella"
             class="col-span-2 row-span-2 col-start-1 row-start-2 place-self-center
             md:col-span-2 md:col-start-1 md:row-start-1
             lg:col-span-1 lg:row-span-1 lg:col-start-2 lg:row-start-1"
             />
             <!-- Right start -->
-            <img src="/images/svg/Estrella.svg" 
+            <img src="/images/svg/global/Estrella.svg" 
             alt="Imagen de estrella"
             class="scale-x-[-1]
             col-span-2 row-span-2 col-start-11 row-start-2 place-self-center
@@ -59,6 +59,6 @@ import Layout from '../../layouts/Layout.astro';
             />
         </section>
         <!-- Rest of the page -->
-        <AudioPlayZ client:load/>
+        <AudioPlay client:load/>
     </article>
 </Layout>
