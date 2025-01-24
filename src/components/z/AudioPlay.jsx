@@ -69,18 +69,18 @@ export default function AudioPlay() {
             {currentAudio === 0 ?
                 "" :
                 <button onClick={discountAudio} className="col-span-1 col-start-1 m-auto">
-                    <img src="/images/svg/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" />
+                    <img src="/images/svg/global/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" />
                 </button>
             }
             {/* Play audio button */}
             <button className="col-span-2 col-start-6 max-w-[216px] w-full m-auto">
-                <img onClick={playAudio} src="/images/svg/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
+                <img onClick={playAudio} src="/images/svg/global/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
             </button>
             {/* Right arrow button */}
             {currentAudio === zAudioList.length - 1 ?
                 "" :
                 <button onClick={countAudio} className="col-span-1 col-start-12 m-auto">
-                    <img src="/images/svg/Flecha_Derecha.svg" alt="Imagen de flecha derecha" />
+                    <img src="/images/svg/global/Flecha_Derecha.svg" alt="Imagen de flecha derecha" />
                 </button>
             }
             {/* Answer buttons */}
