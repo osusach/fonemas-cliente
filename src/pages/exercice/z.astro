@@ -1,17 +1,19 @@
 ---
-import { AudioPlay } from '../../components/z/AudioPlay';
 import Layout from '../../layouts/Layout.astro';
+import { Navbar } from '../../components/Navbar';
+import { AudioPlay } from '../../components/z/AudioPlay';
 ---
 
 <Layout title="Fonemas exercices">
-    <article class="bg-[#F4F0FF] flex flex-col justify-center gap-10 h-screen">
+    <Navbar client:load/>
+    <article class="bg-[#F4F0FF] flex flex-col justify-center gap-10 h-[calc(100vh-64px)]">
         <section
         class="relative w-[85%] mx-auto
         grid grid-cols-12 row-cols-3 gap-[15px]"
         >
             <!-- Title -->
             <img
-            src="/images/svg/z/Ejercicios_s.svg"
+            src="/images/svg/z/Ejercicios_Z.svg"
             alt="Titulo de ejercicios" 
             class="w-[206px] h-[93px] place-self-center
             col-span-6 col-start-4 
