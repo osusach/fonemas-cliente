@@ -1,11 +1,9 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { Navbar } from '../../components/Navbar';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AudioPlay } from '../../components/z/AudioPlay';
 ---
 
-<Layout title="Fonemas exercices">
-    <Navbar client:load/>
+<BaseLayout title="Fonemas exercices">
     <article class="bg-[#F4F0FF] flex flex-col justify-center gap-10 h-[calc(100vh-64px)]">
         <section
         class="relative w-[85%] mx-auto
@@ -63,4 +61,4 @@ import { AudioPlay } from '../../components/z/AudioPlay';
         <!-- Rest of the page -->
         <AudioPlay client:load/>
     </article>
-</Layout>
+</BaseLayout>
