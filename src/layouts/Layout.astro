@@ -1,3 +1,6 @@
+---
+import { Navbar } from "../components/Navbar";
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +11,12 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<slot />
+		<header class="fixed top-0 z-50 w-full">
+			<Navbar client:load />
+		  </header>
+		  <main class="z-0">
+			<slot />
+		  </main>
 	</body>
 </html>
 

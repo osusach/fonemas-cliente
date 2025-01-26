@@ -1,12 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { Navbar } from '../../components/Navbar';
 import { AudioPlay } from '../../components/z/AudioPlay';
 ---
 
 <Layout title="Fonemas exercices">
-    <Navbar client:load/>
-    <article class="bg-[#F4F0FF] flex flex-col justify-center gap-10 h-[calc(100vh-64px)]">
+    <article class="bg-[#F4F0FF] flex flex-col justify-center gap-10 h-full mt-16">
         <section
         class="relative w-[85%] mx-auto
         grid grid-cols-12 row-cols-3 gap-[15px]"
