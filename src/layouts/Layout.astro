@@ -11,12 +11,15 @@ import { Navbar } from "../components/Navbar";
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<header class="fixed top-0 z-50 w-full">
-			<Navbar client:load />
-		  </header>
-		  <main class="z-0">
-			<slot />
-		  </main>
+		<div class="flex flex-col min-h-screen">
+			<header class="top-0 z-50 w-full h-16">
+				<Navbar client:load />
+			</header>
+			<main class="flex flex-grow justify-center">
+				<slot />
+			</main>
+		</div>
+		
 	</body>
 </html>
 
