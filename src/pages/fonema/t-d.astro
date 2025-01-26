@@ -1,0 +1,118 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return [
+    { params: { exercice: 'z' } }
+  ];
+}
+---
+
+<Layout title="Fonemas">
+    <article class="flex flex-col justify-center">
+        <section>
+            <button class="underline sm:text-lg text-xl lg:text-2xl">
+                Fonemas
+            </button>
+        </section>
+        <section class="mb-52 -mt-32">
+            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <img 
+                    src="/images/svg/tyd/Fonema_T_D.svg" 
+                    alt="Fonema Z" 
+                    class="col-start-1 col-span-6 transform sm:-translate-x-4 translate-y-40 my-auto" 
+                />
+                <div class="col-start-7 col-span-6 flex items-center transform translate-y-40 translate-x-8 sm:translate-x-0">
+                    <p class="sm:text-lg text-xl lg:text-5xl w-[85%]">
+                        Las <span class="font-bold text-[#6610F2]">letras t y d</span> existen en castellano e inglés, pero se pronuncian de manera distinta.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+            <p class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]">
+                <span class="text-bold">En castellano</span>, para pronunciar las 
+                <span class="text-bold">
+                    letras <span class="text-[#6610F2]">t</span> y <span class="text-[#6610F2]">d</span>
+                </span>
+                ponemos la lengua <span class="text-bold text-[#6610F2]">detrás de los dientes.</span>
+            </p>
+            <img src="/images/svg/tyd/Mano_Boca.svg"
+                alt="Mano apuntando a una boca"
+                class="col-span-6 col-start-4 mx-auto"
+                >
+            <p class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]">
+                <span class="text-bold">Para comprobar esto</span>, toma un espejo y observa cómo
+                <span class="text-bold text-[#6610F2]">
+                    se mueve tu lengua
+                </span>
+                dentro de tu boca al pronunciar lentamente las siguentes palabras:
+            </p>    
+        </section>
+        <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-20">
+            <img src="/images/svg/tyd/Espejo.svg"
+                alt="Imagen de un espejo"
+                class="col-span-4 col-start-1 lg:col-span-3 lg:col-start-3 my-auto"
+                >
+            <img src="/images/svg/tyd/Tetera_Dedal.svg"
+                alt="Tetera y dedal"
+                class="col-span-8 col-start-6 lg:col-span-5 lg:col-start-6 my-auto"
+                >
+        </section>
+        <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-20">
+            <p class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]">
+                Tal como lo puedes notar, al pronunciar las 
+                <span class="text-bold">
+                    letras <span class="text-[#6610F2]">t</span> y <span class="text-[#6610F2]">d</span>
+                </span>
+                en ambas palabras, tu lengua se pone 
+                <span class="text-bold">
+                    detrás de tus dientes.
+                </span>
+            </p>    
+            <span class="col-start-4 col-span-6 lg:col-start-6 lg:col-span-3 text-bold sm:text-lg text-xl lg:text-3xl mt-20">Por ejemplo:</span>
+        </section>
+        <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-20">
+            <img src="/images/svg/tyd/Tetera.svg"
+                alt="Imagen de una tetera"
+                class="col-start-2 col-span-4 lg:col-start-3 lg:col-span-3"
+                >
+            <img src="/images/svg/tyd/Dedal.svg"
+                alt="Imagen de un dedal"
+                class="col-start-8 col-span-4 lg:col-start-8 lg:col-span-3"
+                >
+        </section>
+        <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-10">
+            <span class="col-start-2 col-span-4 lg:col-start-3 lg:col-span-3 text-4xl lg:text-6xl text-bold text-[#6610F2] mx-auto">Tetera</span>
+            <span class="col-start-8 col-span-4 lg:col-start-8 lg:col-span-3 text-4xl lg:text-6xl text-bold text-[#6610F2] mx-auto">Dedal</span>
+        </section>
+        <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-10">
+            <img src="/images/svg/global/Reproducir_Audio.svg" 
+                alt="Imagen de play audio" 
+                class="col-start-2 col-span-4 lg:col-start-4 lg:col-span-1"
+                >
+            <img src="/images/svg/global/Reproducir_Audio.svg" 
+                alt="Imagen de play audio" 
+                class="col-start-8 col-span-4 transform lg:col-start-9 lg:col-span-1"
+                >
+        </section>
+        <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-20">
+            <img src="/images/svg/global/Estrella.svg" 
+                alt="Imagen de play audio" 
+                class="col-start-1 col-span-4 lg:col-start-1 lg:col-span-4 max-sm:transform max-sm:translate-y-20"
+            >
+            <p class="col-start-1 col-span-11 lg:col-start-6 lg:col-span-7 max-sm:transform max-sm:-translate-y-20 text-[16px] lg:text-[32px] text-right my-auto">
+                En cambio,
+                <span class="text-bold">
+                    la pronunciacion de las letras 
+                    <span class="text-[#6610F2]">t</span> y <span class="text-[#6610F2]">d</span>
+                    en inglés
+                </span>
+                se parece más a la pronunciación de la
+                <span class="text-bold">
+                    letra r en castellano.
+                </span>
+            </p>
+        </section>
+    </article>
+</Layout>
