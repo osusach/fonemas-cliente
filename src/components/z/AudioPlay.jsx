@@ -70,9 +70,9 @@ export function AudioPlay() {
                     <button 
                     onClick={discountAudio}
                     className="max-w-[56px] object-contain m-auto
-                    col-span-2 col-start-11
+                    col-span-2 col-start-1
                     lg:max-w-[120px]
-                    lg:col-span-2 lg:col-start-11"
+                    lg:col-span-2 lg:col-start-1"
                     >
                         <img src="/images/svg/global/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" className="w-[160px]" />
                     </button>
