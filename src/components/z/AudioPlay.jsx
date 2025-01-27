@@ -1,16 +1,11 @@
 import { useState } from "react";
-import { zAudioList } from "../../constant/constants";
+import { zAudioList } from "../../constant/constants";import AudioPlayer from "../AudioPlayer";
 
 export function AudioPlay() {
     const [currentAudio, setCurrentAudio] = useState(0);
     const [selectedButton, setSelectedButton] = useState(null);
     const [isCorrect, setIsCorrect] = useState(false);
-
-    // Play audio function
-    const playAudio = () => {
-        const audio = new Audio(`/audio/z/${zAudioList[currentAudio]}.mp3`);
-        audio.play();
-    }
+    
 
     // Count and discount audio functions
     const countAudio = () => {
@@ -83,13 +78,7 @@ export function AudioPlay() {
                     </button>
                 )}
                 {/* Play audio button */}
-                <button
-                onClick={playAudio}
-                className="col-span-4 col-start-5 m-auto
-                lg:w-[164px]"
-                >
-                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Imagen de reproducir audio" />
-                </button>
+                <AudioPlayer audio_path={`/audio/z/${zAudioList[currentAudio]}.mp3`}/>
                 {/* Right arrow button */}
                 {(currentAudio !== zAudioList.length - 1) && (
                     <button
