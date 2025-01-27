@@ -10,11 +10,11 @@ export async function getStaticPaths() {
 ---
 
 <Layout title="Fonemas exercices">
-    <article class="flex flex-col justify-center -mt-52">
+    <article class="flex flex-col justify-between mt-8">
         <section>
             <nav>
                 <a href="/fonema/z">
-                    <button class="underline sm:text-lg text-xl lg:text-2xl">
+                    <button class="underline sm:text-lg text-xl lg:text-2xl ml-4 lg:ml-0">
                         Fonema /z/
                     </button>
                 </a>
@@ -59,17 +59,20 @@ export async function getStaticPaths() {
             <!-- Left start -->
             <img src="/images/svg/global/Estrella.svg" 
             alt="Imagen de estrella"
-            class="col-span-2 row-span-2 col-start-1 row-start-2 place-self-center
+            class="max-w-[58px] object-contain
+            col-span-2 row-span-2 col-start-1 row-start-2 place-self-center
             md:col-span-2 md:col-start-1 md:row-start-1
-            lg:col-span-1 lg:row-span-1 lg:col-start-2 lg:row-start-1"
+            lg:max-w-[104px]
+            lg:row-span-1 lg:col-start-1 lg:row-start-1"
             />
             <!-- Right start -->
             <img src="/images/svg/global/Estrella.svg" 
             alt="Imagen de estrella"
-            class="scale-x-[-1]
+            class="max-w-[58px] object-contain scale-x-[-1]
             col-span-2 row-span-2 col-start-11 row-start-2 place-self-center
             md:col-span-2 md:col-start-11 md:row-start-1
-            lg:col-span-1 lg:row-span-1 lg:col-start-11 lg:row-start-1"
+            lg:max-w-[104px]
+            lg:row-span-1 lg:col-start-11 lg:row-start-1"
             />
         </section>
         <!-- Rest of the page -->
