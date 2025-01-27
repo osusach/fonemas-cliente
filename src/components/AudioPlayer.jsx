@@ -13,6 +13,12 @@ function AudioPlayer({audio_path, className}) {
     console.log("SE CARGO EL AUDIO")
   }, [inView])
 
+  useEffect(() => {
+    setAudio(new Audio(audio_path))
+    setIsAudioReady(true)
+    console.log("SE CARGO EL AUDIO")
+  }, [audio_path])
+
 
   const playAudio = () => {
     if (!audio) {
