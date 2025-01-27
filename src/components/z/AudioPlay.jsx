@@ -74,9 +74,10 @@ export function AudioPlay() {
                 {(currentAudio !== 0) && (
                     <button 
                     onClick={discountAudio}
-                    className="m-auto
-                    col-span-2 col-start-1
-                    lg:col-span-1"
+                    className="max-w-[56px] object-contain m-auto
+                    col-span-2 col-start-11
+                    lg:max-w-[120px]
+                    lg:col-span-2 lg:col-start-11"
                     >
                         <img src="/images/svg/global/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" className="w-[160px]" />
                     </button>
@@ -93,9 +94,10 @@ export function AudioPlay() {
                 {(currentAudio !== zAudioList.length - 1) && (
                     <button
                     onClick={countAudio}
-                    className="m-auto
+                    className="max-w-[56px] object-contain m-auto
                     col-span-2 col-start-11
-                    lg:col-span-1 lg:col-start-12">
+                    lg:max-w-[120px]
+                    lg:col-span-2 lg:col-start-11">
                         <img src="/images/svg/global/Flecha_Derecha.svg" alt="Imagen de flecha derecha" className="w-[160px]" />
                     </button>
                 )}
@@ -106,7 +108,7 @@ export function AudioPlay() {
                 onClick={() => validateAnswer("s")}
                 className={`text-white text-xl text-bold px-8 py-4 rounded-full
                 col-span-6 col-start-1
-                lg:text-4xl lg:mx-8
+                lg:text-4xl lg:mx-8 lg:py-6
                 lg:col-span-4 lg:col-start-3
                 ${getButtonColor("s")}`}
                 >
@@ -117,7 +119,7 @@ export function AudioPlay() {
                 onClick={() => validateAnswer("z")}
                 className={`text-white text-xl text-bold px-8 py-4 rounded-full
                 col-span-6 col-start-7
-                lg:text-4xl lg:mx-8
+                lg:text-4xl lg:mx-8 lg:py-6
                 lg:col-span-4 lg:col-start-7
                 ${getButtonColor("z")}`}
                 >
