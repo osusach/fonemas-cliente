@@ -30,7 +30,7 @@ function AudioPlayer({audio_path, className}) {
     <>
       <button
         onClick={playAudio}
-        className={`col-span-4 col-start-5 m-auto
+        className={`flex items-center justify-center
         ${className}`}
       >
         <img

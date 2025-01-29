@@ -1,4 +1,5 @@
 ---
+import AudioPlayer from '../components/AudioPlayer';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -6,5 +7,370 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+  <article class="flex flex-col mt-8 mb-8">
+    <!-- Seccion de "Oh no!" -->
+    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto ">
+        <img 
+        src="/images/svg/landing/Oh_No.svg"
+        alt="Texto que dice 'Oh no!'"
+        class="object-contain
+        w-[720px]
+        col-span-8 row-span-2"
+        />
+        <img
+        src="/images/svg/landing/Emoji_Sorprendido.svg"
+        alt="Emoji sorprendido"
+        class="object-contain
+        w-[236.99px]
+        col-span-4 row-span-2 col-start-9 place-self-end"
+        />
+        <p
+        class="text-center
+        text-6xl
+        col-span-12"
+        >
+            Mi cerebro me engaña al leer <span class="text-[#6610F2] text-bold">inglés</span>...
+        </p>
+    </section>
+    <!-- Seccion de "¿Cómo puedo aprender?" -->
+    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
+        <div
+        class="text-center
+        text-3xl
+        col-span-12"
+        >
+            <p>
+                Para que puedas notar <span class="text-bold">cómo tu cerebro te engaña al leer una <span class="text-bold">palabra en </span></span>
+            </p>
+            <p>
+              <span class="text-[#6610F2] ">inglés, </span>pon atención a los siguientes pares de palabras:
+            </p>
+        </div>
+        <div class="
+        col-span-2 col-start-4 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Fir
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Fir.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div class="
+        col-span-2 col-start-8 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Fur
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Fur.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div class="
+        col-span-2 col-start-4 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Chip
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Chip.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div class="
+        col-span-2 col-start-8 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Ship
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Ship.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div class="
+        col-span-2 col-start-4 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Hi
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Hi.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div class="
+        col-span-2 col-start-8 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                High
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/High.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div class="
+        col-span-2 col-start-4 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Boat
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Boat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div class="
+        col-span-2 col-start-8 place-items-center">
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Vote
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Vote.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <img
+        src="/images/svg/landing/Emoji_Pensando.svg"
+        alt="Emoji pensando"
+        class="object-contain
+        w-[164px]
+        col-span-2 row-span-4 col-start-1 row-start-2 place-self-center" />
+    </section>
+    <!-- Sección de comparación -->
+    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-24">
+        <img 
+        src="/images/svg/global/Estrella.svg"
+        alt="Estrella"
+        class="object-contain
+        w-[104px]
+        col-span-2"
+        />
+        <div
+        class="text-center
+        text-3xl
+        col-span-8 col-start-3"
+        >
+            <p>De los cuatro pares de palabras que leíste,</p>
+            <p class="text-bold">¿cuáles son <span class="text-[#6610F2]">iguales</span> y cuáles son <span class="text-[#6610F2]">diferentes</span>?</p>
+        </div>
+        <img 
+        src="/images/svg/global/Estrella.svg"
+        alt="Estrella"
+        class="object-contain
+        w-[104px]
+        col-span-2 col-start-11 place-self-end"
+        />
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-1 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Fir
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Fir.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-4 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Fur
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Fur.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <img
+        src="/images/svg/landing/Flecha_Derecha.svg"
+        alt="Flecha Derecha"
+        class="object-contain
+        w-[165px] mt-8
+        col-span-3 col-start-7 place-self-center"
+        />
+        <button class="
+        mt-8
+        col-span-4 col-start-10 place-self-start">
+            <img
+            src="/images/svg/landing/Revelar_Button.svg"
+            alt="Boton de revelar"
+            class="" />
+        </button>
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-1 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Chip
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Chip.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-4 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Ship
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Ship.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <img
+        src="/images/svg/landing/Flecha_Derecha.svg"
+        alt="Flecha Derecha"
+        class="object-contain
+        w-[165px] mt-8
+        col-span-3 col-start-7 place-self-center"
+        />
+        <button class="
+        mt-8
+        col-span-4 col-start-10 place-self-start">
+            <img
+            src="/images/svg/landing/Revelar_Button.svg"
+            alt="Boton de revelar"
+            class="" />
+        </button>
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-1 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Hi
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Hi.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-4 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                High
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/High.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <img
+        src="/images/svg/landing/Flecha_Derecha.svg"
+        alt="Flecha Derecha"
+        class="object-contain
+        w-[165px] mt-8
+        col-span-3 col-start-7 place-self-center"
+        />
+        <button class="
+        mt-8
+        col-span-4 col-start-10 place-self-start">
+            <img
+            src="/images/svg/landing/Revelar_Button.svg"
+            alt="Boton de revelar"
+            class="" />
+        </button>
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-1 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Boat
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Boat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <div
+        class="
+        mt-8
+        col-span-3 col-start-4 place-items-center"
+        >
+            <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                Vote
+            </p>
+            <AudioPlayer audio_path={"/audio/landing/Vote.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+        </div>
+        <img
+        src="/images/svg/landing/Flecha_Derecha.svg"
+        alt="Flecha Derecha"
+        class="object-contain
+        w-[165px] mt-8
+        col-span-3 col-start-7 place-self-center"
+        />
+        <button class="
+        mt-8
+        col-span-4 col-start-10 place-self-start">
+            <img
+            src="/images/svg/landing/Revelar_Button.svg"
+            alt="Boton de revelar"
+            class="" />
+        </button>
+    </section>
+    <!-- Sección de "Tal como puedes notar" -->
+    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
+        <div class="
+        place-content-center
+        text-3xl
+        col-span-9">
+            <p>
+                Tal como puedes haber notado, la forma en que <span class="text-bold">están</span>
+            </p>
+            <p>
+                <span class="text-bold">escritas las palabras</span> y <span class="text-bold">cómo las leemos</span> son <span class="text-[#6610F2] text-bold">dos cosas</span>
+            </p>
+            <p>
+                <span class="text-[#6610F2] text-bold">distintas</span>. Por ejemplo, <span class="text-[#6610F2] text-bold">fur</span> y <span class="text-[#6610F2] text-bold">fir</span> se <span class="text-bold">escriben distinto,</span>
+            </p>
+            <p><span class="text-bold">escriben distinto, pero se pronuncian igual</span>.</p> 
+        </div>
+        <img
+        src="/images/svg/landing/Emoji_Bombilla.svg"
+        alt="Emoji bombilla"
+        class="col-span-3"
+        />
+    </section>
+    <!-- Sección de propósito -->
+    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
+        <div class="text-4xl text-center
+        col-span-12">
+            <p>
+                En esta página web aprenderás a distinguir <span class="text-[#6610F2] text-bold">cómo</span>
+            </p>
+            <p>
+                <span class="text-[#6610F2] text-bold">diferenciar las palabras del inglés</span> con base
+            </p>
+            <p>
+                en las <span class="text-[#6610F2] text-bold">letras de las palabras</span>.
+            </p>
+        </div>
+        <img
+        src="/images/svg/global/Mano_Derecha.svg"
+        alt="Mano Derecha"
+        class="
+        col-span-3"
+        />
+        <img
+        src="/images/svg/global/Destacado.svg"
+        alt="Destacado"
+        class="object-contain
+        w-[290px]
+        col-span-4 col-start-5"
+        />
+        <img
+        src="/images/svg/global/Mano_Izquierda.svg"
+        alt="Mano Izquierda"
+        class="
+        col-span-3 col-start-10"
+        />
+    </section>
+    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
+        <p class="text-center
+        text-5xl
+        col-span-10 col-start-2"
+        >
+            ¿Qué vas a encontrar en esta <span class="text-[#6610F2] text-bold">página</span>?
+        </p>
+        <div class="text-center
+        text-2xl
+        col-span-12"
+        >
+            <div class="mb-8">
+                <p>
+                    En esta página vas a encontrar <span class="text-[#6610F2] text-bold">6 letras del inglés</span> que tienen
+                </p>
+                <p>
+                    <span class="text-bold">similitudes</span> y <span class="text-bold">diferencias</span> en su <span class="text-bold">pronunciación con el castellano</span>.
+                </p>
+            </div>
+            <p class="text-bold">Estas letras son:</p>
+        </div>
+        <img src="/images/svg/landing/Fonemas.svg" alt="Fonemas" class="col-span-12" />
+    </section>
+    <!-- Sección de utilidad -->
+    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
+        <div class="text-center
+        text-3xl
+        col-span-10 col-start-2">
+            <p>
+                Te explicaremos <span class="text-[#6610F2] text-bold">cómo identificar las letras</span> y <span class="text-[#6610F2] text-bold">cómo</span>
+            </p>
+            <p>
+                <span class="text-[#6610F2] text-bold">pronunciarlas en inglés</span>. Además, encontrarás <span class="text-[#6610F2] text-bold">ejercicios</span>
+            </p>
+            <p>
+                <span class="text-[#6610F2] text-bold">para practicar lo aprendido</span>.
+            </p>
+        </div>
+        <img src="/images/svg/landing/Imagen_Final.svg" alt="Imagen Final" class="col-span-12" />
+    </section>
+  </article>
 </Layout>
 
