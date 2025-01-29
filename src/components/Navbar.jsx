@@ -68,10 +68,10 @@ export function Navbar() {
                             ${isEjerciciosOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'}`}
                         >
                             <div className="py-1">
-                                <a href="/ejercice/z" className="block px-4 py-2 text-white hover:underline">
+                                <a href="/exercise/z" className="block px-4 py-2 text-white hover:underline">
                                     Ejercicios Z
                                 </a>
-                                <a href="/ejercice/t-d" className="block px-4 py-2 text-white hover:underline">
+                                <a href="/exercise/t-d" className="block px-4 py-2 text-white hover:underline">
                                     Ejercicios T-D
                                 </a>
                             </div>
