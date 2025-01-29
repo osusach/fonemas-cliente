@@ -1,4 +1,5 @@
 ---
+import AudioPlayer from "../../components/AudioPlayer";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -110,19 +111,13 @@ export async function getStaticPaths() {
                 <div class="flex flex-col items-center">
                   <img src="/images/svg/z/Sip.svg" alt="Sip" class="w-54 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
                   <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">Sip</p>
-                  <button class="w-24 h-24 sm:w-20 sm:h-20">
-                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" 
-                         class="w-full h-full p-2">
-                  </button>
+                  <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                 </div>
                 <div class="flex flex-col items-center">
                     <img src="/images/svg/z/Zip.svg" alt="Zip" class="w-54 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] rotate-[17.53deg] origin-center 
                                                                     tranform -translate-x-4 min-[350px]:-translate-x-2 sm:-mb-8">
                     <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">Zip</p>
-                    <button class="w-24 h-24 sm:w-20 sm:h-20">
-                      <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" 
-                           class="w-full h-full p-2">
-                    </button>
+                    <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                 </div>
               </div>
             </div>
@@ -202,44 +197,32 @@ export async function getStaticPaths() {
                         <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Zip</p>
-                                <button class="w-20 h-20 flex items-center justify-center">
-                                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
-                                </button>
+                                <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Zone</p>
-                                <button class="w-20 h-20 flex items-center justify-center">
-                                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
-                                </button>
+                                <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Solar</p>
-                                <button class="w-20 h-20 flex items-center justify-center">
-                                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
-                                </button>
+                                <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Zoo</p>
-                                <button class="w-20 h-20 flex items-center justify-center">
-                                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
-                                </button>
+                                <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Station</p>
-                                <button class="w-20 h-20 flex items-center justify-center">
-                                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
-                                </button>
+                                <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Size</p>
-                                <button class="w-20 h-20 flex items-center justify-center">
-                                    <img src="/images/svg/global/Reproducir_Audio.svg" alt="Reproducir Audio" class="w-full h-full p-2">
-                                </button>
+                                <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
                         </div>
                     </div>
