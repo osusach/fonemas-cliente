@@ -50,6 +50,9 @@ export function Navbar() {
                                 <a href="/fonema/t-d" className="block px-4 py-2 text-white hover:underline">
                                     Letra T-D
                                 </a>
+                                <a href="/fonema/v-b" className="block px-4 py-2 text-white hover:underline">
+                                    Letra V-B
+                                </a>
                             </div>
                         </div>
                     </section>
