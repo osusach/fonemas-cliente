@@ -10,13 +10,11 @@ function AudioPlayer({audio_path, className}) {
       setAudio(new Audio(audio_path))
       setIsAudioReady(true)
     }
-    console.log("SE CARGO EL AUDIO")
   }, [inView])
 
   useEffect(() => {
     setAudio(new Audio(audio_path))
     setIsAudioReady(true)
-    console.log("SE CARGO EL AUDIO")
   }, [audio_path])
 
 
@@ -33,11 +31,12 @@ function AudioPlayer({audio_path, className}) {
       <button
         onClick={playAudio}
         className={`col-span-4 col-start-5 m-auto
-        lg:w-[164px] ${className}`}
+        ${className}`}
       >
         <img
           src="/images/svg/global/Reproducir_Audio.svg"
           alt="Imagen de reproducir audio"
+          className="w-full h-full p-2"
         />
       </button>
     </>
