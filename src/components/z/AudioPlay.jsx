@@ -78,7 +78,10 @@ export function AudioPlay() {
                     </button>
                 )}
                 {/* Play audio button */}
+                <div className="col-span-4 col-start-5 m-auto
+                lg:w-[164px]">
                 <AudioPlayer audio_path={`/audio/z/${zAudioList[currentAudio]}.mp3`} className="lg:w-[164px]"/>
+                </div>
                 {/* Right arrow button */}
                 {(currentAudio !== zAudioList.length - 1) && (
                     <button
