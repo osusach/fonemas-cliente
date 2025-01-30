@@ -22,8 +22,8 @@ export function Navbar() {
 
     return (
         <section>
-            <div className="fixed bg-[#6610F2] text-white flex items-center w-full h-16">
-                <nav className="flex justify-end space-x-4 w-[85%] mx-auto gap-12 lg:w-[85%]">
+            <div className="fixed bg-[#6610F2] text-white flex justify-center items-center w-full h-16">
+                <nav className="flex justify-end gap-12 w-[85%] lg:w-[75%] mx-auto">
                     <button onClick={handleMenuOpen} className="p-2 sm:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
