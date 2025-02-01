@@ -1,6 +1,7 @@
 ---
-import AudioPlayer from '../components/AudioPlayer';
 import Layout from '../layouts/Layout.astro';
+import AudioPlayer from '../components/AudioPlayer';
+import RevealButton from '../components/landing/RevealButton';
 ---
 
 <Layout>
@@ -169,14 +170,7 @@ import Layout from '../layouts/Layout.astro';
         sm:w-[165px]
         sm:col-span-3 sm:col-start-7 sm:place-self-center"
         />
-        <button class="mt-8
-        col-span-5 col-start-9
-        sm:col-span-4 sm:col-start-10">
-            <img
-            src="/images/svg/landing/Revelar_Button.svg"
-            alt="Boton de revelar"
-            class="" />
-        </button>
+        <RevealButton word={"Diferentes"} client:load/>
         <div
         class="mt-8
         col-span-3 col-start-1 place-items-center"
@@ -203,14 +197,7 @@ import Layout from '../layouts/Layout.astro';
         sm:w-[165px]
         sm:col-span-3 sm:col-start-7 sm:place-self-center"
         />
-        <button class="mt-8
-        col-span-5 col-start-9
-        sm:col-span-4 sm:col-start-10">
-            <img
-            src="/images/svg/landing/Revelar_Button.svg"
-            alt="Boton de revelar"
-            class="" />
-        </button>
+        <RevealButton word={"Iguales"} client:load/>
         <div
         class="
         mt-8
@@ -239,14 +226,7 @@ import Layout from '../layouts/Layout.astro';
         sm:w-[165px]
         sm:col-span-3 sm:col-start-7 sm:place-self-center"
         />
-        <button class="mt-8
-        col-span-5 col-start-9
-        sm:col-span-4 sm:col-start-10">
-            <img
-            src="/images/svg/landing/Revelar_Button.svg"
-            alt="Boton de revelar"
-            class="" />
-        </button>
+        <RevealButton word={"Iguales"} client:load/>
         <div
         class="
         mt-8
@@ -275,14 +255,7 @@ import Layout from '../layouts/Layout.astro';
         sm:w-[165px]
         sm:col-span-3 sm:col-start-7 sm:place-self-center"
         />
-        <button class="mt-8
-        col-span-5 col-start-9
-        sm:col-span-4 sm:col-start-10">
-            <img
-            src="/images/svg/landing/Revelar_Button.svg"
-            alt="Boton de revelar"
-            class="" />
-        </button>
+        <RevealButton word={"Diferentes"} client:load/>
     </section>
     <!-- Sección de "Tal como puedes notar" -->
     <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
