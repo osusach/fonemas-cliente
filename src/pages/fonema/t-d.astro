@@ -15,7 +15,7 @@ export async function getStaticPaths() {
       </button>
     </section>
     <section class="mb-52 -mt-32">
-      <div class="grid grid-cols-12 gap-[15px] mx-auto">
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
         <img
           src="/images/svg/tyd/Fonema_T_D.svg"
           alt="Fonema Z"
@@ -31,781 +31,824 @@ export async function getStaticPaths() {
         </div>
       </div>
     </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto">
-      <p
-        class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]"
-      >
-        <span class="text-bold">En castellano</span>, para pronunciar las
-        <span class="text-bold">
-          letras <span class="text-[#6610F2]">t</span> y <span
-            class="text-[#6610F2]">d</span
-          >
-        </span>
-        ponemos la lengua <span class="text-bold text-[#6610F2]"
-          >detrás de los dientes.</span
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <p
+          class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]"
         >
-      </p>
-      <img
-        src="/images/svg/tyd/Mano_Boca.svg"
-        alt="Mano apuntando a una boca"
-        class="col-span-6 col-start-4 mx-auto"
-      />
-      <p
-        class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]"
-      >
-        <span class="text-bold">Para comprobar esto</span>, toma un espejo y
-        observa cómo
-        <span class="text-bold text-[#6610F2]"> se mueve tu lengua </span>
-        dentro de tu boca al pronunciar lentamente las siguentes palabras:
-      </p>
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <img
-        src="/images/svg/tyd/Espejo.svg"
-        alt="Imagen de un espejo"
-        class="col-span-4 col-start-1 lg:col-span-3 lg:col-start-3 my-auto"
-      />
-      <img
-        src="/images/svg/tyd/Tetera_Dedal.svg"
-        alt="Tetera y dedal"
-        class="col-span-8 col-start-6 lg:col-span-5 lg:col-start-6 my-auto"
-      />
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <p
-        class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]"
-      >
-        Tal como lo puedes notar, al pronunciar las
-        <span class="text-bold">
-          letras <span class="text-[#6610F2]">t</span> y <span
-            class="text-[#6610F2]">d</span
-          >
-        </span>
-        en ambas palabras, tu lengua se pone
-        <span class="text-bold"> detrás de tus dientes. </span>
-      </p>
-      <span
-        class="col-start-4 col-span-6 lg:col-start-6 lg:col-span-3 text-bold sm:text-lg text-xl lg:text-3xl mt-20"
-        >Por ejemplo:</span
-      >
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <img
-        src="/images/svg/tyd/Tetera.svg"
-        alt="Imagen de una tetera"
-        class="col-start-2 col-span-4 lg:col-start-3 lg:col-span-3 mx-auto"
-      />
-      <img
-        src="/images/svg/tyd/Dedal.svg"
-        alt="Imagen de un dedal"
-        class="col-start-8 col-span-4 lg:col-start-8 lg:col-span-3 mx-auto"
-      />
-      <span
-        class="col-start-2 col-span-4 lg:col-start-3 lg:col-span-3 text-4xl lg:text-6xl text-bold text-[#6610F2] mx-auto"
-        >Tetera</span
-      >
-      <span
-        class="col-start-8 col-span-4 lg:col-start-8 lg:col-span-3 text-4xl lg:text-6xl text-bold text-[#6610F2] mx-auto"
-        >Dedal</span
-      >
-      <AudioPlayer
-        audio_path={"/audio/td/Tetera.mp3"}
-        className="w-24 h-24 sm:w-20 sm:h-20 col-start-2 col-span-4 lg:col-start-4 lg:col-span-1 mx-auto"
-        client:load
-      />
-      <AudioPlayer
-        audio_path={"/audio/td/Dedal.mp3"}
-        className="w-24 h-24 sm:w-20 sm:h-20 col-start-8 col-span-4 transform lg:col-start-9 lg:col-span-1 mx-auto"
-        client:load
-      />
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <img
-        src="/images/svg/global/Estrella.svg"
-        alt="Imagen de play audio"
-        class="col-start-1 col-span-4 lg:col-start-1 lg:col-span-4 max-sm:transform max-sm:translate-y-20"
-      />
-      <p
-        class="col-start-1 col-span-11 lg:col-start-6 lg:col-span-7 max-sm:transform max-sm:-translate-y-20 text-lg lg:text-[32px] text-right my-auto"
-      >
-        En cambio,
-        <span class="text-bold">
-          la pronunciacion de las letras
-          <span class="text-[#6610F2]">t</span> y <span class="text-[#6610F2]"
-            >d</span
-          >
-          en inglés
-        </span>
-        se parece más a la pronunciación de la
-        <span class="text-bold"> letra r en castellano. </span>
-      </p>
-    </section>
-    <!-- Van los gift de demostracion -->
-    <section></section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <p
-        class="col-start-1 col-span-9 text-lg lg:col-start-1 lg:col-span-8 lg:text-3xl text-left"
-      >
-        Una forma de hacernos concientes de las
-        <span class="text-bold lg:block">
-          diferencias entre la escritura y la pronunciación
-        </span>
-        del castellano y del inglés es hacer
-        <span class="text-bold text-[#6610F2] lg:block">
-          ejercicios de discriminación.
-        </span>
-      </p>
-      <img
-        src="/images/svg/global/Flecha.svg"
-        alt="Imagen de varias flechas apuntando a la derecha"
-        class="col-start-1 col-span-3 lg:col-start-3 lg:col-span-2"
-      />
-      <p
-        class="col-start-4 col-span-9 text-lg lg:col-start-5 lg:col-span-8 lg:text-3xl text-right"
-      >
-        <span class="lg:block">
-          Los
-          <span class="text-bold text-[#6610F2]"
-            >ejercicios de discriminación</span
-          >
-          permiten que
-        </span>
-
-        <span class="lg:block">
-          podamos
-          <span class="text-bold"> diferenciar la pronunciación </span>
-          de una letra
-        </span>
-        <span class="lg:block">
-          de otra y, además, nos ayudan a mejorar nuestra
-        </span>
-        <span class="text-bold lg:block">
-          escritura en la lengua extranjera.
-        </span>
-      </p>
-    </section>
-    <p
-      class="col-start-1 col-span-12 text-xl lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mt-10"
-    >
-      Ahora que ya sabes que en catellano y en inglés hay
-      <span class="text-bold"> diferencias entre la pronunciación de las </span>
-      <span class="text-bold">
-        letras <span class="text-[#6610F2]">t</span> y <span
-          class="text-[#6610F2]">d</span
-        >
-      </span>
-      ,escucha los siguentes audios, que están en castellano e inglés, y
-      <span class="text-bold"> pon antencion </span>
-      <span class="text-bold">
-        a las
-        <span class="text-[#6610F2]"> diferencias en la pronunciación: </span>
-      </span>
-    </p>
-
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <img
-        src="/images/svg/global/Contenedor_Audios_Superior.svg"
-        alt="Imagen superior de un contenedor de audios"
-        class="col-start-1 col-span-12 mx-auto"
-      />
-      <span
-        class="col-start-3 col-span-3 text-3xl lg:col-start-4 lg:col-span-2 lg:text-5xl text-bold text-[#6610F2]"
-      >
-        Español
-        <img
-          src="/images/svg/global/Destacado.svg"
-          alt="Imagen de destacado"
-          class="w-1/2 mx-auto"
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-3xl lg:col-start-8 lg:col-span-2 lg:text-5xl text-bold text-center text-[#6610F2]"
-      >
-        Inglés
-        <img
-          src="/images/svg/global/Destacado.svg"
-          alt="Imagen de destacado"
-          class="w-1/2 mx-auto"
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Tabla
-        <AudioPlayer
-          audio_path={"/audio/td/Tabla_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Table
-        <AudioPlayer
-          audio_path={"/audio/td/Table_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Dama
-        <AudioPlayer
-          audio_path={"/audio/td/Dama_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Dame
-        <AudioPlayer
-          audio_path={"/audio/td/Dame_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Talento
-        <AudioPlayer
-          audio_path={"/audio/td/Talento_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Talent
-        <AudioPlayer
-          audio_path={"/audio/td/Talent_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Tacto
-        <AudioPlayer
-          audio_path={"/audio/td/Tacto_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Tact
-        <AudioPlayer
-          audio_path={"/audio/td/Tact_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Tarta
-        <AudioPlayer
-          audio_path={"/audio/td/Tarta_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Tart
-        <AudioPlayer
-          audio_path={"/audio/td/Tart_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Decente
-        <AudioPlayer
-          audio_path={"/audio/td/Decente_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Decent
-        <AudioPlayer
-          audio_path={"/audio/td/Decent_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Denso
-        <AudioPlayer
-          audio_path={"/audio/td/Denso_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Dense
-        <AudioPlayer
-          audio_path={"/audio/td/Dense_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <img
-        src="/images/svg/global/Contenedor_Audios_Inferior.svg"
-        alt="Imagen inferior de un contenedor de audios"
-        class="col-start-1 col-span-12 mx-auto"
-      />
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto">
-      <p
-        class="col-start-2 col-span-11 text-lg lg:col-start-3 lg:col-span-8 lg:text-3xl text-center"
-      >
-        <span class="lg:block">
-          Recuerda que la pronunciación de las
+          <span class="text-bold">En castellano</span>, para pronunciar las
           <span class="text-bold">
             letras <span class="text-[#6610F2]">t</span> y <span
               class="text-[#6610F2]">d</span
             >
           </span>
-        </span>
-        <span class="lg:block">
-          <span class="text-bold">en ingles</span>
-          se parece más a la pronunciación de la
-        </span>
-        <span class="lg:block">
-          <span class="text-bold">letra r en catellano</span>
-          que a la pronunciación
-        </span>
-        <span class="lg:block">
-          de las <span class="text-bold"
-            >letras <span class="text-[#6610F2]">t</span> y <span
+          ponemos la lengua <span class="text-bold text-[#6610F2]"
+            >detrás de los dientes.</span
+          >
+        </p>
+        <img
+          src="/images/svg/tyd/Mano_Boca.svg"
+          alt="Mano apuntando a una boca"
+          class="col-span-6 col-start-4 my-10 lg:my-20 mx-auto"
+        />
+        <p
+          class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]"
+        >
+          <span class="text-bold">Para comprobar esto</span>, toma un espejo y
+          observa cómo
+          <span class="text-bold text-[#6610F2]"> se mueve tu lengua </span>
+          dentro de tu boca al pronunciar lentamente las siguentes palabras:
+        </p>
+      </div>
+    </section>
+    <section class="my-10 lg:my-20">
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <img
+          src="/images/svg/tyd/Espejo.svg"
+          alt="Imagen de un espejo"
+          class="col-span-4 col-start-1 lg:col-span-3 lg:col-start-3 my-auto"
+        />
+        <img
+          src="/images/svg/tyd/Tetera_Dedal.svg"
+          alt="Tetera y dedal"
+          class="col-span-8 col-start-6 lg:col-span-5 lg:col-start-6 my-auto"
+        />
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <p
+          class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 text-lg lg:text-3xl text-center leading-[1.45rem]"
+        >
+          Tal como lo puedes notar, al pronunciar las
+          <span class="text-bold">
+            letras <span class="text-[#6610F2]">t</span> y <span
               class="text-[#6610F2]">d</span
-            ></span
-          > en catellano.
-        </span>
-      </p>
-      <p
-        class="col-start-3 col-span-9 text-2xl lg:col-start-4 lg:col-span-6 lg:text-5xl text-bold text-center mt-20"
-      >
-        ¿Cómo podemos
-        <span class="text-[#6610F2]"
-          >pronunciar las letras t y d del inglés</span
-        >?
-      </p>
-      <img
-        src="/images/svg/tyd/Tetera.svg"
-        alt="Imagen de una tetera"
-        class="col-start-4 col-span-6 lg:col-start-5 lg:col-span-4 w-[55%] mx-auto mt-20"
-      />
-      <p
-        class="col-start-5 col-span-5 text-3xl mx-auto lg:col-start-6 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] whitespace-nowrap"
-      >
-        Tete-<span class="text-black">ra</span>
-      </p>
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <span
-        class="col-start-3 col-span-10 text-2xl lg:col-start-3 lg:col-span-8 lg:text-3xl text-center text-bold mx-auto"
-      >
-        Pronuncia de manera muy lenta la palabra <span class="text-[#6610F2]"
-          >tetera</span
-        >.
-      </span>
-      <p
-        class="col-start-1 col-span-11 lg:col-start-1 lg:col-span-7 lg:text-3xl text-left mt-20"
-      >
-        <span class="lg:block">
-          Fíjate en el <span class="text-bold text-[#6610F2]">
-            movimiento de tu lengua
-          </span> dentro de tu
-        </span>
-        <span class="block">
-          boca. Al pronunciar “<span class="text-bold text-[#6610F2]">tete</span
-          >”, la lengua se pone
-        </span>
-        <span class="lg:block text-bold"> detrás de los dientes. </span>
-      </p>
-      <img
-        src="/images/svg/global/Estrella.svg"
-        alt="Imagen de play audio"
-        class="col-start-9 col-span-4 lg:col-start-8 lg:col-span-3 max-sm:transform max-sm:-translate-y-16"
-      />
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <img
-        src="/images/svg/global/Estrella.svg"
-        alt="Imagen de play audio"
-        class="col-start-1 col-span-4 lg:col-start-3 lg:col-span-3 max-sm:transform max-sm:translate-y-40"
-      />
-      <p
-        class="col-start-2 col-span-10 lg:col-start-7 lg:col-span-7 lg:text-3xl text-right my-auto"
-      >
-        Al pronunciar <span class="text-bold">"ra"</span>, la lengua se <span
-          class="text-[#6610F2]"
-          >aleja de tus dientes
-        </span>
-        y se desplaza hacia los alveólos.
-      </p>
-      <p
-        class="col-start-2 col-span-12 lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mt-20"
-      >
-        En las palabras a continuación, la lengua se pone <span
-          class="text-bold">primero detrás de los dientes</span
-        > al pronunciar la <span class="text-[#6610F2]">letra t</span> y luego se
-        aleja y se sitúa en los alvéolos al pronunciar las <span
-          class="text-bold">letras r</span
-        > o <span class="text-bold"> doble rr</span>.
-      </p>
-    </section>
-
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <div
-        class="col-start-5 col-span-4 lg:col-start-2 lg:col-span-2 text-center mt-20 flex flex-col"
-      >
-        <div class="flex-1">
-          <img
-            src="/images/svg/tyd/Tierra.svg"
-            alt="Imagen del planeta tierra"
-            class="w-full h-auto"
-          />
-        </div>
-        <div class="mt-5">
-          <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
-            T<span class="text-black">ie</span>rr<span class="text-black"
-              >a</span
             >
-            <AudioPlayer
-              audio_path={"/audio/td/Tierra.mp3"}
-              className="lg:w-1/2 mx-auto"
-              client:load
-            />
           </span>
-        </div>
-      </div>
-
-      <div
-        class="col-start-2 col-span-4 lg:col-start-6 lg:col-span-2 text-center mt-20 flex flex-col"
-      >
-        <div class="flex-1">
-          <img
-            src="/images/svg/tyd/Torre.svg"
-            alt="Imagen de una torre"
-            class="w-full h-auto"
-          />
-        </div>
-        <div class="mt-20">
-          <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
-            T<span class="text-black">o</span>rr<span class="text-black">e</span
-            >
-            <AudioPlayer
-              audio_path={"/audio/td/Torre.mp3"}
-              className="lg:w-1/2 mx-auto"
-              client:load
-            />
-          </span>
-        </div>
-      </div>
-
-      <div
-        class="col-start-8 col-span-4 lg:col-start-10 lg:col-span-2 text-center mt-20 flex flex-col"
-      >
-        <div class="flex-1">
-          <img
-            src="/images/svg/tyd/Tarro.svg"
-            alt="Imagen de un tarro"
-            class="w-full h-auto"
-          />
-        </div>
-        <div class="mt-5">
-          <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
-            T<span class="text-black">a</span>rr<span class="text-black">o</span
-            >
-            <AudioPlayer
-              audio_path={"/audio/td/Tarro.mp3"}
-              className="lg:w-1/2 mx-auto"
-              client:load
-            />
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-20">
-      <p
-        class="col-start-2 col-span-11 text-lg lg:col-start-4 lg:col-span-7 lg:text-3xl text-center lg:mt-20"
-      >
-        Así entonces, cuando pronunciamos las <span class="text-bold"
-          >letras <span class="text-[#6610F2]">t</span> y <span
-            class="text-[#6610F2]">d</span
-          >
-          en inglés
-        </span> tenemos que poner <span class="text-bold">
-          la lengua en el mismo lugar
-        </span> de las <span class="text-bold">letras r</span> o <span
-          class="text-bold">rr</span
-        >, como en:
-      </p>
-
-      <span
-        class="col-start-5 col-span-4 text-4xl lg:col-start-2 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
-      >
-        Pe<span class="text-[#6610F2]">r</span>o
-        <AudioPlayer
-          audio_path={"/audio/td/Pero.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-      <span
-        class="col-start-2 col-span-4 text-4xl lg:col-start-6 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
-      >
-        Zo<span class="text-[#6610F2]">rr</span>o
-        <AudioPlayer
-          audio_path={"/audio/td/Zorro.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-      <span
-        class="col-start-8 col-span-4 text-4xl lg:col-start-10 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
-      >
-        <span class="text-[#6610F2]">R</span>oca
-        <AudioPlayer
-          audio_path={"/audio/td/Roca.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-    </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto">
-      <p
-        class="col-start-2 col-span-12 text-lg lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mt-20"
-      >
-        Ahora que ya tienes conciencia de la similitud de la
-        <span class="text-bold">letra r</span> en castellano y
-        <span class="text-bold">
-          las letras <span class="text-[#6610F2]">t</span> y <span
-            class="text-[#6610F2]">d</span
-          > en inglés
-        </span>
-        , vas a pronunciar las siguientes palabras, con ayuda de sus respectivos
-        audios:
-      </p>
-      <span
-        class="col-start-2 col-span-12 text-lg lg:col-start-3 lg:col-span-8 lg:text-3xl text-center text-bold lg:mt-20"
-      >
-        Escucha cada audio y luego <span class="text-[#6610F2]"
-          >repite la palabra:</span
+          en ambas palabras, tu lengua se pone
+          <span class="text-bold"> detrás de tus dientes. </span>
+        </p>
+        <span
+          class="col-start-5 col-span-6 mt-10 lg:col-start-6 lg:col-span-3 text-bold sm:text-lg text-xl lg:text-3xl lg:mt-20"
+          >Por ejemplo:</span
         >
-      </span>
+      </div>
     </section>
-    <section class="grid grid-cols-12 gap-[15px] mx-auto mt-10 lg:mt-20">
-      <img
-        src="/images/svg/global/Contenedor_Audios_Superior.svg"
-        alt="Imagen superior de un contenedor de audios"
-        class="col-start-1 col-span-12 mx-auto"
-      />
-      <span
-        class="col-start-3 col-span-3 text-3xl lg:col-start-4 lg:col-span-2 lg:text-5xl text-bold text-[#6610F2]"
-      >
-        Español
-        <img
-          src="/images/svg/global/Destacado.svg"
-          alt="Imagen de destacado"
-          class="w-1/2 mx-auto"
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-3xl lg:col-start-8 lg:col-span-2 lg:text-5xl text-bold text-center text-[#6610F2]"
-      >
-        Inglés
-        <img
-          src="/images/svg/global/Destacado.svg"
-          alt="Imagen de destacado"
-          class="w-1/2 mx-auto"
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Total
-        <AudioPlayer
-          audio_path={"/audio/td/Total_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Total
-        <AudioPlayer
-          audio_path={"/audio/td/Total_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Terror
-        <AudioPlayer
-          audio_path={"/audio/td/Terror_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Terror
-        <AudioPlayer
-          audio_path={"/audio/td/Terror_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Denso
-        <AudioPlayer
-          audio_path={"/audio/td/Denso_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Dense
-        <AudioPlayer
-          audio_path={"/audio/td/Dense_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Decidir
-        <AudioPlayer
-          audio_path={"/audio/td/Decidir_ESP.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Decide
-        <AudioPlayer
-          audio_path={"/audio/td/Decide_ENG.mp3"}
-          className="lg:w-1/2 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-3 col-span-3 text-4xl lg:col-start-3 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Depender
-        <AudioPlayer
-          audio_path={"/audio/td/Depender_ESP.mp3"}
-          className="lg:w-1/4 mx-auto"
-          client:load
-        />
-      </span>
-
-      <span
-        class="col-start-9 col-span-3 text-4xl lg:col-start-7 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-      >
-        Depend
-        <AudioPlayer
-          audio_path={"/audio/td/Depend_ENG.mp3"}
-          className="lg:w-1/4 mx-auto"
-          client:load
-        />
-      </span>
-
-      <img
-        src="/images/svg/global/Contenedor_Audios_Inferior.svg"
-        alt="Imagen inferior de un contenedor de audios"
-        class="col-start-1 col-span-12 mx-auto"
-      />
-      <span
-        class="col-start-3 col-span-10 text-xl lg:col-start-3 lg:col-span-8 lg:text-3xl text-center lg:mt-20"
-      >
-        ¿Quieres seguir <span class="text-[#6610F2] text-bold">ejercitando</span
-        >?
-      </span>
-      <div
-        class="col-start-3 col-span-10 text-xl lg:col-start-5 lg:col-span-4 lg:mx-auto"
-      >
-        <nav
-          class="transform transition-transform duration-200 hover:scale-110"
+    <section class="my-10 lg:my-20">
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <div
+          class="col-start-2 col-span-4 lg:col-start-3 lg:col-span-3 mx-auto"
         >
-          <a
-            href="/exercise/t-d"
-            class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center"
+          <img src="/images/svg/tyd/Tetera.svg" alt="Imagen de una tetera" />
+          <div
+            class="text-4xl lg:text-6xl w-full text-end text-bold text-[#6610F2] mt-10 lg:mb-5 mx-auto"
           >
-            Presiona aquí
-          </a>
+            Tetera
+          </div>
+        </div>
+
+        <div
+          class="col-start-8 col-span-4 lg:col-start-8 lg:col-span-3 mx-auto"
+        >
+          <img src="/images/svg/tyd/Dedal.svg" alt="Imagen de un dedal" />
+          <div
+            class="text-4xl lg:text-6xl text-bold text-[#6610F2] mt-10 lg:mb-5 text-center"
+          >
+            Dedal
+          </div>
+        </div>
+
+        <AudioPlayer
+          audio_path={"/audio/td/Tetera.mp3"}
+          className="col-start-2 col-span-4 w-20 h-20 transform lg:col-start-4 lg:col-span-2 lg:w-24 lg:h-24 mx-auto"
+          client:load
+        />
+        <AudioPlayer
+          audio_path={"/audio/td/Dedal.mp3"}
+          className="col-start-8 col-span-4 w-20 h-20 transform lg:col-start-9 lg:col-span-1 lg:w-24 lg:h-24 mx-auto"
+          client:load
+        />
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <img
+          src="/images/svg/global/Estrella.svg"
+          alt="Imagen de play audio"
+          class="col-start-1 col-span-4 lg:col-start-1 lg:col-span-4 max-sm:transform max-sm:translate-y-20"
+        />
+        <p
+          class="col-start-1 col-span-11 text-base lg:col-start-5 lg:col-span-8 lg:text-3xl max-sm:transform max-sm:-translate-y-20 text-right my-auto"
+        >
+          En cambio,
+          <span class="text-bold">
+            la pronunciacion de las letras
+            <span class="text-[#6610F2]">t</span> y <span class="text-[#6610F2]"
+              >d</span
+            >
+            en inglés
+          </span>
+          se parece más a la pronunciación de la
+          <span class="text-bold text-[#6610F2]"> letra r en castellano. </span>
+        </p>
+      </div>
+    </section>
+    <!-- Van los gift de demostracion -->
+    <section class="my-10 lg:my-20">
+      <video src="/videos/t-d/Tetera_UltraSlow.mkv" autoplay class="mx-auto">
+        Tu navegador no admite el elemento <code>video</code>.
+      </video>
+    </section>
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <p
+          class="col-start-1 col-span-9 text-base lg:col-start-1 lg:col-span-8 lg:text-3xl text-left"
+        >
+          Una forma de hacernos concientes de las
+          <span class="text-bold lg:block">
+            diferencias entre la escritura y la pronunciación
+          </span>
+          del castellano y del inglés es hacer
+          <span class="text-bold text-[#6610F2] lg:block">
+            ejercicios de discriminación.
+          </span>
+        </p>
+        <img
+          src="/images/svg/global/Flecha.svg"
+          alt="Imagen de varias flechas apuntando a la derecha"
+          class="col-start-1 col-span-3 lg:col-start-3 lg:col-span-2"
+        />
+        <p
+          class="col-start-4 col-span-9 text-base lg:col-start-5 lg:col-span-8 lg:text-3xl text-right"
+        >
+          <span class="lg:block">
+            Los
+            <span class="text-bold text-[#6610F2]"
+              >ejercicios de discriminación</span
+            >
+            permiten que
+          </span>
+
+          <span class="lg:block">
+            podamos
+            <span class="text-bold"> diferenciar la pronunciación </span>
+            de una letra
+          </span>
+          <span class="lg:block">
+            de otra y, además, nos ayudan a mejorar nuestra
+          </span>
+          <span class="text-bold lg:block">
+            escritura en la lengua extranjera.
+          </span>
+        </p>
+        <p
+          class="col-start-1 col-span-12 text-xl lg:col-start-3 lg:col-span-8 lg:text-3xl text-center my-10"
+        >
+          Ahora que ya sabes que en catellano y en inglés hay
+          <span class="text-bold">
+            diferencias entre la pronunciación de las
+          </span>
+          <span class="text-bold">
+            letras <span class="text-[#6610F2]">t</span> y <span
+              class="text-[#6610F2]">d</span
+            >
+          </span>
+          ,escucha los siguentes audios, que están en castellano e inglés, y
+          <span class="text-bold"> pon antencion </span>
+          <span class="text-bold">
+            a las
+            <span class="text-[#6610F2]">
+              diferencias en la pronunciación:
+            </span>
+          </span>
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <img
+          src="/images/svg/global/Contenedor_Audios_Superior.svg"
+          alt="Imagen superior de un contenedor de audios"
+          class="col-start-1 col-span-12 mx-auto"
+        />
+        <span
+          class="col-start-3 col-span-3 text-3xl lg:col-start-4 lg:col-span-2 lg:text-5xl text-bold text-[#6610F2]"
+        >
+          Español
           <img
             src="/images/svg/global/Destacado.svg"
-            alt="Destacado"
-            class="mx-auto w-20 sm:w-40 sm:mt-2"
+            alt="Imagen de destacado"
+            class="w-1/2 mx-auto"
           />
-        </nav>
+        </span>
+
+        <span
+          class="col-start-9 col-span-3 text-3xl lg:col-start-8 lg:col-span-2 lg:text-5xl text-bold text-center text-[#6610F2]"
+        >
+          Inglés
+          <img
+            src="/images/svg/global/Destacado.svg"
+            alt="Imagen de destacado"
+            class="w-1/2 mx-auto"
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Tabla
+          <AudioPlayer
+            audio_path={"/audio/td/Tabla_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Table
+          <AudioPlayer
+            audio_path={"/audio/td/Table_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Dama
+          <AudioPlayer
+            audio_path={"/audio/td/Dama_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Dame
+          <AudioPlayer
+            audio_path={"/audio/td/Dame_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Talento
+          <AudioPlayer
+            audio_path={"/audio/td/Talento_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Talent
+          <AudioPlayer
+            audio_path={"/audio/td/Talent_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Tacto
+          <AudioPlayer
+            audio_path={"/audio/td/Tacto_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Tact
+          <AudioPlayer
+            audio_path={"/audio/td/Tact_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Tarta
+          <AudioPlayer
+            audio_path={"/audio/td/Tarta_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Tart
+          <AudioPlayer
+            audio_path={"/audio/td/Tart_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Decente
+          <AudioPlayer
+            audio_path={"/audio/td/Decente_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-7 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Decent
+          <AudioPlayer
+            audio_path={"/audio/td/Decent_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Denso
+          <AudioPlayer
+            audio_path={"/audio/td/Denso_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Dense
+          <AudioPlayer
+            audio_path={"/audio/td/Dense_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <img
+          src="/images/svg/global/Contenedor_Audios_Inferior.svg"
+          alt="Imagen inferior de un contenedor de audios"
+          class="col-start-1 col-span-12 mx-auto"
+        />
       </div>
-      <img
-        src="/images/svg/global/Mano_Izquierda.svg"
-        alt="Mano apuntando a la izquierda"
-        class="col-start-10 col-span-4 lg:col-start-9 lg:col-span-3 transform max-sm:-translate-y-20"
-      />
+    </section>
+    <section class="my-10 lg:my-20">
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <p
+          class="col-start-2 col-span-11 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center"
+        >
+          <span class="lg:block">
+            Recuerda que la pronunciación de las
+            <span class="text-bold">
+              letras <span class="text-[#6610F2]">t</span> y <span
+                class="text-[#6610F2]">d</span
+              >
+            </span>
+          </span>
+          <span class="lg:block">
+            <span class="text-bold">en ingles</span>
+            se parece más a la pronunciación de la
+          </span>
+          <span class="lg:block">
+            <span class="text-bold">letra r en catellano</span>
+            que a la pronunciación
+          </span>
+          <span class="lg:block">
+            de las <span class="text-bold"
+              >letras <span class="text-[#6610F2]">t</span> y <span
+                class="text-[#6610F2]">d</span
+              ></span
+            > en catellano.
+          </span>
+        </p>
+        <p
+          class="col-start-3 col-span-9 text-2xl lg:col-start-4 lg:col-span-6 lg:text-4xl text-bold text-center mt-10 lg:mt-20"
+        >
+          ¿Cómo podemos
+          <span class="text-[#6610F2]"
+            >pronunciar las letras t y d del inglés</span
+          >?
+        </p>
+        <p
+          class="col-start-5 col-span-4 text-3xl lg:col-start-5 lg:col-span-4 mt-20 lg:text-6xl text-bold mx-auto flex flex-col items-end text-[#6610F2] whitespace-nowrap"
+        >
+          <img src="/images/svg/tyd/Tetera.svg" alt="Imagen de una tetera" />
+          <span class="mt-10 mx-auto">
+            Tete-<span class="text-black">ra</span>
+          </span>
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <span
+          class="col-start-2 col-span-11 text-2xl lg:col-start-2 lg:col-span-10 lg:text-3xl text-center text-bold mx-auto"
+        >
+          Pronuncia de manera muy lenta la palabra <span class="text-[#6610F2]"
+            >tetera</span
+          >.
+        </span>
+        <p
+          class="col-start-1 col-span-12 text-base lg:col-start-1 lg:col-span-8 lg:text-3xl text-left mt-20"
+        >
+          <span class="lg:block">
+            Fíjate en el <span class="text-bold text-[#6610F2]">
+              movimiento de tu lengua
+            </span> dentro de tu
+          </span>
+          <span class="block">
+            boca. Al pronunciar “<span class="text-bold text-[#6610F2]"
+              >tete</span
+            >”, la lengua se pone
+          </span>
+          <span class="lg:block text-bold"> detrás de los dientes. </span>
+        </p>
+        <img
+          src="/images/svg/global/Estrella.svg"
+          alt="Imagen de play audio"
+          class="col-start-9 col-span-4 lg:col-start-9 lg:col-span-3 max-sm:transform max-sm:-translate-y-12"
+        />
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <img
+          src="/images/svg/global/Estrella.svg"
+          alt="Imagen de play audio"
+          class="col-start-1 col-span-4 lg:col-start-3 lg:col-span-3 max-sm:transform max-sm:translate-y-40"
+        />
+        <p
+          class="col-start-2 col-span-11 text-base lg:col-start-6 lg:col-span-7 lg:text-3xl text-right my-auto"
+        >
+          Al pronunciar <span class="text-bold">"ra"</span>, la lengua se <span
+            class="text-[#6610F2]"
+            >aleja de tus dientes
+          </span>
+          y se desplaza hacia los alveólos.
+        </p>
+        <p
+          class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mt-20"
+        >
+          En las palabras a continuación, la lengua se pone <span
+            class="text-bold">primero detrás de los dientes</span
+          > al pronunciar la <span class="text-[#6610F2]">letra t</span> y luego
+          se aleja y se sitúa en los alvéolos al pronunciar las <span
+            class="text-bold">letras r</span
+          > o <span class="text-bold"> doble rr</span>.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <div
+          class="col-start-5 col-span-4 lg:col-start-2 lg:col-span-2 text-center lg:mt-20 flex flex-col"
+        >
+          <div class="h-[200px] flex items-center justify-center">
+            <!-- Altura fija para todas las imágenes -->
+            <img
+              src="/images/svg/tyd/Tierra.svg"
+              alt="Imagen del planeta tierra"
+              class="w-full h-auto max-h-full object-contain"
+            />
+          </div>
+          <div class="mt-5">
+            <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
+              T<span class="text-black">ie</span>rr<span class="text-black"
+                >a</span
+              >
+              <AudioPlayer
+                audio_path={"/audio/td/Tierra.mp3"}
+                className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+                client:load
+              />
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="col-start-2 col-span-4 lg:col-start-6 lg:col-span-2 text-center mt-20 flex flex-col"
+        >
+          <div class="h-[200px] flex items-center justify-center">
+            <img
+              src="/images/svg/tyd/Torre.svg"
+              alt="Imagen de una torre"
+              class="w-full h-auto max-h-full object-contain"
+            />
+          </div>
+          <div class="mt-5">
+            <!-- Cambiar mt-20 a mt-5 para uniformidad -->
+            <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
+              T<span class="text-black">o</span>rr<span class="text-black"
+                >e</span
+              >
+              <AudioPlayer
+                audio_path={"/audio/td/Torre.mp3"}
+                className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+                client:load
+              />
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="col-start-8 col-span-4 lg:col-start-10 lg:col-span-2 text-center mt-20 flex flex-col"
+        >
+          <div class="h-[200px] flex items-center justify-center">
+            <img
+              src="/images/svg/tyd/Tarro.svg"
+              alt="Imagen de un tarro"
+              class="w-full h-auto max-h-full object-contain"
+            />
+          </div>
+          <div class="mt-5">
+            <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
+              T<span class="text-black">a</span>rr<span class="text-black"
+                >o</span
+              >
+              <AudioPlayer
+                audio_path={"/audio/td/Tarro.mp3"}
+                className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+                client:load
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <p
+          class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mt-10 lg:mt-20"
+        >
+          Así entonces, cuando pronunciamos las <span class="text-bold"
+            >letras <span class="text-[#6610F2]">t</span> y <span
+              class="text-[#6610F2]">d</span
+            >
+            en inglés
+          </span> tenemos que poner <span class="text-bold">
+            la lengua en el mismo lugar
+          </span> de las <span class="text-bold">letras r</span> o <span
+            class="text-bold">rr</span
+          >, como en:
+        </p>
+
+        <span
+          class="col-start-5 col-span-4 text-4xl lg:col-start-2 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
+        >
+          Pe<span class="text-[#6610F2]">r</span>o
+          <AudioPlayer
+            audio_path={"/audio/td/Pero.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+        <span
+          class="col-start-2 col-span-4 text-4xl lg:col-start-6 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
+        >
+          Zo<span class="text-[#6610F2]">rr</span>o
+          <AudioPlayer
+            audio_path={"/audio/td/Zorro.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+        <span
+          class="col-start-8 col-span-4 text-4xl lg:col-start-10 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
+        >
+          <span class="text-[#6610F2]">R</span>oca
+          <AudioPlayer
+            audio_path={"/audio/td/Roca.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+      </div>
+    </section>
+    <section class="mb-10">
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <p
+          class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mt-20"
+        >
+          Ahora que ya tienes conciencia de la similitud de la
+          <span class="text-bold">letra r</span> en castellano y
+          <span class="text-bold">
+            las letras <span class="text-[#6610F2]">t</span> y <span
+              class="text-[#6610F2]">d</span
+            > en inglés
+          </span>
+          , vas a pronunciar las siguientes palabras, con ayuda de sus respectivos
+          audios:
+        </p>
+        <span
+          class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center text-bold lg:mt-20"
+        >
+          Escucha cada audio y luego <span class="text-[#6610F2]"
+            >repite la palabra:</span
+          >
+        </span>
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+        <img
+          src="/images/svg/global/Contenedor_Audios_Superior.svg"
+          alt="Imagen superior de un contenedor de audios"
+          class="col-start-1 col-span-12 mx-auto"
+        />
+        <span
+          class="col-start-3 col-span-3 text-3xl lg:col-start-4 lg:col-span-2 lg:text-5xl text-bold text-[#6610F2]"
+        >
+          Español
+          <img
+            src="/images/svg/global/Destacado.svg"
+            alt="Imagen de destacado"
+            class="w-1/2 mx-auto"
+          />
+        </span>
+
+        <span
+          class="col-start-9 col-span-3 text-3xl lg:col-start-8 lg:col-span-2 lg:text-5xl text-bold text-center text-[#6610F2]"
+        >
+          Inglés
+          <img
+            src="/images/svg/global/Destacado.svg"
+            alt="Imagen de destacado"
+            class="w-1/2 mx-auto"
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Total
+          <AudioPlayer
+            audio_path={"/audio/td/Total_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Total
+          <AudioPlayer
+            audio_path={"/audio/td/Total_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Terror
+          <AudioPlayer
+            audio_path={"/audio/td/Terror_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Terror
+          <AudioPlayer
+            audio_path={"/audio/td/Terror_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Denso
+          <AudioPlayer
+            audio_path={"/audio/td/Denso_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Dense
+          <AudioPlayer
+            audio_path={"/audio/td/Dense_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Decidir
+          <AudioPlayer
+            audio_path={"/audio/td/Decidir_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Decide
+          <AudioPlayer
+            audio_path={"/audio/td/Decide_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-2 col-span-5 text-4xl lg:col-start-3 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Depender
+          <AudioPlayer
+            audio_path={"/audio/td/Depender_ESP.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <span
+          class="col-start-8 col-span-5 text-4xl lg:col-start-7 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
+        >
+          Depend
+          <AudioPlayer
+            audio_path={"/audio/td/Depend_ENG.mp3"}
+            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+            client:load
+          />
+        </span>
+
+        <img
+          src="/images/svg/global/Contenedor_Audios_Inferior.svg"
+          alt="Imagen inferior de un contenedor de audios"
+          class="col-start-1 col-span-12 mx-auto"
+        />
+        <span
+          class="col-start-2 col-span-10 text-xl lg:col-start-3 lg:col-span-8 lg:text-3xl text-center lg:mt-20"
+        >
+          ¿Quieres seguir <span class="text-[#6610F2] text-bold"
+            >ejercitando</span
+          >?
+        </span>
+        <div
+          class="col-start-2 col-span-10 text-xl lg:col-start-5 lg:col-span-4 lg:mx-auto"
+        >
+          <nav
+            class="transform transition-transform duration-200 hover:scale-110"
+          >
+            <a
+              href="/exercise/t-d"
+              class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center"
+            >
+              Presiona aquí
+            </a>
+            <img
+              src="/images/svg/global/Destacado.svg"
+              alt="Destacado"
+              class="mx-auto w-20 sm:w-40 sm:mt-2"
+            />
+          </nav>
+        </div>
+        <img
+          src="/images/svg/global/Mano_Izquierda.svg"
+          alt="Mano apuntando a la izquierda"
+          class="col-start-10 col-span-4 lg:col-start-9 lg:col-span-3 transform max-sm:-translate-y-20"
+        />
+      </div>
     </section>
   </article>
 </Layout>
