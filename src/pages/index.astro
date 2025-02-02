@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import AudioPlayer from '../components/AudioPlayer';
 import RevealButton from '../components/landing/RevealButton';
+import Fonemas from '../components/landing/Fonemas';
 ---
 
 <Layout>
@@ -336,7 +337,7 @@ import RevealButton from '../components/landing/RevealButton';
             </div>
             <p class="text-bold">Estas letras son:</p>
         </div>
-        <img src="/images/svg/landing/Fonemas.svg" alt="Fonemas" class="col-span-12" />
+        <Fonemas client:load />
     </section>
     <!-- Sección de utilidad -->
     <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
