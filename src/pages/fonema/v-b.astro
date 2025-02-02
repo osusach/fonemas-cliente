@@ -11,18 +11,19 @@ export async function getStaticPaths() {
 
 <Layout title="Fonemas">
     <article class="flex flex-col justify-center">
-        <section class="mb-12 sm:mb-56 -mt-28 sm:-mt-24">
-            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-                <img src="/images/svg/vyb/vyb.svg" alt="Fonema V y B" class="col-span-6 sm:col-span-5 transform sm:-translate-x-4 translate-y-40" />
-                <div class="col-span-7 col-start-6 place-content-center mb-12 c1400:-mb-40 sm:mb-48 transform translate-y-2 translate-x-8 sm:translate-x-0 sm:translate-y-44 c1400:translate-y-12">
-                    <p class="text-xl sm:text-2xl lg:text-4xl max-w-[80%]">
-                       La <span class="text-bold text-[#6610F2]">letra v</span> se pronuncia siempre como la letra <span class="text-bold text-[#6610F2]">letra b</span> en castellano.
+        <section class="mb-12 sm:mb-12">
+            <div class="flex items-center w-[90%] sm:w-[75%] mx-auto">
+                <img src="/images/svg/vyb/vyb.svg" alt="Fonema V y B" class="w-1/2 sm:w-5/12" />
+                <div class="flex items-center ml-4 sm:ml-8">
+                    <p class="text-xl sm:text-2xl lg:text-4xl">
+                        La <span class="text-bold text-[#6610F2]">letra v</span> se pronuncia siempre como la <span class="text-bold text-[#6610F2]">letra b</span> 
+                        <span class="inline c400:block c500:inline">en castellano.</span>
                     </p>
                 </div>
             </div>
-        </section>
+        </section>        
         <!-- Seccion de "Es decir, siempre pronunciamos con la" -->
-        <section class="mb-8">
+        <section class="sm:mb-8">
             <div class="flex justify-center max-w-[90%] sm:max-w-[40%] mx-auto ">
                 <p class="text-lg sm:text-2xl text-center mb-12">
                     Es decir, siempre pronunciamos con la <span class="text-bold text-[#6610F2]">letra b</span> las palabras escritas con las 
@@ -32,55 +33,56 @@ export async function getStaticPaths() {
             </div>
 
             <div class="max-w-2xl mx-auto">
-                <p class="text-xl sm:text-3xl text-center mb-4">
+                <p class="text-xl sm:text-3xl text-center -mb-4 sm:mb-4">
                     Pensemos <span class="text-bold">por ejemplo</span> en la pronunciacion de:
                 </p>
                 
                 <div class="grid grid-cols-2 sm:gap-x-48 mb-14">
                   <div class="flex flex-col items-center">
-                    <img src="/images/svg/vyb/Botar.svg" alt="Botar" class="w-36 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
+                    <img src="/images/svg/vyb/Botar.svg" alt="Botar" class="w-24 h-56 sm:w-36 sm:h-72 max-w-[70%] -mb-8 sm:max-w-[100%] sm:-mb-8">
                     <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">Botar</p>
                     <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                   </div>
                   <div class="flex flex-col items-center">
-                      <img src="/images/svg/vyb/Votar.svg" alt="Votar" class="w-36 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] sm:-mb-8">
+                      <img src="/images/svg/vyb/Votar.svg" alt="Votar" class="w-28 h-56 sm:w-36 sm:h-72 max-w-[70%] -mb-8 xl:max-w-[100%] sm:-mb-8">
                       <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">Votar</p>
                       <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                   </div>
                 </div>
             </div>
-            <div class="flex justify-center max-w-[90%] sm:max-w-[35%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-12">
+            <div class="flex justify-center max-w-[90%] sm:max-w-[70%] xl::max-w-[35%] mx-auto ">
+                <p class="text-lg sm:text-2xl text-center mb-12 leading-[1.45rem]">
                     Tal como lo puedes notar, cuando leemos las
                     <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
                     <span class="text-bold text-[#6610F2]">b</span>,
-                    no hacemos <span class="text-bold">ninguna diferencia entre ambas.</span>
+                    no hacemos <span class="text-bold">ninguna</span>
+                    <span class="text-bold inline xs:inline c400:block c500:inline">diferencia entre ambas.</span>
                 </p>
             </div>
         </section>
         <!-- Seccion de "Votar y Botar" -->
         <section class="mb-20">
             <div class="flex justify-center max-w-[90%] sm:max-w-[50%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-12">
+                <p class="text-lg sm:text-2xl text-center mb-12 leading-[1.45rem]">
                     De hecho, bien podríamos escribir ambas palabras con las 
                     <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
                     <span class="text-bold text-[#6610F2]">b</span> y las pronunciaríamos igual:
                 </p>
             </div>
             <div class="flex justify-center items-center gap-12 sm:gap-24 mb-12">
-                <div class="text-center">
-                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl mb-2 sm:-mb-2 sm:leading-[79.36px]">Votar</p>
-                    <p class="text-xl sm:text-3xl text-extrabold mb-2">(de tirar)</p>
+                <div class="flex flex-col text-center justify-center items-center">
+                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Votar</p>
+                    <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de tirar)</p>
                     <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                 </div>
-                <div class="text-center">
-                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl mb-2 sm:-mb-2 sm:leading-[79.36px]">Botar</p>
-                    <p class="text-xl sm:text-3xl text-extrabold mb-2">(de voto)</p>
+                <div class="flex flex-col text-center justify-center items-center">
+                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Botar</p>
+                    <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de voto)</p>
                     <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                 </div>
             </div>  
             <div class="flex justify-center max-w-[90%] sm:max-w-[47%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-12">
+                <p class="text-lg sm:text-2xl text-center mb-12 leading-[1.45rem]">
                     Aunque sabríamos que la <span class="text-bold">ortografía no es la correcta, </span>
                     en nuestras mentes seguiríamos pensando en ir a
                     <span class="text-bold text-[#6610F2]">votar</span> y 
@@ -89,12 +91,11 @@ export async function getStaticPaths() {
         </section>
         <!-- Seccion de "Cómo se pronuncien la palabras" -->
         <section class="-mb-40 sm:-mb-56">
-            <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+            <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
                 <div class="col-end-13 col-span-12 c500:col-end-13 c500:col-span-7 sm:max-w-[80%] ml-auto sm:col-end-13 sm:col-span-9 lg:col-end-13 lg:col-span-7"> 
                     <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
                         En inglés, las <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
-                        <span class="text-bold text-[#6610F2]">b</span>
-                        <span class="inline xs:inline c400:block c500:inline">al inicio de una</span>
+                        <span class="text-bold text-[#6610F2]">b</span>al inicio de una
                         <span class="inline xs:inline c400:block c500:inline">palabra tiene <span class="text-bold">pronunciaciones distintas y</span></span>
                         <span class="inline xs:inline c400:block c500:inline"><span class="text-bold">significados distintos.</span></span>
                     </p>
@@ -108,58 +109,63 @@ export async function getStaticPaths() {
         <!-- Seccion de "Por ejemplo" -->
         <section class="mb-12 sm:mb-24">
             <div class="max-w-2xl mx-auto">
-              <p class="text-xl sm:text-3xl text-bold text-center -mb-12 sm:-mb-4">Por ejemplo:</p>
-              
-              <div class="grid grid-cols-2 sm:gap-x-48">
-                <div class="flex flex-col items-center">
-                  <img src="/images/svg/vyb/Van.svg" alt="Van" class="w-56 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
-                  <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">Van</p>
-                  <p class="text-xl sm:text-3xl text-extrabold px-64 text-center">(tipo de automóvil)</p>
-                  <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+                <p class="text-xl sm:text-3xl text-bold text-center -mb-12 sm:-mb-4">Por ejemplo:</p>
+                
+                <div class="grid grid-cols-2 sm:gap-x-48">
+                    <div class="flex flex-col items-center">
+                        <img src="/images/svg/vyb/Van.svg" alt="Van" class="w-56 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
+                        <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-8">Van</p>
+                        <p class="text-xl sm:text-3xl text-extrabold text-center whitespace-nowrap">(tipo de automóvil)</p>
+                        <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="/images/svg/vyb/Ban.svg" alt="Ban" class="w-24 h-72 sm:w-36 sm:h-72 max-w-[70%] -mb-16 xl:max-w-[100%] sm:-mb-8">
+                        <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-8">Ban</p>
+                        <p class="text-xl sm:text-3xl text-extrabold whitespace-nowrap">(de prohibir)</p>
+                        <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+                    </div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="/images/svg/vyb/Ban.svg" alt="Zip" class="w-36 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] sm:-mb-8">
-                    <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">Ban</p>
-                    <p class="text-xl sm:text-3xl text-extrabold">(de prohibir)</p>
-                    <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                </div>
-              </div>
             </div>
-        </section>          
+        </section>              
         <!-- Seccion de "Ejercicios de discriminacion" -->
-        <section class="-mb-12">
-            <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-                <div class="col-start-1 col-span-11 row-start-1 max-w-[93%] sm:col-span-8 sm:max-w-[82%] mb-12"> 
+        <section class="c1400:-mb-2">
+            <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
+                <div class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-12"> 
                     <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
                         Una forma de hacernos conscientes de las
                         <span class="text-bold">diferencias entre la escritura y la pronunciación
-                        </span> del castellano y del inglés es hacer
-                        <span class="text-bold text-[#6610F2] inline c1400:block">ejercicios de discriminación</span>.
+                        </span> 
+                        <span class="inline c1400:block">del castellano y del inglés es hacer</span>
+                        <span class="text-bold text-[#6610F2] inline c1400:block">
+                            ejercicios <span class="text-bold text-[#6610F2] inline c400:block c500:inline">de discriminación</span>
+                        </span>.
                     </p>
                 </div>
-                <div class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-6 sm:-translate-y-20  sm:translate-x-0 ">
+                <div class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-32 -translate-x-8 c500:-translate-y-20 sm:-translate-y-20  sm:translate-x-0 ">
                     <img src="/images/svg/global/Flecha.svg" alt="Flecha" class="w-24 h-24 sm:w-40 sm:h-40 rotate-[5.53deg] ">
                 </div>
-                <div class="col-end-13 col-span-9 max-w-[97%] ml-auto sm:max-w-[98%] sm:col-end-13 sm:col-span-7 row-start-2 transform -translate-y-4"> 
+                <div class="col-end-13 col-span-10 max-w-[90%] ml-auto sm:max-w-[98%] sm:col-end-13 sm:col-span-7 row-start-2 transform -translate-y-4"> 
                     <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
                         Los <span class="text-bold text-[#6610F2]">ejercicios de discriminación</span> permiten que
                         podamos <span class="text-bold">diferenciar la pronunciación</span> de una letra 
                         de otra y, además, nos ayudan a mejorar nuestra
-                        <span class="text-bold inline xs:inline c400:block c500:inline sm:inline">escritura en la lengua extranjera</span>.
+                        <span class="text-bold">escritura</span>
+                        <span class="text-bold inline c400:block c500:inline">en la lengua extranjera</span>.
                     </p>
                 </div>                
             </div>
         </section>  
         <!-- Seccion de "Pronuncia las siguientes palabras" -->
-        <section class="mb-20 sm:mb-36">
-            <p class="mt-4 text-lg sm:text-2xl text-center mb-48 max-w-[70%] sm:max-w-[40%] mx-auto leading-[1.45rem]">
-                Utiliza la siguiente lista para hacer un <span class="text-bold text-[#6610F2]">ejercicios de discriminación</span>
-                <br class="hidden min-[400px]:block max-[450px]:block"> de las <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
+        <section class="mb-32 sm:mb-36">
+            <p class="mt-4 text-lg sm:text-2xl text-center mb-48 max-w-[90%] sm:max-w-[50%] mx-auto leading-[1.45rem]">
+                Utiliza la siguiente lista para hacer un <span class="text-bold text-[#6610F2]">ejercicios </span>
+                <span class="inline c400:block c500:inline"> <span class="text-bold text-[#6610F2]">de discriminación</span>
+                 de las <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
                 <span class="text-bold text-[#6610F2]">b</span> en inglés:</span>
             </p>
 
             <div class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16 mb-12">
-                <img src="/images/svg/global/Contenedor_Audios_Superior.svg" alt="Contenedor de Audios Parte Superior" class="w-full transform -translate-y-48 sm:-translate-y-56 -z-10 relative">
+                <img src="/images/svg/global/Contenedor_Audios_Superior.svg" alt="Contenedor de Audios Parte Superior" class="w-full transform -translate-y-72 sm:-translate-y-56 -z-10 relative">
                 
                 <div class="absolute inset-0 flex items-center justify-center">
                     <div class="w-full px-24 transform translate-y-4">
@@ -209,40 +215,43 @@ export async function getStaticPaths() {
                         </div>
                     </div>
                 </div>
-                <img src="/images/svg/global/Contenedor_Audios_Inferior.svg" alt="Contenedor de Audios Parte Inferior" class="w-full transform translate-y-40 sm:translate-y-48 -z-10 relative">
+                <img src="/images/svg/global/Contenedor_Audios_Inferior.svg" alt="Contenedor de Audios Parte Inferior" class="w-full transform translate-y-64 sm:translate-y-48 -z-10 relative">
             </div>
         </section>       
         <!-- Seccion de "Como podemos pronunciar el fonema" -->
         <section class="mb-48">
-            <p class="text-xl sm:text-3xl text-bold text-center mb-24 max-w-[62%] mx-auto leading-[1.45rem]">
+            <p class="text-xl sm:text-3xl text-bold text-center mb-12 sm:mb-24 max-w-[65%] sm:max-w-[62%] mx-auto leading-[1.45rem]">
                 ¿Cómo podemos<span class="text-[#6610F2]"> pronunciar v en inglés</span>?
             </p>
 
-            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-                <div class="col-start-1 col-span-12 -mb-16 max-w-[97%] sm:col-start-1 sm:col-span-7 sm:mb-16 sm:max-w-[95%] xl:col-span-7 xl:mb-72">
+            <div class="grid grid-cols-12 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
+                <div class="col-start-1 col-span-12 -mb-16 max-w-[100%] sm:col-start-1 sm:col-span-7 sm:mb-16 sm:max-w-[95%] xl:col-span-7 xl:mb-72">
                     <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
-                        Partimos <span class="text-bold">pronunciando la letra b en inglés</span>, que se
+                        Partimos <span class="text-bold">pronunciando la <span class="text-[#6610F2]">letra b</span> en inglés</span>, que se
                         pronuncia con los <span class="text-bold">labios juntos</span> como en la imagen a continuación.
                     </p>
                 </div>
-                <div class="col-start-7 col-span-5 sm:col-start-8 sm:col-span-4 flex justify-center items-center">
-                    <img src="/images/svg/vyb/Boca_B.svg" alt="Boca forma B" class="w-40 h-40 transform sm:rotate-[0deg] rotate-[31.53deg] translate-y-2 min-[350]:translate-x-8 sm:-translate-y-32 translate-x-4">
+                <div class="col-start-7 col-span-5 sm:col-start-8 sm:col-span-4 flex justify-center items-center mb-48 sm:mb-0">
+                    <img src="/images/svg/vyb/Boca_B_1.svg" alt="Boca forma B 1" class="w-32 h-32 sm:w-40 sm:h-40 transform translate-y-2 xs:translate-x-8 sm:-translate-y-12 xl:-translate-y-32 translate-x-4">
                 </div>
             
                 <div class="col-end-13 col-span-12 ml-auto sm:col-end-13 sm:col-span-8 transform -translate-y-8 sm:translate-y-4">
                     <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
-                        Luego, abrimos la boca y mordemos levemente el
-                        <span class="block xs:inline c400:block sm:inline xl:block"></span>
-                            <span class="text-bold">labio inferior</span> con nuestros <span class="text-bold">incisivos superiores</span>
+                        Luego, abrimos la boca y mordemos levemente 
+                        <span class="block xs:inline c400:block sm:inline c1400:block">
+                            el<span class="text-bold"> labio inferior</span> con nuestros <span class="text-bold">incisivos </span>
                         </span>
                         <span class="block c400:block c550:inline c1400:block"> 
-                            </span>para hacer la <span class="text-bold text-[#6610F2]">letra v</span>, como en la imagen.
+                            <span class="text-bold">superiores </span> para hacer la <span class="text-bold text-[#6610F2]">letra v</span>, 
+                        </span>
+                        <span class="block c400:block c550:inline c1400:block"> 
+                            como en la imagen.
                         </span>
                     </p>
                 </div>                                                                        
 
                 <div class="col-start-1 col-span-7 flex justify-center items-center">
-                    <img src="/images/svg/vyb/Boca_V.svg" alt="Abeja" class="w-48 h-48 sm:w-36 sm:h-36 transform -translate-y-32 -translate-x-4 c400:-translate-y-44 
+                    <img src="/images/svg/vyb/Boca_V_1.svg" alt="Boca Forma V 1" class="w-36 h-36 transform -translate-y-32 -translate-x-8 c400:-translate-y-20 
                                                                         c550:-translate-y-52 c550:-translate-x-20 sm:-translate-y-28 sm:-translate-x-12 ">
                 </div>
             </div>
@@ -251,7 +260,7 @@ export async function getStaticPaths() {
         <section class="mb-20">
             <div class="max-w-2xl mx-auto">
                 <div class="flex justify-center max-w-[90%] sm:max-w-[90%] mx-auto">
-                    <p class="text-lg sm:text-2xl text-center">
+                    <p class="text-lg sm:text-2xl text-center -mb-12 sm:mb-0 leading-[1.45rem]">
                         Por tanto, <span class="text-bold">si nuestros labios están juntos</span>, estamos
                         <span class="text-bold text-[#6610F2]">pronunciando la letra b</span> y si nuestros dientes están <span class="text-bold">sobre nuestro labio inferior</span>, 
                         estamos <span class="text-bold text-[#6610F2]"> pronunciando la letra v</span>. 
@@ -260,12 +269,12 @@ export async function getStaticPaths() {
                 
                 <div class="grid grid-cols-2 sm:gap-x-36 mb-14">
                   <div class="flex flex-col items-center">
-                    <img src="/images/svg/vyb/Boca_B.svg" alt="Sip" class="w-40 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
+                    <img src="/images/svg/vyb/Boca_B_2.svg" alt="Boca B 2" class="w-40 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
                     <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">B</p>
                   </div>
                   <div class="flex flex-col items-center">
-                      <img src="/images/svg/vyb/Boca_V.svg" alt="Zip" class="w-36 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] rotate-[17.53deg] origin-center 
-                                                                      tranform -translate-x-4 min-[350px]:-translate-x-2 sm:-mb-8">
+                      <img src="/images/svg/vyb/Boca_V_2.svg" alt="Boca V 2" class="w-36 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] origin-center 
+                                                                      tranform -translate-x-4 xs:translate-x-0 sm:-mb-8">
                       <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold mb-2 sm:mb-8">V</p>
                   </div>
                 </div>
