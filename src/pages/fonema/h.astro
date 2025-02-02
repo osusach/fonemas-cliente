@@ -93,7 +93,7 @@ export async function getStaticPaths() {
                 </div>
             </div>
           </section>          
-        <!-- Seccion de "Por ejemplo" -->
+        <!-- Seccion de "Por ejemplo Hear y Ear" -->
         <section class="mb-12 sm:mb-24">
             <div class="max-w-2xl mx-auto">
                 <p class="text-xl sm:text-3xl text-bold text-center -mb-12 sm:-mb-4">Por ejemplo:</p>
@@ -101,27 +101,26 @@ export async function getStaticPaths() {
                 <div class="grid grid-cols-2 sm:gap-x-48">
                     <div class="flex flex-col items-center">
                         <img src="/images/svg/vyb/Van.svg" alt="Van" class="w-56 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-8">
-                        <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-8">Van</p>
-                        <p class="text-xl sm:text-3xl text-extrabold text-center whitespace-nowrap">(tipo de automóvil)</p>
+                        <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold">Hear</p>
+                        <p class="text-xl sm:text-3xl text-extrabold text-center whitespace-nowrap">(con h-escuchar)</p>
                         <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                     </div>
                     <div class="flex flex-col items-center">
                         <img src="/images/svg/vyb/Ban.svg" alt="Ban" class="w-24 h-72 sm:w-36 sm:h-72 max-w-[70%] -mb-16 xl:max-w-[100%] sm:-mb-8">
-                        <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-8">Ban</p>
-                        <p class="text-xl sm:text-3xl text-extrabold whitespace-nowrap">(de prohibir)</p>
+                        <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold">Ear</p>
+                        <p class="text-xl sm:text-3xl text-extrabold whitespace-nowrap">(sin h-oreja)</p>
                         <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                     </div>
                 </div>
             </div>
-        </section>              
+        </section>                  
         <!-- Seccion de "Ejercicios de discriminacion" -->
         <section class="c1400:-mb-2">
             <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
-                <div class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-12"> 
+                <div class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-4"> 
                     <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
                         Una forma de hacernos conscientes de las
-                        <span class="text-bold">diferencias entre la escritura y la pronunciación
-                        </span> 
+                        <span class="text-bold">diferencias entre la escritura y la pronunciación</span> 
                         <span class="inline c1400:block">del castellano y del inglés es hacer</span>
                         <span class="text-bold text-[#6610F2] inline c1400:block">
                             ejercicios <span class="text-bold text-[#6610F2] inline c400:block c500:inline">de discriminación</span>
@@ -145,10 +144,9 @@ export async function getStaticPaths() {
         <!-- Seccion de "Pronuncia las siguientes palabras" -->
         <section class="mb-32 sm:mb-36">
             <p class="mt-4 text-lg sm:text-2xl text-center mb-48 max-w-[90%] sm:max-w-[50%] mx-auto leading-[1.45rem]">
-                Utiliza la siguiente lista para hacer un <span class="text-bold text-[#6610F2]">ejercicios </span>
+                Utiliza la siguiente lista para hacer un <span class="text-bold text-[#6610F2]">ejercicio </span>
                 <span class="inline c400:block c500:inline"> <span class="text-bold text-[#6610F2]">de discriminación</span>
-                 de las <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
-                <span class="text-bold text-[#6610F2]">b</span> en inglés:</span>
+                <span class="text-bold">de</span> <span class="text-bold text-[#6610F2]"> h:</span></span>
             </p>
 
             <div class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16 mb-12">
@@ -158,43 +156,43 @@ export async function getStaticPaths() {
                     <div class="w-full px-24 transform translate-y-4">
                         <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Vat</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Heel</p>
                                 <AudioPlayer audio_path={"/audio/vb/Vat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Bat</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Eel</p>
                                 <AudioPlayer audio_path={"/audio/vb/Vat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Vest</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hat</p>
                                 <AudioPlayer audio_path={"/audio/vb/Vest.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Best</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">At</p>
                                 <AudioPlayer audio_path={"/audio/vb/Best.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Vote</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hand</p>
                                 <AudioPlayer audio_path={"/audio/vb/Vote.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">Boat</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">And</p>
                                 <div class="w-24 h-24 sm:w-20 sm:h-20">
                                     <AudioPlayer audio_path={"/audio/vb/Boat.mp3"} className="" client:load/>
                                 </div>
                             </div>
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Veer</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hit</p>
                                 <AudioPlayer audio_path={"/audio/vb/Veer.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">Beer</p>
+                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">It</p>
                                 <div class="w-24 h-24 sm:w-20 sm:h-20">
                                     <AudioPlayer audio_path={"/audio/vb/Beer.mp3"} className="" client:load/>
                                 </div>
