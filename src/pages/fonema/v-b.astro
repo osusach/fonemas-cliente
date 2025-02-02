@@ -70,13 +70,13 @@ export async function getStaticPaths() {
                 </p>
             </div>
             <div class="flex justify-center items-center gap-12 sm:gap-24 mb-12">
-                <div class="text-center">
-                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl mb-2 sm:-mb-2 sm:leading-[79.36px]">Votar</p>
+                <div class="flex flex-col text-center justify-center items-center">
+                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Votar</p>
                     <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de tirar)</p>
                     <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                 </div>
-                <div class="text-center">
-                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl mb-2 sm:-mb-2 sm:leading-[79.36px]">Botar</p>
+                <div class="flex flex-col text-center justify-center items-center">
+                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Botar</p>
                     <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de voto)</p>
                     <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                 </div>
@@ -128,15 +128,16 @@ export async function getStaticPaths() {
             </div>
         </section>              
         <!-- Seccion de "Ejercicios de discriminacion" -->
-        <section class="c1400:-mb-12">
+        <section class="c1400:-mb-2">
             <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
                 <div class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-12"> 
                     <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
                         Una forma de hacernos conscientes de las
                         <span class="text-bold">diferencias entre la escritura y la pronunciación
-                        </span> del castellano y del inglés es hacer
-                        <span class="text-bold text-[#6610F2] inline c1400:block">ejercicios 
-                            <span class="text-bold text-[#6610F2] inline c400:block c500:inline">de discriminación</span>
+                        </span> 
+                        <span class="inline c1400:block">del castellano y del inglés es hacer</span>
+                        <span class="text-bold text-[#6610F2] inline c1400:block">
+                            ejercicios <span class="text-bold text-[#6610F2] inline c400:block c500:inline">de discriminación</span>
                         </span>.
                     </p>
                 </div>
@@ -156,7 +157,7 @@ export async function getStaticPaths() {
         </section>  
         <!-- Seccion de "Pronuncia las siguientes palabras" -->
         <section class="mb-32 sm:mb-36">
-            <p class="mt-4 text-lg sm:text-2xl text-center mb-48 max-w-[90%] sm:max-w-[40%] mx-auto leading-[1.45rem]">
+            <p class="mt-4 text-lg sm:text-2xl text-center mb-48 max-w-[90%] sm:max-w-[50%] mx-auto leading-[1.45rem]">
                 Utiliza la siguiente lista para hacer un <span class="text-bold text-[#6610F2]">ejercicios </span>
                 <span class="inline c400:block c500:inline"> <span class="text-bold text-[#6610F2]">de discriminación</span>
                  de las <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
