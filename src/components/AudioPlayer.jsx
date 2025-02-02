@@ -5,6 +5,8 @@ function AudioPlayer({audio_path, className}) {
   const [isAudioReady, setIsAudioReady] = useState(false);
   const [ref, inView, entry] = useInView({threshold: 0.1});
   const [audio, setAudio] = useState(null);
+  const [buttonSrc, setButtonSrc] = useState("/images/svg/global/Reproducir_Audio.svg")
+  
   useEffect(() => {
     if (!isAudioReady) {
       setAudio(new Audio(audio_path))
@@ -24,6 +26,11 @@ function AudioPlayer({audio_path, className}) {
       setIsAudioReady(true)
     }
     audio.play();
+    setButtonSrc("/images/svg/global/Pausar_Audio.svg")
+    audio.addEventListener("ended", () => {
+      setButtonSrc("/images/svg/global/Reproducir_Audio.svg")
+    })
+    
 }
 
   return (
@@ -34,7 +41,7 @@ function AudioPlayer({audio_path, className}) {
         ${className}`}
       >
         <img
-          src="/images/svg/global/Reproducir_Audio.svg"
+          src={buttonSrc}
           alt="Imagen de reproducir audio"
           className="w-full h-full p-2"
         />

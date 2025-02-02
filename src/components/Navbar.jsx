@@ -29,6 +29,10 @@ export function Navbar() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
+                    
+                    <a href="/" className="text-white text-bold text-xl hidden sm:block">Quienes somos</a>
+                    <a href="/" className="text-white text-bold text-xl hidden sm:block">Objetivos</a>
+                    <a href="/ohno" className="text-white text-bold text-xl hidden sm:block">Oh no, mi cerebro me engaña</a>
                     {/* Fonemas container */}
                     <section className="relative">
                         {/* NavBar fonemas button */}
@@ -80,8 +84,6 @@ export function Navbar() {
                             </div>
                         </div>
                     </section>
-                    <a href="/" className="text-white text-bold text-xl hidden sm:block">Quienes somos</a>
-                    <a href="/" className="text-white text-bold text-xl hidden sm:block">Objetivos</a>
                     <a href="/" className="text-white text-bold text-xl hidden sm:block">Extras</a>
                 </nav>
             </div>
