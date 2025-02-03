@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Menu } from "./Menu";
 
 export function Navbar() {
-    const [ilgenuOpen, setIlgenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isFonemasOpen, setIsFonemasOpen] = useState(false);
     const [isEjerciciosOpen, setIsEjerciciosOpen] = useState(false);
 
     const handleMenuOpen = () => {
-        setIlgenuOpen(!ilgenuOpen);
+        setIsMenuOpen(!isMenuOpen);
     }
 
     const handleFonemasToggle = () => {
@@ -91,7 +91,7 @@ export function Navbar() {
                     <a href="/" className="text-white text-bold text-xl hidden lg:block">Extras</a>
                 </nav>
             </div>
-            <Menu ilgenuOpen={ilgenuOpen} handleMenuOpen={handleMenuOpen} />
+            <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} />
         </>
     );
 }
