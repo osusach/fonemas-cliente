@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Menu } from "./Menu";
 
 export function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [ilgenuOpen, setIlgenuOpen] = useState(false);
     const [isFonemasOpen, setIsFonemasOpen] = useState(false);
     const [isEjerciciosOpen, setIsEjerciciosOpen] = useState(false);
 
     const handleMenuOpen = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIlgenuOpen(!ilgenuOpen);
     }
 
     const handleFonemasToggle = () => {
@@ -21,24 +21,25 @@ export function Navbar() {
     }
 
     return (
-        <section>
-            <div className="fixed bg-[#6610F2] text-white flex justify-center items-center w-full h-16">
-                <nav className="flex justify-end gap-12 w-[85%] lg:w-[75%] mx-auto">
-                    <button onClick={handleMenuOpen} className="p-2 sm:hidden">
+        <>
+            <div className="fixed bg-[#6610F2] text-white flex items-center w-full h-16">
+                <nav className="flex justify-end items-center gap-12 w-[85%] lg:w-[75%] mx-auto">
+                    <button onClick={handleMenuOpen} className="p-2 lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
-                    
-                    <a href="/" className="text-white text-bold text-xl hidden sm:block">Quienes somos</a>
-                    <a href="/" className="text-white text-bold text-xl hidden sm:block">Objetivos</a>
-                    <a href="/ohno" className="text-white text-bold text-xl hidden sm:block">Oh no, mi cerebro me engaña</a>
+
+                    <a href="/" className="text-white text-bold text-xl hidden lg:block">Quienes somos</a>
+                    <a href="/" className="text-white text-bold text-xl hidden lg:block">Objetivos</a>
+                    <a href="/ohno" className="text-white text-bold text-xl hidden lg:block">Oh no, mi cerebro me engaña</a>
+
                     {/* Fonemas container */}
-                    <section className="relative">
+                    <section className="relative hidden lg:block">
                         {/* NavBar fonemas button */}
                         <button
                             onClick={handleFonemasToggle}
-                            className="text-white text-bold text-xl hidden sm:block"
+                            className="text-white text-bold text-xl"
                         >
                             Fonemas
                         </button>
@@ -64,11 +65,11 @@ export function Navbar() {
                         </div>
                     </section>
                     {/* Ejercicios container */}
-                    <section className="relative">
+                    <section className="relative hidden lg:block">
                         {/* NavBar ejercicios button */}
                         <button
                             onClick={handleEjerciciosToggle}
-                            className="text-white text-bold text-xl hidden sm:block"
+                            className="text-white text-bold text-xl"
                         >
                             Ejercicios
                         </button>
@@ -87,10 +88,10 @@ export function Navbar() {
                             </div>
                         </div>
                     </section>
-                    <a href="/" className="text-white text-bold text-xl hidden sm:block">Extras</a>
+                    <a href="/" className="text-white text-bold text-xl hidden lg:block">Extras</a>
                 </nav>
             </div>
-            <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} />
-        </section>
+            <Menu ilgenuOpen={ilgenuOpen} handleMenuOpen={handleMenuOpen} />
+        </>
     );
 }
