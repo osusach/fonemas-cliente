@@ -4,7 +4,7 @@ export function Menu({ isMenuOpen, handleMenuOpen }) {
     return (
         <div
         onClick={handleMenuOpen}
-        className="bg-black bg-opacity-50 absolute top-0 left-0 z-10 w-full h-[calc(100vh-64px)] mt-16"
+        className="bg-black bg-opacity-50 fixed z-10 w-full h-[calc(100vh-64px)] mt-16 lg:hidden"
         >
             <menu onClick={(e) => e.stopPropagation()}
             className="bg-[#6610f2] text-white text-right"

@@ -1,6 +1,7 @@
 ---
-import AudioPlayer from '../components/AudioPlayer';
 import Layout from '../layouts/Layout.astro';
+import AudioPlayer from '../components/AudioPlayer';
+import RevealButton from '../components/landing/RevealButton';
 ---
 
 <Layout>
@@ -27,24 +28,19 @@ import Layout from '../layouts/Layout.astro';
             sm:text-6xl
             col-span-12"
             >
-                Mi cerebro me engaña al leer en <span class="text-[#6610F2] text-bold">inglés</span>...
+                Mi cerebro me engaña al leer <span class="text-[#6610F2] text-bold">inglés</span>...
             </p>
         </section>
         <!-- Seccion de "¿Cómo puedo aprender?" -->
         <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-20 sm:mt-24">
-            <div
+            <p
             class="text-center
             text-base
             sm:text-2xl
             col-span-12"
             >
-                <p>
-                    Para que puedas notar <span class="text-bold">cómo tu cerebro te engaña al leer una <span class="text-bold">palabra en </span></span>
-                </p>
-                <p>
-                  <span class="text-[#6610F2] ">inglés, </span>pon atención a los siguientes pares de palabras:
-                </p>
-            </div>
+                Para que puedas notar <span class="text-bold">cómo tu cerebro te engaña al leer una palabra en </span><span class="text-[#6610F2] text-bold">inglés, </span>pon atención a los siguientes pares de palabras:
+            </p>
             <div class="
             col-span-6 place-items-center
             sm:col-span-2 sm:col-start-4">
@@ -125,23 +121,22 @@ import Layout from '../layouts/Layout.astro';
             alt="Estrella"
             class="object-contain
             w-[104px]
-            col-span-2"
+            col-span-2 place-self-center"
             />
-            <div
+            <p
             class="text-center
             text-base
             sm:text-2xl
             col-span-8 col-start-3"
             >
-                <p>De los cuatro pares de palabras que leíste,</p>
-                <p class="text-bold">¿cuáles son <span class="text-[#6610F2]">iguales</span> y cuáles son <span class="text-[#6610F2]">diferentes</span>?</p>
-            </div>
+                De los cuatro pares de palabras que leíste,<span class="text-bold">¿cuáles son <span class="text-[#6610F2]">iguales</span> y cuáles son <span class="text-[#6610F2]">diferentes</span>?</span>
+            </p>
             <img 
             src="/images/svg/global/Estrella.svg"
             alt="Estrella"
             class="object-contain
             w-[104px]
-            col-span-2 col-start-11 place-self-end"
+            col-span-2 col-start-11 place-self-center"
             />
             <div
             class="mt-8
@@ -169,14 +164,7 @@ import Layout from '../layouts/Layout.astro';
             sm:w-[165px]
             sm:col-span-3 sm:col-start-7 sm:place-self-center"
             />
-            <button class="mt-8
-            col-span-5 col-start-9
-            sm:col-span-4 sm:col-start-10">
-                <img
-                src="/images/svg/landing/Revelar_Button.svg"
-                alt="Boton de revelar"
-                class="" />
-            </button>
+            <RevealButton word={"Diferentes"} client:load/>
             <div
             class="mt-8
             col-span-3 col-start-1 place-items-center"
@@ -203,14 +191,7 @@ import Layout from '../layouts/Layout.astro';
             sm:w-[165px]
             sm:col-span-3 sm:col-start-7 sm:place-self-center"
             />
-            <button class="mt-8
-            col-span-5 col-start-9
-            sm:col-span-4 sm:col-start-10">
-                <img
-                src="/images/svg/landing/Revelar_Button.svg"
-                alt="Boton de revelar"
-                class="" />
-            </button>
+            <RevealButton word={"Iguales"} client:load/>
             <div
             class="
             mt-8
@@ -239,14 +220,7 @@ import Layout from '../layouts/Layout.astro';
             sm:w-[165px]
             sm:col-span-3 sm:col-start-7 sm:place-self-center"
             />
-            <button class="mt-8
-            col-span-5 col-start-9
-            sm:col-span-4 sm:col-start-10">
-                <img
-                src="/images/svg/landing/Revelar_Button.svg"
-                alt="Boton de revelar"
-                class="" />
-            </button>
+            <RevealButton word={"Iguales"} client:load/>
             <div
             class="
             mt-8
@@ -275,32 +249,15 @@ import Layout from '../layouts/Layout.astro';
             sm:w-[165px]
             sm:col-span-3 sm:col-start-7 sm:place-self-center"
             />
-            <button class="mt-8
-            col-span-5 col-start-9
-            sm:col-span-4 sm:col-start-10">
-                <img
-                src="/images/svg/landing/Revelar_Button.svg"
-                alt="Boton de revelar"
-                class="" />
-            </button>
+            <RevealButton word={"Diferentes"} client:load/>
         </section>
         <!-- Sección de "Tal como puedes notar" -->
         <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
-            <div class="place-content-center
-            text-base
-            col-span-9
+            <p class="text-base
+            col-span-9 place-content-center
             sm:text-2xl">
-                <p>
-                    Tal como puedes haber notado, la forma en que <span class="text-bold">están</span>
-                </p>
-                <p>
-                    <span class="text-bold">escritas las palabras</span> y <span class="text-bold">cómo las leemos</span> son <span class="text-[#6610F2] text-bold">dos cosas</span>
-                </p>
-                <p>
-                    <span class="text-[#6610F2] text-bold">distintas</span>. Por ejemplo, <span class="text-[#6610F2] text-bold">fur</span> y <span class="text-[#6610F2] text-bold">fir</span> se <span class="text-bold">escriben distinto,</span>
-                </p>
-                <p><span class="text-bold">escriben distinto, pero se pronuncian igual</span>.</p> 
-            </div>
+                Tal como puedes haber notado, la forma en que <span class="text-bold">están escritas las palabras</span> y <span class="text-bold">cómo las leemos</span> son <span class="text-[#6610F2] text-bold">dos cosas distintas</span>. Por ejemplo, <span class="text-[#6610F2] text-bold">fur</span> y <span class="text-[#6610F2] text-bold">fir</span> se <span class="text-bold">escriben distinto, escriben distinto, pero se pronuncian igual</span>.
+            </p>
             <img
             src="/images/svg/landing/Emoji_Bombilla.svg"
             alt="Emoji bombilla"
