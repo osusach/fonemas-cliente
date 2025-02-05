@@ -11,6 +11,9 @@ export default {
 				'c550': '550px',
 				'c1400': '1400px',
 			},
+			spacing: {
+				'16': '4rem',
+			  },
 			animation: {
 				'fade-in': 'fadeIn 0.5s ease-out forwards',
 			  },

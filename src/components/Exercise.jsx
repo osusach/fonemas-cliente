@@ -2,23 +2,25 @@ import AudioPlayer from "./AudioPlayer";
 
 export function Exercise() {
     return (
-        <article className="flex flex-col h-[calc(100vh-64px)]">
-            <nav className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-2">
-                <a
-                href="/fonema/z"
-                className="text-xs underline
-                col-span-12">
-                    Fonema /z/
-                </a>
-                <img
-                src="/images/svg/z/Ejercicios_Z.svg"
-                alt="Titulo de ejercicios" 
-                class="w-[206px] h-[93px] object-contain
-                col-span-6 col-start-4 place-self-center
-                lg:w-[477px]]"
-                />
-            </nav>
-            <div className="flex flex-col justify-center space-y-8 h-[calc(100vh-64px)]">
+        <article className="relative flex flex-col h-[calc(100vh-64px)]">
+            <div className="absolute flex justify-center w-full">
+                <div className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-2">
+                    <a
+                    href="/fonema/z"
+                    className="text-xs underline
+                    col-span-12">
+                        Fonema /z/
+                    </a>
+                    <img
+                    src="/images/svg/z/Ejercicios_Z.svg"
+                    alt="Titulo de ejercicios" 
+                    class="w-[206px] h-[93px] object-contain
+                    col-span-6 col-start-4 place-self-center
+                    lg:w-[477px]]"
+                    />
+                </div>
+            </div>
+            <div className="flex flex-col justify-center space-y-8 sm:space-y-16 h-[calc(100vh-64px)]">
                 <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
                     <img src="/images/svg/global/Estrella.svg" 
                     alt="Imagen de estrella"
