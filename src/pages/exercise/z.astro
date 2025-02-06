@@ -1,56 +1,23 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Exercise } from "../../components/Exercise";
+
+const text = `
+<p
+class="text-base text-center
+sm:text-2xl"
+>
+    Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene <span class="text-[#6610F2]">s</span> o <span class="text-[#6610F2]">z</span></span>.
+</p>
+`;
 ---
 
 <Layout title="Exercises">
-    <article class="relative flex flex-col h-[calc(100vh-64px)]">
-        <div class="absolute flex justify-center w-full">
-            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-2">
-                <!-- Link to fonema /z/ -->
-                <a
-                href="/fonema/z"
-                class="text-xs underline
-                col-span-12">
-                    Fonema /z/
-                </a>
-                <!-- Title -->
-                <img
-                src="/images/svg/z/Ejercicios_Z.svg"
-                alt="Titulo de ejercicios" 
-                class="w-[206px] h-[93px] object-contain
-                col-span-6 col-start-4 place-self-center
-                lg:w-[477px]]"
-                />
-            </div>
-        </div>
-        <div class="flex flex-col justify-center space-y-8 sm:space-y-16 h-[calc(100vh-64px)]">
-            <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-                <!-- Left start -->
-                <img src="/images/svg/global/Estrella.svg" 
-                alt="Imagen de estrella"
-                class="
-                col-span-2 row-span-2 col-start-1 row-start-1 place-self-end
-                lg:col-span-2 lg:row-span-1 lg:col-start-1 lg:row-start-1"
-                />
-                <div class="col-span-8 col-start-3 place-content-center">
-                    <!-- Text -->
-                    <p
-                    class="text-base text-center
-                    sm:text-2xl"
-                    >
-                        Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene <span class="text-[#6610F2]">s</span> o <span class="text-[#6610F2]">z</span></span>.
-                    </p>
-                </div>
-                <!-- Right start -->
-                <img src="/images/svg/global/Estrella.svg" 
-                alt="Imagen de estrella"
-                class="scale-x-[-1]
-                col-span-2 row-span-2 col-start-11 row-start-1 place-self-end
-                lg:col-span-2 lg:row-span-1 lg:col-start-11 lg:row-start-1"
-                />
-            </section>
-            <Exercise fonema={"z"} client:load/>
-        </div>  
-    </article>
+    <Exercise
+    fonema={"z"}
+    routeOfFonema={"/fonema/z"}
+    routeOfTitleSVG={"/images/svg/z/Ejercicios_Z.svg"}
+    text={text}
+    client:load
+    />
 </Layout>
