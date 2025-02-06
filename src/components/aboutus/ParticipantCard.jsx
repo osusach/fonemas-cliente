@@ -9,14 +9,14 @@ function ParticipantCard({is_leftsided = true, img_src, name, email, role, class
             <div class="h-full flex flex-col justify-center">
                 <div class={`h-[40%] flex flex-col justify-between ms-4 me-4 ${!is_leftsided && "text-end"}`}>
                     <div class={`text-[#6610F2]`}>
-                        <h1 class="text-lg sm:text-3xl text-extrabold">
+                        <h1 class="text-base sm:text-3xl text-extrabold">
                             {name}
                         </h1>
-                        <p class="underline text-sm sm:text-xl text-bold">
+                        <p class="underline text-xs sm:text-xl text-bold">
                             {email}
                         </p>
                     </div>
-                    <p class="text-base sm:text-2xl text-bold">
+                    <p class="text-xs sm:text-2xl text-bold">
                         {role}
                     </p>
                 </div>
