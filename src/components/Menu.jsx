@@ -17,13 +17,13 @@ export function Menu({ isMenuOpen, handleMenuOpen }) {
     return (
         <div
         onClick={handleMenuOpen}
-        className="bg-black bg-opacity-50 fixed z-10 w-full h-[calc(100vh-64px)] mt-16 lg:hidden"
+        className="bg-black bg-opacity-50 fixed z-10 w-full h-full mt-16 lg:hidden"
         >
             <menu onClick={(e) => e.stopPropagation()}
             className="bg-[#6610f2] text-white text-right"
             >
                 <nav className="flex flex-col justify-center w-[85%] mx-auto p-2">
-                    <a href="/" className="text-white text-bold text-xl">Quienes somos</a>
+                    <a href="/nosotros" className="text-white text-bold text-xl">Quienes somos</a>
                     <a href="/" className="text-white text-bold text-xl mt-4">Objetivos</a>
                     <a href="/ohno" className="text-white text-bold text-xl mt-4">Oh no, mi cerebro me engaña</a>
                     <button onClick={handleFonemasToggle} className="text-white text-bold text-right text-xl mt-4">Fonemas</button>
