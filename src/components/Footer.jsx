@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="bg-[#6610F2] w-screen py-8 h-auto flex items-center justify-center">
+    <div className="bg-[#6610F2] w-full  py-8 h-auto flex items-center justify-center">
       <div className="sm:w-[60%] w-[90%]">
         <div className="flex flex-col sm:grid sm:grid-cols-12 grid-rows-6 sm:grid-rows-3 gap-[15px] mx-auto text-[#f4f0ff] sm:text-base text-sm font-medium auto-rows-max">
           <div className="col-start-1 col-span-1 sm:col-span-2 flex items-center justify-center sm:absolute">
