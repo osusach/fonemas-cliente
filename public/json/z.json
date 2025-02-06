@@ -1,0 +1,28 @@
+{
+    "audios": [
+        {
+            "name": "Socket",
+            "correct_answer": "s"
+        },
+        {
+            "name": "Signal",
+            "correct_answer": "s"
+        },
+        {
+            "name": "ZigZag",
+            "correct_answer": "z"
+        },
+        {
+            "name": "Zero",
+            "correct_answer": "z"
+        },
+        {
+            "name": "Secret",
+            "correct_answer": "s"
+        },
+        {
+            "name": "Zing",
+            "correct_answer": "z"
+        }
+    ]
+}

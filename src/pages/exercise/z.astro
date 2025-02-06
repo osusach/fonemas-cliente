@@ -1,81 +1,56 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { AudioPlay } from '../../components/z/AudioPlay';
-
-export async function getStaticPaths() {
-  return [
-    { params: { fonema: 'z' } }
-  ];
-}
+import Layout from "../../layouts/Layout.astro";
+import { Exercise } from "../../components/Exercise";
 ---
 
-<Layout title="Fonemas exercises">
-    <article class="flex flex-col justify-between mt-8">
-        <section class="w-full mx-auto">
-            <nav>
-                <a href="/fonema/z">
-                    <button class="underline sm:text-lg text-xl lg:text-2xl ml-4 lg:ml-0">
-                        Fonema /z/
-                    </button>
+<Layout title="Exercises">
+    <article class="relative flex flex-col h-[calc(100vh-64px)]">
+        <div class="absolute flex justify-center w-full">
+            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-2">
+                <!-- Link to fonema /z/ -->
+                <a
+                href="/fonema/z"
+                class="text-xs underline
+                col-span-12">
+                    Fonema /z/
                 </a>
-            </nav>
-        </section>
-        <section>
-            <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
                 <!-- Title -->
                 <img
                 src="/images/svg/z/Ejercicios_Z.svg"
                 alt="Titulo de ejercicios" 
-                class="w-[206px] h-[93px] place-self-center
-                col-span-6 col-start-4 
-                lg:w-[552px] lg:h-[160px]"
-                >
+                class="w-[206px] h-[93px] object-contain
+                col-span-6 col-start-4 place-self-center
+                lg:w-[477px]]"
+                />
             </div>
-        </section>
-        <section class="grid grid-cols-12 gap-[15px] w-[85%] mx-auto">
-            <!-- Text -->
-            <div
-            class="text-[16px] text-center 
-            col-span-12 row-span-2 col-start-1 row-start-1
-            md:text-xl
-            lg:text-4xl"
-            >
-                <!-- Base text -->
-                <p>
-                    Ahora vas a <span class="text-bold">escuchar palabras</span> y vas a
-                </p>
-                <!-- Text for mobile and tablet -->
-                <p class="block lg:hidden">
-                    <span class="text-bold">seleccionar si la palabra</span>
-                </p>
-                <p class="block lg:hidden">
-                    <span class="text-bold">tiene </span><span class="text-[#6610F2]">s <span class="text-black text-bold">o</span> z.</span>
-                </p>
-                <!-- Text for desktop -->
-                <p class="hidden lg:block">
-                    <span class="text-bold">seleccionar si la palabra</span> <span class="text-bold">tiene </span><span class="text-[#6610F2]">s <span class="text-black text-bold">o</span> z.</span>
-                </p>
-            </div>
-            <!-- Left start -->
-            <img src="/images/svg/global/Estrella.svg" 
-            alt="Imagen de estrella"
-            class="max-w-[58px] object-contain
-            col-span-2 row-span-2 col-start-1 row-start-2 place-self-center
-            md:col-span-2 md:col-start-1 md:row-start-1
-            lg:max-w-[104px]
-            lg:row-span-1 lg:col-start-1 lg:row-start-1"
-            />
-            <!-- Right start -->
-            <img src="/images/svg/global/Estrella.svg" 
-            alt="Imagen de estrella"
-            class="max-w-[58px] object-contain scale-x-[-1]
-            col-span-2 row-span-2 col-start-11 row-start-2 place-self-center
-            md:col-span-2 md:col-start-11 md:row-start-1
-            lg:max-w-[104px]
-            lg:row-span-1 lg:col-start-11 lg:row-start-1"
-            />
-        </section>
-        <!-- Rest of the page -->
-        <AudioPlay client:load/>
+        </div>
+        <div class="flex flex-col justify-center space-y-8 sm:space-y-16 h-[calc(100vh-64px)]">
+            <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <!-- Left start -->
+                <img src="/images/svg/global/Estrella.svg" 
+                alt="Imagen de estrella"
+                class="
+                col-span-2 row-span-2 col-start-1 row-start-1 place-self-end
+                lg:col-span-2 lg:row-span-1 lg:col-start-1 lg:row-start-1"
+                />
+                <div class="col-span-8 col-start-3 place-content-center">
+                    <!-- Text -->
+                    <p
+                    class="text-base text-center
+                    sm:text-2xl"
+                    >
+                        Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene <span class="text-[#6610F2]">s</span> o <span class="text-[#6610F2]">z</span></span>.
+                    </p>
+                </div>
+                <!-- Right start -->
+                <img src="/images/svg/global/Estrella.svg" 
+                alt="Imagen de estrella"
+                class="scale-x-[-1]
+                col-span-2 row-span-2 col-start-11 row-start-1 place-self-end
+                lg:col-span-2 lg:row-span-1 lg:col-start-11 lg:row-start-1"
+                />
+            </section>
+            <Exercise fonema={"z"} client:load/>
+        </div>  
     </article>
 </Layout>
