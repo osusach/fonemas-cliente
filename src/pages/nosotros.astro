@@ -1,0 +1,58 @@
+---
+import ParticipantCard from '../components/aboutus/ParticipantCard';
+import Layout from '../layouts/Layout.astro';
+
+---
+
+
+<Layout>
+    <article class="flex flex-col my-8 w-[85%] sm:w-[80%] items-center justify-center">
+        <!-- Introduccion -->
+        <section class="flex flex-col justify-center text-xl sm:text-3xl text-center items-center w-full">
+            <img src="/images/svg/nosotros/Quienes_Somos.svg" alt="" class="my-5 sm:my-10">
+
+            <p class="my-5 sm:my-10">
+                Somos un grupo de profesores y lingüistas de la <span class="text-bold">Escuela de Pedagogías en Inglés de la Facultad de Ciencias de la Educación de la <span class="text-[#6610F2]">Universidad de Talca</span></span>.
+            </p>
+
+            <p class="my-5 sm:my-10">
+                Esta <span class="text-bold text-[#6610F2]">página web</span> se enmarca en el <span class="text-bold">Proyecto Fondecyt de Iniciación, n. 11221032</span>, financiado por la <span class="text-bold">Agencia Nacional de Investigación y Desarrollo (ANID)</span> y liderado por la <span class="text-bold text-[#6610F2]">Dra. Karina Cerda Oñate</span>.
+            </p>
+
+            <p class="my-5 sm:my-10">
+                Para crear esta <span class="text-bold text-[#6610F2]">página</span> hemos colaborado activamente en distintas dimensiones. <span class="text-bold">Creamos el material pedagógico, grabamos los videos y dibujamos las imágenes de la web</span>.
+            </p>
+
+            <p class="my-5 sm:my-10">
+                Además, recibimos la ayuda de un grupo de <span class="underline text-bold"><a href="">desarrolladores de la USACH.</a></span>.
+            </p>
+
+            <p class="text-2xl sm:text-4xl text-[#6610F2] text-bold my-5 sm:my-10">¡Esperamos que disfrutes y aproveches este recurso!</p>
+            <img
+            src="/images/svg/global/Destacado.svg"
+            alt="Destacado"
+            class="object-contain
+            w-[30vw]
+            sm:w-[10vw]
+            "
+            />
+
+        </section>
+
+        <!-- Participantes -->
+        <section class="mt-16">
+            <div class="w-full grid grid-cols-1 ">
+                
+                <ParticipantCard is_leftsided={true} img_src="/images/png/nosotros/Karina.png" name="Dra. Karina Cerda Oñate" email="karina.cerda.o@gmail.com" role="Investigadora responsable" className="w-full h-[25vh] sm:h-[40vh]"/>
+                <ParticipantCard is_leftsided={false} img_src="/images/png/nosotros/Maria.png" name="Prof. María Ignacia Urtubia" email="murtubia17@alumnos.utalca.cl" role="Diseño de material didáctico" className="w-full h-[25vh] sm:h-[40vh]"/>
+                <ParticipantCard is_leftsided={true} img_src="/images/png/nosotros/Rodrigo.png" name="Prof. Rodrigo Santis" email="rsantis18@alumnos.utalca.cl" role="Grabaciones y gestión de proyecto" className="w-full h-[25vh] sm:h-[40vh]"/>
+                <ParticipantCard is_leftsided={false} img_src="/images/png/nosotros/Adrian.png" name="Prof. Adrián Naranjo" email="anaranjo20@alumnos.utalca.cl" role="Voz e imagen en videos" className="w-full h-[25vh] sm:h-[40vh]"/>
+                <ParticipantCard is_leftsided={true} img_src="/images/png/nosotros/Victoria.png" name="Prof. Victoria Peldoza" email="vpeldoza20@alumnos.utalca.cl" role="Ilustraciones de la página" className="w-full h-[25vh] sm:h-[40vh]"/>
+                
+            </div>
+        </section>
+
+    </article>
+
+
+</Layout>
