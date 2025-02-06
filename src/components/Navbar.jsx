@@ -30,7 +30,7 @@ export function Navbar() {
                         </svg>
                     </button>
 
-                    <a href="/" className="text-white text-bold text-xl hidden lg:block">Quienes somos</a>
+                    <a href="/nosotros" className="text-white text-bold text-xl hidden lg:block">Quienes somos</a>
                     <a href="/" className="text-white text-bold text-xl hidden lg:block">Objetivos</a>
                     <a href="/ohno" className="text-white text-bold text-xl hidden lg:block">Oh no, mi cerebro me engaña</a>
 
