@@ -24,7 +24,7 @@ export async function getStaticPaths() {
         </section>        
         <!-- Seccion de "Es decir, siempre pronunciamos con la" -->
         <section class="sm:mb-8">
-            <div class="flex justify-center max-w-[90%] sm:max-w-[40%] mx-auto ">
+            <div class="flex justify-center max-w-[90%] sm:max-w-[40%] mx-auto">
                 <p class="text-lg sm:text-2xl text-center mb-12">
                     Es decir, siempre pronunciamos con la <span class="text-bold text-[#6610F2]">letra b</span> las palabras escritas con las 
                     <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
@@ -69,18 +69,20 @@ export async function getStaticPaths() {
                     <span class="text-bold text-[#6610F2]">b</span> y las pronunciaríamos igual:
                 </p>
             </div>
-            <div class="flex justify-center items-center gap-12 sm:gap-24 mb-12">
-                <div class="flex flex-col text-center justify-center items-center">
-                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Votar</p>
-                    <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de tirar)</p>
-                    <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+            <div class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-2 sm:gap-x-48 mb-14">
+                    <div class="flex flex-col text-center justify-center items-center">
+                        <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Votar</p>
+                        <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de tirar)</p>
+                        <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+                    </div>
+                    <div class="flex flex-col text-center justify-center items-center">
+                        <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Botar</p>
+                        <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de voto)</p>
+                        <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+                    </div>
                 </div>
-                <div class="flex flex-col text-center justify-center items-center">
-                    <p class="text-extrabold text-[#6610F2] text-4xl sm:text-6xl sm:-mb-2 sm:leading-[79.36px]">Botar</p>
-                    <p class="text-2xl sm:text-3xl text-extrabold mb-2">(de voto)</p>
-                    <AudioPlayer audio_path={"/audio/z/Secret.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                </div>
-            </div>  
+            </div>
             <div class="flex justify-center max-w-[90%] sm:max-w-[47%] mx-auto ">
                 <p class="text-lg sm:text-2xl text-center mb-12 leading-[1.45rem]">
                     Aunque sabríamos que la <span class="text-bold">ortografía no es la correcta, </span>
@@ -95,7 +97,7 @@ export async function getStaticPaths() {
                 <div class="col-end-13 col-span-12 c500:col-end-13 c500:col-span-7 sm:max-w-[80%] ml-auto sm:col-end-13 sm:col-span-9 lg:col-end-13 lg:col-span-7"> 
                     <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
                         En inglés, las <span class="text-bold">letras</span> <span class="text-bold text-[#6610F2]">v</span> <span class="text-bold">y</span> 
-                        <span class="text-bold text-[#6610F2]">b</span>al inicio de una
+                        <span class="text-bold text-[#6610F2]">b</span> al inicio de una
                         <span class="inline xs:inline c400:block c500:inline">palabra tiene <span class="text-bold">pronunciaciones distintas y</span></span>
                         <span class="inline xs:inline c400:block c500:inline"><span class="text-bold">significados distintos.</span></span>
                     </p>
@@ -105,7 +107,7 @@ export async function getStaticPaths() {
                     <img src="/images/svg/global/Estrella.svg" alt="Estrella" class="w-48 h-48 sm:w-56 sm:h-56">
                 </div>
             </div>
-          </section>          
+        </section>          
         <!-- Seccion de "Por ejemplo Van y Ban" -->
         <section class="mb-12 sm:mb-24">
             <div class="max-w-2xl mx-auto">
@@ -177,7 +179,7 @@ export async function getStaticPaths() {
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Bat</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+                                <AudioPlayer audio_path={"/audio/vb/Bat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
         
                             <div class="flex flex-col items-center mb-8">
@@ -197,9 +199,7 @@ export async function getStaticPaths() {
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">Boat</p>
-                                <div class="w-24 h-24 sm:w-20 sm:h-20">
-                                    <AudioPlayer audio_path={"/audio/vb/Boat.mp3"} className="" client:load/>
-                                </div>
+                                <AudioPlayer audio_path={"/audio/vb/Boat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Veer</p>
@@ -208,9 +208,7 @@ export async function getStaticPaths() {
         
                             <div class="flex flex-col items-center mb-8">
                                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">Beer</p>
-                                <div class="w-24 h-24 sm:w-20 sm:h-20">
-                                    <AudioPlayer audio_path={"/audio/vb/Beer.mp3"} className="" client:load/>
-                                </div>
+                                <AudioPlayer audio_path={"/audio/vb/Beer.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
                             </div>
                         </div>
                     </div>
