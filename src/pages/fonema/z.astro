@@ -180,7 +180,7 @@ export async function getStaticPaths() {
       </div>
   </section> 
     <!-- Seccion de "Pronuncia las siguientes palabras" -->
-    <section class="mb-20 sm:mb-24">
+    <section class="mb-48 sm:mb-80">
       <p
         class="mt-4 text-lg sm:text-2xl text-center mb-24 max-w-[70%] sm:max-w-[40%] mx-auto leading-[1.45rem]"
       >
@@ -200,8 +200,8 @@ export async function getStaticPaths() {
           class="w-full transform -translate-y-48 sm:-translate-y-36"
         />
 
-        <div class="absolute inset-0 flex items-center justify-center z-50">
-          <div class="w-full px-24 transform translate-y-4">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-full px-24 transform translate-y-20 sm:translate-y-32">
             <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
               <div class="flex flex-col items-center mb-8">
                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
@@ -274,66 +274,44 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/global/Contenedor_Audios_Inferior.svg"
           alt="Contenedor de Audios Parte Inferior"
-          class="w-full transform translate-y-40 sm:translate-y-28 z-0"
+          class="w-full transform translate-y-40 sm:translate-y-28 -z-10 absolute"
         />
       </div>
     </section>
     <!-- Seccion de "Como podemos pronunciar el fonema" -->
     <section class="-mb-32 c400:-mb-44 xl:-mb-48">
-      <p
-        class="mt-4 text-4xl sm:text-3xl text-bold text-center mb-16 max-w-[80%] mx-auto leading-[1.45rem]"
-      >
+      <p class="mt-4 text-xl sm:text-3xl text-bold text-center mb-16 max-w-[62%] mx-auto leading-[1.45rem]">
         ¿Cómo podemos<span class="text-[#6610F2]"> pronunciar z</span>
         en inglés?
       </p>
 
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-        <div
-          class="col-start-1 col-span-12 -mb-16 sm:col-start-1 sm:col-span-7 sm:mb-16 xl:col-span-7 xl:mb-8"
-        >
-          <p class="text-3xl sm:text-2xl text-left leading-[1.45rem]">
-            Partimos <span class="text-bold"
-              >pronunciando la letra s en castellano.</span
-            >
-            Luego, mientras estamos pronunciando la <span class="text-bold"
-              >letra s,</span
-            > ponemos dos dedos sobre nuestra garagnta e <span class="text-bold"
-              >imitamos el zumbido de una abeja.</span
-            >
-          </p>
+        <div class="col-start-1 col-span-12 -mb-16 max-w-[97%] sm:col-start-1 sm:col-span-7 sm:mb-16 sm:max-w-[100%] xl:col-span-7 xl:mb-8">
+            <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
+                Partimos <span class="text-bold">pronunciando la letra s en castellano</span>.
+                Luego, mientras estamos pronunciando la <span class="text-bold">letra s</span>, 
+                ponemos dos dedos sobre nuestra garganta e 
+                <span class="text-bold">imitamos el zumbido de una abeja</span>.
+            </p>
         </div>
-        <div
-          class="col-start-7 col-span-5 sm:col-start-8 sm:col-span-4 flex justify-center items-center"
-        >
-          <img
-            src="/images/svg/global/Nota_Musical.svg"
-            alt="Nota Musical"
-            class="w-40 h-40 transform sm:rotate-[0deg] rotate-[31.53deg] translate-y-2 min-[350]:translate-x-8 sm:-translate-y-6 translate-x-4"
-          />
+        <div class="col-start-7 col-span-5 sm:col-start-8 sm:col-span-4 flex justify-center items-center">
+            <img src="/images/svg/global/Nota_Musical.svg" alt="Nota Musical" class="w-40 h-40 transform sm:rotate-[0deg] rotate-[31.53deg] translate-y-2 min-[350]:translate-x-8 sm:-translate-y-6 translate-x-4">
         </div>
-
-        <div
-          class="col-end-13 col-span-12 ml-auto sm:col-end-13 sm:col-span-7 transform -translate-y-8 sm:translate-y-4"
-        >
-          <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
-            <span class="text-bold"
-              >Si vibra la garganta, estás pronunciando la <span
-                class="text-[#6610F2]">letra z</span
-              >;
-            </span>si no vibra como el zumbida de una abeja, estás pronunciando
-            la <span class="text-bold">letra s</span>
-          </p>
+    
+        <div class="col-end-13 col-span-12 ml-auto sm:col-end-13 sm:col-span-8 transform -translate-y-8 sm:translate-y-4">
+            <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
+                <span class="text-bold">Si vibra la garganta, </span>
+                <span class="text-bold">estás pronunciando la <span class="text-[#6610F2]">letra z</span>;</span> 
+                <span class="block xs:inline c400:block sm:inline xl:block">si no vibra como el zumbido de una abeja, estás</span>
+                <span class="block c400:block c550:inline sm:inline">pronunciando la</span>
+                <span class="text-bold block xs:inline c400:block sm:inline">letra s</span>.
+            </p>
         </div>
-
         <div class="col-start-1 col-span-7 flex justify-center items-center">
-          <img
-            src="/images/png/abeja.png"
-            alt="Abeja"
-            class="w-48 h-48 sm:w-72 sm:h-72 transform -translate-y-32 -translate-x-4 c400:-translate-y-44
-                                                                        c550:-translate-y-52 c550:-translate-x-20 sm:-translate-y-48 sm:-translate-x-12"
-          />
-        </div>
-      </div>
+          <img src="/images/png/abeja.png" alt="Abeja" class="w-48 h-48 sm:w-72 sm:h-72 transform -translate-y-32 -translate-x-4 c400:-translate-y-36 
+                                                              c550:-translate-y-52 c550:-translate-x-20 sm:-translate-y-48 sm:-translate-x-12 ">
+        </div> 
+      </div> 
     </section>
     <section class="mt-10">
       <div
@@ -356,21 +334,21 @@ export async function getStaticPaths() {
           Tu navegador no admite el elemento <code>video</code>.
         </video>
         <span
-          class="col-start-2 col-span-4 text-center text-6xl text-extrabold text-[#6610F2] my-auto"
+          class="col-start-2 col-span-4 text-center text-4xl sm:text-6xl text-extrabold text-[#6610F2] my-auto"
           >Letra s</span
         >
         <span
-          class="col-start-8 col-span-4 text-center text-6xl text-extrabold text-[#6610F2] my-auto"
+          class="col-start-8 col-span-4 text-center text-4xl sm:text-6xl text-extrabold text-[#6610F2] my-auto"
           >Letra z</span
         >
       </div>
     </section>
     <!-- Seccion de "Pronuncia las siguientes palabras" -->
-    <section class="mb-80">
+    <section class="mb-96">
       <p
-        class="text-3xl sm:text-2xl text-center mb-80 max-w-[80%] sm:max-w-[43%] mx-auto leading-[1.45rem]"
+        class="text-lg sm:text-2xl text-center mb-24 sm:mb-64 max-w-[80%] sm:max-w-[45%] mx-auto leading-[1.45rem]"
       >
-        Ahora, pon tu mano sobre tu garganta y sin escuchar los audios, <span
+        Ahora, pon dos dedos sobre tu garganta y sin escuchar los audios, <span
           class="text-bold text-[#6610F2]"
           ><br class="hidden min-[400px]:block max-[450px]:block" /> pronuncia las
           siguientes palabras:</span
@@ -383,21 +361,25 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/global/Contenedor_Audios_Superior.svg"
           alt="Contenedor de Audios Parte Superior"
-          class="w-full transform -translate-y-48 sm:-translate-y-80"
+          class="w-full transform -translate-y-48 sm:-translate-y-64"
         />
-        <div class="absolute inset-0 flex items-center justify-center z-50">
-          <div class="w-full px-24 transform translate-y-4">
-            <div class="flex justify-between items-center mb-20">
-              <img
-                src="/images/svg/z/Sin_Voz.svg"
-                alt="Imagen que representa una persona con la boca cerrada"
-              />
-              <img
-                src="/images/svg/z/Con_Voz.svg"
-                alt="Imagen que representa a una persona hablando"
-              />
-            </div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-full px-24 transform translate-y-48">
             <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
+              <div class="flex flex-col items-center mb-8">
+                <img
+                  src="/images/svg/z/Sin_Voz.svg"
+                  alt="Imagen que representa una persona con la boca cerrada"
+                  class="w-24 sm:w-36 mx-auto absolute flex transform -translate-y-20 sm:-translate-y-36"
+                />
+              </div>
+              <div class="flex flex-col items-center mb-8">
+                <img
+                  src="/images/svg/z/Con_Voz.svg"
+                  alt="Imagen que representa a una persona hablando"
+                  class="w-24 sm:w-36 mx-auto absolute flex transform -translate-y-20 sm:-translate-y-36"
+                />
+              </div>
               <div class="flex flex-col items-center mb-8">
                 <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
                   Silent
@@ -469,7 +451,7 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/global/Contenedor_Audios_Inferior.svg"
           alt="Contenedor de Audios Parte Inferior"
-          class="w-full transform translate-y-40 sm:translate-y-72 z-0"
+          class="w-full transform translate-y-80 sm:translate-y-48 -z-10 absolute"
         />
       </div>
     </section>
