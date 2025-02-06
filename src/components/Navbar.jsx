@@ -30,16 +30,22 @@ export function Navbar() {
                         </svg>
                     </button>
 
-                    <a href="/" className="text-white text-bold text-xl hidden lg:block">Quienes somos</a>
-                    <a href="/" className="text-white text-bold text-xl hidden lg:block">Objetivos</a>
-                    <a href="/ohno" className="text-white text-bold text-xl hidden lg:block">Oh no, mi cerebro me engaña</a>
+                    <a href="/" class="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        Quienes somos
+                    </a>
+                    <a href="/" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        Objetivos
+                    </a>
+                    <a href="/ohno" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        Oh no, mi cerebro me engaña
+                    </a>
 
                     {/* Fonemas container */}
                     <section className="relative hidden lg:block">
                         {/* NavBar fonemas button */}
                         <button
-                            onClick={handleFonemasToggle}
-                            className="text-white text-bold text-xl"
+                        onClick={handleFonemasToggle}
+                        className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
                         >
                             Fonemas
                         </button>
@@ -68,8 +74,8 @@ export function Navbar() {
                     <section className="relative hidden lg:block">
                         {/* NavBar ejercicios button */}
                         <button
-                            onClick={handleEjerciciosToggle}
-                            className="text-white text-bold text-xl"
+                        onClick={handleEjerciciosToggle}
+                        className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
                         >
                             Ejercicios
                         </button>
@@ -88,7 +94,9 @@ export function Navbar() {
                             </div>
                         </div>
                     </section>
-                    <a href="/" className="text-white text-bold text-xl hidden lg:block">Extras</a>
+                    <a href="/" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        Extras
+                    </a>
                 </nav>
             </div>
             <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} />
