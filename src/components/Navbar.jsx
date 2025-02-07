@@ -8,6 +8,8 @@ export function Navbar() {
 
     const handleMenuOpen = () => {
         setIsMenuOpen(!isMenuOpen);
+        setIsFonemasOpen(false);
+        setIsEjerciciosOpen(false);
     }
 
     const handleFonemasToggle = () => {
@@ -22,7 +24,7 @@ export function Navbar() {
 
     return (
         <>
-            <div className="fixed bg-[#6610F2] text-white flex items-center w-full h-16">
+            <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16">
                 <nav className="flex justify-end items-center gap-12 w-[85%] lg:w-[75%] mx-auto">
                     <button onClick={handleMenuOpen} className="p-2 lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -100,7 +102,7 @@ export function Navbar() {
                     </a>
                 </nav>
             </div>
-            <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} />
+            <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} isFonemasOpen={isFonemasOpen} setIsFonemasOpen={setIsFonemasOpen} isEjerciciosOpen={isEjerciciosOpen} setIsEjerciciosOpen={setIsEjerciciosOpen} />
         </>
     );
 }
