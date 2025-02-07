@@ -50,7 +50,7 @@ export async function getStaticPaths() {
           class="col-span-6 col-start-4 my-10 lg:my-20 mx-auto"
         />
         <p
-          class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mx-6"
+          class="col-start-1 col-span-12 text-base mx-4 lg:col-start-3 lg:col-span-8 lg:mx-6 lg:text-3xl text-center"
         >
           <span class="text-bold">Para comprobar esto</span>, toma un espejo y
           observa cómo
@@ -134,10 +134,10 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/global/Estrella.svg"
           alt="Imagen de play audio"
-          class="col-start-1 col-span-4 lg:col-start-1 lg:col-span-4 max-sm:transform max-sm:translate-y-24"
+          class="col-start-1 col-span-4 lg:col-start-2 lg:col-span-3 max-sm:transform max-sm:translate-y-24"
         />
         <p
-          class="col-start-1 col-span-12 text-base ml-8 lg:col-start-5 lg:col-span-8 lg:text-3xl lg:ml-4 max-sm:transform max-sm:-translate-y-20 text-right my-auto"
+          class="col-start-1 col-span-12 text-base lg:col-start-5 lg:col-span-8 lg:text-3xl lg:w-[75%] lg:ml-auto max-sm:transform max-sm:-translate-y-20 text-right my-auto"
         >
           En cambio,
           <span class="text-bold">
@@ -174,36 +174,36 @@ export async function getStaticPaths() {
         >
           Pronunciación alveolar
         </span>
-        <p
-          class="col-start-1 col-span-6 text-sm max-w-[90%] lg:col-start-2 lg:col-span-5 lg:text-3xl lg:mx-6 text-center"
-        >
-          Lengua en la pronunciación de las <span
-            class="text-[#6610F2] text-bold"
-            >letras t <span class="text-black">y</span> d</span
-          > del castellano
-        </p>
-        <p
-          class="col-start-7 col-span-6 text-sm max-w-[85%] lg:col-start-8 lg:col-span-5 lg:text-3xl lg:mx-2 text-center"
-        >
-          Lengua en la pronunciación de la <span class="text-black text-bold"
-            >letra r</span
-          > en castellano y las <span class="text-[#6610F2] text-bold"
-            >letras t <span class="text-black">y</span> d</span
-          > en inglés
-        </p>
+        <div class="col-start-1 col-span-6 lg:col-start-2 lg:col-span-5 w-full">
+          <p class="text-sm lg:text-3xl lg:mx-6 text-center">
+            Lengua en la pronunciación de las <span
+              class="text-[#6610F2] text-bold"
+              >letras t <span class="text-black">y</span> d</span
+            > del castellano
+          </p>
+        </div>
+        <div class="col-start-7 col-span-6 lg:col-start-8 lg:col-span-5 w-full">
+          <p class="text-sm mx-1 lg:text-3xl lg:mx-10 text-center">
+            Lengua en la pronunciación de la <span class="text-black text-bold"
+              >letra r</span
+            > en castellano y las <span class="text-[#6610F2] text-bold"
+              >letras t <span class="text-black">y</span> d</span
+            > en inglés
+          </p>
+        </div>
       </div>
     </section>
     <section>
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
         <p
-          class="col-start-1 col-span-9 text-base max-w-[95%] lg:col-start-1 lg:col-span-9 lg:text-3xl lg:max-w-[90%] text-left mb-10"
+          class="col-start-1 col-span-9 text-base lg:col-start-1 lg:col-span-8 lg:text-3xl lg:max-w-[90%] text-left mb-10"
         >
           Una forma de hacernos concientes de las
           <span class="text-bold">
             diferencias entre la escritura y la pronunciación
           </span>
           del castellano y del inglés es hacer
-          <span class="text-bold lg:block">
+          <span class="text-bold">
             <span class="text-[#6610F2]"> ejercicios de discriminación</span>.
           </span>
         </p>
@@ -212,265 +212,273 @@ export async function getStaticPaths() {
           alt="Imagen de varias flechas apuntando a la derecha"
           class="col-start-1 col-span-3 lg:col-start-2 lg:col-span-2"
         />
-        <p
-          class="col-start-4 col-span-9 text-base lg:col-start-4 lg:col-span-9 lg:text-3xl max-w-[95%] text-right mb-10"
+        <div
+          class="col-start-4 col-span-9 lg:col-start-5 lg:col-span-8 lg:max-w-[85%] lg:ml-auto"
         >
-          Los
-          <span class="text-bold text-[#6610F2]"
-            >ejercicios de discriminación</span
-          >
-          permiten que podamos
-          <span class="text-bold"> diferenciar la pronunciación </span>
-          de una letra de otra y, además, nos ayudan a mejorar nuestra
-          <span class="text-bold"> escritura en la lengua extranjera. </span>
-        </p>
-        <p
-          class="col-start-1 col-span-12 text-base max-w-[95%] lg:col-start-3 lg:col-span-8 lg:text-3xl text-center my-10 lg:mx-2"
-        >
-          Ahora que ya sabes que en catellano y en inglés hay
-          <span class="text-bold"> diferencias entre la pronunciación </span>de
-          las
-          <span class="text-bold">
-            letras <span class="text-[#6610F2]">t</span> y <span
-              class="text-[#6610F2]">d</span
+          <p class="text-base mb-2 lg:text-3xl lg:mb-10 text-right">
+            Los
+            <span class="text-bold text-[#6610F2]"
+              >ejercicios de discriminación</span
             >
-          </span>
-          ,escucha los siguentes audios, que están en castellano e inglés, y
-          <span class="text-bold"> pon antencion </span>
-          <span class="text-bold">
-            a las
-            <span class="text-[#6610F2]">
-              diferencias en la pronunciación
-            </span>:
-          </span>
-        </p>
+            permiten que podamos
+            <span class="text-bold"> diferenciar la pronunciación </span>
+            de una letra de otra y, además, nos ayudan a mejorar nuestra
+            <span class="text-bold"> escritura en la lengua extranjera. </span>
+          </p>
+        </div>
+        <div class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8">
+          <p class="text-base lg:text-3xl text-center my-10 lg:mx-2">
+            Ahora que ya sabes que en catellano y en inglés hay
+            <span class="text-bold">
+              diferencias entre la pronunciación
+            </span>de las
+            <span class="text-bold">
+              letras <span class="text-[#6610F2]">t</span> y <span
+                class="text-[#6610F2]">d</span
+              >
+            </span>
+            ,escucha los siguentes audios, que están en castellano e inglés, y
+            <span class="text-bold"> pon antencion </span>
+            <span class="text-bold">
+              a las
+              <span class="text-[#6610F2]">
+                diferencias en la pronunciación
+              </span>:
+            </span>
+          </p>
+        </div>
       </div>
     </section>
-    <section>
-      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+    <section class="py-56 mt-10 mb-96">
+      <div
+        class="relative w-full max-w-[350px] sm:max-w-[650px] sm:max-h-[650px] mx-auto py-32 sm:py-32"
+      >
         <img
           src="/images/svg/global/Contenedor_Audios_Superior.svg"
-          alt="Imagen superior de un contenedor de audios"
-          class="col-start-1 col-span-12 mx-auto mb-16 lg:mb-24"
+          alt="Contenedor de Audios Parte Superior"
+          class="w-full transform -translate-y-96 sm:-translate-y-96 mb-80 sm:mb-60"
         />
-        <span
-          class="col-start-3 col-span-3 text-3xl lg:col-start-4 lg:col-span-2 lg:text-5xl text-bold text-[#6610F2]"
-        >
-          Español
-          <img
-            src="/images/svg/global/Destacado.svg"
-            alt="Imagen de destacado"
-            class="w-1/2 mx-auto"
-          />
-        </span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-full px-24 transform translate-y-48">
+            <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
+              <div class="flex flex-col items-center text-center mb-8">
+                <span class="text-4xl text-extrabold text-[#6610F2]">
+                  Español
+                  <img
+                    src="/images/svg/global/Destacado.svg"
+                    alt="Imagen que destaca el texto"
+                    class="w-1/2 mx-auto"
+                  />
+                </span>
+              </div>
+              <div class="flex flex-col items-center text-center mb-8">
+                <span class="text-4xl text-extrabold text-[#6610F2]">
+                  Inglés
+                  <img
+                    src="/images/svg/global/Destacado.svg"
+                    alt="Imagen que destaca el texto"
+                    class="w-1/2 mx-auto"
+                  />
+                </span>
+              </div>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Tabla
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Tabla_ESP.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-9 col-span-3 text-3xl lg:col-start-8 lg:col-span-2 lg:text-5xl text-bold text-center text-[#6610F2]"
-        >
-          Inglés
-          <img
-            src="/images/svg/global/Destacado.svg"
-            alt="Imagen de destacado"
-            class="w-1/2 mx-auto"
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Table
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Table_ENG.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Tabla
-          <AudioPlayer
-            audio_path={"/audio/td/Tabla_ESP.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Dama
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Dama_ESP.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Table
-          <AudioPlayer
-            audio_path={"/audio/td/Table_ENG.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Dame
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Dame_ENG.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Dama
-          <AudioPlayer
-            audio_path={"/audio/td/Dama_ESP.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Talento
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Talento_ESP.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Dame
-          <AudioPlayer
-            audio_path={"/audio/td/Dame_ENG.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Talent
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Talent_ENG.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Tacto
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Tacto_ESP.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Talento
-          <AudioPlayer
-            audio_path={"/audio/td/Talento_ESP.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Tact
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Tact_ENG.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Tarta
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Tarta_ESP.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Talent
-          <AudioPlayer
-            audio_path={"/audio/td/Talent_ENG.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Tart
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Tart_ENG.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Decente
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Decente_ESP.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Tacto
-          <AudioPlayer
-            audio_path={"/audio/td/Tacto_ESP.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Decent
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Decent_ENG.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Denso
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Denso_ESP.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
 
-        <span
-          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Tact
-          <AudioPlayer
-            audio_path={"/audio/td/Tact_ENG.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
-
-        <span
-          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Tarta
-          <AudioPlayer
-            audio_path={"/audio/td/Tarta_ESP.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
-
-        <span
-          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Tart
-          <AudioPlayer
-            audio_path={"/audio/td/Tart_ENG.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
-
-        <span
-          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Decente
-          <AudioPlayer
-            audio_path={"/audio/td/Decente_ESP.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
-
-        <span
-          class="col-start-8 col-span-5 text-4xl lg:col-start-7 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Decent
-          <AudioPlayer
-            audio_path={"/audio/td/Decent_ENG.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
-
-        <span
-          class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Denso
-          <AudioPlayer
-            audio_path={"/audio/td/Denso_ESP.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
-
-        <span
-          class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-        >
-          Dense
-          <AudioPlayer
-            audio_path={"/audio/td/Dense_ENG.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
-        </span>
-
+              <div class="flex flex-col items-center mb-8">
+                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                  Dense
+                </p>
+                <AudioPlayer
+                  audio_path={"/audio/td/Dense_ENG.mp3"}
+                  className="w-24 h-24 sm:w-20 sm:h-20"
+                  client:load
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <img
           src="/images/svg/global/Contenedor_Audios_Inferior.svg"
-          alt="Imagen inferior de un contenedor de audios"
-          class="col-start-1 col-span-12 mx-auto"
+          alt="Contenedor de Audios Parte Inferior"
+          class="w-full transform translate-y-96 sm:translate-y-96 -z-10 absolute mt-48 sm:mt-20"
         />
       </div>
     </section>
-    <section class="mt-10 lg:mt-20">
+    <section class="mt-5 lg:mt-20">
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-        <p
-          class="col-start-3 col-span-10 max-sm:max-w-[90%] text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center"
+        <div
+          class="col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 w-full"
         >
-          Recuerda que la pronunciación de las
-          <span class="text-bold">
-            letras <span class="text-[#6610F2]">t</span> y <span
-              class="text-[#6610F2]">d</span
-            >
-          </span>
+          <p class="text-base lg:text-3xl text-center">
+            Recuerda que la pronunciación de las
+            <span class="text-bold">
+              letras <span class="text-[#6610F2]">t</span> y <span
+                class="text-[#6610F2]">d</span
+              >
+            </span>
 
-          <span class="text-bold">en ingles</span>
-          se parece más a la pronunciación de la
+            <span class="text-bold">en ingles</span>
+            se parece más a la pronunciación de la
 
-          <span class="text-bold">letra r en catellano</span>
-          que a la pronunciación de las <span class="text-bold"
-            >letras <span class="text-[#6610F2]">t</span> y <span
-              class="text-[#6610F2]">d</span
-            ></span
-          > en catellano.
-        </p>
-        <p
-          class="col-start-2 col-span-11 text-2xl mt-10 lg:col-start-4 lg:col-span-6 lg:text-4xl lg:mt-20 text-bold text-center"
+            <span class="text-bold">letra r en catellano</span>
+            que a la pronunciación de las <span class="text-bold"
+              >letras <span class="text-[#6610F2]">t</span> y <span
+                class="text-[#6610F2]">d</span
+              ></span
+            > en catellano.
+          </p>
+        </div>
+        <div
+          class="col-start-2 col-span-11 lg:col-start-4 lg:col-span-6 w-full"
         >
-          ¿Cómo podemos
-          <span class="text-[#6610F2]"
-            >pronunciar las letras t y d del inglés</span
-          >?
-        </p>
+          <p class="text-xl mt-10 lg:text-4xl lg:mt-20 text-bold text-center">
+            ¿Cómo podemos
+            <span class="text-[#6610F2]"
+              >pronunciar las letras t y d del inglés</span
+            >?
+          </p>
+        </div>
         <p
-          class="col-start-5 col-span-4 text-3xl lg:col-start-5 lg:col-span-4 mt-20 lg:text-6xl text-bold mx-auto flex flex-col items-end text-[#6610F2] whitespace-nowrap"
+          class="col-start-5 col-span-4 text-3xl mt-5 lg:col-start-5 lg:col-span-4 lg:mt-20 lg:text-6xl text-bold mx-auto flex flex-col items-end text-[#6610F2] whitespace-nowrap"
         >
           <img src="/images/svg/tyd/Tetera.svg" alt="Imagen de una tetera" />
-          <span class="mt-10 mx-auto">
+          <span class="mt-5 lg:mt-10 mx-auto">
             Tete-<span class="text-black">ra</span>
           </span>
         </p>
@@ -489,26 +497,24 @@ export async function getStaticPaths() {
     </section>
     <section class="lg:mb-20">
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-        <span
-          class="col-start-3 col-span-8 text-base lg:col-start-2 lg:col-span-10 lg:text-3xl text-center text-bold mx-auto"
+        <div
+          class="col-start-3 col-span-8 lg:col-start-2 lg:col-span-10 text-center w-full"
         >
-          Pronuncia de manera muy lenta la palabra <span class="text-[#6610F2]"
-            >tetera</span
-          >.
-        </span>
+          <span class="text-base lg:text-3xl text-bold">
+            Pronuncia de manera muy lenta la palabra <span
+              class="text-[#6610F2]">tetera</span
+            >.
+          </span>
+        </div>
         <p
-          class="col-start-1 col-span-12 text-base mt-10 lg:col-start-1 lg:col-span-8 lg:text-3xl lg:mt-20 text-left"
+          class="col-start-1 col-span-12 text-base mt-5 max-sm:mr-4 lg:col-start-1 lg:col-span-8 lg:text-3xl lg:mt-20 text-left"
         >
-          <span class="lg:block">
-            Fíjate en el <span class="text-bold text-[#6610F2]">
-              movimiento de tu lengua
-            </span> dentro de tu
-          </span>
-          <span class="block">
-            boca. Al pronunciar “<span class="text-bold text-[#6610F2]"
-              >tete</span
-            >”, la lengua se pone
-          </span>
+          Fíjate en el <span class="text-bold text-[#6610F2]">
+            movimiento de tu lengua
+          </span> dentro de tu boca. Al pronunciar “<span
+            class="text-bold text-[#6610F2]">tete</span
+          >”, la lengua se pone
+
           <span class="lg:block text-bold"> detrás de los dientes. </span>
         </p>
         <img
@@ -519,21 +525,23 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/tyd/Postdental.svg"
           alt="Imagen de pronunciación postdental"
-          class="col-start-5 col-span-4 mx-auto mt-10"
+          class="col-start-5 col-span-4 mx-auto mt-5 lg:mt-10"
         />
         <span
           class="col-start-4 col-span-6 text-2xl lg:col-start-5 lg:col-span-4 lg:text-3xl text-center text-bold"
           >Respiración postdental</span
         >
-        <p
-          class="col-start-4 col-span-7 text-base max-w-[90%] lg:col-start-4 lg:col-span-6 lg:text-3xl lg:mx-16 text-center"
+        <div
+          class="col-start-3 col-span-8 lg:col-start-5 lg:col-span-4 w-full mx-auto"
         >
-          Lengua en la pronunciación de las <span class="text-bold"
-            >letras <span class="text-[#6610F2]">t</span> y <span
-              class="text-[#6610F2]">d</span
-            >
-          </span> del castellano
-        </p>
+          <p class="text-sm lg:text-3xl text-center">
+            Lengua en la pronunciación de las <span class="text-bold"
+              >letras <span class="text-[#6610F2]">t</span> y <span
+                class="text-[#6610F2]">d</span
+              >
+            </span> del castellano
+          </p>
+        </div>
       </div>
     </section>
     <section>
@@ -543,45 +551,52 @@ export async function getStaticPaths() {
           alt="Imagen de play audio"
           class="col-start-1 col-span-4 lg:col-start-3 lg:col-span-3 max-sm:transform max-sm:translate-y-40"
         />
-        <p
-          class="col-start-3 col-span-10 text-base max-sm:ml-11 lg:col-start-6 lg:col-span-7 lg:text-3xl text-right my-auto"
-        >
-          Al pronunciar <span class="text-bold">"ra"</span>, la lengua se <span
-            class="text-[#6610F2] text-bold"
-            >aleja de tus dientes
-          </span>
-          y se desplaza hacia los alveólos.
-        </p>
+        <div class="col-start-4 col-span-9 lg:col-start-6 lg:col-span-7 w-full">
+          <p class="text-base lg:text-3xl text-right my-auto">
+            Al pronunciar <span class="text-bold">"ra"</span>, la lengua se <span
+              class="text-[#6610F2] text-bold"
+              >aleja de tus dientes
+            </span>
+            y se desplaza hacia los alveólos.
+          </p>
+        </div>
         <img
           src="/images/svg/tyd/Alveolar.svg"
           alt="Imagen de pronunciación alveolar"
           class="max-sm:mt-20 col-start-5 col-span-4 mx-auto"
         />
-        <span
-          class="col-start-5 col-span-4 text-2xl lg:col-start-5 lg:col-span-4 lg:text-3xl text-center text-bold"
-          >Respiración alveolar</span
+        <div
+          class="col-start-5 col-span-4 lg:col-start-5 lg:col-span-4 text-center w-full"
         >
-        <p
-          class="col-start-4 col-span-7 text-base max-sm:max-w-[92%] lg:col-start-4 lg:col-span-6 lg:text-3xl lg:mx-12 text-center"
+          <span class="text-xl lg:text-3xl text-bold">Respiración alveolar</span
+          >
+        </div>
+        <div
+          class="col-start-4 col-span-6 w-full lg:col-start-4 lg:col-span-6 lg:w-[85%] lg:mx-auto"
         >
-          Lengua en la pronunciación de la <span class="text-bold">letra r</span
-          > en castellano y las <span class="text-bold"
-            ><span class="text-[#6610F2]"> letaras t</span> y <span
-              class="text-[#6610F2]">d</span
-            >
-          </span> en inglés
-        </p>
-        <p
-          class="col-start-1 col-span-12 max-sm:mx-1 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center mt-20"
+          <p class="text-sm mx-1 lg:text-3xl lg:mx-12 text-center">
+            Lengua en la pronunciación de la <span class="text-bold"
+              >letra r</span
+            > en castellano y las <span class="text-bold"
+              ><span class="text-[#6610F2]"> letras t</span> y <span
+                class="text-[#6610F2]">d</span
+              >
+            </span> en inglés
+          </p>
+        </div>
+        <div
+          class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 w-full"
         >
-          En las palabras a continuación, la lengua se pone <span
-            class="text-bold">primero detrás de los dientes</span
-          > al pronunciar la <span class="text-[#6610F2] text-bold"
-            >letra t</span
-          > y luego se aleja y se sitúa en los alvéolos al pronunciar las <span
-            class="text-bold">letras r</span
-          > o <span class="text-bold"> doble rr</span>.
-        </p>
+          <p class="mt-10 text-base lg:text-3xl text-center lg:mt-20">
+            En las palabras a continuación, la lengua se pone <span
+              class="text-bold">primero detrás de los dientes</span
+            > al pronunciar la <span class="text-[#6610F2] text-bold"
+              >letra t</span
+            > y luego se aleja y se sitúa en los alvéolos al pronunciar las <span
+              class="text-bold">letras r</span
+            > o <span class="text-bold"> doble rr</span>.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -590,7 +605,7 @@ export async function getStaticPaths() {
         <div
           class="col-start-5 col-span-4 lg:col-start-2 lg:col-span-2 text-center lg:mt-20 flex flex-col"
         >
-          <div class="h-[200px] flex items-center justify-center">
+          <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
             <!-- Altura fija para todas las imágenes -->
             <img
               src="/images/svg/tyd/Tierra.svg"
@@ -598,7 +613,7 @@ export async function getStaticPaths() {
               class="w-full h-auto max-h-full object-contain"
             />
           </div>
-          <div class="mt-5">
+          <div class="lg:mt-5">
             <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
               T<span class="text-black">ie</span>rr<span class="text-black"
                 >a</span
@@ -613,17 +628,16 @@ export async function getStaticPaths() {
         </div>
 
         <div
-          class="col-start-2 col-span-4 lg:col-start-6 lg:col-span-2 text-center mt-20 flex flex-col"
+          class="col-start-2 col-span-4 lg:col-start-6 lg:col-span-2 lg:mt-20 text-center flex flex-col"
         >
-          <div class="h-[200px] flex items-center justify-center">
+          <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
             <img
               src="/images/svg/tyd/Torre.svg"
               alt="Imagen de una torre"
               class="w-full h-auto max-h-full object-contain"
             />
           </div>
-          <div class="mt-5">
-            <!-- Cambiar mt-20 a mt-5 para uniformidad -->
+          <div class="lg:mt-5">
             <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
               T<span class="text-black">o</span>rr<span class="text-black"
                 >e</span
@@ -638,16 +652,16 @@ export async function getStaticPaths() {
         </div>
 
         <div
-          class="col-start-8 col-span-4 lg:col-start-10 lg:col-span-2 text-center mt-20 flex flex-col"
+          class="col-start-8 col-span-4 lg:col-start-10 lg:col-span-2 lg:mt-20 text-center flex flex-col"
         >
-          <div class="h-[200px] flex items-center justify-center">
+          <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
             <img
               src="/images/svg/tyd/Tarro.svg"
               alt="Imagen de un tarro"
               class="w-full h-auto max-h-full object-contain"
             />
           </div>
-          <div class="mt-5">
+          <div class="lg:mt-5">
             <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
               T<span class="text-black">a</span>rr<span class="text-black"
                 >o</span
@@ -690,7 +704,7 @@ export async function getStaticPaths() {
           />
         </span>
         <span
-          class="col-start-2 col-span-4 text-4xl lg:col-start-6 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
+          class="col-start-2 col-span-4 text-4xl lg:col-start-6 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center lg:mt-20"
         >
           Zo<span class="text-[#6610F2]">rr</span>o
           <AudioPlayer
@@ -700,7 +714,7 @@ export async function getStaticPaths() {
           />
         </span>
         <span
-          class="col-start-8 col-span-4 text-4xl lg:col-start-10 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
+          class="col-start-8 col-span-4 text-4xl lg:col-start-10 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center lg:mt-20"
         >
           <span class="text-[#6610F2]">R</span>oca
           <AudioPlayer
@@ -738,21 +752,23 @@ export async function getStaticPaths() {
       </section>
       <section class="mb-10 -mt-10">
         <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-          <p
-            class="col-start-1 col-span-12 text-base max-sm:mx-2 lg:col-start-3 lg:col-span-9 lg:text-3xl lg:max-w-[90%] text-center"
+          <div
+            class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-9 w-full lg:w-[90%]"
           >
-            Ahora que ya tienes conciencia de la similitud de la
-            <span class="text-bold">letra r</span> en castellano y
-            <span class="text-bold">
-              las letras <span class="text-[#6610F2]">t</span> y <span
-                class="text-[#6610F2]">d</span
-              > en inglés,
-            </span>
-            vas a pronunciar las siguientes palabras, con ayuda de sus respectivos
-            audios.
-          </p>
+            <p class="text-base lg:text-3xl text-center">
+              Ahora que ya tienes conciencia de la similitud de la
+              <span class="text-bold">letra r</span> en castellano y
+              <span class="text-bold">
+                las letras <span class="text-[#6610F2]">t</span> y <span
+                  class="text-[#6610F2]">d</span
+                > en inglés,
+              </span>
+              vas a pronunciar las siguientes palabras, con ayuda de sus respectivos
+              audios.
+            </p>
+          </div>
           <span
-            class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center text-bold lg:mt-20"
+            class="col-start-1 col-span-12 text-base max-sm:mb-5 lg:col-start-3 lg:col-span-8 lg:text-3xl text-center text-bold lg:mt-20"
           >
             Escucha cada audio y luego <span class="text-[#6610F2]"
               >repite la palabra</span
@@ -760,150 +776,157 @@ export async function getStaticPaths() {
           </span>
         </div>
       </section>
-      <section>
-        <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+      <section class="py-56 mt-10 mb-96">
+        <div
+          class="relative w-full max-w-[350px] sm:max-w-[650px] sm:max-h-[650px] mx-auto py-32 sm:py-32"
+        >
           <img
             src="/images/svg/global/Contenedor_Audios_Superior.svg"
-            alt="Imagen superior de un contenedor de audios"
-            class="col-start-1 col-span-12 mx-auto mb-16 lg:mb-24"
+            alt="Contenedor de Audios Parte Superior"
+            class="w-full transform -translate-y-96 sm:-translate-y-80"
           />
-          <span
-            class="col-start-3 col-span-3 text-3xl lg:col-start-4 lg:col-span-2 lg:text-5xl text-bold text-[#6610F2]"
-          >
-            Español
-            <img
-              src="/images/svg/global/Destacado.svg"
-              alt="Imagen de destacado"
-              class="w-1/2 mx-auto"
-            />
-          </span>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-full px-24 transform translate-y-48">
+              <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
+                <div class="flex flex-col items-center text-center mb-8">
+                  <span class="text-4xl text-extrabold text-[#6610F2]">
+                    Español
+                    <img
+                      src="/images/svg/global/Destacado.svg"
+                      alt="Imagen que destaca el texto"
+                      class="w-1/2 mx-auto"
+                    />
+                  </span>
+                </div>
+                <div class="flex flex-col items-center text-center mb-8">
+                  <span class="text-4xl text-extrabold text-[#6610F2]">
+                    Inglés
+                    <img
+                      src="/images/svg/global/Destacado.svg"
+                      alt="Imagen que destaca el texto"
+                      class="w-1/2 mx-auto"
+                    />
+                  </span>
+                </div>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Total
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Total_ESP.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
 
-          <span
-            class="col-start-9 col-span-3 text-3xl lg:col-start-8 lg:col-span-2 lg:text-5xl text-bold text-center text-[#6610F2]"
-          >
-            Inglés
-            <img
-              src="/images/svg/global/Destacado.svg"
-              alt="Imagen de destacado"
-              class="w-1/2 mx-auto"
-            />
-          </span>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Total
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Total_ENG.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
 
-          <span
-            class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Total
-            <AudioPlayer
-              audio_path={"/audio/td/Total_ESP.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Terror
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Terror_ESP.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
 
-          <span
-            class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Total
-            <AudioPlayer
-              audio_path={"/audio/td/Total_ENG.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Terror
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Terror_ENG.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
 
-          <span
-            class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Terror
-            <AudioPlayer
-              audio_path={"/audio/td/Terror_ESP.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Denso
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Denso_ESP.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
 
-          <span
-            class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Terror
-            <AudioPlayer
-              audio_path={"/audio/td/Terror_ENG.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Dense
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Dense_ENG.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Decidir
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Decidir_ESP.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
 
-          <span
-            class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Denso
-            <AudioPlayer
-              audio_path={"/audio/td/Denso_ESP.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Decide
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Decide_ENG.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Depender
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Depender_ESP.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
 
-          <span
-            class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Dense
-            <AudioPlayer
-              audio_path={"/audio/td/Dense_ENG.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
-
-          <span
-            class="col-start-2 col-span-5 text-4xl lg:col-start-4 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Decidir
-            <AudioPlayer
-              audio_path={"/audio/td/Decidir_ESP.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
-
-          <span
-            class="col-start-8 col-span-5 text-4xl lg:col-start-8 lg:col-span-2 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Decide
-            <AudioPlayer
-              audio_path={"/audio/td/Decide_ENG.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
-
-          <span
-            class="col-start-2 col-span-5 text-4xl lg:col-start-3 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Depender
-            <AudioPlayer
-              audio_path={"/audio/td/Depender_ESP.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
-
-          <span
-            class="col-start-8 col-span-5 text-4xl lg:col-start-7 lg:col-span-4 lg:text-6xl text-bold text-[#6610F2] text-center mt-20"
-          >
-            Depend
-            <AudioPlayer
-              audio_path={"/audio/td/Depend_ENG.mp3"}
-              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-              client:load
-            />
-          </span>
-
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Depend
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/td/Depend_ENG.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
           <img
             src="/images/svg/global/Contenedor_Audios_Inferior.svg"
-            alt="Imagen inferior de un contenedor de audios"
-            class="col-start-1 col-span-12 mx-auto"
+            alt="Contenedor de Audios Parte Inferior"
+            class="w-full transform translate-y-96 sm:translate-y-96 -z-10 absolute mt-40 sm:mt-5"
           />
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
           <span
             class="col-start-2 col-span-10 text-xl lg:col-start-3 lg:col-span-8 lg:text-3xl text-center lg:mt-20"
           >
