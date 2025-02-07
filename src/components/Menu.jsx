@@ -1,9 +1,4 @@
-import { useState } from "react";
-
-export function Menu({ isMenuOpen, handleMenuOpen }) {
-    const [isFonemasOpen, setIsFonemasOpen] = useState(false);
-    const [isEjerciciosOpen, setIsEjerciciosOpen] = useState(false);
-
+export function Menu({ isMenuOpen, handleMenuOpen, isFonemasOpen, setIsFonemasOpen, isEjerciciosOpen, setIsEjerciciosOpen }) {
     const handleFonemasToggle = () => {
         setIsFonemasOpen(!isFonemasOpen);
     }
@@ -12,17 +7,21 @@ export function Menu({ isMenuOpen, handleMenuOpen }) {
         setIsEjerciciosOpen(!isEjerciciosOpen);
     }
 
-    if (!isMenuOpen) return null;
-
     return (
-        <div
-        onClick={handleMenuOpen}
-        className="bg-black bg-opacity-50 fixed z-10 w-full h-full mt-16 lg:hidden"
-        >
-            <menu onClick={(e) => e.stopPropagation()}
-            className="bg-[#6610f2] text-white text-right"
+        <>
+            <div
+            onClick={handleMenuOpen}
+            className={`fixed inset-0 bg-black bg-opacity-50 z-10 mt-16 transition-opacity duration-300 ${
+            isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+            ></div>
+
+            <menu
+            className={`fixed top-0 left-0 w-full bg-[#6610f2] text-white z-20 transform transition-transform duration-300 ${
+            isMenuOpen ? "translate-y-0 animate-slideDown mt-16" : "-translate-y-full animate-slideUp"
+            }`}
             >
-                <nav className="flex flex-col justify-center w-[85%] mx-auto p-2">
+                <nav className="flex flex-col justify-center text-right w-[85%] mx-auto p-4">
                     <a href="/nosotros" className="text-white text-bold text-xl">Quienes somos</a>
                     <a href="/" className="text-white text-bold text-xl mt-4">Objetivos</a>
                     <a href="/ohno" className="text-white text-bold text-xl mt-4">Oh no, mi cerebro me engaña</a>
@@ -55,6 +54,6 @@ export function Menu({ isMenuOpen, handleMenuOpen }) {
                     <a href="/" className="text-white text-bold text-xl my-4">Extras</a>
                 </nav>
             </menu>
-        </div>
-    );
+        </>
+      );
 }

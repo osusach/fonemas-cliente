@@ -8,6 +8,8 @@ export function Navbar() {
 
     const handleMenuOpen = () => {
         setIsMenuOpen(!isMenuOpen);
+        setIsFonemasOpen(false);
+        setIsEjerciciosOpen(false);
     }
 
     const handleFonemasToggle = () => {
@@ -20,9 +22,21 @@ export function Navbar() {
         setIsFonemasOpen(false);
     }
 
+    const handleFonemasOrEjerciciosClose = () => {
+        setIsFonemasOpen(false);
+        setIsEjerciciosOpen(false);
+    }
+
     return (
         <>
-            <div className="fixed bg-[#6610F2] text-white flex items-center w-full h-16">
+            <div
+            onClick={handleFonemasOrEjerciciosClose}
+            className={`fixed inset-0 bg-black bg-opacity-50 z-10 mt-16 transition-opacity duration-300 ${
+            (isFonemasOpen || isEjerciciosOpen) ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+            ></div>
+
+            <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16">
                 <nav className="flex justify-end items-center gap-12 w-[85%] lg:w-[75%] mx-auto">
                     <button onClick={handleMenuOpen} className="p-2 lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -30,7 +44,7 @@ export function Navbar() {
                         </svg>
                     </button>
 
-                    <a href="/nosotros" class="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                    <a href="/nosotros" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                         Quienes somos
                     </a>
                     <a href="/objetivo" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
@@ -100,7 +114,7 @@ export function Navbar() {
                     </a>
                 </nav>
             </div>
-            <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} />
+            <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} isFonemasOpen={isFonemasOpen} setIsFonemasOpen={setIsFonemasOpen} isEjerciciosOpen={isEjerciciosOpen} setIsEjerciciosOpen={setIsEjerciciosOpen} />
         </>
     );
 }
