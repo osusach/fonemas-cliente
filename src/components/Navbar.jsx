@@ -62,7 +62,7 @@ export function Navbar() {
                         onClick={handleFonemasToggle}
                         className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
                         >
-                            Fonemas
+                            Letras
                         </button>
                         <div className={`absolute left-1/2 -translate-x-1/2 w-48 bg-[#6610F2]  rounded-md shadow-lg z-50 text-center 
                             transition-all duration-200 ease-in-out origin-top
