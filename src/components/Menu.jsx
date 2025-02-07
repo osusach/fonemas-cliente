@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export function Menu({ isMenuOpen, handleMenuOpen, isFonemasOpen, setIsFonemasOpen, isEjerciciosOpen, setIsEjerciciosOpen }) {
     const handleFonemasToggle = () => {
         setIsFonemasOpen(!isFonemasOpen);

@@ -22,8 +22,20 @@ export function Navbar() {
         setIsFonemasOpen(false);
     }
 
+    const handleFonemasOrEjerciciosClose = () => {
+        setIsFonemasOpen(false);
+        setIsEjerciciosOpen(false);
+    }
+
     return (
         <>
+            <div
+            onClick={handleFonemasOrEjerciciosClose}
+            className={`fixed inset-0 bg-black bg-opacity-50 z-10 mt-16 transition-opacity duration-300 ${
+            (isFonemasOpen || isEjerciciosOpen) ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+            ></div>
+
             <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16">
                 <nav className="flex justify-end items-center gap-12 w-[85%] lg:w-[75%] mx-auto">
                     <button onClick={handleMenuOpen} className="p-2 lg:hidden">
