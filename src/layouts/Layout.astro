@@ -2,99 +2,115 @@
 import Footer from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 
-const {title, description, imageUrl} = Astro.props
-
+const { title, description, imageUrl } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title || 'English Pronunciation'}</title>
-		<meta name="description" content={description || 'Aprende cómo diferenciar las palabras del inglés con base en las letras de las palabras'} />
-		<meta property="og:title" content={title || 'English Pronunciation'} />
-		<meta property="og:description" content={description || 'Aprende cómo diferenciar las palabras del inglés con base en las letras de las palabras'} />
-		<meta property="og:image" content={imageUrl || 'https://i.imgur.com/MU6GmRC.png'} />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={title || 'English Pronunciation'} />
-		<meta name="twitter:description" content={description || 'Aprende cómo diferenciar las palabras del inglés con base en las letras de las palabras'} />
-		<meta name="twitter:image" content={imageUrl || 'https://i.imgur.com/MU6GmRC.png'} />
-
-
-	</head>
-	<body>
-		<div class="flex flex-col min-h-screen">
-			<header class="top-0 z-50 w-full h-16">
-				<Navbar client:load />
-			</header>
-			<main class="flex flex-grow justify-center mx-auto gap-10 lg:w-[67%] mb-20">
-				<slot />
-			</main>
-			<Footer/>
-		</div>
-		
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title || "English Pronunciation"}</title>
+    <meta
+      name="description"
+      content={description ||
+        "Aprende cómo diferenciar las palabras del inglés con base en las letras de las palabras"}
+    />
+    <meta property="og:title" content={title || "English Pronunciation"} />
+    <meta
+      property="og:description"
+      content={description ||
+        "Aprende cómo diferenciar las palabras del inglés con base en las letras de las palabras"}
+    />
+    <meta
+      property="og:image"
+      content={imageUrl || "https://i.imgur.com/MU6GmRC.png"}
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title || "English Pronunciation"} />
+    <meta
+      name="twitter:description"
+      content={description ||
+        "Aprende cómo diferenciar las palabras del inglés con base en las letras de las palabras"}
+    />
+    <meta
+      name="twitter:image"
+      content={imageUrl || "https://i.imgur.com/MU6GmRC.png"}
+    />
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      <header class="top-0 z-50 w-full h-16">
+        <Navbar client:load />
+      </header>
+      <main
+        class="flex flex-grow justify-center mx-auto gap-10 lg:w-[67%] mb-20"
+      >
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
 </html>
 
 <style>
-body {
-  font-family: 'CabinetGrotesk', sans-serif;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  background-color:#F4F0FF;
-}
-header{
-  font-family: 'CabinetGrotesk', sans-serif;
-}
-
+  body {
+    font-family: "CabinetGrotesk", sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: #f4f0ff;
+  }
+  header {
+    font-family: "CabinetGrotesk", sans-serif;
+  }
 </style>
 
 <style is:global>
-@font-face {
-  font-family: 'CabinetGrotesk';
-  src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
-  font-weight: 325;
-  font-style: normal;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "CabinetGrotesk";
+    src: url("/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+    font-weight: 325;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-	font-family: 'CabinetGroteskMediumBold';	
-	src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
-	font-weight: 425;
-	font-style: normal;
-	font-display: swap;
-}
+  @font-face {
+    font-family: "CabinetGroteskMediumBold";
+    src: url("/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-	font-family: 'CabinetGroteskBold';	
-	src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+  @font-face {
+    font-family: "CabinetGroteskBold";
+    src: url("/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-	font-family: 'CabinetGroteskExtraBold';	
-	src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
-}
+  @font-face {
+    font-family: "CabinetGroteskExtraBold";
+    src: url("/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
 
-.text-mediumbold {
+  .text-mediumbold {
     font-family: CabinetGroteskMediumBold;
-}
+  }
 
-.text-bold {
+  .text-bold {
     font-family: CabinetGroteskBold;
-}
+  }
 
-.text-extrabold {
+  .text-extrabold {
     font-family: CabinetGroteskExtraBold;
-}
+  }
 </style>
