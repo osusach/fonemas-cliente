@@ -7,7 +7,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title="Letras t-d" description="Explicación de la diferencia entre los sonidos t y d en castellano e inglés">
+<Layout title="Fonemas">
   <article class="flex flex-col justify-center">
     <section class="ml-5 my-10 lg:ml-10 lg:my-20">
       <button class="underline sm:text-lg text-xl lg:text-2xl"> Letras </button>
@@ -30,7 +30,7 @@ export async function getStaticPaths() {
       </div>
     </section>
     <section>
-      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+      <div class="grid grid-cols-12 gap-[15px] w-[85%] lg:w-full mx-auto">
         <p
           class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center"
         >
@@ -74,7 +74,7 @@ export async function getStaticPaths() {
       </div>
     </section>
     <section>
-      <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+      <div class="grid grid-cols-12 gap-[15px] w-[80%] lg:w-full mx-auto">
         <p
           class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center leading-[1.45rem] mx-4"
         >
@@ -136,20 +136,26 @@ export async function getStaticPaths() {
           alt="Imagen de play audio"
           class="col-start-1 col-span-4 lg:col-start-2 lg:col-span-3 max-sm:transform max-sm:translate-y-24"
         />
-        <p
-          class="col-start-1 col-span-12 text-base lg:col-start-5 lg:col-span-8 lg:text-3xl lg:w-[75%] lg:ml-auto max-sm:transform max-sm:-translate-y-20 text-right my-auto"
+        <div
+          class="col-start-1 col-span-12 w-full lg:col-start-5 lg:col-span-8 lg:w-[75%]"
         >
-          En cambio,
-          <span class="text-bold">
-            la pronunciación de las letras
-            <span class="text-[#6610F2]">t</span> y <span class="text-[#6610F2]"
-              >d</span
-            >
-            en inglés
-          </span>
-          se parece más a la pronunciación de la
-          <span class="text-bold text-[#6610F2]"> letra r en castellano</span>.
-        </p>
+          <p
+            class="text-base lg:text-3xl lg:ml-auto max-sm:transform max-sm:-translate-y-20 text-right my-auto"
+          >
+            En cambio,
+            <span class="text-bold">
+              la pronunciacion de las letras
+              <span class="text-[#6610F2]">t</span> y <span
+                class="text-[#6610F2]">d</span
+              >
+              en inglés
+            </span>
+            se parece más a la pronunciación de la
+            <span class="text-bold text-[#6610F2]">
+              letra r en castellano</span
+            >.
+          </p>
+        </div>
       </div>
     </section>
     <section class="my-10 lg:my-20">
@@ -198,13 +204,13 @@ export async function getStaticPaths() {
         <p
           class="col-start-1 col-span-9 text-base lg:col-start-1 lg:col-span-8 lg:text-3xl lg:max-w-[90%] text-left mb-10"
         >
-          Una forma de hacernos conscientes de las
+          Una forma de hacernos concientes de las
           <span class="text-bold">
             diferencias entre la escritura y la pronunciación
           </span>
           del castellano y del inglés es hacer
           <span class="text-bold">
-            <span class="text-[#6610F2]"> ejercicios de discriminación</span>.  
+            <span class="text-[#6610F2]"> ejercicios de discriminación</span>.
           </span>
         </p>
         <img
@@ -228,16 +234,17 @@ export async function getStaticPaths() {
         </div>
         <div class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8">
           <p class="text-base lg:text-3xl text-center my-10 lg:mx-2">
-            Ahora que ya sabes que en castellano y en inglés hay
+            Ahora que ya sabes que en catellano y en inglés hay
             <span class="text-bold">
               diferencias entre la pronunciación
             </span>de las
             <span class="text-bold">
               letras <span class="text-[#6610F2]">t</span> y <span
                 class="text-[#6610F2]">d</span
-              >,
-            </span> escucha los siguentes audios, que están en castellano e inglés, y
-            <span class="text-bold"> pon atención </span>
+              >
+            </span>
+            ,escucha los siguentes audios, que están en castellano e inglés, y
+            <span class="text-bold"> pon antencion </span>
             <span class="text-bold">
               a las
               <span class="text-[#6610F2]">
@@ -452,15 +459,15 @@ export async function getStaticPaths() {
               >
             </span>
 
-            <span class="text-bold">en inglés</span>
+            <span class="text-bold">en ingles</span>
             se parece más a la pronunciación de la
 
-            <span class="text-bold">letra r en castellano</span>
+            <span class="text-bold">letra r en catellano</span>
             que a la pronunciación de las <span class="text-bold"
               >letras <span class="text-[#6610F2]">t</span> y <span
                 class="text-[#6610F2]">d</span
               ></span
-            > en castellano.
+            > en catellano.
           </p>
         </div>
         <div
@@ -528,7 +535,7 @@ export async function getStaticPaths() {
         />
         <span
           class="col-start-4 col-span-6 text-2xl lg:col-start-5 lg:col-span-4 lg:text-3xl text-center text-bold"
-          >Pronunciación postdental</span
+          >Respiración postdental</span
         >
         <div
           class="col-start-3 col-span-8 lg:col-start-5 lg:col-span-4 w-full mx-auto"
@@ -567,14 +574,14 @@ export async function getStaticPaths() {
         <div
           class="col-start-5 col-span-4 lg:col-start-5 lg:col-span-4 text-center w-full"
         >
-          <span class="text-xl lg:text-3xl text-bold">Pronunciación alveolar</span
+          <span class="text-xl lg:text-3xl text-bold">Respiración alveolar</span
           >
         </div>
         <div
           class="col-start-4 col-span-6 w-full lg:col-start-4 lg:col-span-6 lg:w-[85%] lg:mx-auto"
         >
           <p class="text-sm mx-1 lg:text-3xl lg:mx-12 text-center">
-            Lengua en la pronunciación de la <span class="text-bold text-[#6610F2]" 
+            Lengua en la pronunciación de la <span class="text-bold"
               >letra r</span
             > en castellano y las <span class="text-bold"
               ><span class="text-[#6610F2]"> letras t</span> y <span
@@ -592,8 +599,8 @@ export async function getStaticPaths() {
             > al pronunciar la <span class="text-[#6610F2] text-bold"
               >letra t</span
             > y luego se aleja y se sitúa en los alvéolos al pronunciar las <span
-              class="text-bold text-[#6610F2]">letras r</span
-            > o <span class="text-bold text-[#6610F2]"> doble rr</span>.
+              class="text-bold">letras r</span
+            > o <span class="text-bold"> doble rr</span>.
           </p>
         </div>
       </div>
@@ -687,8 +694,8 @@ export async function getStaticPaths() {
             en inglés
           </span> tenemos que poner <span class="text-bold">
             la lengua en el mismo lugar
-          </span> de las <span class="text-bold text-[#6610F2]">letras r</span> o <span
-            class="text-bold text-[#6610F2]">rr</span
+          </span> de las <span class="text-bold">letras r</span> o <span
+            class="text-bold">rr</span
           >, como en:
         </p>
 
@@ -733,14 +740,14 @@ export async function getStaticPaths() {
           <span
             class="col-start-4 col-span-6 text-2xl lg:col-start-5 lg:col-span-4 lg:text-3xl text-bold text-center"
           >
-            Pronunciación alveolar
+            Respiración alveolar
           </span>
           <p
             class="col-start-4 col-span-7 text-base max-sm:max-w-[92%] lg:col-start-4 lg:col-span-6 lg:text-3xl lg:mx-12 text-center"
           >
-            Lengua en la pronunciación de la <span class="text-bold text-[#6610F2]"
+            Lengua en la pronunciación de la <span class="text-bold"
               >letra r</span
-            > en castellano y las<span class="text-bold">
+            >en castellano y las<span class="text-bold">
               letras <span class="text-[#6610F2]">t</span> y <span
                 class="text-[#6610F2]">d</span
               >
@@ -756,12 +763,12 @@ export async function getStaticPaths() {
           >
             <p class="text-base lg:text-3xl text-center">
               Ahora que ya tienes conciencia de la similitud de la
-              <span class="text-bold text-[#6610F2]">letra r</span> en castellano y
+              <span class="text-bold">letra r</span> en castellano y
               <span class="text-bold">
                 las letras <span class="text-[#6610F2]">t</span> y <span
                   class="text-[#6610F2]">d</span
-                > en inglés
-              </span>,
+                > en inglés,
+              </span>
               vas a pronunciar las siguientes palabras, con ayuda de sus respectivos
               audios.
             </p>
