@@ -7,7 +7,7 @@ function Footer() {
             <img
               src="https://anid.cl/wp-content/uploads/2022/04/anid_rojo_azul.png"
               alt="Logo de ANID"
-              className="w-[50%] sm:w-[8vw] sm:h-full object-scale-down"
+              className="w-[30vw] sm:w-[7vw] sm:h-full object-scale-down"
             />
           </div>
           <div className="w-full sm:row-start-1 col-start-1 col-span-1 sm:col-start-3 sm:col-span-5">
@@ -55,25 +55,25 @@ function Footer() {
             <p>Contribuidores</p>
             <p>
               <span className="text-bold underline">
-                <a href="mailto:murtubia17@alumnos.utalca.cl">Prof. María Ignacia Urtubia</a>{" "}
+                <a href="/nosotros">Prof. María Ignacia Urtubia</a>{" "}
               </span>{" "}
               (Diseño de material didáctico)
             </p>
             <p>
               <span className="text-bold underline">
-                <a href="mailto:rsantis18@alumnos.utalca.cl">Prof. Rodrigo Santis</a>
+                <a href="/nosotros">Prof. Rodrigo Santis</a>
               </span>{" "}
               (Grabaciones y gestión de proyecto)
             </p>
             <p>
               <span className="text-bold underline">
-                <a href="mailto:anaranjo20@alumnos.utalca.cl">Prof. Adrián Naranjo</a>
+                <a href="/nosotros">Prof. Adrián Naranjo</a>
               </span>{" "}
               (Voz e imagen en videos)
             </p>
             <p>
               <span className="text-bold underline">
-                <a href="mailto:vpeldoza20@alumnos.utalca.cl">Prof. Victoria Peldoza</a>
+                <a href="/nosotros">Prof. Victoria Peldoza</a>
               </span>{" "}
               (Ilustraciones de la página)
             </p>
