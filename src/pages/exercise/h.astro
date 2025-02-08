@@ -1,0 +1,27 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Exercise } from "../../components/Exercise";
+
+const text = `
+<p
+class="text-base text-center
+sm:text-2xl"
+>
+    Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra <span class="text-[#6610F2]">tiene</span> o <span class="text-[#6610F2]">no tiene</span> la letra <span class="text-[#6610F2]">h</span></span>.
+</p>
+`;
+---
+
+<Layout title="Ejercicios H" description="Ejercicios para identificar el sonido H en inglés">
+    <Exercise
+    fonema={"h"}
+    routeOfFonema={"/fonema/h"}
+    routeOfTitleSVG={"/images/svg/h/Ejercicios_H.svg"}
+    text={text}
+    answerA={"yes"}
+    textAnswerA={"Tiene h"}
+    answerB={"no"}
+    textAnswerB={"No tiene h"}
+    client:load
+    />
+</Layout>

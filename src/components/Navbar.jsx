@@ -109,6 +109,9 @@ export function Navbar() {
                                 <a href="/exercise/v-b" className="block px-4 py-2 text-white hover:underline">
                                     Ejercicios V-B
                                 </a>
+                                <a href="/exercise/h" className="block px-4 py-2 text-white hover:underline">
+                                    Ejercicios H
+                                </a>
                             </div>
                         </div>
                     </section>
