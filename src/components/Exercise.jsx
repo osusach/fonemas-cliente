@@ -115,7 +115,7 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
                         {(!data)? (
                             <AudioPlayer audio_path={``} className="lg:w-[164px]"/>
                         ) : (
-                            <AudioPlayer audio_path={`/audio/z/${data.audios[currentAudio].name}.mp3`} className="lg:w-[164px]"/>
+                            <AudioPlayer audio_path={`/audio/${fonema}/exercise/${data.audios[currentAudio].name}.mp3`} className="lg:w-[164px]"/>
                         )}
                     </div>
                     {/* Right arrow button */}
@@ -136,7 +136,7 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
                     className={`bg-[#6610F2] text-white text-xl text-bold px-8 py-4 rounded-full
                     col-span-6 col-start-1
                     lg:col-span-4 lg:col-start-3
-                    ${getButtonColor("s")}`}
+                    ${getButtonColor(answerA)}`}
                     >
                         {textAnswerA}
                     </button>
@@ -146,7 +146,7 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
                     className={`bg-[#6610F2] text-white text-xl text-bold px-8 py-4 rounded-full
                     col-span-6 col-start-7
                     lg:col-span-4 lg:col-start-7
-                    ${getButtonColor("z")}`}
+                    ${getButtonColor(answerB)}`}
                     >
                         {textAnswerB}
                     </button>

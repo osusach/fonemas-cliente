@@ -1,0 +1,28 @@
+{
+    "audios": [
+        {
+            "name": "Decent_ENG_ENG",
+            "correct_answer": "Ingles"
+        },
+        {
+            "name": "Text_ENG_ESP",
+            "correct_answer": "Castellano"
+        },
+        {
+            "name": "Disco_ENG_ESP",
+            "correct_answer": "Castellano"
+        },
+        {
+            "name": "Tart_ENG_ENG",
+            "correct_answer": "Ingles"
+        },
+        {
+            "name": "Dame_ENG_ENG",
+            "correct_answer": "Ingles"
+        },
+        {
+            "name": "Type_ENG_ESP",
+            "correct_answer": "Castellano"
+        }
+    ]
+}
