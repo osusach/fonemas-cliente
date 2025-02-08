@@ -1,55 +1,84 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Fonemas from '../components/landing/Fonemas';
+import Layout from "../layouts/Layout.astro";
+import Fonemas from "../components/landing/Fonemas";
 ---
-
 
 <Layout>
   <article class="flex flex-col mt-8 mb-8">
     <!-- Sección de propósito -->
-    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-8">
-        <p class="text-xl text-center
+    <section
+      class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-8"
+    >
+      <p
+        class="text-xl text-center
         col-span-12
-        sm:text-6xl">
-            En esta página web aprenderás a distinguir <span class="text-[#6610F2] text-bold">cómo diferenciar las palabras del inglés</span> con base en las <span class="text-[#6610F2] text-bold">letras de las palabras</span>.
-        </p>
-        <img
+        sm:text-6xl text-mediumbold"
+      >
+        En esta página web aprenderás a distinguir <span
+          class="text-[#6610F2] text-bold"
+          >cómo diferenciar las palabras del inglés</span
+        > con base en las <span class="text-[#6610F2] text-bold"
+          >letras de las palabras</span
+        >.
+      </p>
+      <img
         src="/images/svg/global/Destacado.svg"
         alt="Destacado"
         class="object-contain
         w-[290px]
         col-span-4 col-start-5"
-        />
+      />
     </section>
-    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-14">
-        <p class="text-center text-xl
+    <section
+      class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-14"
+    >
+      <p
+        class="text-center text-xl
         col-span-10 col-start-2
-        sm:text-4xl"
-        >
-            ¿Qué vas a encontrar en esta <span class="text-[#6610F2] text-bold">página</span>?
-        </p>
-        <div class="text-base text-center
+        sm:text-4xl text-mediumbold"
+      >
+        ¿Qué vas a encontrar en esta <span class="text-[#6610F2] text-bold"
+          >página</span
+        >?
+      </p>
+      <div class="text-base text-center
         col-span-12
-        sm:text-2xl"
-        >
-            <p class="mb-8">
-                En esta página vas a encontrar <span class="text-[#6610F2] text-bold">6 letras del inglés</span> que tienen <span class="text-bold">similitudes</span> y <span class="text-bold">diferencias</span> en su <span class="text-bold">pronunciación con el castellano</span>.
-            </p>
-            <p class="text-bold">Estas letras son:</p>
-        </div>
-        <Fonemas client:load />
+        sm:text-2xl">
+        <p class="mb-8">
+          En esta página vas a encontrar <span class="text-[#6610F2] text-bold"
+            >6 letras del inglés</span
+          > que tienen <span class="text-bold">similitudes</span> y <span
+            class="text-bold">diferencias</span
+          > en su <span class="text-bold">pronunciación con el castellano</span
+          >.
+        </p>
+        <p class="text-bold">Estas letras son:</p>
+      </div>
+      <Fonemas client:load />
     </section>
     <!-- Sección de utilidad -->
-    <section class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24">
-        <div class="text-base text-center
+    <section
+      class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-24"
+    >
+      <div
+        class="text-base text-center
         col-span-10 col-start-2
         sm:text-3xl
         sm:col-span-12 sm:col-start-1"
-        >
-            Te explicaremos <span class="text-[#6610F2] text-bold">cómo identificar las letras</span> y <span class="text-[#6610F2] text-bold">cómo pronunciarlas en inglés</span>. Además, encontrarás <span class="text-[#6610F2] text-bold">ejercicios para practicar lo aprendido</span>.
-        </div>
-        <img src="/images/svg/landing/Imagen_Final.svg" alt="Imagen Final" class="col-span-12" />
+      >
+        Te explicaremos <span class="text-[#6610F2] text-bold"
+          >cómo identificar las letras</span
+        > y <span class="text-[#6610F2] text-bold"
+          >cómo pronunciarlas en inglés</span
+        >. Además, encontrarás <span class="text-[#6610F2] text-bold"
+          >ejercicios para practicar lo aprendido</span
+        >.
+      </div>
+      <img
+        src="/images/svg/landing/Imagen_Final.svg"
+        alt="Imagen Final"
+        class="col-span-12"
+      />
     </section>
   </article>
 </Layout>
-
