@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AudioPlayer from "./AudioPlayer";
 
-export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text}) {
+export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA, textAnswerA, answerB, textAnswerB}) {
     const [data, setData] = useState(null);
     const [currentAudio, setCurrentAudio] = useState(0);
     const [selectedButton, setSelectedButton] = useState(null);
@@ -115,7 +115,7 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text}) {
                         {(!data)? (
                             <AudioPlayer audio_path={``} className="lg:w-[164px]"/>
                         ) : (
-                            <AudioPlayer audio_path={`/audio/z/${data.audios[currentAudio].name}.mp3`} className="lg:w-[164px]"/>
+                            <AudioPlayer audio_path={`/audio/${fonema}/exercise/${data.audios[currentAudio].name}.mp3`} className="lg:w-[164px]"/>
                         )}
                     </div>
                     {/* Right arrow button */}
@@ -132,23 +132,23 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text}) {
                 <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
                     {/* S button */}
                     <button
-                    onClick={() => validateAnswer("s")}
+                    onClick={() => validateAnswer(answerA)}
                     className={`bg-[#6610F2] text-white text-xl text-bold px-8 py-4 rounded-full
                     col-span-6 col-start-1
                     lg:col-span-4 lg:col-start-3
-                    ${getButtonColor("s")}`}
+                    ${getButtonColor(answerA)}`}
                     >
-                        Tiene s
+                        {textAnswerA}
                     </button>
                     {/* Z button */}
                     <button 
-                    onClick={() => validateAnswer("z")}
+                    onClick={() => validateAnswer(answerB)}
                     className={`bg-[#6610F2] text-white text-xl text-bold px-8 py-4 rounded-full
                     col-span-6 col-start-7
                     lg:col-span-4 lg:col-start-7
-                    ${getButtonColor("z")}`}
+                    ${getButtonColor(answerB)}`}
                     >
-                        Tiene z
+                        {textAnswerB}
                     </button>
                 </section>
             </div>  
