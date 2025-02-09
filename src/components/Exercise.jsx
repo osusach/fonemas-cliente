@@ -131,13 +131,14 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
                         </button>
                     )}
                 </section>
-                <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <section className="flex gap-[15px] w-[85%] sm:w-[35%] mx-auto justify-between">
                     {/* Option A button */}
                     <button
                     onClick={() => validateAnswer(answerA)}
                     className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-1
                     lg:col-span-4 lg:col-start-3
+                    sm:w-[20vh]
                     ${getButtonColor(answerA)}`}
                     >
                         {textAnswerA}
@@ -148,6 +149,7 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
                     className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-7
                     lg:col-span-4 lg:col-start-7
+                    sm:w-[20vh]
                     ${getButtonColor(answerB)}`}
                     >
                         {textAnswerB}
