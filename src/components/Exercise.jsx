@@ -40,7 +40,9 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
     // Get button color function
     const getButtonColor = (buttonType) => {
         if (selectedButton === buttonType) {
-            return isCorrect ? "bg-green-500" : "bg-red-500";
+            return isCorrect ? 
+            "bg-green-500 animate-growShrink" 
+            : "bg-red-500 animate-shake";
         }
         return "bg-[#6610F2]";
     }
@@ -130,20 +132,20 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
                     )}
                 </section>
                 <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-                    {/* S button */}
+                    {/* Option A button */}
                     <button
                     onClick={() => validateAnswer(answerA)}
-                    className={`bg-[#6610F2] text-white text-xl text-bold px-8 py-4 rounded-full
+                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-1
                     lg:col-span-4 lg:col-start-3
                     ${getButtonColor(answerA)}`}
                     >
                         {textAnswerA}
                     </button>
-                    {/* Z button */}
+                    {/* Option B button */}
                     <button 
                     onClick={() => validateAnswer(answerB)}
-                    className={`bg-[#6610F2] text-white text-xl text-bold px-8 py-4 rounded-full
+                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-7
                     lg:col-span-4 lg:col-start-7
                     ${getButtonColor(answerB)}`}
