@@ -3,420 +3,798 @@ import AudioPlayer from "../../components/AudioPlayer";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  return [
-    { params: { exercice: 'z' } }
-  ];
+  return [{ params: { exercice: "z" } }];
 }
 ---
 
-<Layout title="Letra H" description="Explicación de cómo suena la letra H en inglés y su comparación con el castellano.">
-    <article class="flex flex-col justify-center">
-        <section class="mb-2 sm:mb-12 mt-12 sm:mt-12">
-            <div class="flex items-center w-[90%] sm:w-[75%] mx-auto transform justify-center">
-                <img src="/images/svg/h/Fonema_H.svg" alt="Fonema H" class="w-4/12 sm:w-3/12 transform sm:translate-x-24" />
-                <div class="flex items-center ml-4 sm:ml-48 max-w-[40%]">
-                    <p class="text-xl sm:text-2xl lg:text-5xl">
-                        La <span class="text-bold text-[#6610F2]">letra h</span> no se
-                        <span class="inline c400:block c500:inline">pronuncia en castellano.</span>
-                    </p>
-                </div>
-            </div>
-        </section>        
-        <!-- Seccion de "Veamos un ejemplo a continuación" -->
-        <section class="mb-12">
-            <div class="max-w-2xl mx-auto">
-                <p class="text-lg sm:text-2xl text-center mb-8 sm:mb-20">
-                    Veamos <span class="text-bold">un ejemplo</span> a continuación:
+<Layout
+  title="Letra H"
+  description="Explicación de cómo suena la letra H en inglés y su comparación con el castellano."
+>
+  <article class="flex flex-col justify-center">
+    <section class="mb-2 sm:mb-12 mt-12 sm:mt-12">
+      <div
+        class="flex items-center w-[90%] sm:w-[75%] mx-auto transform justify-center"
+      >
+        <img
+          src="/images/svg/h/Fonema_H.svg"
+          alt="Fonema H"
+          class="w-4/12 sm:w-3/12 transform sm:translate-x-24"
+        />
+        <div class="flex items-center ml-4 sm:ml-48 max-w-[40%]">
+          <p class="text-xl sm:text-2xl lg:text-5xl">
+            La <span class="text-bold text-[#6610F2]">letra h</span> no se
+            <span class="inline c400:block c500:inline"
+              >pronuncia en castellano.</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion de "Veamos un ejemplo a continuación" -->
+    <section class="mb-12">
+      <div class="max-w-2xl mx-auto">
+        <p class="text-lg sm:text-2xl text-center mb-8 sm:mb-20">
+          Veamos <span class="text-bold">un ejemplo</span> a continuación:
+        </p>
+      </div>
+      <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
+        <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
+          <div>
+            <div class="flex flex-col items-center mb-8">
+              <video
+                src="/videos/h/Hotel_ESP.mkv"
+                controls
+                class="w-80 sm:w-full mx-auto"
+              >
+              </video>
+              <div class="flex flex-col items-center mb-4">
+                <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">
+                  Hotel
                 </p>
+              </div>
             </div>
-            <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
-                <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
-                    <div>
-                      <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/Hotel_ESP.mkv" controls class="w-80 sm:w-full mx-auto">
-                      </div>
-                      <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">Hotel</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/Hola.mkv" controls class="w-80 sm:w-full mx-auto">
-                      </div>
-                      <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">Hola</p>
-                      </div>
-                    </div>
+            <div>
+              <div class="flex flex-col items-center mb-8">
+                <video
+                  src="/videos/h/Hola.mkv"
+                  controls
+                  class="w-80 sm:w-full mx-auto"
+                >
+                </video>
+                <div class="flex flex-col items-center mb-4">
+                  <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">
+                    Hola
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="flex justify-center max-w-[80%] sm:max-w-[70%] xl:max-w-[50%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center leading-[1.45rem]">
-                    Tal como lo puedes notar, cuando leemos una palabra
-                    con la <span class="text-bold text-[#6610F2]">letra h</span>, no pronunciamos la <span class="text-bold text-[#6610F2]">letra h</span>.
-                </p>
-            </div>
-        </section>
+          </div>
+          <div
+            class="flex justify-center max-w-[80%] sm:max-w-[70%] xl:max-w-[50%] mx-auto"
+          >
+            <p class="text-lg sm:text-2xl text-center leading-[1.45rem]">
+              Tal como lo puedes notar, cuando leemos una palabra con la <span
+                class="text-bold text-[#6610F2]">letra h</span
+              >, no pronunciamos la <span class="text-bold text-[#6610F2]"
+                >letra h</span
+              >.
+            </p>
+          </div>
+        </div>
         <!-- Seccion de "Hotel Ingles y Español" -->
         <section class="mb-20">
-            <div class="flex justify-center max-w-[90%] sm:max-w-[45%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-20 leading-[1.45rem]">
-                    En cambio, <span class="text-bold">en inglés la  <span class="text-[#6610F2]">letra h</span> sí se pronuncia</span>. 
-                    Pensemos <span class="text-bold">por ejemplo</span> en la misma palabra:
-                </p>
-            </div>
-
-            <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
-                <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
-                    <div>
-                        <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/Hotel_ESP.mkv" controls class="w-80 sm:w-full mx-auto">
-                        </div>
-                        <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold ">Hotel</p>
-                        <p class="text-2xl sm:text-3xl text-extrabold text-center whitespace-nowrap">(español)</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/Hotel_ENG.mkv" controls class="w-80 sm:w-full mx-auto">
-                        </div>
-                        <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold ">Hotel</p>
-                        <p class="text-2xl sm:text-3xl text-extrabold text-center whitespace-nowrap">(inglés)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-center max-w-[90%] sm:max-w-[46%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-12 leading-[1.45rem]">
-                    Así entonces, <span class="text-bold">en español la <span class="text-[#6610F2]">letra h</span> no se pronuncia 
-                    y en inglés sí</span>.
-            </div>
-        </section>
-        <!-- Seccion de "Estrella como se pronuncian las palabras" -->
-        <section class="-mb-40 sm:-mb-56">
-            <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
-                <div class="col-end-13 col-span-12 c500:col-end-13 c500:col-span-7 max-w-[90%] sm:max-w-[80%] ml-auto sm:col-end-13 sm:col-span-9 lg:col-end-13 lg:col-span-8"> 
-                    <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
-                        Por tanto, <span class="text-bold">en inglés</span>, cuando una palabra
-                        empieza con la <span class="text-bold text-[#6610F2]">letra h</span>, <span class="text-bold">sí debemos
-                        pronunciar la <span class="text-[#6610F2]">letra h</span></span>.
-                    </p>
-                </div>
-                <div class="col-start-1 col-span-5 sm:col-start-1 sm:col-span-4 transform -translate-y-44 c400:-translate-y-48 c500:-translate-y-56 
-                            xl:translate-x-20 lg:-translate-x-16 sm:-translate-y-72 sm:-translate-x-2">
-                    <img src="/images/svg/global/Estrella.svg" alt="Estrella" class="w-48 h-48 sm:w-56 sm:h-56">
-                </div>
-            </div>
-          </section>          
-        <!-- Seccion de "Por ejemplo Hear y Ear" -->
-        <section class="mb-12 sm:mb-2">
-            <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
-                <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
-                    <div>
-                      <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/Hear.mkv" controls class="w-80 sm:w-full mx-auto">
-                      </div>
-                      <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">Hear</p>
-                        <p class="text-2xl sm:text-3xl text-extrabold text-center whitespace-nowrap">(con h-escuchar)</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/Ear.mkv" controls class="w-80 sm:w-full mx-auto">
-                      </div>
-                      <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">Ear</p>
-                        <p class="text-2xl sm:text-3xl text-extrabold whitespace-nowrap">(sin h-oreja)</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </section>                  
-        <!-- Seccion de "Ejercicios de discriminacion" -->
-        <section class="mb-8">
-            <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
-                <div class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-4"> 
-                    <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
-                        Una forma de hacernos conscientes de las
-                        <span class="text-bold">diferencias entre la escritura y la pronunciación
-                        </span> 
-                        <span class="inline c1400:block">del castellano y del inglés es hacer</span>
-                        <span class="text-bold text-[#6610F2] inline c1400:block">
-                            ejercicios <span class="text-bold text-[#6610F2] inline c400:block c500:inline">de discriminación.</span>
-                        </span>
-                    </p>
-                </div>
-                <div class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12  sm:translate-x-0 ">
-                  <img src="/images/svg/global/Flecha.svg" alt="Flecha" class="w-24 h-24 sm:w-40 sm:h-40 rotate-[5.53deg] ">
-                </div>
-                <div class="col-end-13 col-span-10 max-w-[90%] ml-auto sm:max-w-[95%] sm:col-end-13 sm:col-span-8 row-start-2 transform "> 
-                    <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
-                        Los <span class="text-bold text-[#6610F2]">ejercicios de discriminación</span> permiten que
-                        podamos <span class="text-bold">diferenciar la pronunciación</span> de una letra 
-                        de otra y, además, nos ayudan a mejorar nuestra
-                        <span class="text-bold">escritura</span>
-                        <span class="text-bold inline c400:block c450:inline">en la lengua extranjera</span>.
-                    </p>
-                </div>               
-            </div>
-        </section> 
-        <!-- Seccion de "Pronuncia las siguientes palabras" -->
-        <section class="mb-80 sm:mb-96">
-            <p class="mt-4 text-lg sm:text-2xl text-center mb-48 max-w-[90%] sm:max-w-[50%] mx-auto leading-[1.45rem]">
-                Utiliza la siguiente lista para hacer un <span class="text-bold text-[#6610F2]">ejercicio </span>
-                <span class="inline c400:block c500:inline"> <span class="text-bold text-[#6610F2]">de discriminación</span>
-                <span class="text-bold">de</span> <span class="text-bold text-[#6610F2]"> h:</span></span>
+          <div class="flex justify-center max-w-[90%] sm:max-w-[45%] mx-auto">
+            <p class="text-lg sm:text-2xl text-center mb-20 leading-[1.45rem]">
+              En cambio, <span class="text-bold"
+                >en inglés la <span class="text-[#6610F2]">letra h</span> sí se pronuncia</span
+              >. Pensemos <span class="text-bold">por ejemplo</span> en la misma
+              palabra:
             </p>
+          </div>
 
-            <img
-                src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
-                alt="Contenedor de Audios Parte Superior"
-                class="w-3/4 flex hidden justify-center mx-auto transform -translate-y-36 sm:block"
-            />
-            <div
-                class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
-            >
-                <img
-                src="/images/svg/global/Contenedor_Audios_Superior.svg"
-                alt="Contenedor de Audios Parte Superior"
-                class="w-full transform -translate-y-80 sm:hidden"
-                />
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="w-full px-24 transform translate-y-20 sm:translate-y-24">
-                        <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Heel</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Eel</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hat</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vest.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">At</p>
-                                <AudioPlayer audio_path={"/audio/vb/Best.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hand</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vote.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">And</p>
-                                <div class="w-24 h-24 sm:w-20 sm:h-20">
-                                    <AudioPlayer audio_path={"/audio/vb/Boat.mp3"} className="" client:load/>
-                                </div>
-                            </div>
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hit</p>
-                                <AudioPlayer audio_path={"/audio/vb/Veer.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">It</p>
-                                <div class="w-24 h-24 sm:w-20 sm:h-20">
-                                    <AudioPlayer audio_path={"/audio/vb/Beer.mp3"} className="" client:load/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img
-                src="/images/svg/global/Contenedor_Audios_Inferior.svg"
-                alt="Contenedor de Audios Parte Inferior"
-                class="w-full transform translate-y-72 -z-10 absolute sm:hidden"
-              />
-            </div>
-            <img
-                src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
-                alt="Contenedor de Audios Parte Inferior"
-                class="w-3/4 flex hidden justify-center mx-auto transform translate-y-80 sm:block"
-              />
-            </div>
-        </section>       
-        <!-- Seccion de "Como podemos pronunciar el fonema" -->
-        <section class="">
-            <p class="text-xl sm:text-3xl text-bold text-center mb-12 sm:mb-24 max-w-[65%] sm:max-w-[62%] mx-auto leading-[1.45rem]">
-                ¿Cómo podemos<span class="text-[#6610F2]"> pronunciar h en inglés</span>?
-            </p>
-
-            <div class="flex justify-center max-w-[80%] sm:max-w-[35%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-16 leading-[1.45rem]">
-                    Partimos pronunciando la <span class="text-bold">letra a</span> y dejamos 
-                    salir el aire lentamente hasta que se acaba. 
-                    <span class="text-bold">Cuando se acaba, tenemos la <span class="text-bold text-[#6610F2]">letra h</span></span>.
-                </p>
-            </div>
-
-            <div class="flex flex-col items-center mb-20">
-                <video src="/videos/h/A-H.mkv" controls class="w-[80%] sm:w-[50%] mx-auto">
-            </div>
-
-            <div class="flex justify-center max-w-[90%] sm:max-w-[48%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-16 leading-[1.45rem]">
-                    En la siguiente frase, el hablante de español de Chile 
-                    pronuncia la <span class="text-bold">letra s del español</span> como la <span class="text-bold text-[#6610F2]">letra h </span><span class="text-bold">en inglés</span>.
-                </p>
-            </div>
-
-            <div class="flex flex-col items-center mb-20">
-                <video src="/videos/h/Loh_Libroh.mkv" controls class="w-[80%] sm:w-[50%] mx-auto">
-            </div>
-
-            <div class="flex justify-center max-w-[90%] sm:max-w-[41%] mx-auto">
-                <p class="text-lg sm:text-2xl text-center mb-12 sm:mb-20 leading-[1.45rem]">
-                    Para cerciorarte de que estás pronunciando la letra
-                    correcta, ve los videos correspondientes a las 
-                    <span class="text-bold text-[#6610F2]">letras s y <span class="text-[#6610F2]"> h</span></span>.
-                </p>
-            </div>
-        </section>
-        <section class="mb-24">
-            <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
-                <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
-                    <div>
-                      <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/s.mkv" controls class="w-80 sm:w-full mx-auto">
-                      </div>
-                      <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold mb-2 sm:mb-8">S</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="flex flex-col items-center mb-8">
-                        <video src="/videos/h/h.mkv" controls class="w-80 sm:w-full mx-auto">
-                      </div>
-                      <div class="flex flex-col items-center mb-4">
-                        <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold mb-2 sm:mb-8">H</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-center max-w-[90%] sm:max-w-[43%] mx-auto ">
-                <p class="text-lg sm:text-2xl text-center mb-48 leading-[1.45rem]">
-                    Ahora, pronunciarás palabras que son <span class="text-bold">similares en
-                    inglés y en español</span>. Recuerda, <span class="text-bold">en español la <span class="text-[#6610F2]">letra h</span>    
-                    no se pronuncia y en inglés sí</span>:           
-                </p>
-            </div>
-        </section>
-        <!-- Seccion de "Si nuestros labios estan juntos" -->
-        <section class="mb-96 sm:mb-96">
-            <img
-                src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
-                alt="Contenedor de Audios Parte Superior"
-                class="w-3/4 flex hidden justify-center mx-auto transform -translate-y-56 sm:block"
-            />
-            <div
-                class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
-            >
-                <img
-                src="/images/svg/global/Contenedor_Audios_Superior.svg"
-                alt="Contenedor de Audios Parte Superior"
-                class="w-full transform -translate-y-96 sm:hidden"
-                />
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="w-full px-24 transform translate-y-16 sm:translate-y-18">
-                        <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
-                            <div class="flex flex-col items-center mb-12">
-                                <p class="text-[#6610F2] text-2xl sm:text-4xl text-bold">Español</p>
-                                <img src="/images/svg/global/Destacado.svg" alt="Destacado" class="w-16 sm:w-20 mx-auto absolute flex transform translate-y-8 sm:translate-y-12">
-                            </div>
-                            
-                            <div class="flex flex-col items-center mb-12">
-                                <p class="text-[#6610F2] text-2xl sm:text-4xl text-bold">Inglés</p>
-                                <img src="/images/svg/global/Destacado.svg" alt="Destacado" class="w-16 sm:w-20 mx-auto absolute flex transform translate-y-8 sm:translate-y-12">
-                            </div>
-
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hotel</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hotel</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Hábito</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vest.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Habit</p>
-                                <AudioPlayer audio_path={"/audio/vb/Best.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Honor</p>
-                                <AudioPlayer audio_path={"/audio/vb/Vote.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">Honor</p>
-                                <AudioPlayer audio_path={"/audio/vb/Boat.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">Horror</p>
-                                <AudioPlayer audio_path={"/audio/vb/Veer.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-        
-                            <div class="flex flex-col items-center mb-8">
-                                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center">Horror</p>
-                                <AudioPlayer audio_path={"/audio/vb/Beer.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img
-                src="/images/svg/global/Contenedor_Audios_Inferior.svg"
-                alt="Contenedor de Audios Parte Inferior"
-                class="w-full transform translate-y-80 -z-10 absolute sm:hidden"
-              />
-            </div>
-            <img
-                src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
-                alt="Contenedor de Audios Parte Inferior"
-                class="w-3/4 flex hidden justify-center mx-auto transform translate-y-80 sm:block"
-              />
-            </div>
-        </section>
-        <!-- Seccion de "¿Quieres seguir ejercitando?" -->                   
-        <section >
-            <div class="grid grid-cols-2 items-center relative">
-                <div class="col-span-2 text-center">
-                    <p class="text-xl sm:text-3xl text-center mb-4 sm:mb-12">
-                        <span class="text-mediumbold">¿Quieres seguir </span><span class="text-bold text-[#6610F2]">
-                        ejercitando</span><span class="text-mediumbold">?</span>
+          <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
+            <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
+              <div>
+                <div class="flex flex-col items-center mb-8">
+                  <video
+                    src="/videos/h/Hotel_ESP.mkv"
+                    controls
+                    class="w-80 sm:w-full mx-auto"
+                  >
+                  </video>
+                  <div class="flex flex-col items-center mb-4">
+                    <p
+                      class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold"
+                    >
+                      Hotel
                     </p>
-                    <nav class="transform transition-transform duration-200 hover:scale-110">
-                        <a href="/exercice/z" class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center">
-                            Haz click aquí
-                        </a>
-                        <img 
-                            src="/images/svg/global/Destacado.svg" 
-                            alt="Destacado" 
-                            class="mx-auto w-20 sm:w-40 sm:mt-2"
+                    <p
+                      class="text-2xl sm:text-3xl text-extrabold text-center whitespace-nowrap"
+                    >
+                      (español)
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col items-center mb-8">
+                    <video
+                      src="/videos/h/Hotel_ENG.mkv"
+                      controls
+                      class="w-80 sm:w-full mx-auto"
+                    >
+                    </video>
+                    <div class="flex flex-col items-center mb-4">
+                      <p
+                        class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold"
+                      >
+                        Hotel
+                      </p>
+                      <p
+                        class="text-2xl sm:text-3xl text-extrabold text-center whitespace-nowrap"
+                      >
+                        (inglés)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-center max-w-[90%] sm:max-w-[46%] mx-auto"
+              >
+                <p
+                  class="text-lg sm:text-2xl text-center mb-12 leading-[1.45rem]"
+                >
+                  Así entonces, <span class="text-bold"
+                    >en español la <span class="text-[#6610F2]">letra h</span> no
+                    se pronuncia y en inglés sí</span
+                  >.
+                </p>
+              </div>
+              <!-- Seccion de "Estrella como se pronuncian las palabras" -->
+              <section class="-mb-40 sm:-mb-56">
+                <div
+                  class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto"
+                >
+                  <div
+                    class="col-end-13 col-span-12 c500:col-end-13 c500:col-span-7 max-w-[90%] sm:max-w-[80%] ml-auto sm:col-end-13 sm:col-span-9 lg:col-end-13 lg:col-span-8"
+                  >
+                    <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
+                      Por tanto, <span class="text-bold">en inglés</span>,
+                      cuando una palabra empieza con la <span
+                        class="text-bold text-[#6610F2]">letra h</span
+                      >, <span class="text-bold"
+                        >sí debemos pronunciar la <span class="text-[#6610F2]"
+                          >letra h</span
+                        ></span
+                      >.
+                    </p>
+                  </div>
+                  <div
+                    class="col-start-1 col-span-5 sm:col-start-1 sm:col-span-4 transform -translate-y-44 c400:-translate-y-48 c500:-translate-y-56
+                            xl:translate-x-20 lg:-translate-x-16 sm:-translate-y-72 sm:-translate-x-2"
+                  >
+                    <img
+                      src="/images/svg/global/Estrella.svg"
+                      alt="Estrella"
+                      class="w-48 h-48 sm:w-56 sm:h-56"
+                    />
+                  </div>
+                </div>
+              </section>
+              <!-- Seccion de "Por ejemplo Hear y Ear" -->
+              <section class="mb-12 sm:mb-2">
+                <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
+                  <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
+                    <div>
+                      <div class="flex flex-col items-center mb-8">
+                        <video
+                          src="/videos/h/Hear.mkv"
+                          controls
+                          class="w-80 sm:w-full mx-auto"
                         >
-                    </nav>
+                        </video>
+                        <div class="flex flex-col items-center mb-4">
+                          <p
+                            class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold"
+                          >
+                            Hear
+                          </p>
+                          <p
+                            class="text-2xl sm:text-3xl text-extrabold text-center whitespace-nowrap"
+                          >
+                            (con h-escuchar)
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex flex-col items-center mb-8">
+                          <video
+                            src="/videos/h/Ear.mkv"
+                            controls
+                            class="w-80 sm:w-full mx-auto"
+                          >
+                          </video>
+                          <div class="flex flex-col items-center mb-4">
+                            <p
+                              class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold"
+                            >
+                              Ear
+                            </p>
+                            <p
+                              class="text-2xl sm:text-3xl text-extrabold whitespace-nowrap"
+                            >
+                              (sin h-oreja)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Seccion de "Ejercicios de discriminacion" -->
+                  <section class="mb-8">
+                    <div
+                      class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto"
+                    >
+                      <div
+                        class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-4"
+                      >
+                        <p
+                          class="text-lg sm:text-2xl text-left leading-[1.45rem]"
+                        >
+                          Una forma de hacernos conscientes de las
+                          <span class="text-bold"
+                            >diferencias entre la escritura y la pronunciación
+                          </span>
+                          <span class="inline c1400:block"
+                            >del castellano y del inglés es hacer</span
+                          >
+                          <span
+                            class="text-bold text-[#6610F2] inline c1400:block"
+                          >
+                            ejercicios <span
+                              class="text-bold text-[#6610F2] inline c400:block c500:inline"
+                              >de discriminación.</span
+                            >
+                          </span>
+                        </p>
+                      </div>
+                      <div
+                        class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12 sm:translate-x-0"
+                      >
+                        <img
+                          src="/images/svg/global/Flecha.svg"
+                          alt="Flecha"
+                          class="w-24 h-24 sm:w-40 sm:h-40 rotate-[5.53deg]"
+                        />
+                      </div>
+                      <div
+                        class="col-end-13 col-span-10 max-w-[90%] ml-auto sm:max-w-[95%] sm:col-end-13 sm:col-span-8 row-start-2 transform"
+                      >
+                        <p
+                          class="text-lg sm:text-2xl text-right leading-[1.45rem]"
+                        >
+                          Los <span class="text-bold text-[#6610F2]"
+                            >ejercicios de discriminación</span
+                          > permiten que podamos <span class="text-bold"
+                            >diferenciar la pronunciación</span
+                          > de una letra de otra y, además, nos ayudan a mejorar
+                          nuestra
+                          <span class="text-bold">escritura</span>
+                          <span class="text-bold inline c400:block c450:inline"
+                            >en la lengua extranjera</span
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Seccion de "Pronuncia las siguientes palabras" -->
+                  <section class="mb-80 sm:mb-96">
+                    <p
+                      class="mt-4 text-lg sm:text-2xl text-center mb-48 max-w-[90%] sm:max-w-[50%] mx-auto leading-[1.45rem]"
+                    >
+                      Utiliza la siguiente lista para hacer un <span
+                        class="text-bold text-[#6610F2]"
+                        >ejercicio
+                      </span>
+                      <span class="inline c400:block c500:inline">
+                        <span class="text-bold text-[#6610F2]"
+                          >de discriminación</span
+                        >
+                        <span class="text-bold">de</span>
+                        <span class="text-bold text-[#6610F2]"> h:</span></span
+                      >
+                    </p>
+
+                    <img
+                      src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
+                      alt="Contenedor de Audios Parte Superior"
+                      class="w-3/4 hidden justify-center mx-auto transform -translate-y-36 sm:block"
+                    />
+                    <div
+                      class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
+                    >
+                      <img
+                        src="/images/svg/global/Contenedor_Audios_Superior.svg"
+                        alt="Contenedor de Audios Parte Superior"
+                        class="w-full transform -translate-y-80 sm:hidden"
+                      />
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <div
+                          class="w-full px-24 transform translate-y-20 sm:translate-y-24"
+                        >
+                          <div
+                            class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0"
+                          >
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                              >
+                                Heel
+                              </p>
+                              <AudioPlayer
+                                audio_path={"/audio/h/Heel.mp3"}
+                                className="w-24 h-24 sm:w-20 sm:h-20"
+                                client:load
+                              />
+                            </div>
+
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                              >
+                                Eel
+                              </p>
+                              <AudioPlayer
+                                audio_path={"/audio/h/Eel.mp3"}
+                                className="w-24 h-24 sm:w-20 sm:h-20"
+                                client:load
+                              />
+                            </div>
+
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                              >
+                                Hat
+                              </p>
+                              <AudioPlayer
+                                audio_path={"/audio/h/Hat.mp3"}
+                                className="w-24 h-24 sm:w-20 sm:h-20"
+                                client:load
+                              />
+                            </div>
+
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                              >
+                                At
+                              </p>
+                              <AudioPlayer
+                                audio_path={"/audio/h/At.mp3"}
+                                className="w-24 h-24 sm:w-20 sm:h-20"
+                                client:load
+                              />
+                            </div>
+
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                              >
+                                Hand
+                              </p>
+                              <AudioPlayer
+                                audio_path={"/audio/h/Hand.mp3"}
+                                className="w-24 h-24 sm:w-20 sm:h-20"
+                                client:load
+                              />
+                            </div>
+
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center"
+                              >
+                                And
+                              </p>
+                              <div class="w-24 h-24 sm:w-20 sm:h-20">
+                                <AudioPlayer
+                                  audio_path={"/audio/h/And.mp3"}
+                                  className=""
+                                  client:load
+                                />
+                              </div>
+                            </div>
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                              >
+                                Hit
+                              </p>
+                              <AudioPlayer
+                                audio_path={"/audio/h/Hit.mp3"}
+                                className="w-24 h-24 sm:w-20 sm:h-20"
+                                client:load
+                              />
+                            </div>
+
+                            <div class="flex flex-col items-center mb-8">
+                              <p
+                                class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center"
+                              >
+                                It
+                              </p>
+                              <div class="w-24 h-24 sm:w-20 sm:h-20">
+                                <AudioPlayer
+                                  audio_path={"/audio/h/It.mp3"}
+                                  className=""
+                                  client:load
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <img
+                        src="/images/svg/global/Contenedor_Audios_Inferior.svg"
+                        alt="Contenedor de Audios Parte Inferior"
+                        class="w-full transform translate-y-72 -z-10 absolute sm:hidden"
+                      />
+                    </div>
+                    <img
+                      src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
+                      alt="Contenedor de Audios Parte Inferior"
+                      class="w-3/4 hidden justify-center mx-auto transform translate-y-80 sm:block"
+                    />
+                  </section>
                 </div>
-                <div class="col-start-2 col-span-2 -mt-12 sm:-mt-14">
-                    <img src="/images/svg/global/Mano_Izquierda.svg" alt="Mano Izquierda" class="w-32 h-32 sm:w-56 sm:h-56 transform translate-y-2 translate-x-14 sm:-translate-y-8 sm:translate-x-32">
-                </div>
+                <!-- Seccion de "Como podemos pronunciar el fonema" -->
+                <section class="">
+                  <p
+                    class="text-xl sm:text-3xl text-bold text-center mb-12 sm:mb-24 max-w-[65%] sm:max-w-[62%] mx-auto leading-[1.45rem]"
+                  >
+                    ¿Cómo podemos<span class="text-[#6610F2]">
+                      pronunciar h en inglés</span
+                    >?
+                  </p>
+
+                  <div
+                    class="flex justify-center max-w-[80%] sm:max-w-[35%] mx-auto"
+                  >
+                    <p
+                      class="text-lg sm:text-2xl text-center mb-16 leading-[1.45rem]"
+                    >
+                      Partimos pronunciando la <span class="text-bold"
+                        >letra a</span
+                      > y dejamos salir el aire lentamente hasta que se acaba.
+                      <span class="text-bold"
+                        >Cuando se acaba, tenemos la <span
+                          class="text-bold text-[#6610F2]">letra h</span
+                        ></span
+                      >.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center mb-20">
+                    <video
+                      src="/videos/h/A-H.mkv"
+                      controls
+                      class="w-[80%] sm:w-[50%] mx-auto"
+                    >
+                    </video>
+
+                    <div
+                      class="flex justify-center max-w-[90%] sm:max-w-[48%] mx-auto"
+                    >
+                      <p
+                        class="text-lg sm:text-2xl text-center mb-16 leading-[1.45rem]"
+                      >
+                        En la siguiente frase, el hablante de español de Chile
+                        pronuncia la <span class="text-bold"
+                          >letra s del español</span
+                        > como la <span class="text-bold text-[#6610F2]"
+                          >letra h
+                        </span><span class="text-bold">en inglés</span>.
+                      </p>
+                    </div>
+
+                    <div class="flex flex-col items-center mb-20">
+                      <video
+                        src="/videos/h/Loh_Libroh.mkv"
+                        controls
+                        class="w-[80%] sm:w-[50%] mx-auto"
+                      >
+                      </video>
+
+                      <div
+                        class="flex justify-center max-w-[90%] sm:max-w-[41%] mx-auto"
+                      >
+                        <p
+                          class="text-lg sm:text-2xl text-center mb-12 sm:mb-20 leading-[1.45rem]"
+                        >
+                          Para cerciorarte de que estás pronunciando la letra
+                          correcta, ve los videos correspondientes a las
+                          <span class="text-bold text-[#6610F2]"
+                            >letras s y <span class="text-[#6610F2]">
+                              h</span
+                            ></span
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                    <section class="mb-24">
+                      <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
+                        <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
+                          <div>
+                            <div class="flex flex-col items-center mb-8">
+                              <video
+                                src="/videos/h/s.mkv"
+                                controls
+                                class="w-80 sm:w-full mx-auto"
+                              >
+                              </video>
+                              <div class="flex flex-col items-center mb-4">
+                                <p
+                                  class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold mb-2 sm:mb-8"
+                                >
+                                  S
+                                </p>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="flex flex-col items-center mb-8">
+                                <video
+                                  src="/videos/h/h.mkv"
+                                  controls
+                                  class="w-80 sm:w-full mx-auto"
+                                >
+                                </video>
+                                <div class="flex flex-col items-center mb-4">
+                                  <p
+                                    class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold mb-2 sm:mb-8"
+                                  >
+                                    H
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="flex justify-center max-w-[90%] sm:max-w-[43%] mx-auto"
+                          >
+                            <p
+                              class="text-lg sm:text-2xl text-center mb-48 leading-[1.45rem]"
+                            >
+                              Ahora, pronunciarás palabras que son <span
+                                class="text-bold"
+                                >similares en inglés y en español</span
+                              >. Recuerda, <span class="text-bold"
+                                >en español la <span class="text-[#6610F2]"
+                                  >letra h</span
+                                >
+                                no se pronuncia y en inglés sí</span
+                              >:
+                            </p>
+                          </div>
+                        </div>
+                        <!-- Seccion de "Si nuestros labios estan juntos" -->
+                        <section class="mb-96 sm:mb-96">
+                          <img
+                            src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
+                            alt="Contenedor de Audios Parte Superior"
+                            class="w-3/4 hidden justify-center mx-auto transform -translate-y-56 sm:block"
+                          />
+                          <div
+                            class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
+                          >
+                            <img
+                              src="/images/svg/global/Contenedor_Audios_Superior.svg"
+                              alt="Contenedor de Audios Parte Superior"
+                              class="w-full transform -translate-y-96 sm:hidden"
+                            />
+                            <div
+                              class="absolute inset-0 flex items-center justify-center"
+                            >
+                              <div
+                                class="w-full px-24 transform translate-y-16 sm:translate-y-18"
+                              >
+                                <div
+                                  class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0"
+                                >
+                                  <div class="flex flex-col items-center mb-12">
+                                    <p
+                                      class="text-[#6610F2] text-2xl sm:text-4xl text-bold"
+                                    >
+                                      Español
+                                    </p>
+                                    <img
+                                      src="/images/svg/global/Destacado.svg"
+                                      alt="Destacado"
+                                      class="w-16 sm:w-20 mx-auto absolute flex transform translate-y-8 sm:translate-y-12"
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-12">
+                                    <p
+                                      class="text-[#6610F2] text-2xl sm:text-4xl text-bold"
+                                    >
+                                      Inglés
+                                    </p>
+                                    <img
+                                      src="/images/svg/global/Destacado.svg"
+                                      alt="Destacado"
+                                      class="w-16 sm:w-20 mx-auto absolute flex transform translate-y-8 sm:translate-y-12"
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                                    >
+                                      Hotel
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/1_Hotel_ESP.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                                    >
+                                      Hotel
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/5_Hotel_ENG.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                                    >
+                                      Hábito
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/2_Habito_ESP.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                                    >
+                                      Habit
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/6_Habit_ENG.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                                    >
+                                      Honor
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/3_Honor_ESP.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center"
+                                    >
+                                      Honor
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/7_Honor_ENG.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold"
+                                    >
+                                      Horror
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/4_Horror_ESP.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+
+                                  <div class="flex flex-col items-center mb-8">
+                                    <p
+                                      class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold text-center"
+                                    >
+                                      Horror
+                                    </p>
+                                    <AudioPlayer
+                                      audio_path={"/audio/h/8_Horror_ENG.mp3"}
+                                      className="w-24 h-24 sm:w-20 sm:h-20"
+                                      client:load
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <img
+                              src="/images/svg/global/Contenedor_Audios_Inferior.svg"
+                              alt="Contenedor de Audios Parte Inferior"
+                              class="w-full transform translate-y-80 -z-10 absolute sm:hidden"
+                            />
+                          </div>
+                          <img
+                            src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
+                            alt="Contenedor de Audios Parte Inferior"
+                            class="w-3/4 hidden justify-center mx-auto transform translate-y-80 sm:block"
+                          />
+                        </section>
+                      </div>
+                      <!-- Seccion de "¿Quieres seguir ejercitando?" -->
+                      <section>
+                        <div class="grid grid-cols-2 items-center relative">
+                          <div class="col-span-2 text-center">
+                            <p
+                              class="text-xl sm:text-3xl text-center mb-4 sm:mb-12"
+                            >
+                              <span class="text-mediumbold"
+                                >¿Quieres seguir
+                              </span><span class="text-bold text-[#6610F2]">
+                                ejercitando</span
+                              ><span class="text-mediumbold">?</span>
+                            </p>
+                            <nav
+                              class="transform transition-transform duration-200 hover:scale-110"
+                            >
+                              <a
+                                href="/exercice/z"
+                                class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center"
+                              >
+                                Haz click aquí
+                              </a>
+                              <img
+                                src="/images/svg/global/Destacado.svg"
+                                alt="Destacado"
+                                class="mx-auto w-20 sm:w-40 sm:mt-2"
+                              />
+                            </nav>
+                          </div>
+                          <div class="col-start-2 col-span-2 -mt-12 sm:-mt-14">
+                            <img
+                              src="/images/svg/global/Mano_Izquierda.svg"
+                              alt="Mano Izquierda"
+                              class="w-32 h-32 sm:w-56 sm:h-56 transform translate-y-2 translate-x-14 sm:-translate-y-8 sm:translate-x-32"
+                            />
+                          </div>
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+                </section>
+              </section>
             </div>
-        </section> 
-    </article>
-</Layout>
+          </div>
+        </section>
+      </div>
+    </section>
+  </article></Layout
+>
