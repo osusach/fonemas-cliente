@@ -30,31 +30,37 @@ export function Navbar() {
     return (
         <>
             <div
-                onClick={handleFonemasOrEjerciciosClose}
-                className={`fixed inset-0 bg-black bg-opacity-50 z-10 mt-16 transition-opacity duration-300 ${(isFonemasOpen || isEjerciciosOpen) ? "opacity-100" : "opacity-0 pointer-events-none"
-                    }`}
+            onClick={handleFonemasOrEjerciciosClose}
+            className={`fixed inset-0 bg-black bg-opacity-50 z-10 mt-16 transition-opacity duration-300 ${
+            (isFonemasOpen || isEjerciciosOpen) ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
             ></div>
 
-            <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16 sm:h-24">
-                <nav className="grid grid-cols-12 gap-[15px] w-full c400:w-[85%] lg:w-[67%] mx-auto h-16 items-center text-center">
-                    <span className="col-start-2 c400:col-start-1 col-span-7 text-xl text-start lg:col-start-1 lg:col-span-4 lg:text-3xl my-auto">English Pronunciation</span>
-                    <a href="/nosotros" className="col-start-5 col-span-2 relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+            <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16">
+                <nav className="flex justify-end items-center gap-12 w-[85%] lg:w-[75%] mx-auto">
+                    <button onClick={handleMenuOpen} className="p-2 lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+
+                    <a href="/nosotros" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                         Sobre nosotros
                     </a>
-                    <a href="/objetivo" className="col-start-7 col-span-1 text-start relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                    <a href="/objetivo" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                         Objetivo
                     </a>
-                    <a href="/ohno" className="col-start-8 col-span-2 relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
-                        Tu cerebro te engaña
+                    <a href="/ohno" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        Oh no, mi cerebro me engaña
                     </a>
 
 
                     {/* Fonemas container */}
-                    <section className="col-start-10 col-span-1 mx-auto relative hidden lg:block">
+                    <section className="relative hidden lg:block">
                         {/* NavBar fonemas button */}
                         <button
-                            onClick={handleFonemasToggle}
-                            className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+                        onClick={handleFonemasToggle}
+                        className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
                         >
                             Letras
                         </button>
@@ -80,11 +86,11 @@ export function Navbar() {
                         </div>
                     </section>
                     {/* Ejercicios container */}
-                    <section className="col-start-11 col-span-1 ml-auto relative hidden lg:block">
+                    <section className="relative hidden lg:block">
                         {/* NavBar ejercicios button */}
                         <button
-                            onClick={handleEjerciciosToggle}
-                            className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+                        onClick={handleEjerciciosToggle}
+                        className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
                         >
                             Ejercicios
                         </button>
@@ -109,14 +115,9 @@ export function Navbar() {
                             </div>
                         </div>
                     </section>
-                    <a href="/" className="col-start-12 col-span-1 mx-auto relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                    <a href="/" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                         Extras
                     </a>
-                    <button onClick={handleMenuOpen} className="col-start-11 col-span-2 p-2 lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
                 </nav>
             </div>
             <Menu isMenuOpen={isMenuOpen} handleMenuOpen={handleMenuOpen} isFonemasOpen={isFonemasOpen} setIsFonemasOpen={setIsFonemasOpen} isEjerciciosOpen={isEjerciciosOpen} setIsEjerciciosOpen={setIsEjerciciosOpen} />
