@@ -37,7 +37,7 @@ export function Navbar() {
 
             <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16 sm:h-24">
                 <nav className="grid grid-cols-12 gap-[15px] w-full c400:w-[85%] lg:w-[67%] mx-auto h-16 items-center text-start">
-                    <a href="/" className="col-start-2 sm:col-start-1 col-span-8 text-xl lg:text-3xl text-extrabold my-auto w-full">
+                    <a href="/" className="col-start-2 sm:col-start-1 col-span-8 sm:col-span-4 text-xl lg:text-3xl text-extrabold my-auto w-full">
                         <span>English Pronunciation</span>
                     </a>
                     <div className="col-start-5 col-span-8 hidden lg:flex justify-evenly items-center">
