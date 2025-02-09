@@ -38,14 +38,20 @@ export function Navbar() {
             <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16 sm:h-24">
                 <nav className="grid grid-cols-12 gap-[15px] w-full c400:w-[85%] lg:w-[67%] mx-auto h-16 items-center text-center">
                     <span className="col-start-2 c400:col-start-1 col-span-7 text-xl text-start lg:col-start-1 lg:col-span-4 lg:text-3xl text-extrabold my-auto">English Pronunciation</span>
-                    <a href="/nosotros" className="col-start-5 col-span-2 relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
-                        Sobre nosotros
+                    <a href="/nosotros" className="col-start-5 col-span-2 text-white text-bold text-xl hidden lg:block ">
+                        <span className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                            Sobre nosotros
+                        </span>
                     </a>
-                    <a href="/objetivo" className="col-start-7 col-span-1 text-start relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
-                        Objetivo
+                    <a href="/objetivo" className="col-start-7 col-span-1 text-start  text-white text-bold text-xl hidden lg:block ">
+                        <span className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                            Objetivo
+                        </span>
                     </a>
-                    <a href="/ohno" className="col-start-8 col-span-2 relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
-                        Tu cerebro te engaña
+                    <a href="/ohno" className="col-start-8 col-span-2 text-white text-bold text-xl hidden lg:block">
+                        <span className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                            Tu cerebro te engaña
+                        </span>
                     </a>
 
 
