@@ -7,31 +7,48 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title="Letra Z" description="Explicación de cómo suena la letra Z en inglés y en español ">
+<Layout
+  title="Letra Z"
+  description="Explicación de cómo suena la letra Z en inglés y en español "
+>
   <article class="flex flex-col justify-center">
-    <section class="-mb-6 sm:mb-12 mt-12 sm:mt-36">
-      <div class="flex items-center w-[90%] sm:w-[80%] mx-auto transform justify-center">
-          <img src="/images/svg/z/Fonema_Z.svg" alt="Fonema Z" class="w-4/12 sm:w-3/12 transform sm:translate-x-24" />
-          <div class="flex items-center ml-4 sm:ml-48 max-w-[50%] sm:max-w-[100%] transform translate-x-8 sm:translate-x-0">
-            <p class="text-xl sm:text-5xl max-w-[100%] sm:max-w-[100%]">
-              La <span class="text-bold text-[#6610F2]">letra z</span> se pronuncia
-              siempre como la letra s en castellano.
-            </p>
-          </div>
+    <section class="-mb-6 sm:mb-12 mt-20 sm:mt-48">
+      <div
+        class="flex items-center w-[90%] sm:w-[80%] mx-auto transform justify-center"
+      >
+        <img
+          src="/images/svg/z/Fonema_Z.svg"
+          alt="Fonema Z"
+          class="w-4/12 sm:w-3/12 transform sm:translate-x-24"
+        />
+        <div
+          class="flex items-center ml-4 sm:ml-48 max-w-[50%] sm:max-w-[100%] transform translate-x-8 sm:translate-x-0"
+        >
+          <p class="text-xl sm:text-5xl max-w-[100%] sm:max-w-[100%]">
+            La <span class="text-bold text-[#6610F2]">letra z</span> se pronuncia
+            siempre como la letra s en castellano.
+          </p>
+        </div>
       </div>
-    </section>  
+    </section>
 
     <section class="mt-20">
       <div class="flex justify-center max-w-[95%] sm:max-w-[50%] mx-auto">
         <p class="text-lg sm:text-2xl text-center mb-12">
-          Es decir, siempre pronunciamos como la <span class="text-bold">letra s</span> las palabras escritas con las 
-          <span class="text-bold">letras s y <span class="text-[#6610F2]">z</span>.</span>
+          Es decir, siempre pronunciamos como la <span class="text-bold"
+            >letra s</span
+          > las palabras escritas con las
+          <span class="text-bold"
+            >letras s y <span class="text-[#6610F2]">z</span>.</span
+          >
         </p>
       </div>
     </section>
 
     <section class="mb-12">
-      <div class="flex justify-center max-w-[90%] sm:max-w-[70%] mx-auto -mb-8 sm:mb-12">
+      <div
+        class="flex justify-center max-w-[90%] sm:max-w-[70%] mx-auto -mb-8 sm:mb-12"
+      >
         <p class="text-lg sm:text-3xl text-center">
           Pensemos <span class="text-bold">por ejemplo</span> en la pronunciación
           de:
@@ -40,153 +57,279 @@ export async function getStaticPaths() {
       <div class="max-w-2xl mx-auto">
         <div class="grid grid-cols-2 sm:gap-x-48">
           <div class="flex flex-col items-center">
-              <img src="/images/svg/z/Zona.svg" alt="Van" class="w-24 h-72 sm:w-36 sm:h-72 max-w-[70%] -mb-12 sm:max-w-[100%] sm:mb-2">
-              <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-6">Zona</p>
-              <AudioPlayer audio_path={"/audio/z/Zona.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+            <img
+              src="/images/svg/z/Zona.svg"
+              alt="Van"
+              class="w-24 h-72 sm:w-36 sm:h-72 max-w-[70%] -mb-12 sm:max-w-[100%] sm:mb-2"
+            />
+            <p
+              class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-6"
+            >
+              Zona
+            </p>
+            <AudioPlayer
+              audio_path={"/audio/z/Zona.mp3"}
+              className="w-24 h-24 sm:w-20 sm:h-20"
+              client:load
+            />
           </div>
           <div class="flex flex-col items-center">
-              <img src="/images/svg/z/Sana.svg" alt="Ban" class="w-24 h-72 sm:w-36 sm:h-72 max-w-[70%] -mb-12 xl:max-w-[100%] sm:mb-2">
-              <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-6">Sana</p>
-              <AudioPlayer audio_path={"/audio/z/Sana.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+            <img
+              src="/images/svg/z/Sana.svg"
+              alt="Ban"
+              class="w-24 h-72 sm:w-36 sm:h-72 max-w-[70%] -mb-12 xl:max-w-[100%] sm:mb-2"
+            />
+            <p
+              class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-6"
+            >
+              Sana
+            </p>
+            <AudioPlayer
+              audio_path={"/audio/z/Sana.mp3"}
+              className="w-24 h-24 sm:w-20 sm:h-20"
+              client:load
+            />
           </div>
         </div>
       </div>
     </section>
     <!-- Seccion de "En ingles" -->
     <section class="mb-20">
-        <div class="flex flex-col justify-center max-w-[90%] sm:max-w-[100%] mx-auto">
-          <p class="text-lg sm:text-2xl max-w-[90%] sm:max-w-[40%] text-center mb-28 sm:mb-10 mx-auto mb-20">
-            Tal como lo puedes notar, cuando pronunciamos las <span
-              class="text-bold"
-              >letras <span class="text-[#6610F2]">s</span> y <span class="text-[#6610F2]">z</span>
-            </span>, no hacemos <span class="text-bold"
-              >ninguna diferencia entre ambas.</span
+      <div
+        class="flex flex-col justify-center max-w-[90%] sm:max-w-[100%] mx-auto"
+      >
+        <p
+          class="text-lg sm:text-2xl max-w-[90%] sm:max-w-[40%] text-center mb-28 sm:mb-10 mx-auto"
+        >
+          Tal como lo puedes notar, cuando pronunciamos las <span
+            class="text-bold"
+            >letras <span class="text-[#6610F2]">s</span> y <span
+              class="text-[#6610F2]">z</span
+            >
+          </span>, no hacemos <span class="text-bold"
+            >ninguna diferencia entre ambas.</span
+          >
+        </p>
+      </div>
+      <div
+        class="sm:grid sm:grid-cols-12 gap-[15px] flex justify-center w-[85%] sm:w-[75%] mx-auto -mb-20 sm:-mb-28"
+      >
+        <img
+          src="/images/svg/global/Mano_Derecha.svg"
+          alt="Imagen de una mano apuntando a la derecha"
+          class="w-36 col-start-1 col-span-5 transform -translate-y-24"
+        />
+      </div>
+      <div
+        class="flex flex-col justify-center max-w-[90%] sm:max-w-[100%] mx-auto mb-12"
+      >
+        <p
+          class="text-lg sm:text-2xl max-w-[90%] text-center sm:max-w-[40%] mx-auto"
+        >
+          De hecho, bien podriamos escribir <span class="text-bold">
+            <span class="text-[#6610F2]">s</span> o <span class="text-[#6610F2]"
+              >z</span
+            >, pero las pronunciamos igual:
+          </span>
+        </p>
+      </div>
+      <div class="max-w-2xl mx-auto -mb-12 sm:mb-0">
+        <div class="grid grid-cols-2 sm:gap-x-48">
+          <div class="flex flex-col text-center justify-center items-center">
+            <p
+              class="text-extrabold text-4xl sm:text-6xl sm:mb-2 sm:leading-[79.36px]"
+            >
+              <span class="text-[#6610F2]">S</span>ona
+            </p>
+            <AudioPlayer
+              audio_path={"/audio/z/Zona.mp3"}
+              className="w-24 h-24 sm:w-20 sm:h-20"
+              client:load
+            />
+          </div>
+          <div class="flex flex-col text-center justify-center items-center">
+            <p
+              class="text-extrabold text-4xl sm:text-6xl sm:mb-2 sm:leading-[79.36px]"
+            >
+              <span class="text-[#6610F2]">Z</span>ana
+            </p>
+            <AudioPlayer
+              audio_path={"/audio/z/Sana.mp3"}
+              className="w-24 h-24 sm:w-20 sm:h-20"
+              client:load
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-center max-w-[90%] sm:max-w-[100%] mx-auto"
+      >
+        <p
+          class="text-lg sm:text-2xl text-center mt-20 sm:mb-10 mx-auto sm:max-w-[48%]"
+        >
+          Aunque sabríamos que la <span class="text-bold"
+            >ortografía no es la correcta</span
+          >, en nuestras mentes seguiríamos pensando en una <span
+            class="text-bold text-[#6610F2]">zona</span
+          > geográfica y en una persona <span class="text-bold text-[#6610F2]"
+            >sana</span
+          >.
+        </p>
+      </div>
+    </section>
+    <section class="-mb-40 sm:-mb-56">
+      <div
+        class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto"
+      >
+        <div
+          class="col-end-13 col-span-12 c500:col-end-13 c500:col-span-7 sm:max-w-[90%] ml-auto sm:col-end-13 sm:col-span-9 lg:col-end-13 lg:col-span-7"
+        >
+          <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
+            En inglés, las <span class="text-bold">letras</span>
+            <span class="text-bold">s y</span>
+            <span class="text-bold text-[#6610F2]">z</span> al inicio de una
+            <span class="inline xs:inline c400:block c500:inline"
+              >palabra tiene <span class="text-bold"
+                >pronunciaciones distintas y</span
+              ></span
+            >
+            <span class="inline xs:inline c400:block c500:inline"
+              ><span class="text-bold">significados distintos.</span></span
             >
           </p>
         </div>
-        <div class="sm:grid sm:grid-cols-12 gap-[15px] flex justify-center w-[85%] sm:w-[75%] mx-auto -mb-20 sm:-mb-28">
+        <div
+          class="col-start-1 col-span-5 sm:col-start-1 sm:col-span-4 transform -translate-y-44 c400:-translate-y-44 c500:-translate-y-56
+                      -translate-x-4 xl:translate-x-12 lg:-translate-x-16 sm:-translate-y-72 sm:-translate-x-2"
+        >
           <img
-            src="/images/svg/global/Mano_Derecha.svg"
-            alt="Imagen de una mano apuntando a la derecha"
-            class="w-36 col-start-1 col-span-5 transform -translate-y-24 "
+            src="/images/svg/global/Estrella.svg"
+            alt="Estrella"
+            class="w-48 h-48 sm:w-56 sm:h-56"
           />
         </div>
-        <div class="flex flex-col justify-center max-w-[90%] sm:max-w-[100%] mx-auto mb-12">
-          <p class="text-lg sm:text-2xl max-w-[90%] text-center sm:max-w-[40%] mx-auto">
-            De hecho, bien podriamos escribir <span class="text-bold">
-              <span class="text-[#6610F2]">s</span> o <span class="text-[#6610F2]">z</span>, pero las pronunciamos
-              igual:
-            </span>
-          </p>
-        </div>
-        <div class="max-w-2xl mx-auto -mb-12 sm:mb-0">
-          <div class="grid grid-cols-2 sm:gap-x-48">
-            <div class="flex flex-col text-center justify-center items-center">
-              <p class="text-extrabold text-4xl sm:text-6xl sm:mb-2 sm:leading-[79.36px]"><span class="text-[#6610F2]">S</span>ona</p>
-              <AudioPlayer audio_path={"/audio/z/Zona.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-            </div>
-            <div class="flex flex-col text-center justify-center items-center">
-              <p class="text-extrabold text-4xl sm:text-6xl sm:mb-2 sm:leading-[79.36px]"><span class="text-[#6610F2]">Z</span>ana</p>
-              <AudioPlayer audio_path={"/audio/z/Sana.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center max-w-[90%] sm:max-w-[100%] mx-auto">
-          <p
-            class="text-lg sm:text-2xl text-center mt-20 sm:mb-10 mx-auto sm:max-w-[48%]"
-          >
-            Aunque sabríamos que la <span class="text-bold"
-              >ortografía no es la correcta</span
-            >, en nuestras mentes seguiríamos pensando en una <span
-              class="text-bold text-[#6610F2]">zona</span
-            > geográfica y en una persona <span class="text-bold text-[#6610F2]"
-              >sana</span
-            >.
-          </p>
-        </div>
-    </section>
-    <section class="-mb-40 sm:-mb-56">
-      <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
-          <div class="col-end-13 col-span-12 c500:col-end-13 c500:col-span-7 sm:max-w-[90%] ml-auto sm:col-end-13 sm:col-span-9 lg:col-end-13 lg:col-span-7"> 
-              <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
-                  En inglés, las <span class="text-bold">letras</span> <span class="text-bold">s y</span> 
-                  <span class="text-bold text-[#6610F2]">z</span> al inicio de una
-                  <span class="inline xs:inline c400:block c500:inline">palabra tiene <span class="text-bold">pronunciaciones distintas y</span></span>
-                  <span class="inline xs:inline c400:block c500:inline"><span class="text-bold">significados distintos.</span></span>
-              </p>
-          </div>
-          <div class="col-start-1 col-span-5 sm:col-start-1 sm:col-span-4 transform -translate-y-44 c400:-translate-y-44 c500:-translate-y-56 
-                      -translate-x-4 xl:translate-x-12 lg:-translate-x-16 sm:-translate-y-72 sm:-translate-x-2">
-              <img src="/images/svg/global/Estrella.svg" alt="Estrella" class="w-48 h-48 sm:w-56 sm:h-56">
-          </div>
       </div>
-  </section>  
+    </section>
     <!-- Seccion de "Por ejemplo" -->
     <section class="mb-8 sm:mb-24">
       <div class="max-w-2xl mx-auto">
-        <p class="text-xl sm:text-3xl text-bold text-center -mb-12 sm:-mb-4">Por ejemplo:</p>
-        
+        <p class="text-xl sm:text-3xl text-bold text-center -mb-12 sm:-mb-4">
+          Por ejemplo:
+        </p>
+
         <div class="grid grid-cols-2 sm:gap-x-48">
           <div class="flex flex-col items-center">
-            <img src="/images/svg/z/Sip.svg" alt="Sip" class="w-54 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-4">
-            <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-2">Sip</p>
-            <p class="text-xl sm:text-3xl text-extrabold mb-2">(beber un sorbo)</p>
-            <AudioPlayer audio_path={"/audio/z/Sip.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+            <img
+              src="/images/svg/z/Sip.svg"
+              alt="Sip"
+              class="w-54 h-72 max-w-[70%] -mb-16 sm:max-w-[100%] sm:-mb-4"
+            />
+            <p
+              class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-2"
+            >
+              Sip
+            </p>
+            <p class="text-xl sm:text-3xl text-extrabold mb-2">
+              (beber un sorbo)
+            </p>
+            <AudioPlayer
+              audio_path={"/audio/z/Sip.mp3"}
+              className="w-24 h-24 sm:w-20 sm:h-20"
+              client:load
+            />
           </div>
           <div class="flex flex-col items-center">
-              <img src="/images/svg/z/Zip.svg" alt="Zip" class="w-54 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] rotate-[17.53deg] origin-center 
-                                                              tranform -translate-x-4 min-[350px]:-translate-x-2 sm:-mb-4">
-              <p class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-2">Zip</p>
-              <p class="text-xl sm:text-3xl text-extrabold mb-2">(subir el cierre)</p>
-              <AudioPlayer audio_path={"/audio/z/Zip.mp3"} className="w-24 h-24 sm:w-20 sm:h-20" client:load/>
+            <img
+              src="/images/svg/z/Zip.svg"
+              alt="Zip"
+              class="w-54 h-72 max-w-[70%] -mb-16 xl:max-w-[100%] rotate-[17.53deg] origin-center
+                                                              tranform -translate-x-4 min-[350px]:-translate-x-2 sm:-mb-4"
+            />
+            <p
+              class="text-[#6610F2] text-4xl sm:text-6xl text-extrabold sm:mb-2"
+            >
+              Zip
+            </p>
+            <p class="text-xl sm:text-3xl text-extrabold mb-2">
+              (subir el cierre)
+            </p>
+            <AudioPlayer
+              audio_path={"/audio/z/Zip.mp3"}
+              className="w-24 h-24 sm:w-20 sm:h-20"
+              client:load
+            />
           </div>
         </div>
       </div>
-    </section>  
+    </section>
     <!-- Seccion de "Ejercicios de Discriminacion" -->
     <section class="mb-8">
-      <div class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto">
-          <div class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-4"> 
-              <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
-                  Una forma de hacernos conscientes de las
-                  <span class="text-bold">diferencias entre la escritura y la pronunciación
-                  </span> 
-                  <span class="inline c1400:block">del castellano y del inglés es hacer</span>
-                  <span class="text-bold text-[#6610F2] inline c1400:block">
-                      ejercicios <span class="text-bold text-[#6610F2] inline c400:block c500:inline">de discriminación.</span>
-                  </span>
-              </p>
-          </div>
-          <div class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12  sm:translate-x-0 ">
-            <img src="/images/svg/global/Flecha.svg" alt="Flecha" class="w-24 h-24 sm:w-40 sm:h-40 rotate-[5.53deg] ">
-          </div>
-          <div class="col-end-13 col-span-10 max-w-[90%] ml-auto sm:max-w-[95%] sm:col-end-13 sm:col-span-8 row-start-2 transform "> 
-              <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
-                  Los <span class="text-bold text-[#6610F2]">ejercicios de discriminación</span> permiten que
-                  podamos <span class="text-bold">diferenciar la pronunciación</span> de una letra 
-                  de otra y, además, nos ayudan a mejorar nuestra
-                  <span class="text-bold">escritura</span>
-                  <span class="text-bold inline c400:block c450:inline">en la lengua extranjera</span>.
-              </p>
-          </div>               
+      <div
+        class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto"
+      >
+        <div
+          class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-4"
+        >
+          <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
+            Una forma de hacernos conscientes de las
+            <span class="text-bold"
+              >diferencias entre la escritura y la pronunciación
+            </span>
+            <span class="inline c1400:block"
+              >del castellano y del inglés es hacer</span
+            >
+            <span class="text-bold text-[#6610F2] inline c1400:block">
+              ejercicios <span
+                class="text-bold text-[#6610F2] inline c400:block c500:inline"
+                >de discriminación.</span
+              >
+            </span>
+          </p>
+        </div>
+        <div
+          class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12 sm:translate-x-0"
+        >
+          <img
+            src="/images/svg/global/Flecha.svg"
+            alt="Flecha"
+            class="w-24 h-24 sm:w-40 sm:h-40 rotate-[5.53deg]"
+          />
+        </div>
+        <div
+          class="col-end-13 col-span-10 max-w-[90%] ml-auto sm:max-w-[95%] sm:col-end-13 sm:col-span-8 row-start-2 transform"
+        >
+          <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
+            Los <span class="text-bold text-[#6610F2]"
+              >ejercicios de discriminación</span
+            > permiten que podamos <span class="text-bold"
+              >diferenciar la pronunciación</span
+            > de una letra de otra y, además, nos ayudan a mejorar nuestra
+            <span class="text-bold">escritura</span>
+            <span class="text-bold inline c400:block c450:inline"
+              >en la lengua extranjera</span
+            >.
+          </p>
+        </div>
       </div>
-    </section> 
+    </section>
     <!-- Seccion de "Pronuncia las siguientes palabras" -->
-    <section class="mb-48 sm:mb-96 ">
+    <section class="mb-48 sm:mb-96">
       <p
         class="mt-4 text-lg sm:text-2xl text-center mb-32 sm:mb-24 max-w-[90%] sm:max-w-[45%] mx-auto leading-[1.45rem]"
       >
         Utiliza la siguente lista para hacer un <span
           class="text-[#6610F2] text-bold">ejercicio de discriminación</span
         > de las <span class="text-bold"
-          >letras <span class="text-[#6610F2]">s</span> y <span class="text-[#6610F2]">z</span>:
+          >letras <span class="text-[#6610F2]">s</span> y <span
+            class="text-[#6610F2]">z</span
+          >:
         </span>
       </p>
 
       <img
         src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
         alt="Contenedor de Audios Parte Superior"
-        class="w-3/4 flex hidden justify-center mx-auto transform -translate-y-12 sm:block"
+        class="w-3/4 hidden justify-center mx-auto transform -translate-y-12 sm:block"
       />
       <div
         class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
@@ -275,174 +418,216 @@ export async function getStaticPaths() {
         />
       </div>
       <img
-          src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
-          alt="Contenedor de Audios Parte Inferior"
-          class="w-3/4 flex hidden justify-center mx-auto transform translate-y-64 sm:block"
-        />
+        src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
+        alt="Contenedor de Audios Parte Inferior"
+        class="w-3/4 hidden justify-center mx-auto transform translate-y-64 sm:block"
+      />
     </section>
     <!-- Seccion de "Como podemos pronunciar el fonema" -->
-    <section class="-mb-32 c400:-mb-44 xl:-mb-48  overflow-hidden">
-      <p class="mt-4 text-xl sm:text-3xl text-bold text-center mb-12 sm:mb-20 max-w-[62%] mx-auto leading-[1.45rem]">
+    <section class="-mb-32 c400:-mb-44 xl:-mb-48 overflow-hidden">
+      <p
+        class="mt-4 text-xl sm:text-3xl text-bold text-center mb-12 sm:mb-20 max-w-[62%] mx-auto leading-[1.45rem]"
+      >
         ¿Cómo podemos<span class="text-[#6610F2]"> pronunciar z</span>
         en inglés?
       </p>
 
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-        <div class="col-start-1 col-span-11 -mb-16 max-w-[97%] sm:col-start-1 sm:col-span-7 sm:mb-16 sm:max-w-[90%] xl:col-span-8 xl:mb-8">
-            <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
-              Comienza <span class="text-bold">pronunciando la letra s en castellano</span>.
-              Luego, mientras pronuncias la <span class="text-bold">letra s</span>, 
-              pon dos dedos sobre tu garganta e 
-              <span class="text-bold">imita el zumbido de una abeja</span>.
-            </p>
+        <div
+          class="col-start-1 col-span-11 -mb-16 max-w-[97%] sm:col-start-1 sm:col-span-7 sm:mb-16 sm:max-w-[90%] xl:col-span-8 xl:mb-8"
+        >
+          <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
+            Comienza <span class="text-bold"
+              >pronunciando la letra s en castellano</span
+            >. Luego, mientras pronuncias la <span class="text-bold"
+              >letra s</span
+            >, pon dos dedos sobre tu garganta e
+            <span class="text-bold">imita el zumbido de una abeja</span>.
+          </p>
         </div>
-        <div class="col-start-7 col-span-5 sm:col-start-8 sm:col-span-4 flexjustify-center items-center -mb-8 sm:-mb-48">
-            <img src="/images/svg/global/Nota_Musical.svg" alt="Nota Musical" class="w-48 h-48 transform sm:rotate-[25.53deg] rotate-[25.53deg] -translate-y-6 sm:-translate-y-32 lg:-translate-y-52 translate-x-12 sm:translate-x-4 ">
+        <div
+          class="col-start-7 col-span-5 sm:col-start-8 sm:col-span-4 flexjustify-center items-center -mb-8 sm:-mb-48"
+        >
+          <img
+            src="/images/svg/global/Nota_Musical.svg"
+            alt="Nota Musical"
+            class="w-48 h-48 transform sm:rotate-[25.53deg] rotate-[25.53deg] -translate-y-6 sm:-translate-y-32 lg:-translate-y-52 translate-x-12 sm:translate-x-4"
+          />
         </div>
-    
-        <div class="col-end-13 col-span-12 ml-auto sm:col-end-13 sm:col-span-8 transform -translate-y-8 sm:translate-y-4">
-            <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
-                <span class="text-bold">Si te vibra la garganta, estás</span>
-                <span class="block xs:inline c400:block sm:inline"><span class="text-bold">pronunciando la <span class="text-[#6610F2]">letra z</span></span>; si no vibra</span> 
-                <span class="inline xs:inline c400:block sm:inline">como el zumbido de una abeja,</span>
-                <span class="block xs:inline c400:block c550:inline sm:inline"> estás pronunciando la <span class="text-bold">letra s</span>.</span>
-            </p>
+
+        <div
+          class="col-end-13 col-span-12 ml-auto sm:col-end-13 sm:col-span-8 transform -translate-y-8 sm:translate-y-4"
+        >
+          <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
+            <span class="text-bold">Si te vibra la garganta, estás</span>
+            <span class="block xs:inline c400:block sm:inline"
+              ><span class="text-bold"
+                >pronunciando la <span class="text-[#6610F2]">letra z</span
+                ></span
+              >; si no vibra</span
+            >
+            <span class="inline xs:inline c400:block sm:inline"
+              >como el zumbido de una abeja,</span
+            >
+            <span class="block xs:inline c400:block c550:inline sm:inline">
+              estás pronunciando la <span class="text-bold">letra s</span
+              >.</span
+            >
+          </p>
         </div>
         <div class="col-start-1 col-span-7 flex justify-center items-center">
-          <img src="/images/png/abeja.png" alt="Abeja" class="w-48 h-48 sm:w-72 sm:h-72 transform -translate-y-20 -translate-x-12 c400:-translate-y-36 
-                                                              c500:-translate-y-52 c550:-translate-x-20 sm:-translate-y-48 sm:-translate-x-12 ">
-        </div> 
-      </div> 
+          <img
+            src="/images/png/abeja.png"
+            alt="Abeja"
+            class="w-48 h-48 sm:w-72 sm:h-72 transform -translate-y-20 -translate-x-12 c400:-translate-y-36
+                                                              c500:-translate-y-52 c550:-translate-x-20 sm:-translate-y-48 sm:-translate-x-12"
+          />
+        </div>
+      </div>
     </section>
     <section class="mt-10">
       <div class="lg:max-w-4xl sm:max-w-2xl mx-auto">
         <div class="grid sm:grid-cols-2 sm:gap-x-12 mb-14">
           <div>
             <div class="flex flex-col items-center mb-4">
-              <video src="/videos/z/Muestra_Vibracion_S.mkv" controls muted class="w-80 sm:w-full mx-auto">
+              <video
+                src="/videos/z/Muestra_Vibracion_S.mkv"
+                controls
+                muted
+                class="w-80 sm:w-full mx-auto"></video>
             </div>
             <div class="flex flex-col items-center mb-4">
-              <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">Letra s</p>
+              <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">
+                Letra s
+              </p>
             </div>
           </div>
           <div>
             <div class="flex flex-col items-center mb-4">
-              <video src="/videos/z/Muestra_Vibracion_Z.mkv" controls muted class="w-80 sm:w-full mx-auto">
+              <video
+                src="/videos/z/Muestra_Vibracion_Z.mkv"
+                controls
+                muted
+                class="w-80 sm:w-full mx-auto"></video>
             </div>
             <div class="flex flex-col items-center mb-4">
-              <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">Letra z</p>
-          </div>
-        </div>
-    </div>
-    </section>
-    <!-- Seccion de "Pronuncia las siguientes palabras" -->
-    <section class="mb-64 sm:mb-96">
-      <p
-        class="text-lg sm:text-2xl text-center mb-36 sm:mb-24 max-w-[80%] sm:max-w-[50%] mx-auto leading-[1.45rem]"
-      >
-        Ahora, pon dos dedos sobre tu garganta y sin escuchar los audios, <span
-          class="text-bold text-[#6610F2]"
-          > pronuncia las
-          siguientes palabras:</span
-        >
-      </p>
-
-      <img
-        src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
-        alt="Contenedor de Audios Parte Superior"
-        class="w-3/4 flex hidden justify-center mx-auto transform -translate-y-0 sm:block"
-      />
-      <div
-        class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
-      >
-        <img
-          src="/images/svg/global/Contenedor_Audios_Superior.svg"
-          alt="Contenedor de Audios Parte Superior"
-          class="w-full transform -translate-y-56 sm:hidden"
-        />
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="w-full px-24 transform translate-y-20 sm:translate-y-40">
-            <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
-              <div class="flex flex-col items-center mb-8">
-                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
-                  Silent
-                </p>
-                <AudioPlayer
-                  audio_path={"/audio/z/Silent.mp3"}
-                  className="w-24 h-24 sm:w-20 sm:h-20"
-                  client:load
-                />
-              </div>
-
-              <div class="flex flex-col items-center mb-8">
-                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
-                  Zap
-                </p>
-                <AudioPlayer
-                  audio_path={"/audio/z/Zap.mp3"}
-                  className="w-24 h-24 sm:w-20 sm:h-20"
-                  client:load
-                />
-              </div>
-
-              <div class="flex flex-col items-center mb-8">
-                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
-                  Singer
-                </p>
-                <AudioPlayer
-                  audio_path={"/audio/z/Singer.mp3"}
-                  className="w-24 h-24 sm:w-20 sm:h-20"
-                  client:load
-                />
-              </div>
-
-              <div class="flex flex-col items-center mb-8">
-                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
-                  Zombie
-                </p>
-                <AudioPlayer
-                  audio_path={"/audio/z/Zombie.mp3"}
-                  className="w-24 h-24 sm:w-20 sm:h-20"
-                  client:load
-                />
-              </div>
-
-              <div class="flex flex-col items-center mb-8">
-                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
-                  Summer
-                </p>
-                <AudioPlayer
-                  audio_path={"/audio/z/Summer.mp3"}
-                  className="w-24 h-24 sm:w-20 sm:h-20"
-                  client:load
-                />
-              </div>
-
-              <div class="flex flex-col items-center mb-8">
-                <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
-                  Zinc
-                </p>
-                <AudioPlayer
-                  audio_path={"/audio/z/Zinc.mp3"}
-                  className="w-24 h-24 sm:w-20 sm:h-20"
-                  client:load
-                />
-              </div>
+              <p class="text-[#6610F2] text-4xl sm:text-5xl text-extrabold">
+                Letra z
+              </p>
             </div>
           </div>
         </div>
-        <img
-          src="/images/svg/global/Contenedor_Audios_Inferior.svg"
-          alt="Contenedor de Audios Parte Inferior"
-          class="w-full transform translate-y-48 sm:translate-y-28 -z-10 absolute sm:hidden"
-        />
       </div>
-      <img
+      <!-- Seccion de "Pronuncia las siguientes palabras" -->
+      <section class="mb-64 sm:mb-96">
+        <p
+          class="text-lg sm:text-2xl text-center mb-36 sm:mb-24 max-w-[80%] sm:max-w-[50%] mx-auto leading-[1.45rem]"
+        >
+          Ahora, pon dos dedos sobre tu garganta y sin escuchar los audios, <span
+            class="text-bold text-[#6610F2]"
+          >
+            pronuncia las siguientes palabras:</span
+          >
+        </p>
+
+        <img
+          src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
+          alt="Contenedor de Audios Parte Superior"
+          class="w-3/4 hidden justify-center mx-auto transform -translate-y-0 sm:block"
+        />
+        <div
+          class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
+        >
+          <img
+            src="/images/svg/global/Contenedor_Audios_Superior.svg"
+            alt="Contenedor de Audios Parte Superior"
+            class="w-full transform -translate-y-56 sm:hidden"
+          />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="w-full px-24 transform translate-y-20 sm:translate-y-40"
+            >
+              <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Silent
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/z/Silent.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Zap
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/z/Zap.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Singer
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/z/Singer.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Zombie
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/z/Zombie.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Summer
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/z/Summer.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+
+                <div class="flex flex-col items-center mb-8">
+                  <p class="text-[#6610F2] text-3xl sm:text-5xl text-extrabold">
+                    Zinc
+                  </p>
+                  <AudioPlayer
+                    audio_path={"/audio/z/Zinc.mp3"}
+                    className="w-24 h-24 sm:w-20 sm:h-20"
+                    client:load
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="/images/svg/global/Contenedor_Audios_Inferior.svg"
+            alt="Contenedor de Audios Parte Inferior"
+            class="w-full transform translate-y-48 sm:translate-y-28 -z-10 absolute sm:hidden"
+          />
+        </div>
+        <img
           src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
           alt="Contenedor de Audios Parte Inferior"
-          class="w-3/4 flex hidden justify-center mx-auto transform translate-y-72 sm:block"
+          class="w-3/4 hidden justify-center mx-auto transform translate-y-72 sm:block"
         />
-      </div>
+      </section>
     </section>
     <!-- Seccion de "¿Quieres seguir ejercitando?" -->
     <section class="overflow-hidden">

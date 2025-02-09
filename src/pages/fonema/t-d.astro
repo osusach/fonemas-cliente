@@ -7,12 +7,12 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title="Letras t-d" description="Explicación de la diferencia entre los sonidos t y d en castellano e inglés">
+<Layout
+  title="Letras t-d"
+  description="Explicación de la diferencia entre los sonidos t y d en castellano e inglés"
+>
   <article class="flex flex-col justify-center">
-    <section class="ml-5 my-10 lg:ml-10 lg:my-20">
-      <button class="underline sm:text-lg text-xl lg:text-2xl"> Letras </button>
-    </section>
-    <section class="mb-52 -mt-32">
+    <section class="mb-52 -mt-24 lg:-mt-10">
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
         <img
           src="/images/svg/tyd/Fonema_T_D.svg"
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
           class="col-start-7 col-span-6 flex items-center transform translate-y-40 translate-x-8 sm:translate-x-0"
         >
           <p class="sm:text-lg text-base lg:text-5xl max-w-[90%]">
-            Las <span class="text-bold text-[#6610F2]">letras t y d</span> existen
+            Las <span class="text-extrabold text-[#6610F2]">letras t y d</span> existen
             en castellano e inglés, pero se pronuncian de manera distinta.
           </p>
         </div>
@@ -102,35 +102,42 @@ export async function getStaticPaths() {
         <div
           class="col-start-2 col-span-4 lg:col-start-3 lg:col-span-3 mx-auto"
         >
-          <img src="/images/svg/tyd/Tetera.svg" alt="Imagen de una tetera" />
+          <img
+            src="/images/svg/tyd/Tetera.svg"
+            alt="Imagen de una tetera"
+            class="w-[90%]"
+          />
           <div
-            class="text-4xl lg:text-6xl w-full text-end text-bold text-[#6610F2] mt-10 lg:mb-5 mx-auto"
+            class="text-4xl lg:text-6xl w-full text-center text-extrabold text-[#6610F2] mt-6 lg:mt-14 lg:mb-5 mx-auto"
           >
             Tetera
+            <AudioPlayer
+              audio_path={"/audio/td/Tetera.mp3"}
+              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+              client:load
+            />
           </div>
         </div>
 
         <div
           class="col-start-8 col-span-4 lg:col-start-8 lg:col-span-3 mx-auto"
         >
-          <img src="/images/svg/tyd/Dedal.svg" alt="Imagen de un dedal" />
+          <img
+            src="/images/svg/tyd/Dedal.svg"
+            alt="Imagen de un dedal"
+            class="w-[90%] mx-auto"
+          />
           <div
-            class="text-4xl lg:text-6xl text-bold text-[#6610F2] mt-10 lg:mb-5 text-center"
+            class="text-4xl lg:text-6xl text-extrabold text-[#6610F2] mt-4 lg:mt-12 lg:mb-5 text-center"
           >
             Dedal
+            <AudioPlayer
+              audio_path={"/audio/td/Dedal.mp3"}
+              className="col-start-8 col-span-4 w-20 h-20 lg:col-start-9 lg:col-span-1 lg:w-24 lg:h-24 mx-auto"
+              client:load
+            />
           </div>
         </div>
-
-        <AudioPlayer
-          audio_path={"/audio/t-d/Tetera.mp3"}
-          className="col-start-2 col-span-4 w-20 h-20 lg:col-start-4 lg:col-span-2 lg:w-24 lg:h-24 mx-auto"
-          client:load
-        />
-        <AudioPlayer
-          audio_path={"/audio/t-d/Dedal.mp3"}
-          className="col-start-8 col-span-4 w-20 h-20 lg:col-start-9 lg:col-span-1 lg:w-24 lg:h-24 mx-auto"
-          client:load
-        />
       </div>
     </section>
     <section>
@@ -496,7 +503,7 @@ export async function getStaticPaths() {
           class="col-start-5 col-span-4 text-3xl mt-5 lg:col-start-5 lg:col-span-4 lg:mt-20 lg:text-6xl text-bold mx-auto flex flex-col items-end text-[#6610F2] whitespace-nowrap"
         >
           <img src="/images/svg/tyd/Tetera.svg" alt="Imagen de una tetera" />
-          <span class="mt-5 lg:mt-10 ml-auto">
+          <span class="text-extrabold mt-5 lg:mt-10 ml-auto">
             Tete-<span class="text-black">ra</span>
           </span>
         </p>
@@ -625,18 +632,20 @@ export async function getStaticPaths() {
     <section class="mt-10">
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
         <div
-          class="col-start-5 col-span-4 lg:col-start-2 lg:col-span-2 text-center lg:mt-20 flex flex-col"
+          class="col-start-5 col-span-4 lg:col-start-2 lg:col-span-3 text-center lg:mt-20 flex flex-col"
         >
           <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
             <!-- Altura fija para todas las imágenes -->
             <img
               src="/images/svg/tyd/Tierra.svg"
               alt="Imagen del planeta tierra"
-              class="w-full h-auto max-h-full object-contain"
+              class="w-[85%] mx-auto object-contain"
             />
           </div>
           <div class="lg:mt-5">
-            <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
+            <span
+              class="text-4xl lg:text-6xl text-extrabold text-[#6610F2] block"
+            >
               T<span class="text-black">ie</span>rr<span class="text-black"
                 >a</span
               >
@@ -660,7 +669,9 @@ export async function getStaticPaths() {
             />
           </div>
           <div class="lg:mt-5">
-            <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
+            <span
+              class="text-4xl lg:text-6xl text-extrabold text-[#6610F2] block"
+            >
               T<span class="text-black">o</span>rr<span class="text-black"
                 >e</span
               >
@@ -674,17 +685,19 @@ export async function getStaticPaths() {
         </div>
 
         <div
-          class="col-start-8 col-span-4 lg:col-start-10 lg:col-span-2 lg:mt-20 text-center flex flex-col"
+          class="col-start-8 col-span-4 lg:col-start-9 lg:col-span-3 lg:mt-20 text-center flex flex-col"
         >
           <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
             <img
               src="/images/svg/tyd/Tarro.svg"
               alt="Imagen de un tarro"
-              class="w-full h-auto max-h-full object-contain"
+              class="w-[85%] object-contain"
             />
           </div>
           <div class="lg:mt-5">
-            <span class="text-4xl lg:text-6xl text-bold text-[#6610F2] block">
+            <span
+              class="text-4xl lg:text-6xl text-extrabold text-[#6610F2] block"
+            >
               T<span class="text-black">a</span>rr<span class="text-black"
                 >o</span
               >
@@ -716,25 +729,26 @@ export async function getStaticPaths() {
         </p>
 
         <span
-          class="col-start-5 col-span-4 text-4xl lg:col-start-2 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center mt-20"
+          class="col-start-5 col-span-4 text-4xl lg:col-start-2 lg:col-span-3 lg:text-6xl text-extrabold text-center mt-20"
         >
           <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
-            <!-- Altura fija para todas las imágenes -->
             <img
               src="/images/svg/tyd/Pero.svg"
               alt="Imagen de un pero"
-              class="w-full h-auto max-h-full object-contain"
+              class="w-full object-contain"
             />
           </div>
-          Pe<span class="text-[#6610F2]">r</span>o
-          <AudioPlayer
-            audio_path={"/audio/t-d/Pero.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
+          <div class="lg:mt-10">
+            Pe<span class="text-[#6610F2]">r</span>o
+            <AudioPlayer
+              audio_path={"/audio/td/Pero.mp3"}
+              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+              client:load
+            />
+          </div>
         </span>
         <span
-          class="col-start-2 col-span-4 text-4xl lg:col-start-6 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center lg:mt-20"
+          class="col-start-2 col-span-4 text-4xl lg:col-start-6 lg:col-span-2 lg:text-6xl mx-auto text-extrabold text-center lg:mt-20"
         >
           <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
             <img
@@ -743,15 +757,17 @@ export async function getStaticPaths() {
               class="w-full h-auto max-h-full object-contain"
             />
           </div>
-          Zo<span class="text-[#6610F2]">rr</span>o
-          <AudioPlayer
-            audio_path={"/audio/t-d/Zorro.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
+          <div class="lg:mt-10">
+            Zo<span class="text-[#6610F2]">rr</span>o
+            <AudioPlayer
+              audio_path={"/audio/td/Zorro.mp3"}
+              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+              client:load
+            />
+          </div>
         </span>
         <span
-          class="col-start-8 col-span-4 text-4xl lg:col-start-10 lg:col-span-2 lg:text-6xl mx-auto text-bold text-center lg:mt-20"
+          class="col-start-8 col-span-4 text-4xl lg:col-start-9 lg:col-span-3 lg:text-6xl text-extrabold text-center lg:mt-20"
         >
           <div class="h-[150px] lg:h-[200px] flex items-center justify-center">
             <img
@@ -760,12 +776,14 @@ export async function getStaticPaths() {
               class="w-full h-auto max-h-full object-contain"
             />
           </div>
-          <span class="text-[#6610F2]">R</span>oca
-          <AudioPlayer
-            audio_path={"/audio/t-d/Roca.mp3"}
-            className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
-            client:load
-          />
+          <div class="lg:mt-10">
+            <span class="text-[#6610F2]">R</span>oca
+            <AudioPlayer
+              audio_path={"/audio/td/Roca.mp3"}
+              className="w-20 h-20 lg:w-24 lg:h-24 mx-auto"
+              client:load
+            />
+          </div>
         </span>
       </div>
       <section class="my-20">
