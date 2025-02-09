@@ -48,16 +48,16 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
     }
 
     return (
-        <article className="relative flex flex-col h-[calc(100vh-64px)]">
-            <div className="absolute sm:static flex justify-center w-full">
-                <div className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto mt-2">
+        <article className="relative flex flex-col h-[calc(100vh-96px)] -mb-8 sm:-mb-16">
+            <div className="sm:static flex justify-center w-full pt-8">
+                <div className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto pt-2">
                     {/* Link to fonema /z/ */}
                     <a
                     href={`${routeOfFonema}`}
                     className="text-xs underline
                     col-span-12
                     sm:text-xl">
-                        Fonema /{fonema}/
+                        Letra {fonema}
                     </a>
                     {/* Title */}
                     <img
@@ -69,7 +69,7 @@ export function Exercise({fonema, routeOfFonema, routeOfTitleSVG, text, answerA,
                     />
                 </div>
             </div>
-            <div className="flex flex-col justify-center space-y-8 sm:space-y-16 h-[calc(100vh-64px)]">
+            <div className="flex flex-col justify-around  h-[60vh]">
                 <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
                     {/* Left start */}
                     <img src="/images/svg/global/Estrella.svg" 
