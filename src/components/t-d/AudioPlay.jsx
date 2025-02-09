@@ -80,7 +80,7 @@ export function AudioPlay() {
                 {/* Play audio button */}
                 <div className="col-span-4 col-start-5 m-auto
                 lg:w-[164px]">
-                    <AudioPlayer audio_path={`/audio/td/exercise/${t_dAudioList[currentAudio]}.mp3`} className="lg:w-[164px]" />
+                    <AudioPlayer audio_path={`/audio/t-d/exercise/${t_dAudioList[currentAudio]}.mp3`} className="lg:w-[164px]" />
                 </div>
                 {/* Right arrow button */}
                 {(currentAudio !== t_dAudioList.length - 1) && (
