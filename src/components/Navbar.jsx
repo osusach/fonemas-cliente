@@ -38,17 +38,17 @@ export function Navbar() {
             <div className="fixed bg-[#6610F2] text-white flex items-center z-40 w-full h-16 sm:h-24">
                 <nav className="grid grid-cols-12 gap-[15px] w-full c400:w-[85%] lg:w-[67%] mx-auto h-16 items-center text-center">
                     <span className="col-start-2 c400:col-start-1 col-span-7 text-xl text-start lg:col-start-1 lg:col-span-4 lg:text-3xl text-extrabold my-auto">English Pronunciation</span>
-                    <a href="/nosotros" className="col-start-5 col-span-2 text-white text-bold text-xl hidden lg:block ">
+                    <a href="/nosotros" className="col-start-5 col-span-2 text-white text-bold text-lg c1800:text-xl hidden lg:block ">
                         <span className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Sobre nosotros
                         </span>
                     </a>
-                    <a href="/objetivo" className="col-start-7 col-span-1 text-start  text-white text-bold text-xl hidden lg:block ">
+                    <a href="/objetivo" className="col-start-7 col-span-1 text-start  text-white text-bold text-lg c1800:text-xl hidden lg:block ">
                         <span className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Objetivo
                         </span>
                     </a>
-                    <a href="/ohno" className="col-start-8 col-span-2 text-white text-bold text-xl hidden lg:block">
+                    <a href="/ohno" className="col-start-8 col-span-2 text-white text-bold text-lg c1800:text-xl hidden lg:block">
                         <span className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Tu cerebro te engaña
                         </span>
@@ -60,7 +60,7 @@ export function Navbar() {
                         {/* NavBar fonemas button */}
                         <button
                             onClick={handleFonemasToggle}
-                            className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+                            className="relative text-white text-bold text-lg c1800:text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
                         >
                             Letras
                         </button>
@@ -90,7 +90,7 @@ export function Navbar() {
                         {/* NavBar ejercicios button */}
                         <button
                             onClick={handleEjerciciosToggle}
-                            className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+                            className="relative text-white text-bold text-lg c1800:text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
                         >
                             Ejercicios
                         </button>
@@ -116,7 +116,7 @@ export function Navbar() {
                         </div>
                     </section>
 
-                    <a href="/extras" className="relative text-white text-bold text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
+                    <a href="/extras" className="relative text-white text-bold text-lg c1800:text-xl hidden lg:block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">
                         Extras
                     </a>
                     <button onClick={handleMenuOpen} className="col-start-11 col-span-2 p-2 lg:hidden">
