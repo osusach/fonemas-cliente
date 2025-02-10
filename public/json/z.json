@@ -2,6 +2,7 @@
     "audios": [
         {
             "name": "Socket",
+            "description": 0,
             "answer_a": "s",
             "text_answer_a": "Tiene s",
             "answer_b": "z",
@@ -10,6 +11,7 @@
         },
         {
             "name": "Signal",
+            "description": 0,
             "answer_a": "s",
             "text_answer_a": "Tiene s",
             "answer_b": "z",
@@ -18,6 +20,7 @@
         },
         {
             "name": "ZigZag",
+            "description": 0,
             "answer_a": "s",
             "text_answer_a": "Tiene s",
             "answer_b": "z",
@@ -26,6 +29,7 @@
         },
         {
             "name": "Zero",
+            "description": 0,
             "answer_a": "s",
             "text_answer_a": "Tiene s",
             "answer_b": "z",
@@ -34,6 +38,7 @@
         },
         {
             "name": "Secret",
+            "description": 0,
             "answer_a": "s",
             "text_answer_a": "Tiene s",
             "answer_b": "z",
@@ -42,6 +47,7 @@
         },
         {
             "name": "Zing",
+            "description": 0,
             "answer_a": "s",
             "text_answer_a": "Tiene s",
             "answer_b": "z",

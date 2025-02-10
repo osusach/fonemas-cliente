@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AudioPlayer from "./AudioPlayer";
 
-export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, text }) {
+export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions }) {
     const [data, setData] = useState(null);
     const [currentAudio, setCurrentAudio] = useState(0);
     const [selectedButton, setSelectedButton] = useState(null);
@@ -80,7 +80,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, text }) {
                     />
                     <div className="col-span-8 col-start-3 place-content-center">
                         {/* Text */}
-                        <div dangerouslySetInnerHTML={{__html: text}} />
+                        {data ? <div dangerouslySetInnerHTML={{__html: descriptions[data.audios[currentAudio].description]}} /> : null}
                     </div>
                     {/* Right start */}
                     <img src="/images/svg/global/Estrella.svg" 

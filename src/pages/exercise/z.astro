@@ -2,14 +2,16 @@
 import Layout from "../../layouts/Layout.astro";
 import { Exercise } from "../../components/Exercise";
 
-const text = `
-<p
-class="text-base text-center
-sm:text-2xl"
->
-    Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene <span class="text-[#6610F2]">s</span> o <span class="text-[#6610F2]">z</span></span>.
-</p>
-`;
+const descriptions = [
+    `
+    <p
+    class="text-base text-center
+    sm:text-2xl"
+    >
+        Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene <span class="text-[#6610F2]">s</span> o <span class="text-[#6610F2]">z</span></span>.
+    </p>
+    `
+];
 ---
 
 <Layout title="Ejercicios Z" description="Ejercicios para identificar el sonido Z en inglés">
@@ -17,7 +19,7 @@ sm:text-2xl"
     fonema={"z"}
     routeOfFonema={"/fonema/z"}
     routeOfTitleSVG={"/images/svg/z/Ejercicios_Z.svg"}
-    text={text}
+    descriptions={descriptions}
     client:load
     />
 </Layout>
