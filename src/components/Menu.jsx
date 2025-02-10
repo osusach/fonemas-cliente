@@ -20,10 +20,10 @@ export function Menu({ isMenuOpen, handleMenuOpen, isFonemasOpen, setIsFonemasOp
                     }`}
             >
                 <nav className="flex flex-col justify-center text-right w-[85%] mx-auto p-4">
-                    <a href="/nosotros" className="text-white text-bold text-xl">Quienes somos</a>
-                    <a href="/" className="text-white text-bold text-xl mt-4">Objetivos</a>
+                    <a href="/nosotros" className="text-white text-bold text-xl">Sobre nosotros</a>
+                    <a href="/" className="text-white text-bold text-xl mt-4">Objetivo</a>
                     <a href="/ohno" className="text-white text-bold text-xl mt-4">Tu cerebro te engaña</a>
-                    <button onClick={handleFonemasToggle} className="text-white text-bold text-right text-xl mt-4">Fonemas</button>
+                    <button onClick={handleFonemasToggle} className="text-white text-bold text-right text-xl mt-4">Letras</button>
                     <div
                         className={`overflow-hidden transition-all duration-300 ease-in-out ${isFonemasOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
                             }`}
