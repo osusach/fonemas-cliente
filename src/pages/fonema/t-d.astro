@@ -1,5 +1,6 @@
 ---
 import AudioPlayer from "../../components/AudioPlayer";
+import TeacherMessage from "../../components/TeacherMessage";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -32,7 +33,7 @@ export async function getStaticPaths() {
     <section>
       <div class="grid grid-cols-12 gap-[15px] w-[85%] lg:w-full mx-auto">
         <p
-          class="col-start-1 col-span-12 text-base lg:col-start-3 lg:col-span-8 lg:text-3xl text-center"
+          class="col-start-1 col-span-12 text-base sm:max-w-[70%] sm:mx-auto lg:col-start-3 lg:col-span-8 sm:text-2xl text-center"
         >
           <span class="text-bold">En castellano</span>, para pronunciar las
           <span class="text-bold">
@@ -50,9 +51,9 @@ export async function getStaticPaths() {
           class="col-span-6 col-start-4 my-10 lg:my-20 mx-auto"
         />
         <div
-          class="col-start-1 col-span-12 w-[90%] c400:w-[85%] lg:col-start-3 lg:col-span-8 lg:w-full mx-auto"
+          class="col-start-1 col-span-12 w-[90%] c400:w-[85%] sm:max-w-[60%] sm:mx-auto lg:col-start-3 lg:col-span-8 lg:w-full mx-auto"
         >
-          <p class="text-base lg:text-3xl text-center">
+          <p class="text-base sm:text-2xl text-center">
             <span class="text-bold">Para comprobar esto</span>, toma un espejo y
             observa cómo
             <span class="text-bold text-[#6610F2]"> se mueve tu lengua </span>
@@ -78,9 +79,9 @@ export async function getStaticPaths() {
     <section>
       <div class="grid grid-cols-12 gap-[15px] w-[80%] lg:w-full mx-auto">
         <div
-          class="col-start-2 col-span-10 lg:col-start-4 lg:col-span-6 w-full"
+          class="col-start-2 col-span-10 lg:col-start-4 sm:max-w-[80%] sm:mx-auto lg:col-span-6 w-full"
         >
-          <p class="text-base lg:text-3xl text-center">
+          <p class="text-base sm:text-2xl text-center">
             Tal como lo puedes notar, al pronunciar las
             <span class="text-bold">
               letras <span class="text-[#6610F2]">t</span> y <span
@@ -92,7 +93,7 @@ export async function getStaticPaths() {
           </p>
         </div>
         <span
-          class="col-start-5 col-span-6 mt-5 lg:col-start-6 lg:col-span-3 text-bold sm:text-lg text-xl lg:text-3xl lg:mt-20"
+          class="col-start-5 col-span-6 mt-5 lg:col-start-6 lg:col-span-3 text-bold sm:text-lg text-xl sm:text-2xl lg:mt-20"
           >Por ejemplo:</span
         >
       </div>
@@ -148,10 +149,10 @@ export async function getStaticPaths() {
           class="col-start-1 col-span-4 lg:col-start-2 lg:col-span-3 max-sm:transform max-sm:translate-y-24 my-auto"
         />
         <div
-          class="col-start-1 col-span-12 w-full c400:w-[88%] lg:col-start-6 lg:col-span-7 c1400:w-[80%] c1800:w-[78%] ml-auto my-auto"
+          class="col-start-1 col-span-12 w-full c400:w-[88%] lg:col-start-6 lg:col-span-7 c1400:w-[97%] c1800:w-[95%] ml-auto my-auto"
         >
           <p
-            class="text-base lg:text-3xl max-sm:transform max-sm:-translate-y-20 text-right my-auto"
+            class="text-base sm:text-2xl max-sm:transform max-sm:-translate-y-20 text-right my-auto"
           >
             En cambio,
             <span class="text-bold">
@@ -182,19 +183,19 @@ export async function getStaticPaths() {
           class="col-start-8 col-span-4 lg:col-start-8 lg:col-span-3"
         />
         <span
-          class="col-start-2 col-span-4 text-base lg:col-start-2 lg:col-span-5 lg:text-3xl text-bold text-center"
+          class="col-start-2 col-span-4 text-base lg:col-start-2 lg:col-span-5 sm:text-2xl text-bold text-center"
         >
           Respiración postdental
         </span>
         <span
-          class="col-start-8 col-span-4 text-base lg:col-start-7 lg:col-span-5 lg:text-3xl text-bold text-center"
+          class="col-start-8 col-span-4 text-base lg:col-start-7 lg:col-span-5 sm:text-2xl text-bold text-center"
         >
           Respiración alveolar
         </span>
         <div
-          class="col-start-1 col-span-6 lg:col-start-2 lg:col-span-5 w-full c400:w-[90%] lg:w-[95%] c1800:w-full mx-auto"
+          class="col-start-1 col-span-6 lg:col-start-2 lg:col-span-5 w-full c400:w-[90%] lg:w-[75%] c1800:w-full mx-auto"
         >
-          <p class="text-sm lg:text-3xl text-center">
+          <p class="text-sm sm:text-2xl text-center">
             Lengua en la pronunciación de las <span
               class="text-[#6610F2] text-bold"
               >letras t <span class="text-black">y</span> d</span
@@ -204,7 +205,7 @@ export async function getStaticPaths() {
         <div
           class="col-start-7 col-span-6 lg:col-start-7 lg:col-span-5 w-full lg:w-[90%] c1800:w-full mx-auto"
         >
-          <p class="text-sm mx-1 lg:text-3xl text-center">
+          <p class="text-sm mx-1 sm:text-2xl text-center">
             Lengua en la pronunciación de la <span class="text-black text-bold"
               >letra r</span
             > en castellano y las <span class="text-[#6610F2] text-bold"
@@ -214,45 +215,61 @@ export async function getStaticPaths() {
         </div>
       </div>
     </section>
+    <section class="mb-8">
+      <div
+        class="grid grid-cols-12 grid-rows-2 gap-[15px] w-[90%] sm:w-[75%] mx-auto"
+      >
+        <div
+          class="col-start-1 col-span-11 row-start-1 max-w-[88%] sm:col-span-8 sm:max-w-[90%] mb-4"
+        >
+          <p class="text-lg sm:text-2xl text-left leading-[1.45rem]">
+            Una forma de hacernos conscientes de las
+            <span class="text-bold"
+              >diferencias entre la escritura y la pronunciación
+            </span>
+            <span class="inline c1400:block"
+              >del castellano y del inglés es hacer</span
+            >
+            <span class="text-bold text-[#6610F2] inline c1400:block">
+              ejercicios <span
+                class="text-bold text-[#6610F2] inline c400:block c500:inline"
+                >de discriminación.</span
+              >
+            </span>
+          </p>
+        </div>
+        <div
+          class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12 sm:translate-x-0"
+        >
+          <img
+            src="/images/svg/global/Flecha.svg"
+            alt="Flecha"
+            class="w-24 h-24 sm:w-40 sm:h-40 rotate-[5.53deg]"
+          />
+        </div>
+        <div
+          class="col-end-13 col-span-10 max-w-[90%] ml-auto sm:max-w-[95%] sm:col-end-13 sm:col-span-8 row-start-2 transform"
+        >
+          <p class="text-lg sm:text-2xl text-right leading-[1.45rem]">
+            Los <span class="text-bold text-[#6610F2]"
+              >ejercicios de discriminación</span
+            > permiten que podamos <span class="text-bold"
+              >diferenciar la pronunciación</span
+            > de una letra de otra y, además, nos ayudan a mejorar nuestra
+            <span class="text-bold">escritura</span>
+            <span class="text-bold inline c400:block c450:inline"
+              >en la lengua extranjera</span
+            >.
+          </p>
+        </div>
+      </div>
+    </section>
     <section>
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
         <div
-          class="col-start-1 col-span-9 lg:col-start-1 lg:col-span-8 w-[90%] c400:w-[90%] lg:w-full c1800:w-[90%]"
-        >
-          <p class="text-base lg:text-3xl text-left lg:mb-10">
-            Una forma de hacernos concientes de las
-            <span class="text-bold">
-              diferencias entre la escritura y la pronunciación
-            </span>
-            del castellano y del inglés es hacer
-            <span class="text-bold">
-              <span class="text-[#6610F2]"> ejercicios de discriminación</span>.
-            </span>
-          </p>
-        </div>
-        <img
-          src="/images/svg/global/Flecha.svg"
-          alt="Imagen de varias flechas apuntando a la derecha"
-          class="col-start-1 col-span-3 lg:col-start-2 lg:col-span-2"
-        />
-        <div
-          class="col-start-4 col-span-9 lg:col-start-5 lg:col-span-8 w-[90%] c400:w-full lg:max-w-[90%] lg:ml-auto c1800:w-[85%]"
-        >
-          <p class="text-base my-5 lg:text-3xl lg:my-10 text-right">
-            Los
-            <span class="text-bold text-[#6610F2]"
-              >ejercicios de discriminación</span
-            >
-            permiten que podamos
-            <span class="text-bold"> diferenciar la pronunciación </span>
-            de una letra de otra y, además, nos ayudan a mejorar nuestra
-            <span class="text-bold"> escritura en la lengua extranjera. </span>
-          </p>
-        </div>
-        <div
           class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 w-full c400:w-[90%] lg:w-full mx-auto"
         >
-          <p class="text-base lg:text-3xl text-center lg:my-10">
+          <p class="text-base sm:text-2xl text-center lg:my-10">
             Ahora que ya sabes que en catellano y en inglés hay
             <span class="text-bold">
               diferencias entre la pronunciación
@@ -271,23 +288,31 @@ export async function getStaticPaths() {
               </span>:
             </span>
           </p>
+          <div class="flex w-full justify-center z-10 transform translate-y-12 sm:translate-y-4 relative">
+            <TeacherMessage client:load/>
+          </div>
         </div>
       </div>
     </section>
-    <section class="py-56 mt-16 lg:mt-10 mb-96">
-      <div
-        class="relative w-full max-w-[350px] sm:max-w-[650px] sm:max-h-[650px] mx-auto py-32 sm:py-32"
-      >
-        <img
-          src="/images/svg/global/Contenedor_Audios_Superior.svg"
-          alt="Contenedor de Audios Parte Superior"
-          class="w-full transform -translate-y-96 sm:-translate-y-96 mb-80 sm:mb-60"
-        />
+    <section class="py-56 -mt-16 sm:-mt-16 mb-96">
+    <img
+      src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
+      alt="Contenedor de Audios Parte Superior"
+      class="w-3/4 hidden justify-center mx-auto transform -translate-y-36 sm:block"
+    />
+    <div
+    class="relative w-full max-w-[350px] sm:max-w-[650px] sm:max-h-[650px] transform translate-y-40 mx-auto py-32 sm:py-32"
+    >
+      <img
+        src="/images/svg/global/Contenedor_Audios_Superior.svg"
+        alt="Contenedor de Audios Parte Superior"
+        class="w-full transform -translate-y-96 sm:-translate-y-96 mb-80 sm:mb-60 sm:hidden"
+      />
         <div class="absolute inset-0 flex items-center justify-center">
           <div class="w-full px-24 transform translate-y-48">
             <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
               <div class="flex flex-col items-center text-center mb-8">
-                <span class="text-4xl text-extrabold text-[#6610F2]">
+                <span class="text-2xl sm:text-4xl text-extrabold text-[#6610F2]">
                   Español
                   <img
                     src="/images/svg/global/Destacado.svg"
@@ -297,7 +322,7 @@ export async function getStaticPaths() {
                 </span>
               </div>
               <div class="flex flex-col items-center text-center mb-8">
-                <span class="text-4xl text-extrabold text-[#6610F2]">
+                <span class="text-2xl sm:text-4xl text-extrabold text-[#6610F2]">
                   Inglés
                   <img
                     src="/images/svg/global/Destacado.svg"
@@ -461,16 +486,26 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/global/Contenedor_Audios_Inferior.svg"
           alt="Contenedor de Audios Parte Inferior"
-          class="w-full transform translate-y-96 sm:translate-y-96 -z-10 absolute mt-48 sm:mt-20"
+          class="w-full transform translate-y-96 sm:translate-y-96 -z-10 absolute mt-48 sm:mt-20 sm:hidden"
+        />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-center">
+        <img
+          src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
+          alt="Contenedor de Audios Parte Inferior"
+          class="w-3/4 lg:w-1/2 hidden  mx-auto transform -z-10 absolute translate-y-48 sm:block"
         />
       </div>
     </section>
-    <section class="mt-2 lg:mt-20">
+    <section class="mt-48 sm:mt-80">
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
         <div
-          class="col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 w-full c400:w-[95%] lg:w-[95%] c1800:w-full mx-auto"
+          class="col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 w-full c400:w-[95%] lg:w-[90%] c1800:w-full mx-auto"
         >
-          <p class="text-base lg:text-3xl text-center">
+          <p class="text-base sm:text-2xl text-center">
             Recuerda que la pronunciación de las
             <span class="text-bold">
               letras <span class="text-[#6610F2]">t</span> y <span
@@ -520,7 +555,7 @@ export async function getStaticPaths() {
         <div
           class="col-start-3 col-span-8 lg:col-start-2 lg:col-span-10 text-center w-full"
         >
-          <span class="text-base lg:text-3xl text-bold">
+          <span class="text-base sm:text-2xl text-bold">
             Pronuncia de manera muy lenta la palabra <span
               class="text-[#6610F2]">tetera</span
             >.
@@ -529,7 +564,7 @@ export async function getStaticPaths() {
         <div
           class="col-start-1 col-span-12 lg:col-start-1 lg:col-span-8 w-full lg:w-[90%] mr-auto my-auto"
         >
-          <p class="text-base mt-5 lg:text-3xl text-left">
+          <p class="text-base mt-5 sm:text-2xl text-left">
             Fíjate en el <span class="text-bold text-[#6610F2]">
               movimiento de tu lengua
             </span> dentro de tu boca. Al pronunciar “<span
@@ -550,13 +585,13 @@ export async function getStaticPaths() {
           class="col-start-5 col-span-4 mx-auto lg:mt-10"
         />
         <span
-          class="col-start-4 col-span-6 text-2xl lg:col-start-4 lg:col-span-6 lg:text-3xl text-center text-bold lg:w-[90%] mx-auto"
+          class="col-start-4 col-span-6 text-2xl lg:col-start-4 lg:col-span-6 sm:text-2xl text-center text-bold lg:w-[90%] mx-auto"
           >Respiración postdental</span
         >
         <div
-          class="col-start-4 col-span-6 lg:col-start-4 lg:col-span-6 w-full c400:w-[90%] lg:w-[80%] c1800:w-[90%] mx-auto"
+          class="col-start-4 col-span-6 lg:col-start-4 lg:col-span-6 w-full c400:w-[90%] lg:w-[65%] c1800:w-[90%] mx-auto"
         >
-          <p class="text-sm lg:text-3xl text-center">
+          <p class="text-sm sm:text-2xl text-center">
             Lengua en la pronunciación de las <span class="text-bold"
               >letras <span class="text-[#6610F2]">t</span> y <span
                 class="text-[#6610F2]">d</span
@@ -571,12 +606,12 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/global/Estrella.svg"
           alt="Imagen de play audio"
-          class="col-start-2 col-span-4 lg:col-start-1 lg:col-span-3 max-sm:transform max-sm:translate-y-28 my-auto"
+          class="col-start-2 col-span-4 lg:col-start-1 lg:col-span-3 max-sm:transform transform lg:translate-y-0 lg:-translate-x-0 sm:translate-y-40 sm:-translate-x-16 max-sm:translate-y-8 max-sm:-translate-x-12 my-auto"
         />
         <div
-          class="col-start-2 col-span-11 lg:col-start-5 lg:col-span-8 w-[80%] c400:w-[75%] lg:w-full max-sm:transform max-sm:-translate-y-20 my-auto ml-auto"
+          class="col-start-2 col-span-11 lg:col-start-5 lg:col-span-8 w-[80%] c400:w-[80%] lg:w-full max-sm:transform max-sm:-translate-y-20 my-auto ml-auto"
         >
-          <p class="text-base lg:text-3xl text-right">
+          <p class="text-base sm:text-2xl text-right">
             Al pronunciar <span class="text-bold">"ra"</span>, la lengua se <span
               class="text-[#6610F2] text-bold"
               >aleja de tus dientes
@@ -587,18 +622,18 @@ export async function getStaticPaths() {
         <img
           src="/images/svg/tyd/Alveolar.svg"
           alt="Imagen de pronunciación alveolar"
-          class="max-sm:mt-10 col-start-5 col-span-4 mx-auto"
+          class="max-sm:-mt-10 col-start-5 col-span-4 mx-auto"
         />
         <div
           class="col-start-5 col-span-4 lg:col-start-5 lg:col-span-4 text-center w-full"
         >
-          <span class="text-xl lg:text-3xl text-bold">Respiración alveolar</span
+          <span class="text-xl sm:text-2xl text-bold">Respiración alveolar</span
           >
         </div>
         <div
           class="col-start-4 col-span-6 lg:col-start-4 lg:col-span-6 w-full c400:w-[90%] lg:w-[95%] mx-auto"
         >
-          <p class="text-sm mx-1 lg:text-3xl lg:mx-12 text-center">
+          <p class="text-sm mx-1 sm:text-2xl lg:mx-12 text-center">
             Lengua en la pronunciación de la <span class="text-bold"
               >letra r</span
             > en castellano y las <span class="text-bold"
@@ -611,7 +646,7 @@ export async function getStaticPaths() {
         <div
           class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 w-[85%] c400:w-[90%] lg:w-[90%] c1800:w-full mx-auto"
         >
-          <p class="mt-5 text-base lg:text-3xl text-center lg:mt-20">
+          <p class="mt-5 text-base sm:text-2xl text-center lg:mt-20">
             En las palabras a continuación, la lengua se pone <span
               class="text-bold">primero detrás de los dientes</span
             > al pronunciar la <span class="text-[#6610F2] text-bold"
@@ -709,7 +744,7 @@ export async function getStaticPaths() {
     <section>
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
         <p
-          class="col-start-1 col-span-12 text-base lg:col-start-2 lg:col-span-10 lg:text-3xl lg:mt-20 lg:mx-16 text-center mt-10"
+          class="col-start-1 col-span-12 text-base lg:col-start-2 lg:col-span-10 sm:text-2xl lg:mt-20 lg:mx-16 text-center mt-10"
         >
           Así entonces, cuando pronunciamos las <span class="text-bold"
             >letras <span class="text-[#6610F2]">t</span> y <span
@@ -789,12 +824,12 @@ export async function getStaticPaths() {
             class="col-start-5 col-span-4 lg:col-start-5 lg:col-span-4 mx-auto"
           />
           <span
-            class="col-start-4 col-span-6 text-2xl lg:col-start-5 lg:col-span-4 lg:text-3xl text-bold text-center"
+            class="col-start-4 col-span-6 text-2xl lg:col-start-5 lg:col-span-4 sm:text-2xl text-bold text-center"
           >
             Respiración alveolar
           </span>
           <p
-            class="col-start-4 col-span-7 text-base max-sm:max-w-[92%] lg:col-start-4 lg:col-span-6 lg:text-3xl lg:mx-12 text-center"
+            class="col-start-4 col-span-7 text-base max-sm:max-w-[92%] lg:col-start-4 lg:col-span-6 sm:text-2xl lg:mx-12 text-center"
           >
             Lengua en la pronunciación de la <span class="text-bold"
               >letra r</span
@@ -807,12 +842,12 @@ export async function getStaticPaths() {
           </p>
         </div>
       </section>
-      <section class="mb-10 -mt-10">
+      <section class="mb-10 mt-32">
         <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
           <div
             class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-9 w-full lg:w-[90%]"
           >
-            <p class="text-base lg:text-3xl text-center">
+            <p class="text-base sm:text-2xl text-center">
               Ahora que ya tienes conciencia de la similitud de la
               <span class="text-bold">letra r</span> en castellano y
               <span class="text-bold">
@@ -825,28 +860,36 @@ export async function getStaticPaths() {
             </p>
           </div>
           <span
-            class="col-start-1 col-span-12 text-base lg:col-start-2 lg:col-span-10 lg:text-3xl text-center text-bold"
+            class="col-start-1 col-span-12 text-base lg:col-start-2 lg:col-span-10 sm:text-2xl sm:mt-8 text-center text-bold"
           >
             Escucha cada audio y luego <span class="text-[#6610F2]"
               >repite la palabra</span
             >:
           </span>
         </div>
+        <div class="flex w-full justify-center z-10 transform translate-y-16 sm:translate-y-24 relative">
+          <TeacherMessage client:load/>
+        </div>
       </section>
       <section class="py-56 mt-10 mb-96">
+        <img
+        src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
+        alt="Contenedor de Audios Parte Superior"
+        class="w-3/4 hidden justify-center mx-auto transform -translate-y-36 sm:block"
+        />
         <div
-          class="relative w-full max-w-[350px] sm:max-w-[650px] sm:max-h-[650px] mx-auto py-32 sm:py-32"
+          class="relative w-full max-w-[350px] sm:max-w-[650px] mx-auto py-32 sm:py-16"
         >
-          <img
-            src="/images/svg/global/Contenedor_Audios_Superior.svg"
-            alt="Contenedor de Audios Parte Superior"
-            class="w-full transform -translate-y-96 sm:-translate-y-80"
-          />
+        <img
+          src="/images/svg/global/Contenedor_Audios_Superior.svg"
+          alt="Contenedor de Audios Parte Superior"
+          class="w-full transform -translate-y-80 sm:hidden"
+        />
           <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-full px-24 transform translate-y-48">
+            <div class="w-full px-24 transform translate-y-52">
               <div class="grid grid-cols-2 gap-4 gap-x-32 sm:gap-x-0">
                 <div class="flex flex-col items-center text-center mb-8">
-                  <span class="text-4xl text-extrabold text-[#6610F2]">
+                  <span class="text-2xl sm:text-4xl text-extrabold text-[#6610F2]">
                     Español
                     <img
                       src="/images/svg/global/Destacado.svg"
@@ -856,7 +899,7 @@ export async function getStaticPaths() {
                   </span>
                 </div>
                 <div class="flex flex-col items-center text-center mb-8">
-                  <span class="text-4xl text-extrabold text-[#6610F2]">
+                  <span class="text-2xl sm:text-4xl text-extrabold text-[#6610F2]">
                     Inglés
                     <img
                       src="/images/svg/global/Destacado.svg"
@@ -978,14 +1021,23 @@ export async function getStaticPaths() {
           <img
             src="/images/svg/global/Contenedor_Audios_Inferior.svg"
             alt="Contenedor de Audios Parte Inferior"
-            class="w-full transform translate-y-96 sm:translate-y-96 -z-10 absolute mt-40 sm:mt-5"
+            class="w-full transform translate-y-96 sm:translate-y-96 -z-10 absolute mt-40 sm:mt-5 sm:hidden"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="flex justify-center">
+          <img
+            src="/images/svg/global/Contenedor_Audios_Inferior_xl.svg"
+            alt="Contenedor de Audios Parte Inferior"
+            class="w-3/4 lg:w-1/2 hidden  mx-auto transform -z-10 absolute -translate-y-8 sm:block"
           />
         </div>
       </section>
       <section>
         <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
           <span
-            class="col-start-2 col-span-10 text-xl lg:col-start-3 lg:col-span-8 lg:text-3xl text-center lg:mt-20"
+            class="col-start-2 col-span-10 text-xl lg:col-start-3 lg:col-span-8 sm:text-2xl text-center lg:mt-20"
           >
             ¿Quieres seguir <span class="text-[#6610F2] text-bold"
               >ejercitando</span
