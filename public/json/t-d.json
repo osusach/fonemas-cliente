@@ -2,27 +2,51 @@
     "audios": [
         {
             "name": "Decent_ENG_ENG",
-            "correct_answer": "Ingles"
+            "answer_a": "eng",
+            "text_answer_a": "D en inglés",
+            "answer_b": "esp",
+            "text_answer_b": "D en castellano",
+            "correct_answer": "eng"
         },
         {
             "name": "Text_ENG_ESP",
-            "correct_answer": "Castellano"
+            "answer_a": "eng",
+            "text_answer_a": "T en inglés",
+            "answer_b": "esp",
+            "text_answer_b": "T en castellano",
+            "correct_answer": "esp"
         },
         {
             "name": "Disco_ENG_ESP",
-            "correct_answer": "Castellano"
+            "answer_a": "eng",
+            "text_answer_a": "D en inglés",
+            "answer_b": "esp",
+            "text_answer_b": "D en castellano",
+            "correct_answer": "esp"
         },
         {
             "name": "Tart_ENG_ENG",
-            "correct_answer": "Ingles"
+            "answer_a": "eng",
+            "text_answer_a": "T en inglés",
+            "answer_b": "esp",
+            "text_answer_b": "T en castellano",
+            "correct_answer": "eng"
         },
         {
             "name": "Dame_ENG_ENG",
-            "correct_answer": "Ingles"
+            "answer_a": "eng",
+            "text_answer_a": "D en inglés",
+            "answer_b": "esp",
+            "text_answer_b": "D en castellano",
+            "correct_answer": "eng"
         },
         {
             "name": "Type_ENG_ESP",
-            "correct_answer": "Castellano"
+            "answer_a": "eng",
+            "text_answer_a": "T en inglés",
+            "answer_b": "esp",
+            "text_answer_b": "T en castellano",
+            "correct_answer": "esp"
         }
     ]
 }
