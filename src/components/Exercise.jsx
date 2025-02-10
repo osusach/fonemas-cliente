@@ -131,13 +131,14 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, text }) {
                         </button>
                     )}
                 </section>
-                <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <section className="flex gap-[15px] w-[85%] sm:w-[35%] mx-auto justify-between">
                     {/* Option A button */}
                     <button
                     onClick={() => validateAnswer(data.audios[currentAudio].answer_a)}
                     className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-1
                     lg:col-span-4 lg:col-start-3
+                    sm:w-[20vh]
                     ${data ? getButtonColor(data.audios[currentAudio].answer_a) : ""}`}
                     >
                         {data ? data.audios[currentAudio].text_answer_a : ""}
@@ -148,6 +149,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, text }) {
                     className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-7
                     lg:col-span-4 lg:col-start-7
+                    sm:w-[20vh]
                     ${data ? getButtonColor(data.audios[currentAudio].answer_b) : ""}`}
                     >
                         {data ? data.audios[currentAudio].text_answer_b : ""}
