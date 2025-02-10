@@ -1,5 +1,6 @@
 ---
 import AudioPlayer from "../../components/AudioPlayer";
+import TeacherMessage from "../../components/TeacherMessage";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -238,7 +239,7 @@ export async function getStaticPaths() {
             </p>
           </div>
           <div
-            class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12 sm:translate-x-0"
+            class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-20 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12 sm:translate-x-0"
           >
             <img
               src="/images/svg/global/Flecha.svg"
@@ -278,6 +279,10 @@ export async function getStaticPaths() {
             <span class="text-bold text-[#6610F2]"> h:</span></span
           >
         </p>
+
+        <div class="flex w-full justify-center z-10 transform -translate-y-44 sm:-translate-y-28 relative">
+          <TeacherMessage client:load/>
+        </div>
 
         <img
           src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
@@ -516,6 +521,10 @@ export async function getStaticPaths() {
     </section>
     <!-- Seccion de "Si nuestros labios estan juntos" -->
     <section class="mb-96 sm:mb-96">
+      <div class="flex w-full justify-center z-10 transform -translate-y-64 sm:-translate-y-48 relative">
+        <TeacherMessage client:load/>
+      </div>
+
       <img
         src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
         alt="Contenedor de Audios Parte Superior"
@@ -639,7 +648,7 @@ export async function getStaticPaths() {
                   Horror
                 </p>
                 <AudioPlayer
-                  audio_path={"/audio/h/Honor_ENG.mp3"}
+                  audio_path={"/audio/h/Horror_ENG.mp3"}
                   className="w-24 h-24 sm:w-20 sm:h-20"
                   client:load
                 />
@@ -662,7 +671,7 @@ export async function getStaticPaths() {
       </div>
     </section>
     <!-- Seccion de "¿Quieres seguir ejercitando?" -->
-    <section class="sm:mt-24">
+    <section class="sm:mt-24 overflow-hidden">
       <div class="grid grid-cols-2 items-center relative">
         <div class="col-span-2 text-center">
           <p class="text-xl sm:text-3xl text-center mb-4 sm:mb-12">
@@ -676,7 +685,7 @@ export async function getStaticPaths() {
             class="transform transition-transform duration-200 hover:scale-110"
           >
             <a
-              href="/exercice/z"
+              href="/exercise/h"
               class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center"
             >
               Haz click aquí

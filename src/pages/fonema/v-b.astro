@@ -1,5 +1,6 @@
 ---
 import AudioPlayer from "../../components/AudioPlayer";
+import TeacherMessage from "../../components/TeacherMessage";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -267,7 +268,7 @@ export async function getStaticPaths() {
             </p>
           </div>
           <div
-            class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-24 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12 sm:translate-x-0"
+            class="col-start-2 col-span-4 row-start-2 flex justify-center items-center transform -translate-y-20 -translate-x-8 c450:-translate-y-12 sm:-translate-y-12 sm:translate-x-0"
           >
             <img
               src="/images/svg/global/Flecha.svg"
@@ -309,6 +310,10 @@ export async function getStaticPaths() {
             <span class="text-bold text-[#6610F2]">b</span> en inglés:</span
           >
         </p>
+
+        <div class="flex w-full justify-center z-10 transform -translate-y-48 sm:-translate-y-28 relative">
+            <TeacherMessage client:load/>
+        </div>
 
         <img
           src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
@@ -570,7 +575,7 @@ export async function getStaticPaths() {
             class="transform transition-transform duration-200 hover:scale-110"
           >
             <a
-              href="/exercice/z"
+              href="/exercise/v-b"
               class="text-[#6610F2] text-extrabold text-2xl sm:text-4xl w-full cursor-pointer px-4 text-center inline-flex justify-center"
             >
               Haz click aquí

@@ -8,7 +8,7 @@ export default function TeacherMessage() {
       <div className="w-full flex justify-center"
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
-        onClick={() => setIsOpen(!isOpen)}
+        onTouchStart={() => setIsOpen(!isOpen)}
       >
           <img src="/images/svg/global/alert.svg" alt="" className="h-[10px] sm:h-[20px] mt-1"/>
           <p className="text-sm sm:text-2xl  text-[#6610F2] text-bold underline">¿Eres profesor?</p>
