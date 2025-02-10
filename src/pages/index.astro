@@ -7,7 +7,7 @@ import Fonemas from "../components/landing/Fonemas";
   <article class="flex flex-col mt-8 mb-8">
     <!-- Sección de propósito -->
     <section
-      class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-8"
+      class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] lg:space-y-8 mx-auto mt-8"
     >
       <p
         class="text-xl text-center
@@ -30,7 +30,7 @@ import Fonemas from "../components/landing/Fonemas";
       />
     </section>
     <section
-      class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] space-y-8 mx-auto mt-14"
+      class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] sm:space-y-8 mx-auto mt-14"
     >
       <p
         class="text-center text-xl
@@ -54,7 +54,9 @@ import Fonemas from "../components/landing/Fonemas";
         </p>
         <p class="text-bold">Estas letras son:</p>
       </div>
-      <Fonemas client:load />
+      <div class="col-span-12">
+        <Fonemas client:load />
+      </div>
     </section>
     <!-- Sección de utilidad -->
     <section
@@ -64,7 +66,7 @@ import Fonemas from "../components/landing/Fonemas";
         class="text-base text-center
         col-span-10 col-start-2
         sm:text-3xl
-        sm:col-span-12 sm:col-start-1"
+        sm:col-span-12 sm:col-start-1 sm:w-[90%]"
       >
         Te explicaremos <span class="text-[#6610F2] text-bold"
           >cómo identificar las letras</span
