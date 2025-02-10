@@ -1,5 +1,6 @@
 ---
 import AudioPlayer from "../../components/AudioPlayer";
+import TeacherMessage from "../../components/TeacherMessage";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -309,6 +310,10 @@ export async function getStaticPaths() {
             <span class="text-bold text-[#6610F2]">b</span> en inglés:</span
           >
         </p>
+
+        <div class="flex w-full justify-center z-10 transform -translate-y-48 sm:-translate-y-28 relative">
+            <TeacherMessage client:load/>
+        </div>
 
         <img
           src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"

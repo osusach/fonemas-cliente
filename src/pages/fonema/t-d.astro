@@ -1,5 +1,6 @@
 ---
 import AudioPlayer from "../../components/AudioPlayer";
+import TeacherMessage from "../../components/TeacherMessage";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -271,6 +272,9 @@ export async function getStaticPaths() {
               </span>:
             </span>
           </p>
+          <div class="flex w-full justify-center z-10 transform translate-y-12 sm:translate-y-0 relative">
+            <TeacherMessage client:load/>
+          </div>
         </div>
       </div>
     </section>
@@ -831,6 +835,9 @@ export async function getStaticPaths() {
               >repite la palabra</span
             >:
           </span>
+        </div>
+        <div class="flex w-full justify-center z-10 transform translate-y-4 sm:translate-y-24 relative">
+          <TeacherMessage client:load/>
         </div>
       </section>
       <section class="py-56 mt-10 mb-96">

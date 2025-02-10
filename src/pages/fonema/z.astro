@@ -325,10 +325,10 @@ export async function getStaticPaths() {
             class="text-[#6610F2]">z</span
             >:
           </span>
-          <div class="flex w-full justify-center z-50 relative">
-            <TeacherMessage client:load/>
-          </div>
       </p>
+      <div class="flex w-full justify-center z-10 transform -translate-y-24 sm:translate-y-0 relative">
+        <TeacherMessage client:load/>
+      </div>
 
       <img
         src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
@@ -533,7 +533,9 @@ export async function getStaticPaths() {
             pronuncia las siguientes palabras:</span
           >
         </p>
-
+        <div class="flex w-full justify-center z-10 transform -translate-y-24 sm:translate-y-0 relative">
+          <TeacherMessage client:load/>
+        </div>
         <img
           src="/images/svg/global/Contenedor_Audios_Superior_xl.svg"
           alt="Contenedor de Audios Parte Superior"
