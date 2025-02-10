@@ -2,26 +2,56 @@
     "audios": [
         {
             "name": "Very",
+            "description": 0,
+            "answer_a": "v",
+            "text_answer_a": "Tiene v",
+            "answer_b": "b",
+            "text_answer_b": "Tiene b",
             "correct_answer": "v"
         },
         {
             "name": "Bus",
+            "description": 0,
+            "answer_a": "v",
+            "text_answer_a": "Tiene v",
+            "answer_b": "b",
+            "text_answer_b": "Tiene b",
             "correct_answer": "b"
         },
         {
             "name": "Vet",
+            "description": 0,
+            "answer_a": "v",
+            "text_answer_a": "Tiene v",
+            "answer_b": "b",
+            "text_answer_b": "Tiene b",
             "correct_answer": "v"
         },
         {
             "name": "Bed",
+            "description": 0,
+            "answer_a": "v",
+            "text_answer_a": "Tiene v",
+            "answer_b": "b",
+            "text_answer_b": "Tiene b",
             "correct_answer": "b"
         },
         {
             "name": "Visit",
+            "description": 0,
+            "answer_a": "v",
+            "text_answer_a": "Tiene v",
+            "answer_b": "b",
+            "text_answer_b": "Tiene b",
             "correct_answer": "v"
         },
         {
             "name": "Box",
+            "description": 0,
+            "answer_a": "v",
+            "text_answer_a": "Tiene v",
+            "answer_b": "b",
+            "text_answer_b": "Tiene b",
             "correct_answer": "b"
         }
     ]

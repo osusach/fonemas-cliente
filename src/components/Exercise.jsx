@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AudioPlayer from "./AudioPlayer";
 
-export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, text, answerA, textAnswerA, answerB, textAnswerB }) {
+export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions }) {
     const [data, setData] = useState(null);
     const [currentAudio, setCurrentAudio] = useState(0);
     const [selectedButton, setSelectedButton] = useState(null);
@@ -80,7 +80,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, text, answerA
                     />
                     <div className="col-span-8 col-start-3 place-content-center">
                         {/* Text */}
-                        <div dangerouslySetInnerHTML={{ __html: text }} />
+                        {data ? <div dangerouslySetInnerHTML={{__html: descriptions[data.audios[currentAudio].description]}} /> : null}
                     </div>
                     {/* Right start */}
                     <img src="/images/svg/global/Estrella.svg"
@@ -134,25 +134,25 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, text, answerA
                 <section className="flex gap-[15px] w-[85%] sm:w-[35%] mx-auto justify-between">
                     {/* Option A button */}
                     <button
-                        onClick={() => validateAnswer(answerA)}
-                        className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
+                    onClick={() => validateAnswer(data.audios[currentAudio].answer_a)}
+                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-1
                     lg:col-span-4 lg:col-start-3
                     sm:w-[20vh]
-                    ${getButtonColor(answerA)}`}
+                    ${data ? getButtonColor(data.audios[currentAudio].answer_a) : ""}`}
                     >
-                        {textAnswerA}
+                        {data ? data.audios[currentAudio].text_answer_a : ""}
                     </button>
                     {/* Option B button */}
-                    <button
-                        onClick={() => validateAnswer(answerB)}
-                        className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
+                    <button 
+                    onClick={() => validateAnswer(data.audios[currentAudio].answer_b)}
+                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-7
                     lg:col-span-4 lg:col-start-7
                     sm:w-[20vh]
-                    ${getButtonColor(answerB)}`}
+                    ${data ? getButtonColor(data.audios[currentAudio].answer_b) : ""}`}
                     >
-                        {textAnswerB}
+                        {data ? data.audios[currentAudio].text_answer_b : ""}
                     </button>
                 </section>
             </div>

@@ -2,14 +2,16 @@
 import Layout from "../../layouts/Layout.astro";
 import { Exercise } from "../../components/Exercise";
 
-const text = `
-<p
-class="text-base text-center
-sm:text-2xl"
->
-    Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene <span class="text-[#6610F2]">v</span> o <span class="text-[#6610F2]">b</span></span>.
-</p>
-`;
+const descriptions = [
+    `
+    <p
+    class="text-base text-center
+    sm:text-2xl"
+    >
+        Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene <span class="text-[#6610F2]">v</span> o <span class="text-[#6610F2]">b</span></span>.
+    </p>
+    `
+];
 ---
 
 <Layout title="Ejercicios V-B" description="Ejercicios para identificar el sonido V o B en inglés">
@@ -17,11 +19,7 @@ sm:text-2xl"
     fonema={"v-b"}
     routeOfFonema={"/fonema/v-b"}
     routeOfTitleSVG={"/images/svg/vyb/Ejercicios v-b.svg"}
-    text={text}
-    answerA={"v"}
-    textAnswerA={"Tiene v"}
-    answerB={"b"}
-    textAnswerB={"Tiene b"}
+    descriptions={descriptions}
     client:load
     />
 </Layout>

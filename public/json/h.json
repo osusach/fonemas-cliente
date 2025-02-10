@@ -2,26 +2,56 @@
     "audios": [
         {
             "name": "Art",
+            "description": 0,
+            "answer_a": "yes",
+            "text_answer_a": "Tiene h",
+            "answer_b": "no",
+            "text_answer_b": "No tiene h",
             "correct_answer": "no"
         },
         {
             "name": "Heart",
+            "description": 0,
+            "answer_a": "yes",
+            "text_answer_a": "Tiene h",
+            "answer_b": "no",
+            "text_answer_b": "No tiene h",
             "correct_answer": "yes"
         },
         {
             "name": "Is",
+            "description": 0,
+            "answer_a": "yes",
+            "text_answer_a": "Tiene h",
+            "answer_b": "no",
+            "text_answer_b": "No tiene h",
             "correct_answer": "no"
         },
         {
             "name": "His",
+            "description": 0,
+            "answer_a": "yes",
+            "text_answer_a": "Tiene h",
+            "answer_b": "no",
+            "text_answer_b": "No tiene h",
             "correct_answer": "yes"
         },
         {
             "name": "Eat",
+            "description": 0,
+            "answer_a": "yes",
+            "text_answer_a": "Tiene h",
+            "answer_b": "no",
+            "text_answer_b": "No tiene h",
             "correct_answer": "no"
         },
         {
             "name": "Heat",
+            "description": 0,
+            "answer_a": "yes",
+            "text_answer_a": "Tiene h",
+            "answer_b": "no",
+            "text_answer_b": "No tiene h",
             "correct_answer": "yes"
         }
     ]

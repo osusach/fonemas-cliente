@@ -2,26 +2,56 @@
     "audios": [
         {
             "name": "Socket",
+            "description": 0,
+            "answer_a": "s",
+            "text_answer_a": "Tiene s",
+            "answer_b": "z",
+            "text_answer_b": "Tiene z",
             "correct_answer": "s"
         },
         {
             "name": "Signal",
+            "description": 0,
+            "answer_a": "s",
+            "text_answer_a": "Tiene s",
+            "answer_b": "z",
+            "text_answer_b": "Tiene z",
             "correct_answer": "s"
         },
         {
             "name": "ZigZag",
+            "description": 0,
+            "answer_a": "s",
+            "text_answer_a": "Tiene s",
+            "answer_b": "z",
+            "text_answer_b": "Tiene z",
             "correct_answer": "z"
         },
         {
             "name": "Zero",
+            "description": 0,
+            "answer_a": "s",
+            "text_answer_a": "Tiene s",
+            "answer_b": "z",
+            "text_answer_b": "Tiene z",
             "correct_answer": "z"
         },
         {
             "name": "Secret",
+            "description": 0,
+            "answer_a": "s",
+            "text_answer_a": "Tiene s",
+            "answer_b": "z",
+            "text_answer_b": "Tiene z",
             "correct_answer": "s"
         },
         {
             "name": "Zing",
+            "description": 0,
+            "answer_a": "s",
+            "text_answer_a": "Tiene s",
+            "answer_b": "z",
+            "text_answer_b": "Tiene z",
             "correct_answer": "z"
         }
     ]

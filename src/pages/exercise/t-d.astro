@@ -2,14 +2,24 @@
 import Layout from "../../layouts/Layout.astro";
 import { Exercise } from "../../components/Exercise";
 
-const text = `
-<p
-class="text-base text-center
-sm:text-2xl"
->
-    Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene la letra <span class="text-[#6610F2]">letra t</span> <span class="text-[#6610F2]">del ingles</span> o <span class="text-[#6610F2]">del castellano</span></span>.
-</p>
-`;
+const descriptions = [
+    `
+    <p
+    class="text-base text-center
+    sm:text-2xl"
+    >
+        Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene la letra <span class="text-[#6610F2]">letra d</span> <span class="text-[#6610F2]">del inglés</span> o <span class="text-[#6610F2]">del castellano</span></span>.
+    </p>
+    `,
+    `
+    <p
+    class="text-base text-center
+    sm:text-2xl"
+    >
+        Ahora vas a <span class="text-bold">escuchar palabras</span> y <span class="text-bold">vas a seleccionar si la palabra tiene la letra <span class="text-[#6610F2]">letra t</span> <span class="text-[#6610F2]">del inglés</span> o <span class="text-[#6610F2]">del castellano</span></span>.
+    </p>
+    `
+];
 ---
 
 <Layout title="Ejercicios T-D" description="Ejercicios para identificar el la letra T en inglés o castellano">
@@ -17,11 +27,7 @@ sm:text-2xl"
     fonema={"t-d"}
     routeOfFonema={"/fonema/t-d"}
     routeOfTitleSVG={"/images/svg/tyd/Ejercicios t-d.svg"}
-    text={text}
-    answerA={"Ingles"}
-    textAnswerA={"T en ingles"}
-    answerB={"Castellano"}
-    textAnswerB={"T en castellano"}
+    descriptions={descriptions}
     client:load
     />
 </Layout>
