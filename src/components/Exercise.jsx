@@ -60,13 +60,15 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                         Letra {fonema}
                     </a>
                     {/* Title */}
-                    <img
+                    <div
+                    className="col-span-12 flex justify-center">
+                        <img
                         src={`${routeOfTitleSVG}`}
                         alt="Titulo de ejercicios"
-                        className="w-[206px] h-[93px] object-contain
-                    col-span-6 col-start-4 place-self-center
-                    lg:w-[477px] lg:h-40"
-                    />
+                        className="w-[206px] h-[93px]
+                        lg:w-[477px] lg:h-40"
+                        />
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col justify-around  h-[60vh]">
@@ -131,28 +133,34 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                         </button>
                     )}
                 </section>
-                <section className="flex gap-[15px] w-[85%] sm:w-[35%] mx-auto justify-between">
+                <section className="flex gap-[15px] w-[85%] sm:w-[75%] mx-auto justify-center">
                     {/* Option A button */}
                     <button
                     onClick={() => validateAnswer(data.audios[currentAudio].answer_a)}
-                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
+                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-1
-                    lg:col-span-4 lg:col-start-3
-                    sm:w-[20vh]
+                    w-[150px]
+                    sm:w-[200px]
+                    sm:col-span-4 sm:col-start-3
                     ${data ? getButtonColor(data.audios[currentAudio].answer_a) : ""}`}
                     >
-                        {data ? data.audios[currentAudio].text_answer_a : ""}
+                        <p className="text-lg sm:text-xl text-bold text-white">
+                            {data ? data.audios[currentAudio].text_answer_a : ""}
+                        </p>
                     </button>
                     {/* Option B button */}
                     <button 
                     onClick={() => validateAnswer(data.audios[currentAudio].answer_b)}
-                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl font-bold text-white transition-all duration-300 ease-in-out transform
+                    className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl transition-all duration-300 ease-in-out transform
                     col-span-6 col-start-7
-                    lg:col-span-4 lg:col-start-7
-                    sm:w-[20vh]
+                    w-[150px]
+                    sm:w-[200px]
+                    sm:col-span-4 sm:col-start-7
                     ${data ? getButtonColor(data.audios[currentAudio].answer_b) : ""}`}
                     >
-                        {data ? data.audios[currentAudio].text_answer_b : ""}
+                        <p className="text-base sm:text-xl text-bold text-white">
+                            {data ? data.audios[currentAudio].text_answer_b : ""}
+                        </p>
                     </button>
                 </section>
             </div>
