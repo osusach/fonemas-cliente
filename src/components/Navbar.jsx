@@ -69,10 +69,10 @@ export function Navbar() {
                                         Letra Z
                                     </a>
                                     <a href="/fonema/t-d" className="block px-4 py-2 text-white hover:underline">
-                                        Letra T-D
+                                        Letras T-D
                                     </a>
                                     <a href="/fonema/v-b" className="block px-4 py-2 text-white hover:underline">
-                                        Letra V-B
+                                        Letras V-B
                                     </a>
                                     <a href="/fonema/h" className="block px-4 py-2 text-white hover:underline">
                                         Letra H
