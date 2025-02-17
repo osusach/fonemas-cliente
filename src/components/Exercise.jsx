@@ -4,6 +4,7 @@ import AudioPlayer from "./AudioPlayer";
 export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions }) {
     const [data, setData] = useState(null);
     const [currentAudio, setCurrentAudio] = useState(0);
+    const [audiosLength, setAudiosLength] = useState(0);
     const [selectedButton, setSelectedButton] = useState(null);
     const [isCorrect, setIsCorrect] = useState(false);
 
@@ -13,7 +14,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
         const response = await fetch(jsonFilePath);
         const data = await response.json();
         setData(data);
-        console.log(data.audios);
+        setAudiosLength(data.audios.length);
     }
 
     useEffect(() => {
@@ -49,7 +50,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
 
     return (
         <article className="relative flex flex-col h-[calc(100vh-96px)] -mb-8 sm:-mb-16">
-            <div className="sm:static flex justify-center w-full pt-8">
+            <div className="sm:static flex justify-center w-full pt-4 sm:pt-8">
                 <div className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto pt-2">
                     {/* Link to fonema /z/ */}
                     <a
@@ -92,46 +93,39 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                     lg:col-span-2 lg:row-span-1 lg:col-start-11 lg:row-start-1"
                     />
                 </section>
-                <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-                    {/* Number of word */}
-                    <p
-                        className="text-[#6610F2] text-bold text-xl text-center mb-4
-                    col-span-12
-                    lg:text-3xl"
-                    >
-                        Palabra {currentAudio + 1}
+                <section className="flex flex-col w-[85%] sm:w-[75%] mx-auto">
+                    <p className="text-[#6610F2] text-bold text-xl lg:text-3xl text-center mb-8">
+                    Palabra {currentAudio + 1}
                     </p>
-                    {/* Left arrow button */}
-                    {(currentAudio != 0) && (
+                    <div className="flex justify-between">
+                        {/* Left arrow button */}
                         <button
-                            onClick={discountAudio}
-                            className="
-                        col-span-2 col-start-1"
+                        onClick={discountAudio}
+                        className={`${currentAudio != 0 ? "visible" : "invisible"}`}
                         >
-                            <img src="/images/svg/global/Flecha_Izquierda.svg" alt="Imagen de flecha izquierda" className="w-[160px]" />
+                            <img
+                            src="/images/svg/global/Flecha_Izquierda.svg"
+                            alt="Imagen de flecha izquierda"
+                            className="w-24" />
                         </button>
-                    )}
-                    {/* Play audio button */}
-                    <div className="object-contain
-                    w-[86px] lg:w-[164px]
-                    col-span-4 col-start-5 place-self-center"
-                    >
+                        {/* Play audio button */}
                         {(!data) ? (
-                            <AudioPlayer audio_path={``} className="lg:w-[164px]" />
+                            <AudioPlayer audio_path={``} className="w-36 sm:w-40" />
                         ) : (
-                            <AudioPlayer audio_path={`/audio/${fonema}/exercise/${data.audios[currentAudio].name}.mp3`} className="lg:w-[164px]" />
+                            <AudioPlayer audio_path={`/audio/${fonema}/exercise/${data.audios[currentAudio].name}.mp3`} className="w-36 sm:w-40" />
                         )}
-                    </div>
-                    {/* Right arrow button */}
-                    {(data) && (currentAudio != data.audios.length - 1) && (
+                        {/* Right arrow button */}
                         <button
-                            onClick={countAudio}
-                            className="
-                        col-span-2 col-start-11"
+                        onClick={countAudio}
+                        className={`${currentAudio != audiosLength - 1 ? "visible" : "invisible"}`}
                         >
-                            <img src="/images/svg/global/Flecha_Derecha.svg" alt="Imagen de flecha derecha" className="w-[160px]" />
+                            <img
+                            src="/images/svg/global/Flecha_Derecha.svg"
+                            alt="Imagen de flecha derecha"
+                            className="w-24"
+                            />
                         </button>
-                    )}
+                    </div>
                 </section>
                 <section className="flex gap-[15px] w-[85%] sm:w-[75%] mx-auto justify-center">
                     {/* Option A button */}
