@@ -49,7 +49,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
     }
 
     return (
-        <article className="relative flex flex-col h-[calc(100vh-96px)] -mb-8 sm:-mb-16">
+        <article className="relative flex flex-col min-h-[calc(100vh-96px)] -mb-8 sm:-mb-16">
             <div className="sm:static flex justify-center w-full pt-4 sm:pt-8">
                 <div className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto pt-2">
                     {/* Link to fonema /z/ */}
@@ -67,12 +67,12 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                         src={`${routeOfTitleSVG}`}
                         alt="Titulo de ejercicios"
                         className="w-[206px] h-[93px]
-                        lg:w-[477px] lg:h-40"
+                        lg:w-[477px] lg:h-32"
                         />
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-around  h-[60vh]">
+            <div className="flex flex-col justify-around min-h-[60vh]">
                 <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
                     {/* Left start */}
                     <img src="/images/svg/global/Estrella.svg"
