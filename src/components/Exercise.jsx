@@ -66,31 +66,31 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                         <img
                         src={`${routeOfTitleSVG}`}
                         alt="Titulo de ejercicios"
-                        className="w-[206px] h-[93px]
-                        lg:w-[477px] lg:h-32"
+                        className="max-h-24
+                        lg:max-h-32"
                         />
                     </div>
                 </div>
             </div>
             <div className="flex flex-col justify-around min-h-[60vh]">
-                <section className="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
+                <section className="flex justify-center items-end sm:items-center gap-3 w-[85%] sm:w-[75%] mx-auto">
                     {/* Left start */}
-                    <img src="/images/svg/global/Estrella.svg"
-                        alt="Imagen de estrella"
-                        className="
-                    col-span-2 row-span-2 col-start-1 row-start-1 place-self-end
-                    lg:col-span-2 lg:row-span-1 lg:col-start-1 lg:row-start-1"
+                    <img 
+                    src="/images/svg/global/Estrella.svg"
+                    alt="Imagen de estrella"
+                    className="max-w-12 sm:max-w-24"
                     />
-                    <div className="col-span-8 col-start-3 place-content-center">
+                    <div className="mb-4 sm:mb-0">
                         {/* Text */}
-                        {data ? <div dangerouslySetInnerHTML={{__html: descriptions[data.audios[currentAudio].description]}} /> : null}
+                        {data && 
+                        <div dangerouslySetInnerHTML={{__html: descriptions[data.audios[currentAudio].description]}} />
+                        }
                     </div>
                     {/* Right start */}
-                    <img src="/images/svg/global/Estrella.svg"
-                        alt="Imagen de estrella"
-                        className="scale-x-[-1]
-                    col-span-2 row-span-2 col-start-11 row-start-1 place-self-end
-                    lg:col-span-2 lg:row-span-1 lg:col-start-11 lg:row-start-1"
+                    <img 
+                    src="/images/svg/global/Estrella.svg"
+                    alt="Imagen de estrella"
+                    className="max-w-12 sm:max-w-24 scale-x-[-1]"
                     />
                 </section>
                 <section className="flex flex-col w-[85%] sm:w-[75%] mx-auto">
@@ -106,13 +106,13 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                             <img
                             src="/images/svg/global/Flecha_Izquierda.svg"
                             alt="Imagen de flecha izquierda"
-                            className="w-24" />
+                            className="max-w-24" />
                         </button>
                         {/* Play audio button */}
                         {(!data) ? (
-                            <AudioPlayer audio_path={``} className="w-36 sm:w-40" />
+                            <AudioPlayer audio_path={``} className="max-w-36 sm:max-w-40" />
                         ) : (
-                            <AudioPlayer audio_path={`/audio/${fonema}/exercise/${data.audios[currentAudio].name}.mp3`} className="w-36 sm:w-40" />
+                            <AudioPlayer audio_path={`/audio/${fonema}/exercise/${data.audios[currentAudio].name}.mp3`} className="max-w-36 sm:max-w-40" />
                         )}
                         {/* Right arrow button */}
                         <button
@@ -122,7 +122,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                             <img
                             src="/images/svg/global/Flecha_Derecha.svg"
                             alt="Imagen de flecha derecha"
-                            className="w-24"
+                            className="max-w-24"
                             />
                         </button>
                     </div>
@@ -132,10 +132,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                     <button
                     onClick={() => validateAnswer(data.audios[currentAudio].answer_a)}
                     className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 transition-all duration-300 ease-in-out transform
-                    col-span-6 col-start-1
-                    w-[150px]
-                    sm:w-[200px]
-                    sm:col-span-4 sm:col-start-3
+                    max-w-36 sm:min-w-52
                     ${data ? getButtonColor(data.audios[currentAudio].answer_a) : ""}`}
                     >
                         <p className="text-lg sm:text-xl text-bold text-white">
@@ -146,10 +143,7 @@ export function Exercise({ fonema, routeOfFonema, routeOfTitleSVG, descriptions 
                     <button 
                     onClick={() => validateAnswer(data.audios[currentAudio].answer_b)}
                     className={`bg-[#6610F2] relative overflow-hidden rounded-full px-8 py-4 text-xl transition-all duration-300 ease-in-out transform
-                    col-span-6 col-start-7
-                    w-[150px]
-                    sm:w-[200px]
-                    sm:col-span-4 sm:col-start-7
+                    max-w-36 sm:min-w-52
                     ${data ? getButtonColor(data.audios[currentAudio].answer_b) : ""}`}
                     >
                         <p className="text-base sm:text-xl text-bold text-white">
