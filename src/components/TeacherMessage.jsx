@@ -5,7 +5,7 @@ export default function TeacherMessage() {
 
   return (
     <div className="relative w-full flex flex-col items-center">
-      <div className="w-full flex justify-center"
+      <div className="flex justify-center"
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
         onTouchStart={() => setIsOpen(!isOpen)}
