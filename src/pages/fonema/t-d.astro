@@ -573,10 +573,8 @@ export async function getStaticPaths() {
     </section>
     <section class="lg:mb-20">
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-        <div
-          class="col-start-1 col-span-12 lg:col-start-1 lg:col-span-8 w-full lg:w-[90%] c1800:w-[80%] mr-auto my-auto"
-        >
-          <p class="text-base mt-5 sm:text-2xl text-left">
+        <div class="col-span-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:w-[90%]">
+          <p class="text-base sm:text-2xl text-left w-[80%] sm:w-full">
             Fíjate en el <span class="text-bold text-[#6610F2]">
               movimiento de tu lengua
             </span> dentro de tu boca. Al pronunciar “<span
@@ -585,16 +583,18 @@ export async function getStaticPaths() {
 
             <span class="text-bold"> detrás de los dientes. </span>
           </p>
+          <div class="flex justify-end -mt-12 sm:mt-0">
+            <img
+              src="/images/svg/global/Estrella.svg"
+              alt="Imagen de Estrella"
+              class="max-w-24 sm:max-w-44"
+            />
+          </div>
         </div>
-        <img
-          src="/images/svg/global/Estrella.svg"
-          alt="Imagen de play audio"
-          class="col-start-9 col-span-4 lg:col-start-9 lg:col-span-3 -mb-20 sm:mb-0 max-sm:transform max-sm:-translate-y-12 my-auto"
-        />
         <img
           src="/images/svg/tyd/Postdental.svg"
           alt="Imagen de pronunciación postdental"
-          class="col-start-5 col-span-4 mx-auto lg:mt-10"
+          class="col-start-5 col-span-4 mx-auto sm:mt-10"
         />
         <span
           class="col-start-4 col-span-6 text-2xl lg:col-start-4 lg:col-span-6 sm:text-2xl text-center text-bold lg:w-[90%] mx-auto"
@@ -615,26 +615,37 @@ export async function getStaticPaths() {
     </section>
     <section>
       <div class="grid grid-cols-12 gap-[15px] w-[85%] sm:w-[75%] mx-auto">
-        <img
-          src="/images/svg/global/Estrella.svg"
-          alt="Imagen de play audio"
-          class="col-start-2 col-span-4 lg:col-start-1 lg:col-span-3 max-sm:transform transform lg:translate-y-0 lg:-translate-x-0 sm:translate-y-40 sm:-translate-x-16 max-sm:translate-y-8 max-sm:-translate-x-12 my-auto"
-        />
-        <div
-          class="col-start-2 col-span-11 lg:col-start-5 lg:col-span-8 w-[80%] c400:w-[80%] lg:w-full max-sm:transform max-sm:-translate-y-20 my-auto ml-auto"
-        >
-          <p class="text-base sm:text-2xl text-right">
+        <div class="col-span-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:w-[90%] sm:ml-auto">
+          <div class="hidden sm:block">
+            <div class="flex justify-start -mt-12 sm:mt-0">
+              <img
+                src="/images/svg/global/Estrella.svg"
+                alt="Imagen de Estrella"
+                class="max-w-24 sm:max-w-44"
+              />
+            </div>
+          </div>
+          <p class="text-base sm:text-2xl text-right w-[80%] sm:w-full ml-auto">
             Al pronunciar <span class="text-bold">"ra"</span>, la lengua se <span
               class="text-[#6610F2] text-bold"
               >aleja de tus dientes
             </span>
             y se desplaza hacia los alveólos.
           </p>
+          <div class="sm:hidden">
+            <div class="flex justify-start -mt-12 sm:mt-0">
+              <img
+                src="/images/svg/global/Estrella.svg"
+                alt="Imagen de Estrella"
+                class="max-w-24 sm:max-w-44"
+              />
+            </div>
+          </div>
         </div>
         <img
           src="/images/svg/tyd/Alveolar.svg"
           alt="Imagen de pronunciación alveolar"
-          class="max-sm:-mt-10 col-start-5 col-span-4 mx-auto"
+          class="col-start-5 col-span-4 mx-auto sm:mt-10"
         />
         <div
           class="col-start-5 col-span-4 lg:col-start-5 lg:col-span-4 text-center w-full"
